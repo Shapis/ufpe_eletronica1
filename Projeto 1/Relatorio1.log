@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.10)  10 JUN 2023 05:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.6.10)  10 JUN 2023 05:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -787,7 +787,7 @@ Package amsmath Warning: Foreign command \over;
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \end{document}
+l.139 \end{document}
                      [2 <./images/quadripolob.png>] (./Relatorio1.aux)
 Package rerunfilecheck Info: File `Relatorio1.out' has not changed.
 (rerunfilecheck)             Checksum: 2B5297CB911173E362D2A0E725EC40F0;1337.
@@ -795,13 +795,13 @@ Package rerunfilecheck Info: File `Relatorio1.out' has not changed.
 Here is how much of TeX's memory you used:
  53519 strings out of 476025
  1380310 string characters out of 5796532
- 2123594 words of memory out of 5000000
+ 2123634 words of memory out of 5000000
  73307 multiletter control sequences out of 15000+600000
  522626 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,9n,118p,778b,906s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Relatorio1.pdf (2 pages, 200996 bytes).
+Output written on Relatorio1.pdf (2 pages, 200763 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams

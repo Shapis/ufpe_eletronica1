@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1686386149 "/home/hpsilva/Documents/ufpe_eletronica1/Projeto 1/Relatorio1.tex" "Relatorio1.pdf" "Relatorio1" 1686386149 0
-  "/home/hpsilva/Documents/ufpe_eletronica1/Projeto 1/Relatorio1.tex" 1686386148 5688 f6cc7f523985acef573c64882b87aeb9 ""
+["pdflatex"] 1686386584 "/home/hpsilva/Documents/ufpe_eletronica1/Projeto 1/Relatorio1.tex" "Relatorio1.pdf" "Relatorio1" 1686386585 0
+  "/home/hpsilva/Documents/ufpe_eletronica1/Projeto 1/Relatorio1.tex" 1686386584 5738 ecbe0bebce463dddd37d0ef796998a0e ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1686171558 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1686171558 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1686171558 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -249,10 +249,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1686171558 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1686382907 4493604 868eb9f183785b6f5cdd229f8b5ca0e9 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1686382902 8204101 919503ce77e48f3ef03ffcce06e7623b ""
-  "Relatorio1.aux" 1686386149 2179 ae48b17ef320334498f0a50c9fcd7db8 "pdflatex"
-  "Relatorio1.out" 1686386149 1337 2b5297cb911173e362d2a0e725ec40f0 "pdflatex"
-  "Relatorio1.tex" 1686386148 5688 f6cc7f523985acef573c64882b87aeb9 ""
-  "Relatorio1.toc" 1686386149 816 a682d62dc9b1aa1493a930dda448ae54 "pdflatex"
+  "Relatorio1.aux" 1686386585 2179 ae48b17ef320334498f0a50c9fcd7db8 "pdflatex"
+  "Relatorio1.out" 1686386585 1337 2b5297cb911173e362d2a0e725ec40f0 "pdflatex"
+  "Relatorio1.tex" 1686386584 5738 ecbe0bebce463dddd37d0ef796998a0e ""
+  "Relatorio1.toc" 1686386585 816 a682d62dc9b1aa1493a930dda448ae54 "pdflatex"
   "images/quadripoloa.png" 1683154412 62084 14104d7970e2b67e093593d1f77cb02b ""
   "images/quadripolob.png" 1683154418 72372 b48d54bcbbb808c7e1d4925981aceabd ""
   (generated)
