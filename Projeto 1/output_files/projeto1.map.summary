@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Jun 23 13:36:03 2023
+Analysis & Synthesis Status : Successful - Fri Jun 23 14:05:14 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : projeto1
-Top-level Entity Name : contador_async
+Top-level Entity Name : projeto1
 Family : Cyclone IV E
-Total logic elements : 5
-    Total combinational functions : 5
-    Dedicated logic registers : 4
-Total registers : 4
-Total pins : 5
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 7
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

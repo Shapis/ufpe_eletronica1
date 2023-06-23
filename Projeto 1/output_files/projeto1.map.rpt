@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto1
-Fri Jun 23 13:36:03 2023
+Fri Jun 23 14:05:14 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,10 +13,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 23 13:36:03 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 23 14:05:14 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; contador_async                              ;
+; Top-level Entity Name              ; projeto1                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
-;     Dedicated logic registers      ; 4                                           ;
-; Total registers                    ; 4                                           ;
-; Total pins                         ; 5                                           ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -66,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; contador_async     ; projeto1           ;
+; Top-level entity name                                            ; projeto1           ; projeto1           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,67 +152,79 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
-; contador_async.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/contador_async.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; projeto1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 1/projeto1.bdf    ;         ;
+; registrador.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 1/registrador.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 5     ;
-;                                             ;       ;
-; Total combinational functions               ; 5     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 2     ;
-;     -- 3 input functions                    ; 1     ;
-;     -- <=2 input functions                  ; 2     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 5     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 4     ;
-;     -- Dedicated logic registers            ; 4     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 5     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; inst  ;
-; Maximum fan-out                             ; 6     ;
-; Total fan-out                               ; 35    ;
-; Average fan-out                             ; 1.84  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+;                                             ;             ;
+; Total combinational functions               ; 0           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 0           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 0           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 7           ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; LED1~output ;
+; Maximum fan-out                             ; 1           ;
+; Total fan-out                               ; 8           ;
+; Average fan-out                             ; 0.57        ;
++---------------------------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
-; |contador_async            ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |contador_async     ; contador_async ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |projeto1                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |projeto1           ; projeto1    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; registrador:inst|inst                 ; Stuck at VCC due to stuck port preset  ;
+; registrador:inst|inst1                ; Stuck at GND due to stuck port data_in ;
+; registrador:inst|inst2                ; Stuck at GND due to stuck port data_in ;
+; registrador:inst|inst3                ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -219,10 +232,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -234,18 +247,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 4                           ;
-;     CLR               ; 4                           ;
-; cycloneiii_lcell_comb ; 9                           ;
-;     normal            ; 9                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
+; boundary_port         ; 7                           ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.93                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,18 +272,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 23 13:35:58 2023
+    Info: Processing started: Fri Jun 23 14:05:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto1 -c projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file projeto1.bdf
     Info (12023): Found entity 1: projeto1
 Info (12021): Found 1 design units, including 1 entities, in source file contador.bdf
     Info (12023): Found entity 1: contador
 Info (12021): Found 1 design units, including 1 entities, in source file contador_async.bdf
     Info (12023): Found entity 1: contador_async
-Info (12127): Elaborating entity "contador_async" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Info (12021): Found 1 design units, including 1 entities, in source file registrador.bdf
+    Info (12023): Found entity 1: registrador
+Info (12127): Elaborating entity "projeto1" for the top level hierarchy
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "BIT[3]" is stuck at GND
+    Warning (13410): Pin "BIT[2]" is stuck at GND
+    Warning (13410): Pin "BIT[1]" is stuck at GND
+    Warning (13410): Pin "BIT[0]" is stuck at VCC
 Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity contador1 -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity contador1 -section_id Top was ignored
@@ -303,14 +318,15 @@ Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does no
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity contador1 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 698 megabytes
-    Info: Processing ended: Fri Jun 23 13:36:03 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:16
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock"
+Info (21057): Implemented 7 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 5 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 367 megabytes
+    Info: Processing ended: Fri Jun 23 14:05:14 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
 
 

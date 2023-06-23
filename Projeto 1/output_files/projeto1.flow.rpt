@@ -1,5 +1,5 @@
 Flow report for projeto1
-Fri Jun 23 13:36:10 2023
+Fri Jun 23 14:05:19 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Jun 23 13:36:10 2023       ;
+; Flow Status                        ; Successful - Fri Jun 23 14:05:19 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; contador_async                              ;
+; Top-level Entity Name              ; projeto1                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 5 / 6,272 ( < 1 % )                         ;
-;     Total combinational functions  ; 5 / 6,272 ( < 1 % )                         ;
-;     Dedicated logic registers      ; 4 / 6,272 ( < 1 % )                         ;
-; Total registers                    ; 4                                           ;
-; Total pins                         ; 5 / 92 ( 5 % )                              ;
+; Total logic elements               ; 0 / 6,272 ( 0 % )                           ;
+;     Total combinational functions  ; 0 / 6,272 ( 0 % )                           ;
+;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 7 / 92 ( 8 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,37 +65,36 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/23/2023 13:35:58 ;
+; Start date & time ; 06/23/2023 14:05:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; projeto1            ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                  ;
-+-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 90520746206363.168753815806286         ; --            ; --             ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --             ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --             ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --             ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --                                ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --             ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; contador1      ; Top                               ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; contador_async ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; contador1      ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; contador_async ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; contador1      ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; contador_async ; Top                               ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --             ; --                                ;
-; TOP_LEVEL_ENTITY                    ; contador_async                         ; projeto1      ; --             ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                               ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 5288368003951.168753990812597          ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -103,26 +102,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 698 MB              ; 00:00:15                           ;
-; Fitter               ; 00:00:02     ; 1.1                     ; 2121 MB             ; 00:00:04                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 555 MB              ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 798 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 803 MB              ; 00:00:00                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 356 MB              ; 00:00:14                           ;
+; Fitter               ; 00:00:02     ; 1.0                     ; 944 MB              ; 00:00:02                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 352 MB              ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 441 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 600 MB              ; 00:00:00                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+----------------------+------------------+-------------+-------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name     ; OS Version  ; Processor type ;
-+----------------------+------------------+-------------+-------------+----------------+
-; Analysis & Synthesis ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; Fitter               ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; Assembler            ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; Timing Analyzer      ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; EDA Netlist Writer   ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-+----------------------+------------------+-------------+-------------+----------------+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++----------------------+----------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname     ; OS Name        ; OS Version ; Processor type ;
++----------------------+----------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Fitter               ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Assembler            ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Timing Analyzer      ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
++----------------------+----------------------+----------------+------------+----------------+
 
 
 ------------

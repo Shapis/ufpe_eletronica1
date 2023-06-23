@@ -1,8 +1,25 @@
-|contador_async
-LED[1] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-LED[2] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
-LED[3] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
-LED[4] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
-KEY4 => inst11.IN0
+|projeto1
+LED1 <= KEY1.DB_MAX_OUTPUT_PORT_TYPE
+KEY1 => LED1.DATAIN
+BIT[0] <= registrador:inst.BIT[0]
+BIT[1] <= registrador:inst.BIT[1]
+BIT[2] <= registrador:inst.BIT[2]
+BIT[3] <= registrador:inst.BIT[3]
+clock => registrador:inst.clock
+
+
+|projeto1|registrador:inst
+BIT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+BIT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BIT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+BIT[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst1.CLK
+clock => inst2.CLK
+clock => inst3.CLK
+in[0] => inst.PRESET
+in[1] => inst1.PRESET
+in[2] => inst2.PRESET
+in[3] => inst3.PRESET
 
 
