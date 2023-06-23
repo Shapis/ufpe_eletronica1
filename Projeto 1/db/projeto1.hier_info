@@ -1,8 +1,140 @@
-|contador
-LED[1] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
-LED[2] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
-LED[3] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-LED[4] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-KEY4 => inst5.IN0
+|projeto1
+LED[1] <= divisor8:inst21.clk_out
+FPGA_CLK => divisor8:inst.clk_in
+
+
+|projeto1|divisor8:inst21
+clk_out <= divisor1:inst7.out
+clk_in => divisor1:inst.in
+
+
+|projeto1|divisor8:inst21|divisor1:inst7
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst6
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst5
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst1
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst3
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst21|divisor1:inst4
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20
+clk_out <= divisor1:inst7.out
+clk_in => divisor1:inst.in
+
+
+|projeto1|divisor8:inst20|divisor1:inst7
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst6
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst5
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst1
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst3
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst20|divisor1:inst4
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst
+clk_out <= divisor1:inst7.out
+clk_in => divisor1:inst.in
+
+
+|projeto1|divisor8:inst|divisor1:inst7
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst6
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst5
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst1
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst2
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst3
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
+
+
+|projeto1|divisor8:inst|divisor1:inst4
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst.CLK
 
 
