@@ -2,7 +2,16 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_CLK",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

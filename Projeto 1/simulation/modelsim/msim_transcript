@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {projeto1.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:32:06 on Jun 23,2023
+# Start time: 19:13:33 on Jun 23,2023
 # vcom -reportprogress 300 -93 -work work projeto1.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -25,14 +25,14 @@
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity projeto1
-# -- Compiling architecture structure of projeto1
-# End time: 18:32:06 on Jun 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity contador_teste_numeros
+# -- Compiling architecture structure of contador_teste_numeros
+# End time: 19:13:33 on Jun 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.projeto1
-# vsim work.projeto1 
-# Start time: 18:32:10 on Jun 23,2023
+vsim work.contador_teste_numeros
+# vsim work.contador_teste_numeros 
+# Start time: 19:13:37 on Jun 23,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -42,7 +42,7 @@ vsim work.projeto1
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.projeto1(structure)
+# Loading work.contador_teste_numeros(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
@@ -52,10 +52,10 @@ vsim work.projeto1
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 add wave -position insertpoint  \
-sim:/projeto1/LED \
-sim:/projeto1/KEY4 \
-sim:/projeto1/clkout
-force -freeze sim:/projeto1/KEY4 1 0, 0 {50 ps} -r 100
+sim:/contador_teste_numeros/LED \
+sim:/contador_teste_numeros/KEY4 \
+sim:/contador_teste_numeros/clkout
+force -freeze sim:/contador_teste_numeros/KEY4 1 0, 0 {50 ps} -r 100
 run
 run
 run
@@ -65,5 +65,5 @@ run
 run
 run
 run
-# End time: 18:32:37 on Jun 23,2023, Elapsed time: 0:00:27
+# End time: 19:14:55 on Jun 23,2023, Elapsed time: 0:01:18
 # Errors: 0, Warnings: 0
