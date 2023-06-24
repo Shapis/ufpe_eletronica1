@@ -1,5 +1,5 @@
 Flow report for projeto1
-Sat Jun 24 16:38:38 2023
+Sat Jun 24 17:11:39 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jun 24 16:38:38 2023       ;
+; Flow Status                        ; Successful - Sat Jun 24 17:11:39 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; testes                                      ;
+; Top-level Entity Name              ; comparador                                  ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 59 / 6,272 ( < 1 % )                        ;
-;     Total combinational functions  ; 35 / 6,272 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 34 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 34                                          ;
-; Total pins                         ; 3 / 92 ( 3 % )                              ;
+; Total logic elements               ; 3 / 6,272 ( < 1 % )                         ;
+;     Total combinational functions  ; 3 / 6,272 ( < 1 % )                         ;
+;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 9 / 92 ( 10 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/24/2023 16:38:25 ;
+; Start date & time ; 06/24/2023 17:11:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; projeto1            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 90520746206363.168763550541108         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 5288368003951.168763748607488          ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -87,16 +87,16 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; comparador  ; Top                               ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; testes      ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; comparador  ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; testes      ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; comparador  ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; testes      ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; testes                                 ; projeto1      ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; comparador                             ; projeto1      ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -105,26 +105,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 695 MB              ; 00:00:18                           ;
-; Fitter               ; 00:00:02     ; 1.1                     ; 2128 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 555 MB              ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 780 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 800 MB              ; 00:00:00                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 395 MB              ; 00:00:15                           ;
+; Fitter               ; 00:00:03     ; 1.0                     ; 936 MB              ; 00:00:02                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 351 MB              ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 444 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 600 MB              ; 00:00:00                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+----------------------+------------------+-------------+-------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name     ; OS Version  ; Processor type ;
-+----------------------+------------------+-------------+-------------+----------------+
-; Analysis & Synthesis ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; Fitter               ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; Assembler            ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; Timing Analyzer      ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-; EDA Netlist Writer   ; fedora           ; Fedora Core ; Fedora Core ; x86_64         ;
-+----------------------+------------------+-------------+-------------+----------------+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++----------------------+----------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname     ; OS Name        ; OS Version ; Processor type ;
++----------------------+----------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Fitter               ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Assembler            ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Timing Analyzer      ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; pedro-Aspire-A514-54 ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
++----------------------+----------------------+----------------+------------+----------------+
 
 
 ------------

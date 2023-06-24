@@ -8,9 +8,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/simulation/modelsim
-Ehard_block
-Z1 w1687629967
+Z0 d/home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 1/simulation/modelsim
+Ecomparador
+Z1 w1687637499
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -22,19 +22,68 @@ R0
 Z8 8projeto1.vho
 Z9 Fprojeto1.vho
 l0
-L35 1
-Vi9a_SfXm?YhLI2dhm1j^51
-!s100 >mXi5[`cD`bFC`UBKA<om3
+L78 1
+VaiX7YPRzh85;EGVMT@<D=0
+!s100 SAX];8h>6Oz56SC2HhRoL0
 Z10 OV;C;2020.1;71
 31
-Z11 !s110 1687629982
+Z11 !s110 1687637507
 !i10b 1
-Z12 !s108 1687629982.000000
+Z12 !s108 1687637507.000000
 Z13 !s90 -reportprogress|300|-93|-work|work|projeto1.vho|
 !s107 projeto1.vho|
 !i113 1
 Z14 o-93 -work work
 Z15 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 comparador 0 22 aiX7YPRzh85;EGVMT@<D=0
+!i122 0
+l132
+L98 200
+VaDWDN08b`i^z1RefX<mS90
+!s100 R_DgZX4z5QiY]nhBX=4gF0
+R10
+31
+R11
+!i10b 1
+R12
+R13
+Z16 !s107 projeto1.vho|
+!i113 1
+R14
+R15
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 0
+R0
+R8
+R9
+l0
+L35 1
+Vi9a_SfXm?YhLI2dhm1j^51
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R16
+!i113 1
+R14
+R15
 Astructure
 R2
 R3
@@ -48,59 +97,6 @@ l65
 L51 20
 VWdBQm4eNm6eGHO;iQNz`j1
 !s100 [5;Wd8QGQ>@2NGoJ1I]Y43
-R10
-31
-R11
-!i10b 1
-R12
-R13
-Z16 !s107 projeto1.vho|
-!i113 1
-R14
-R15
-Epulso
-R1
-R3
-R7
-R2
-Z17 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
-R4
-R5
-R6
-Z18 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 0
-R0
-R8
-R9
-l0
-L80 1
-V1Q;>BI@73=zY_2O1@SOCn0
-!s100 Rm:_=EF42_7gJPT@;HOOS2
-R10
-31
-R11
-!i10b 1
-R12
-R13
-R16
-!i113 1
-R14
-R15
-Astructure
-R3
-R7
-R2
-R17
-R4
-R5
-R6
-R18
-DEx4 work 5 pulso 0 22 1Q;>BI@73=zY_2O1@SOCn0
-!i122 0
-l117
-L92 92
-VG4cK9ShzND]adnlcO>GgO0
-!s100 Q<NCbSPLLBAzhOEj=m8_f1
 R10
 31
 R11
