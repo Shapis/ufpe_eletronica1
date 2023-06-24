@@ -9,8 +9,8 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/simulation/modelsim
-Econtador_teste_numeros
-Z1 w1687570493
+Efreq_440hz
+Z1 w1687616503
 Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
 Z3 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -25,13 +25,13 @@ Z10 8projeto1.vho
 Z11 Fprojeto1.vho
 l0
 L80 1
-VK1Io<=[Zk:P_>]N_kkQIM0
-!s100 KMzY?T]^]kHAnHKFRUPFN1
+VP>efP1OMo0_zCSALn907k0
+!s100 3NOfHC^b3cX8a;P[m?0[22
 Z12 OV;C;2020.1;71
 31
-Z13 !s110 1687570513
+Z13 !s110 1687616507
 !i10b 1
-Z14 !s108 1687570513.000000
+Z14 !s108 1687616507.000000
 Z15 !s90 -reportprogress|300|-93|-work|work|projeto1.vho|
 !s107 projeto1.vho|
 !i113 1
@@ -46,12 +46,12 @@ R6
 R7
 R8
 R9
-DEx4 work 22 contador_teste_numeros 0 22 K1Io<=[Zk:P_>]N_kkQIM0
+DEx4 work 10 freq_440hz 0 22 P>efP1OMo0_zCSALn907k0
 !i122 0
-l158
-L101 595
-V9k07CkSc53nPkHc5ZQ0hc1
-!s100 mb_Sj4UZRK^P2WO`j^:==3
+l196
+L101 1165
+Vn=Rb?kBJVL6;=Y?_dUIzO2
+!s100 c0FIJHAamO1UDJPUEzZYN1
 R12
 31
 R13

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Jun 23 22:45:15 2023
+Analysis & Synthesis Status : Successful - Sat Jun 24 12:01:09 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : projeto1
-Top-level Entity Name : buzzer_1760hz
+Top-level Entity Name : projeto1
 Family : Cyclone IV E
-Total logic elements : 24
-    Total combinational functions : 24
-    Dedicated logic registers : 19
-Total registers : 19
+Total logic elements : 36
+    Total combinational functions : 36
+    Dedicated logic registers : 32
+Total registers : 32
 Total pins : 2
 Total virtual pins : 0
 Total memory bits : 0

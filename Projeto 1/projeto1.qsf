@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY buzzer_1760hz
+set_global_assignment -name TOP_LEVEL_ENTITY projeto1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:05:14  JUNE 22, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -70,24 +70,24 @@ set_location_assignment PIN_85 -to LED[3]
 set_location_assignment PIN_84 -to LED[4]
 set_global_assignment -name BDF_FILE projeto1.bdf
 set_global_assignment -name BDF_FILE contador.bdf
-set_global_assignment -name BDF_FILE contador_async.bdf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BDF_FILE registrador.bdf
 set_global_assignment -name BDF_FILE contador_sync_decresc_mod10.bdf
-set_global_assignment -name BDF_FILE contador_teste_numeros.bdf
 set_global_assignment -name BDF_FILE divisor1.bdf
 set_global_assignment -name BDF_FILE divisor8.bdf
 set_global_assignment -name BDF_FILE divisor16.bdf
 set_location_assignment PIN_110 -to beep
-set_global_assignment -name BDF_FILE buzzer_440hz.bdf
-set_global_assignment -name BDF_FILE buzzer_523hz.bdf
-set_global_assignment -name BDF_FILE buzzer_622hz.bdf
-set_global_assignment -name BDF_FILE buzzer_740hz.bdf
-set_global_assignment -name BDF_FILE buzzer_880hz.bdf
-set_global_assignment -name BDF_FILE contador_async_8bits.bdf
-set_global_assignment -name BDF_FILE buzzer_1046hz.bdf
-set_global_assignment -name BDF_FILE buzzer_1760hz.bdf
+set_global_assignment -name BDF_FILE freq_440hz.bdf
+set_global_assignment -name BDF_FILE freq_1hz.bdf
+set_global_assignment -name BDF_FILE freq_523hz.bdf
+set_global_assignment -name BDF_FILE freq_622hz.bdf
+set_global_assignment -name BDF_FILE contador_sync_8bits.bdf
+set_global_assignment -name BDF_FILE freq_740hz.bdf
+set_global_assignment -name BDF_FILE freq_880hz.bdf
+set_global_assignment -name BDF_FILE freq_1046hz.bdf
+set_global_assignment -name BDF_FILE freq_1760hz.bdf
+set_global_assignment -name BDF_FILE freq_2hz.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
