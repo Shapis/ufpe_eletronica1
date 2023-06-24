@@ -39,6 +39,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "beep_freq" (rect 0 0 59 15)(font "Intel Clear" (font_size 8)))
+		(text "beep_freq" (rect 21 59 80 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
 		(pt 144 32)
 		(output)
 		(text "LED" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
