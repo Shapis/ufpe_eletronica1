@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto1
-Fri Jun 23 19:25:28 2023
+Fri Jun 23 22:45:15 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,15 +43,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 23 19:25:28 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 23 22:45:15 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; projeto1                                    ;
+; Top-level Entity Name              ; buzzer_1760hz                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 24                                          ;
 ;     Total combinational functions  ; 24                                          ;
-;     Dedicated logic registers      ; 24                                          ;
-; Total registers                    ; 24                                          ;
+;     Dedicated logic registers      ; 19                                          ;
+; Total registers                    ; 19                                          ;
 ; Total pins                         ; 2                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; projeto1           ; projeto1           ;
+; Top-level entity name                                            ; buzzer_1760hz      ; projeto1           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,95 +154,79 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processors 3-16        ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; projeto1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/projeto1.bdf  ;         ;
-; divisor1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor1.bdf  ;         ;
-; divisor8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor8.bdf  ;         ;
-; divisor16.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor16.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
+; contador_async.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/contador_async.bdf ;         ;
+; divisor1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor1.bdf       ;         ;
+; divisor8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor8.bdf       ;         ;
+; buzzer_1760hz.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/buzzer_1760hz.bdf  ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                       ;
-+---------------------------------------------+-------------------------------------+
-; Resource                                    ; Usage                               ;
-+---------------------------------------------+-------------------------------------+
-; Estimated Total logic elements              ; 24                                  ;
-;                                             ;                                     ;
-; Total combinational functions               ; 24                                  ;
-; Logic element usage by number of LUT inputs ;                                     ;
-;     -- 4 input functions                    ; 0                                   ;
-;     -- 3 input functions                    ; 0                                   ;
-;     -- <=2 input functions                  ; 24                                  ;
-;                                             ;                                     ;
-; Logic elements by mode                      ;                                     ;
-;     -- normal mode                          ; 24                                  ;
-;     -- arithmetic mode                      ; 0                                   ;
-;                                             ;                                     ;
-; Total registers                             ; 24                                  ;
-;     -- Dedicated logic registers            ; 24                                  ;
-;     -- I/O registers                        ; 0                                   ;
-;                                             ;                                     ;
-; I/O pins                                    ; 2                                   ;
-;                                             ;                                     ;
-; Embedded Multiplier 9-bit elements          ; 0                                   ;
-;                                             ;                                     ;
-; Maximum fan-out node                        ; divisor8:inst22|divisor1:inst8|inst ;
-; Maximum fan-out                             ; 2                                   ;
-; Total fan-out                               ; 75                                  ;
-; Average fan-out                             ; 1.44                                ;
-+---------------------------------------------+-------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimated Total logic elements              ; 24                          ;
+;                                             ;                             ;
+; Total combinational functions               ; 24                          ;
+; Logic element usage by number of LUT inputs ;                             ;
+;     -- 4 input functions                    ; 6                           ;
+;     -- 3 input functions                    ; 2                           ;
+;     -- <=2 input functions                  ; 16                          ;
+;                                             ;                             ;
+; Logic elements by mode                      ;                             ;
+;     -- normal mode                          ; 24                          ;
+;     -- arithmetic mode                      ; 0                           ;
+;                                             ;                             ;
+; Total registers                             ; 19                          ;
+;     -- Dedicated logic registers            ; 19                          ;
+;     -- I/O registers                        ; 0                           ;
+;                                             ;                             ;
+; I/O pins                                    ; 2                           ;
+;                                             ;                             ;
+; Embedded Multiplier 9-bit elements          ; 0                           ;
+;                                             ;                             ;
+; Maximum fan-out node                        ; contador_async:inst4|inst29 ;
+; Maximum fan-out                             ; 9                           ;
+; Total fan-out                               ; 99                          ;
+; Average fan-out                             ; 2.11                        ;
++---------------------------------------------+-----------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------+--------------+
-; |projeto1                  ; 24 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |projeto1                                              ; projeto1    ; work         ;
-;    |divisor16:inst|        ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst                               ; divisor16   ; work         ;
-;       |divisor8:inst1|     ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1                ; divisor8    ; work         ;
-;          |divisor1:inst2|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst2 ; divisor1    ; work         ;
-;          |divisor1:inst3|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst3 ; divisor1    ; work         ;
-;          |divisor1:inst4|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst4 ; divisor1    ; work         ;
-;          |divisor1:inst5|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst5 ; divisor1    ; work         ;
-;          |divisor1:inst6|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst6 ; divisor1    ; work         ;
-;          |divisor1:inst7|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst7 ; divisor1    ; work         ;
-;          |divisor1:inst8|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst8 ; divisor1    ; work         ;
-;          |divisor1:inst|   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst1|divisor1:inst  ; divisor1    ; work         ;
-;       |divisor8:inst|      ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst                 ; divisor8    ; work         ;
-;          |divisor1:inst2|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst2  ; divisor1    ; work         ;
-;          |divisor1:inst3|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst3  ; divisor1    ; work         ;
-;          |divisor1:inst4|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst4  ; divisor1    ; work         ;
-;          |divisor1:inst5|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst5  ; divisor1    ; work         ;
-;          |divisor1:inst6|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst6  ; divisor1    ; work         ;
-;          |divisor1:inst7|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst7  ; divisor1    ; work         ;
-;          |divisor1:inst8|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst8  ; divisor1    ; work         ;
-;          |divisor1:inst|   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor16:inst|divisor8:inst|divisor1:inst   ; divisor1    ; work         ;
-;    |divisor8:inst22|       ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22                              ; divisor8    ; work         ;
-;       |divisor1:inst2|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst2               ; divisor1    ; work         ;
-;       |divisor1:inst3|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst3               ; divisor1    ; work         ;
-;       |divisor1:inst4|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst4               ; divisor1    ; work         ;
-;       |divisor1:inst5|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst5               ; divisor1    ; work         ;
-;       |divisor1:inst6|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst6               ; divisor1    ; work         ;
-;       |divisor1:inst7|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst7               ; divisor1    ; work         ;
-;       |divisor1:inst8|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst8               ; divisor1    ; work         ;
-;       |divisor1:inst|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|divisor8:inst22|divisor1:inst                ; divisor1    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+----------------+--------------+
+; |buzzer_1760hz             ; 24 (0)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |buzzer_1760hz                              ; buzzer_1760hz  ; work         ;
+;    |contador_async:inst4|  ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|contador_async:inst4         ; contador_async ; work         ;
+;    |divisor1:inst1|        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor1:inst1               ; divisor1       ; work         ;
+;    |divisor1:inst2|        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor1:inst2               ; divisor1       ; work         ;
+;    |divisor8:inst|         ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst                ; divisor8       ; work         ;
+;       |divisor1:inst2|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst2 ; divisor1       ; work         ;
+;       |divisor1:inst3|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst3 ; divisor1       ; work         ;
+;       |divisor1:inst4|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst4 ; divisor1       ; work         ;
+;       |divisor1:inst5|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst5 ; divisor1       ; work         ;
+;       |divisor1:inst6|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst6 ; divisor1       ; work         ;
+;       |divisor1:inst7|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst7 ; divisor1       ; work         ;
+;       |divisor1:inst8|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst8 ; divisor1       ; work         ;
+;       |divisor1:inst|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_1760hz|divisor8:inst|divisor1:inst  ; divisor1       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -251,10 +235,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 19    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -267,14 +251,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 2                           ;
-; cycloneiii_ff         ; 24                          ;
-;     plain             ; 24                          ;
+; cycloneiii_ff         ; 19                          ;
+;     CLR               ; 8                           ;
+;     plain             ; 11                          ;
 ; cycloneiii_lcell_comb ; 24                          ;
 ;     normal            ; 24                          ;
-;         1 data inputs ; 24                          ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 6                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.98                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -293,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 23 19:25:22 2023
+    Info: Processing started: Fri Jun 23 22:45:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto1 -c projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -315,10 +303,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file divisor
     Info (12023): Found entity 1: divisor8
 Info (12021): Found 1 design units, including 1 entities, in source file divisor16.bdf
     Info (12023): Found entity 1: divisor16
-Info (12127): Elaborating entity "projeto1" for the top level hierarchy
-Info (12128): Elaborating entity "divisor8" for hierarchy "divisor8:inst22"
-Info (12128): Elaborating entity "divisor1" for hierarchy "divisor8:inst22|divisor1:inst8"
-Info (12128): Elaborating entity "divisor16" for hierarchy "divisor16:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_440hz.bdf
+    Info (12023): Found entity 1: buzzer_440hz
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_523hz.bdf
+    Info (12023): Found entity 1: buzzer_523hz
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_622hz.bdf
+    Info (12023): Found entity 1: buzzer_622hz
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_740hz.bdf
+    Info (12023): Found entity 1: buzzer_740hz
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_880hz.bdf
+    Info (12023): Found entity 1: buzzer_880hz
+Info (12021): Found 1 design units, including 1 entities, in source file contador_async_8bits.bdf
+    Info (12023): Found entity 1: contador_async_8bits
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_1046hz.bdf
+    Info (12023): Found entity 1: buzzer_1046hz
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer_1760hz.bdf
+    Info (12023): Found entity 1: buzzer_1760hz
+Info (12127): Elaborating entity "buzzer_1760hz" for the top level hierarchy
+Info (12128): Elaborating entity "contador_async" for hierarchy "contador_async:inst4"
+Info (12128): Elaborating entity "divisor1" for hierarchy "divisor1:inst2"
+Info (12128): Elaborating entity "divisor8" for hierarchy "divisor8:inst"
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity contador1 -section_id Top was ignored
@@ -352,8 +356,8 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 24 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 691 megabytes
-    Info: Processing ended: Fri Jun 23 19:25:28 2023
+    Info: Peak virtual memory: 688 megabytes
+    Info: Processing ended: Fri Jun 23 22:45:15 2023
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:16
 

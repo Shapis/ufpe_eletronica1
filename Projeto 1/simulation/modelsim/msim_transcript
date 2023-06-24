@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {projeto1.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:13:33 on Jun 23,2023
+# Start time: 22:35:13 on Jun 23,2023
 # vcom -reportprogress 300 -93 -work work projeto1.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -27,12 +27,12 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity contador_teste_numeros
 # -- Compiling architecture structure of contador_teste_numeros
-# End time: 19:13:33 on Jun 23,2023, Elapsed time: 0:00:00
+# End time: 22:35:13 on Jun 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.contador_teste_numeros
 # vsim work.contador_teste_numeros 
-# Start time: 19:13:37 on Jun 23,2023
+# Start time: 22:35:23 on Jun 23,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -47,8 +47,6 @@ vsim work.contador_teste_numeros
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
-# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
-# Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 add wave -position insertpoint  \
@@ -65,5 +63,8 @@ run
 run
 run
 run
-# End time: 19:14:55 on Jun 23,2023, Elapsed time: 0:01:18
+run
+run
+run
+# End time: 22:36:56 on Jun 23,2023, Elapsed time: 0:01:33
 # Errors: 0, Warnings: 0
