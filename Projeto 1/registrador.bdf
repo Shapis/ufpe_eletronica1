@@ -89,22 +89,6 @@ https://fpgasoftware.intel.com/eula.
 	(text "VCC" (rect -1 128 9 148)(font "Arial" (font_size 6))(vertical))
 )
 (pin
-	(input)
-	(rect 360 496 528 512)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clock" (rect 5 0 30 11)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 1256 528 1432 544)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -456,38 +440,6 @@ https://fpgasoftware.intel.com/eula.
 	(rotate180)
 )
 (connector
-	(pt 752 504)
-	(pt 752 440)
-)
-(connector
-	(pt 752 440)
-	(pt 768 440)
-)
-(connector
-	(pt 600 504)
-	(pt 600 440)
-)
-(connector
-	(pt 616 440)
-	(pt 600 440)
-)
-(connector
-	(pt 904 440)
-	(pt 904 504)
-)
-(connector
-	(pt 904 440)
-	(pt 920 440)
-)
-(connector
-	(pt 1064 504)
-	(pt 1064 440)
-)
-(connector
-	(pt 1064 440)
-	(pt 1080 440)
-)
-(connector
 	(pt 648 480)
 	(pt 648 488)
 )
@@ -572,22 +524,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1256 632)
 )
 (connector
-	(pt 528 504)
-	(pt 600 504)
-)
-(connector
-	(pt 600 504)
-	(pt 752 504)
-)
-(connector
-	(pt 752 504)
-	(pt 904 504)
-)
-(connector
-	(pt 904 504)
-	(pt 1064 504)
-)
-(connector
 	(pt 648 488)
 	(pt 800 488)
 )
@@ -596,16 +532,13 @@ https://fpgasoftware.intel.com/eula.
 	(pt 952 488)
 )
 (connector
-	(pt 952 488)
-	(pt 1112 488)
-)
-(connector
 	(pt 1112 488)
 	(pt 1200 488)
 )
-(junction (pt 600 504))
-(junction (pt 752 504))
-(junction (pt 904 504))
+(connector
+	(pt 952 488)
+	(pt 1112 488)
+)
 (junction (pt 800 488))
 (junction (pt 952 488))
 (junction (pt 1112 488))
