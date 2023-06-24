@@ -9,32 +9,34 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/simulation/modelsim
-Ehard_block
-Z1 w1687629967
-Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
-Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z7 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+Econtador_sync_decresc_mod10
+Z1 w1687641307
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
 !i122 0
 R0
-Z8 8projeto1.vho
-Z9 Fprojeto1.vho
+Z10 8projeto1.vho
+Z11 Fprojeto1.vho
 l0
-L35 1
-Vi9a_SfXm?YhLI2dhm1j^51
-!s100 >mXi5[`cD`bFC`UBKA<om3
-Z10 OV;C;2020.1;71
+L80 1
+V<V0@Kz3S0L8Z_;kNjnhdz1
+!s100 ;F8Oh@b3?1omYf;3K?cE@0
+Z12 OV;C;2020.1;71
 31
-Z11 !s110 1687629982
+Z13 !s110 1687641314
 !i10b 1
-Z12 !s108 1687629982.000000
-Z13 !s90 -reportprogress|300|-93|-work|work|projeto1.vho|
+Z14 !s108 1687641314.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|projeto1.vho|
 !s107 projeto1.vho|
 !i113 1
-Z14 o-93 -work work
-Z15 tExplicit 1 CvgOpt 0
+Z16 o-93 -work work
+Z17 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -42,72 +44,70 @@ R4
 R5
 R6
 R7
+R8
+R9
+DEx4 work 27 contador_sync_decresc_mod10 0 22 <V0@Kz3S0L8Z_;kNjnhdz1
+!i122 0
+l140
+L97 334
+V3Tj[g1MQa:[aW]2URgH3A1
+!s100 6Z;M[XUDW>YlRYgAKnJOO3
+R12
+31
+R13
+!i10b 1
+R14
+R15
+Z18 !s107 projeto1.vho|
+!i113 1
+R16
+R17
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+!i122 0
+R0
+R10
+R11
+l0
+L35 1
+Vi9a_SfXm?YhLI2dhm1j^51
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R18
+!i113 1
+R16
+R17
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
 DEx4 work 10 hard_block 0 22 i9a_SfXm?YhLI2dhm1j^51
 !i122 0
 l65
 L51 20
 VWdBQm4eNm6eGHO;iQNz`j1
 !s100 [5;Wd8QGQ>@2NGoJ1I]Y43
-R10
-31
-R11
-!i10b 1
 R12
+31
 R13
-Z16 !s107 projeto1.vho|
-!i113 1
+!i10b 1
 R14
 R15
-Epulso
-R1
-R3
-R7
-R2
-Z17 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
-R4
-R5
-R6
-Z18 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 0
-R0
-R8
-R9
-l0
-L80 1
-V1Q;>BI@73=zY_2O1@SOCn0
-!s100 Rm:_=EF42_7gJPT@;HOOS2
-R10
-31
-R11
-!i10b 1
-R12
-R13
-R16
-!i113 1
-R14
-R15
-Astructure
-R3
-R7
-R2
-R17
-R4
-R5
-R6
 R18
-DEx4 work 5 pulso 0 22 1Q;>BI@73=zY_2O1@SOCn0
-!i122 0
-l117
-L92 92
-VG4cK9ShzND]adnlcO>GgO0
-!s100 Q<NCbSPLLBAzhOEj=m8_f1
-R10
-31
-R11
-!i10b 1
-R12
-R13
-R16
 !i113 1
-R14
-R15
+R16
+R17

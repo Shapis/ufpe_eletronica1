@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {projeto1.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:06:22 on Jun 24,2023
+# Start time: 18:15:14 on Jun 24,2023
 # vcom -reportprogress 300 -93 -work work projeto1.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -25,14 +25,14 @@
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity pulso
-# -- Compiling architecture structure of pulso
-# End time: 15:06:22 on Jun 24,2023, Elapsed time: 0:00:00
+# -- Compiling entity contador_sync_decresc_mod10
+# -- Compiling architecture structure of contador_sync_decresc_mod10
+# End time: 18:15:14 on Jun 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.pulso
-# vsim work.pulso 
-# Start time: 15:06:25 on Jun 24,2023
+vsim work.contador_sync_decresc_mod10
+# vsim work.contador_sync_decresc_mod10 
+# Start time: 18:15:17 on Jun 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -42,7 +42,7 @@ vsim work.pulso
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.pulso(structure)
+# Loading work.contador_sync_decresc_mod10(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
@@ -50,13 +50,65 @@ vsim work.pulso
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 add wave -position insertpoint  \
-sim:/pulso/clk_out \
-sim:/pulso/clk_in
-force -freeze sim:/pulso/clk_in 1 0, 0 {50 ps} -r 100
+sim:/contador_sync_decresc_mod10/led \
+sim:/contador_sync_decresc_mod10/clk_out \
+sim:/contador_sync_decresc_mod10/clk_in
+force -freeze sim:/contador_sync_decresc_mod10/clk_in 1 0, 0 {50 ps} -r 100
 run
 run
 run
 run
 run
-# End time: 15:06:45 on Jun 24,2023, Elapsed time: 0:00:20
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 18:16:01 on Jun 24,2023, Elapsed time: 0:00:44
 # Errors: 0, Warnings: 0

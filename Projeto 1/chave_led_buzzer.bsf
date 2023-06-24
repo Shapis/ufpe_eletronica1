@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 160 112)
+	(rect 16 16 160 144)
 	(text "chave_led_buzzer" (rect 5 0 107 15)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 79 26 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 111 26 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -34,16 +34,23 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 48)
 		(input)
-		(text "FPGA_CLK" (rect 0 0 60 15)(font "Intel Clear" (font_size 8)))
-		(text "FPGA_CLK" (rect 21 43 81 58)(font "Intel Clear" (font_size 8)))
+		(text "reset" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "reset" (rect 21 43 50 58)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "beep_freq" (rect 0 0 59 15)(font "Intel Clear" (font_size 8)))
-		(text "beep_freq" (rect 21 59 80 74)(font "Intel Clear" (font_size 8)))
+		(text "FPGA_CLK" (rect 0 0 60 15)(font "Intel Clear" (font_size 8)))
+		(text "FPGA_CLK" (rect 21 59 81 74)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "beep_freq" (rect 0 0 59 15)(font "Intel Clear" (font_size 8)))
+		(text "beep_freq" (rect 21 75 80 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 144 32)
@@ -60,6 +67,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 144 48)(pt 128 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 128 80))
+		(rectangle (rect 16 16 128 112))
 	)
 )
