@@ -24,7 +24,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 112 224 280 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "FPGA_CLK" (rect 5 0 65 11)(font "Arial" ))
+	(text "FPGA_CLK" (rect 5 0 64 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -375,6 +375,31 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 112 176))
 	)
 )
+(symbol
+	(rect 1120 216 1168 248)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 27 34)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 1120 248)
 	(pt 1184 248)
@@ -473,6 +498,10 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 1104 232)
+	(pt 1120 232)
+)
+(connector
+	(pt 1168 232)
 	(pt 1184 232)
 )
 (junction (pt 1120 264))

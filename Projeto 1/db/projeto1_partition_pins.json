@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "KEY1",
+					"strict" : false
+				},
+				{
 					"name" : "FPGA_CLK",
 					"strict" : false
 				}

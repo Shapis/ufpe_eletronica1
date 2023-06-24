@@ -2,927 +2,747 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : -1.825
-TNS   : -10.056
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -1.984
+TNS   : -9.872
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
-Slack : -0.804
-TNS   : -0.804
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
+Slack : -0.944
+TNS   : -0.944
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
-Slack : -0.703
-TNS   : -0.703
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
+Slack : -0.935
+TNS   : -0.935
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
-Slack : -0.685
-TNS   : -0.685
+Type  : Slow 1200mV 85C Model Setup 'FPGA_CLK'
+Slack : -0.829
+TNS   : -0.829
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : -0.678
-TNS   : -0.678
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor1:inst3|inst'
+Slack : -0.752
+TNS   : -0.752
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
-Slack : -0.657
-TNS   : -0.657
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
+Slack : -0.746
+TNS   : -0.746
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
-Slack : -0.655
-TNS   : -0.655
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
+Slack : -0.660
+TNS   : -0.660
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
-Slack : -0.653
-TNS   : -0.653
-
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : -0.651
-TNS   : -0.651
-
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
-Slack : -0.650
-TNS   : -0.650
-
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
 Slack : -0.649
 TNS   : -0.649
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
-Slack : -0.646
-TNS   : -0.646
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
+Slack : -0.589
+TNS   : -0.589
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : -0.646
-TNS   : -0.646
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
+Slack : -0.574
+TNS   : -0.574
 
-Type  : Slow 1200mV 85C Model Setup 'FPGA_CLK'
-Slack : -0.638
-TNS   : -0.638
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor1:inst2|inst'
+Slack : -0.565
+TNS   : -0.565
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : -0.632
-TNS   : -0.632
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor1:inst7|inst'
+Slack : -0.562
+TNS   : -0.562
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : -0.625
-TNS   : -0.625
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
+Slack : -0.549
+TNS   : -0.549
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
-Slack : -0.612
-TNS   : -0.612
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor1:inst8|inst'
+Slack : -0.532
+TNS   : -0.532
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : -0.612
-TNS   : -0.612
+Type  : Slow 1200mV 85C Model Setup 'divisor1:inst25|inst'
+Slack : -0.494
+TNS   : -0.494
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : -0.611
-TNS   : -0.611
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
+Slack : -0.463
+TNS   : -0.463
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
-Slack : -0.610
-TNS   : -0.610
+Type  : Slow 1200mV 85C Model Setup 'divisor1:inst26|inst'
+Slack : -0.445
+TNS   : -0.445
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
-Slack : -0.604
-TNS   : -0.604
+Type  : Slow 1200mV 85C Model Setup 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
+Slack : -0.193
+TNS   : -0.193
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
-Slack : -0.595
-TNS   : -0.595
+Type  : Slow 1200mV 85C Model Setup 'divisor1:inst27|inst'
+Slack : -0.135
+TNS   : -0.246
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
-Slack : -0.575
-TNS   : -0.575
-
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Slow 1200mV 85C Model Setup '1231'
 Slack : 0.114
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
-Slack : 0.124
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
+Slack : -0.030
+TNS   : -0.030
+
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : 0.395
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
-Slack : -0.337
-TNS   : -0.337
-
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : 0.485
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Slow 1200mV 85C Model Hold '1231'
 Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : 0.555
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
+Slack : 0.525
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : 0.563
+Type  : Slow 1200mV 85C Model Hold 'divisor1:inst27|inst'
+Slack : 0.537
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : 0.564
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
+Slack : 0.542
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
-Slack : 0.565
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor1:inst7|inst'
+Slack : 0.550
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
-Slack : 0.578
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor1:inst2|inst'
+Slack : 0.556
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
-Slack : 0.578
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
+Slack : 0.562
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
-Slack : 0.579
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
-Slack : 0.579
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
-Slack : 0.582
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
-Slack : 0.583
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
+Slack : 0.585
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'FPGA_CLK'
-Slack : 0.588
+Slack : 0.644
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
-Slack : 0.588
+Type  : Slow 1200mV 85C Model Hold 'divisor1:inst25|inst'
+Slack : 0.644
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
+Type  : Slow 1200mV 85C Model Hold 'divisor1:inst26|inst'
 Slack : 0.650
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
-Slack : 0.668
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
+Slack : 0.691
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
-Slack : 0.668
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor1:inst8|inst'
+Slack : 0.694
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
-Slack : 0.672
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
+Slack : 0.697
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : 0.672
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor1:inst3|inst'
+Slack : 0.704
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
-Slack : 0.693
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
+Slack : 0.801
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
-Slack : 0.699
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
+Slack : 0.987
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : 0.701
+Type  : Slow 1200mV 85C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
+Slack : 1.007
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : 0.711
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Recovery 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -2.115
+TNS   : -16.915
 
-Type  : Slow 1200mV 85C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : 0.721
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Recovery 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : -2.304
-TNS   : -18.426
-
-Type  : Slow 1200mV 85C Model Removal 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : 1.597
+Type  : Slow 1200mV 85C Model Removal 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : 1.039
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FPGA_CLK'
 Slack : -3.000
 TNS   : -4.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor1:inst27|inst'
 Slack : -1.487
 TNS   : -11.896
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width '1231'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor1:inst25|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor1:inst26|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst2|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst3|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst7|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst8|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : -1.487
-TNS   : -1.487
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -1.787
+TNS   : -8.637
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : -1.487
-TNS   : -1.487
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
+Slack : -0.908
+TNS   : -0.908
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : -1.655
-TNS   : -8.891
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
-Slack : -0.688
-TNS   : -0.688
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
-Slack : -0.569
-TNS   : -0.569
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
-Slack : -0.568
-TNS   : -0.568
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
+Slack : -0.870
+TNS   : -0.870
 
 Type  : Slow 1200mV 0C Model Setup 'FPGA_CLK'
-Slack : -0.567
-TNS   : -0.567
+Slack : -0.720
+TNS   : -0.720
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
-Slack : -0.563
-TNS   : -0.563
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst3|inst'
+Slack : -0.677
+TNS   : -0.677
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
-Slack : -0.563
-TNS   : -0.563
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
+Slack : -0.670
+TNS   : -0.670
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
-Slack : -0.562
-TNS   : -0.562
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
+Slack : -0.588
+TNS   : -0.588
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
-Slack : -0.560
-TNS   : -0.560
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
+Slack : -0.566
+TNS   : -0.566
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : -0.556
-TNS   : -0.556
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
+Slack : -0.501
+TNS   : -0.501
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
-Slack : -0.552
-TNS   : -0.552
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
+Slack : -0.500
+TNS   : -0.500
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
-Slack : -0.552
-TNS   : -0.552
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst2|inst'
+Slack : -0.496
+TNS   : -0.496
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : -0.552
-TNS   : -0.552
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst7|inst'
+Slack : -0.491
+TNS   : -0.491
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : -0.546
-TNS   : -0.546
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
+Slack : -0.483
+TNS   : -0.483
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : -0.545
-TNS   : -0.545
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst8|inst'
+Slack : -0.482
+TNS   : -0.482
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : -0.542
-TNS   : -0.542
+Type  : Slow 1200mV 0C Model Setup 'divisor1:inst25|inst'
+Slack : -0.450
+TNS   : -0.450
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : -0.540
-TNS   : -0.540
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
+Slack : -0.426
+TNS   : -0.426
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
-Slack : -0.537
-TNS   : -0.537
+Type  : Slow 1200mV 0C Model Setup 'divisor1:inst26|inst'
+Slack : -0.408
+TNS   : -0.408
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : -0.534
-TNS   : -0.534
+Type  : Slow 1200mV 0C Model Setup 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
+Slack : -0.100
+TNS   : -0.100
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
-Slack : -0.524
-TNS   : -0.524
+Type  : Slow 1200mV 0C Model Setup 'divisor1:inst27|inst'
+Slack : -0.039
+TNS   : -0.043
 
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
-Slack : -0.497
-TNS   : -0.497
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
-Slack : -0.497
-TNS   : -0.497
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
-Slack : -0.497
-TNS   : -0.497
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
-Slack : 0.199
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Slow 1200mV 0C Model Setup '1231'
 Slack : 0.208
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
-Slack : -0.376
-TNS   : -0.376
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
+Slack : -0.060
+TNS   : -0.060
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : 0.430
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : 0.339
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Slow 1200mV 0C Model Hold '1231'
 Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : 0.509
+Type  : Slow 1200mV 0C Model Hold 'divisor1:inst27|inst'
+Slack : 0.502
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : 0.511
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
+Slack : 0.506
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
-Slack : 0.514
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
+Slack : 0.524
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
-Slack : 0.516
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
-Slack : 0.520
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : 0.520
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst7|inst'
 Slack : 0.529
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
-Slack : 0.530
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst2|inst'
 Slack : 0.533
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
-Slack : 0.534
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
+Slack : 0.537
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
-Slack : 0.536
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
+Slack : 0.538
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'FPGA_CLK'
-Slack : 0.547
+Slack : 0.588
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
-Slack : 0.568
+Type  : Slow 1200mV 0C Model Hold 'divisor1:inst26|inst'
+Slack : 0.632
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
-Slack : 0.590
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
+Slack : 0.639
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
-Slack : 0.595
+Type  : Slow 1200mV 0C Model Hold 'divisor1:inst25|inst'
+Slack : 0.653
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : 0.602
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst8|inst'
+Slack : 0.679
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
-Slack : 0.611
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
+Slack : 0.689
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : 0.624
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst3|inst'
+Slack : 0.696
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : 0.629
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
+Slack : 0.782
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
-Slack : 0.642
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
+Slack : 1.014
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
-Slack : 0.643
+Type  : Slow 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
+Slack : 1.032
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : 0.661
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Recovery 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -1.868
+TNS   : -14.937
 
-Type  : Slow 1200mV 0C Model Recovery 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : -2.035
-TNS   : -16.274
-
-Type  : Slow 1200mV 0C Model Removal 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : 1.510
+Type  : Slow 1200mV 0C Model Removal 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : 0.957
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FPGA_CLK'
 Slack : -3.000
 TNS   : -4.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor1:inst27|inst'
 Slack : -1.487
 TNS   : -11.896
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width '1231'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor1:inst25|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor1:inst26|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst2|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst3|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst7|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst8|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : -1.487
-TNS   : -1.487
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -0.303
+TNS   : -0.968
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : -1.487
-TNS   : -1.487
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : -0.265
-TNS   : -1.257
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : -0.081
-TNS   : -0.081
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
-Slack : -0.051
-TNS   : -0.051
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
-Slack : -0.007
-TNS   : -0.007
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
-Slack : 0.001
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
-Slack : 0.020
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
-Slack : 0.021
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
-Slack : 0.028
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : 0.028
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
-Slack : 0.029
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
-Slack : 0.030
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : 0.030
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
-Slack : 0.031
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : 0.031
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
-Slack : 0.034
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
-Slack : 0.054
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : 0.054
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
-Slack : 0.058
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
-Slack : 0.058
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : 0.058
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : 0.060
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
+Slack : -0.036
+TNS   : -0.036
 
 Type  : Fast 1200mV 0C Model Setup 'FPGA_CLK'
-Slack : 0.064
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
+Slack : 0.024
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
-Slack : 0.072
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
+Slack : 0.032
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
-Slack : 0.295
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst3|inst'
+Slack : 0.055
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst2|inst'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst7|inst'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor1:inst8|inst'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divisor1:inst25|inst'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divisor1:inst26|inst'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divisor1:inst27|inst'
+Slack : 0.528
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup '1231'
 Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
-Slack : -0.095
-TNS   : -0.095
-
-Type  : Fast 1200mV 0C Model Hold 'FPGA_CLK'
-Slack : 0.187
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
+Slack : 0.013
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst2|inst'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst7|inst'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst3|inst'
 Slack : 0.201
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Fast 1200mV 0C Model Hold '1231'
 Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : 0.223
+Type  : Fast 1200mV 0C Model Hold 'divisor1:inst25|inst'
+Slack : 0.210
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
-Slack : 0.226
+Type  : Fast 1200mV 0C Model Hold 'divisor1:inst27|inst'
+Slack : 0.210
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : 0.226
+Type  : Fast 1200mV 0C Model Hold 'FPGA_CLK'
+Slack : 0.213
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor1:inst8|inst'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divisor1:inst26|inst'
 Slack : 0.227
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
-Slack : 0.228
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
+Slack : 0.227
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : 0.228
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
-Slack : 0.233
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
 Slack : 0.235
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
-Slack : 0.237
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
+Slack : 0.270
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
-Slack : 0.244
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
+Slack : 0.274
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
-Slack : 0.251
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
+Slack : 0.277
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
-Slack : 0.278
+Type  : Fast 1200mV 0C Model Hold 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
+Slack : 0.324
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
-Slack : 0.282
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Recovery 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -0.319
+TNS   : -2.550
 
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
-Slack : 0.289
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
-Slack : 0.290
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
-Slack : 0.292
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
-Slack : 0.294
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
-Slack : 0.295
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : 0.298
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : 0.302
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : 0.382
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : -0.428
-TNS   : -3.424
-
-Type  : Fast 1200mV 0C Model Removal 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
-Slack : 0.634
+Type  : Fast 1200mV 0C Model Removal 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : 0.438
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FPGA_CLK'
 Slack : -3.000
 TNS   : -4.047
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst10|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor1:inst27|inst'
 Slack : -1.000
 TNS   : -8.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst9|inst'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width '1231'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|contador_sync_8bits:inst13|inst4'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor1:inst25|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst2|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor1:inst26|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst3|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|contador_sync_8bits:inst4|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst4|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|contador_sync_8bits:inst4|inst4'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst5|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst2|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst6|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst3|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst7|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst7|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst8|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor1:inst8|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst1|divisor1:inst|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst2|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst2|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst3|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst3|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst4|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst4|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst5|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst5|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst6|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst6|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst7|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst7|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst8|inst'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst8|inst'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor16:inst|divisor8:inst|divisor1:inst|inst'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst2|inst'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst3|inst'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst7|inst'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst8|inst'
-Slack : -1.000
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_1hz:inst|freq_2hz:inst|divisor1:inst9|inst'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_440hz:inst24|divisor8:inst|divisor1:inst|inst'
 Slack : -1.000
 TNS   : -1.000
 
