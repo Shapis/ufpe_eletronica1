@@ -1,5 +1,5 @@
 Flow report for projeto1
-Sat Jun 24 16:38:38 2023
+Sat Jun 24 17:25:23 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jun 24 16:38:38 2023       ;
+; Flow Status                        ; Successful - Sat Jun 24 17:25:23 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; testes                                      ;
+; Top-level Entity Name              ; projeto1                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 59 / 6,272 ( < 1 % )                        ;
-;     Total combinational functions  ; 35 / 6,272 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 34 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 34                                          ;
-; Total pins                         ; 3 / 92 ( 3 % )                              ;
+; Total logic elements               ; 160 / 6,272 ( 3 % )                         ;
+;     Total combinational functions  ; 97 / 6,272 ( 2 % )                          ;
+;     Dedicated logic registers      ; 86 / 6,272 ( 1 % )                          ;
+; Total registers                    ; 86                                          ;
+; Total pins                         ; 4 / 92 ( 4 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/24/2023 16:38:25 ;
+; Start date & time ; 06/24/2023 17:25:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; projeto1            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 90520746206363.168763550541108         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 90520746206363.168763830827984         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -88,15 +88,14 @@ https://fpgasoftware.intel.com/eula.
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; testes      ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; testes      ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; contador1   ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; testes      ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; testes                                 ; projeto1      ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -105,12 +104,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 695 MB              ; 00:00:18                           ;
-; Fitter               ; 00:00:02     ; 1.1                     ; 2128 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 555 MB              ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 780 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 800 MB              ; 00:00:00                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 694 MB              ; 00:00:16                           ;
+; Fitter               ; 00:00:03     ; 1.1                     ; 2134 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 560 MB              ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 784 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 801 MB              ; 00:00:00                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:26                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

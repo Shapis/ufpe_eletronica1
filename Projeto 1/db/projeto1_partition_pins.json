@@ -8,7 +8,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY1",
+					"name" : "beep",
+					"strict" : false
+				},
+				{
+					"name" : "KEY4",
 					"strict" : false
 				},
 				{

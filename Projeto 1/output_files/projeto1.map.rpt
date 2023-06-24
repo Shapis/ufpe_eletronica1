@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto1
-Sat Jun 24 16:38:31 2023
+Sat Jun 24 17:25:14 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 24 16:38:31 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 24 17:25:14 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; testes                                      ;
+; Top-level Entity Name              ; projeto1                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 42                                          ;
-;     Total combinational functions  ; 35                                          ;
-;     Dedicated logic registers      ; 34                                          ;
-; Total registers                    ; 34                                          ;
-; Total pins                         ; 3                                           ;
+; Total logic elements               ; 104                                         ;
+;     Total combinational functions  ; 96                                          ;
+;     Dedicated logic registers      ; 86                                          ;
+; Total registers                    ; 86                                          ;
+; Total pins                         ; 4                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; testes             ; projeto1           ;
+; Top-level entity name                                            ; projeto1           ; projeto1           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,13 +154,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-16        ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -169,72 +169,122 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; projeto1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/projeto1.bdf            ;         ;
 ; divisor1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor1.bdf            ;         ;
 ; divisor8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor8.bdf            ;         ;
+; divisor16.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor16.bdf           ;         ;
 ; freq_440hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_440hz.bdf          ;         ;
+; freq_523hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_523hz.bdf          ;         ;
 ; contador_sync_8bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/contador_sync_8bits.bdf ;         ;
-; testes.bdf                       ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/testes.bdf              ;         ;
+; freq_2hz.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_2hz.bdf            ;         ;
+; pulso.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/pulso.bdf               ;         ;
+; chave_led_buzzer.bdf             ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/chave_led_buzzer.bdf    ;         ;
+; key_debouncer.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/key_debouncer.bdf       ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                        ;
-+---------------------------------------------+----------------------+
-; Resource                                    ; Usage                ;
-+---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 42                   ;
-;                                             ;                      ;
-; Total combinational functions               ; 35                   ;
-; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 7                    ;
-;     -- 3 input functions                    ; 5                    ;
-;     -- <=2 input functions                  ; 23                   ;
-;                                             ;                      ;
-; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 35                   ;
-;     -- arithmetic mode                      ; 0                    ;
-;                                             ;                      ;
-; Total registers                             ; 34                   ;
-;     -- Dedicated logic registers            ; 34                   ;
-;     -- I/O registers                        ; 0                    ;
-;                                             ;                      ;
-; I/O pins                                    ; 3                    ;
-;                                             ;                      ;
-; Embedded Multiplier 9-bit elements          ; 0                    ;
-;                                             ;                      ;
-; Maximum fan-out node                        ; divisor1:inst27|inst ;
-; Maximum fan-out                             ; 9                    ;
-; Total fan-out                               ; 149                  ;
-; Average fan-out                             ; 1.99                 ;
-+---------------------------------------------+----------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                  ;
++---------------------------------------------+----------------------------------------------------------------+
+; Resource                                    ; Usage                                                          ;
++---------------------------------------------+----------------------------------------------------------------+
+; Estimated Total logic elements              ; 104                                                            ;
+;                                             ;                                                                ;
+; Total combinational functions               ; 96                                                             ;
+; Logic element usage by number of LUT inputs ;                                                                ;
+;     -- 4 input functions                    ; 18                                                             ;
+;     -- 3 input functions                    ; 9                                                              ;
+;     -- <=2 input functions                  ; 69                                                             ;
+;                                             ;                                                                ;
+; Logic elements by mode                      ;                                                                ;
+;     -- normal mode                          ; 96                                                             ;
+;     -- arithmetic mode                      ; 0                                                              ;
+;                                             ;                                                                ;
+; Total registers                             ; 86                                                             ;
+;     -- Dedicated logic registers            ; 86                                                             ;
+;     -- I/O registers                        ; 0                                                              ;
+;                                             ;                                                                ;
+; I/O pins                                    ; 4                                                              ;
+;                                             ;                                                                ;
+; Embedded Multiplier 9-bit elements          ; 0                                                              ;
+;                                             ;                                                                ;
+; Maximum fan-out node                        ; chave_led_buzzer:inst|key_debouncer:inst1|divisor1:inst26|inst ;
+; Maximum fan-out                             ; 9                                                              ;
+; Total fan-out                               ; 384                                                            ;
+; Average fan-out                             ; 2.01                                                           ;
++---------------------------------------------+----------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name         ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+---------------------+--------------+
-; |testes                           ; 35 (5)              ; 34 (9)                    ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |testes                                                ; testes              ; work         ;
-;    |divisor1:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|divisor1:inst25                                ; divisor1            ; work         ;
-;    |divisor1:inst26|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|divisor1:inst26                                ; divisor1            ; work         ;
-;    |divisor1:inst27|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|divisor1:inst27                                ; divisor1            ; work         ;
-;    |freq_440hz:inst24|            ; 27 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24                              ; freq_440hz          ; work         ;
-;       |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|contador_sync_8bits:inst4    ; contador_sync_8bits ; work         ;
-;       |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor1:inst2               ; divisor1            ; work         ;
-;       |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor1:inst3               ; divisor1            ; work         ;
-;       |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor1:inst7               ; divisor1            ; work         ;
-;       |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor1:inst8               ; divisor1            ; work         ;
-;       |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor1:inst9               ; divisor1            ; work         ;
-;       |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst                ; divisor8            ; work         ;
-;          |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst2 ; divisor1            ; work         ;
-;          |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst3 ; divisor1            ; work         ;
-;          |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst4 ; divisor1            ; work         ;
-;          |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst5 ; divisor1            ; work         ;
-;          |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst6 ; divisor1            ; work         ;
-;          |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst7 ; divisor1            ; work         ;
-;          |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst8 ; divisor1            ; work         ;
-;          |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testes|freq_440hz:inst24|divisor8:inst|divisor1:inst  ; divisor1            ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                          ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Entity Name         ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |projeto1                               ; 96 (0)              ; 86 (0)                    ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |projeto1                                                                                          ; projeto1            ; work         ;
+;    |chave_led_buzzer:inst|              ; 96 (3)              ; 86 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst                                                                    ; chave_led_buzzer    ; work         ;
+;       |divisor1:inst10|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|divisor1:inst10                                                    ; divisor1            ; work         ;
+;       |divisor1:inst17|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|divisor1:inst17                                                    ; divisor1            ; work         ;
+;       |freq_2hz:inst31|                 ; 35 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31                                                    ; freq_2hz            ; work         ;
+;          |contador_sync_8bits:inst13|   ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|contador_sync_8bits:inst13                         ; contador_sync_8bits ; work         ;
+;          |divisor16:inst|               ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst                                     ; divisor16           ; work         ;
+;             |divisor8:inst1|            ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1                      ; divisor8            ; work         ;
+;                |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst2       ; divisor1            ; work         ;
+;                |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst3       ; divisor1            ; work         ;
+;                |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst4       ; divisor1            ; work         ;
+;                |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst5       ; divisor1            ; work         ;
+;                |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst6       ; divisor1            ; work         ;
+;                |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst7       ; divisor1            ; work         ;
+;                |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst8       ; divisor1            ; work         ;
+;                |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst        ; divisor1            ; work         ;
+;             |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst                       ; divisor8            ; work         ;
+;                |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst2        ; divisor1            ; work         ;
+;                |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst3        ; divisor1            ; work         ;
+;                |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst4        ; divisor1            ; work         ;
+;                |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst5        ; divisor1            ; work         ;
+;                |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst6        ; divisor1            ; work         ;
+;                |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst7        ; divisor1            ; work         ;
+;                |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst8        ; divisor1            ; work         ;
+;                |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst         ; divisor1            ; work         ;
+;          |divisor1:inst10|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor1:inst10                                    ; divisor1            ; work         ;
+;          |divisor1:inst2|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor1:inst2                                     ; divisor1            ; work         ;
+;          |divisor1:inst3|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor1:inst3                                     ; divisor1            ; work         ;
+;          |divisor1:inst7|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor1:inst7                                     ; divisor1            ; work         ;
+;          |divisor1:inst8|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor1:inst8                                     ; divisor1            ; work         ;
+;          |divisor1:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_2hz:inst31|divisor1:inst9                                     ; divisor1            ; work         ;
+;       |freq_523hz:inst30|               ; 23 (0)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30                                                  ; freq_523hz          ; work         ;
+;          |contador_sync_8bits:inst4|    ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|contador_sync_8bits:inst4                        ; contador_sync_8bits ; work         ;
+;          |divisor1:inst2|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor1:inst2                                   ; divisor1            ; work         ;
+;          |divisor1:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor1:inst9                                   ; divisor1            ; work         ;
+;          |divisor8:inst|                ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst                                    ; divisor8            ; work         ;
+;             |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst2                     ; divisor1            ; work         ;
+;             |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst3                     ; divisor1            ; work         ;
+;             |divisor1:inst4|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst4                     ; divisor1            ; work         ;
+;             |divisor1:inst5|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst5                     ; divisor1            ; work         ;
+;             |divisor1:inst6|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst6                     ; divisor1            ; work         ;
+;             |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst7                     ; divisor1            ; work         ;
+;             |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst8                     ; divisor1            ; work         ;
+;             |divisor1:inst|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|freq_523hz:inst30|divisor8:inst|divisor1:inst                      ; divisor1            ; work         ;
+;       |key_debouncer:inst1|             ; 33 (4)              ; 32 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1                                                ; key_debouncer       ; work         ;
+;          |divisor1:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|divisor1:inst25                                ; divisor1            ; work         ;
+;          |divisor1:inst26|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|divisor1:inst26                                ; divisor1            ; work         ;
+;          |freq_440hz:inst24|            ; 27 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24                              ; freq_440hz          ; work         ;
+;             |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|contador_sync_8bits:inst4    ; contador_sync_8bits ; work         ;
+;             |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor1:inst2               ; divisor1            ; work         ;
+;             |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor1:inst3               ; divisor1            ; work         ;
+;             |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor1:inst7               ; divisor1            ; work         ;
+;             |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor1:inst8               ; divisor1            ; work         ;
+;             |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor1:inst9               ; divisor1            ; work         ;
+;             |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst                ; divisor8            ; work         ;
+;                |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst2 ; divisor1            ; work         ;
+;                |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst3 ; divisor1            ; work         ;
+;                |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst4 ; divisor1            ; work         ;
+;                |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst5 ; divisor1            ; work         ;
+;                |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst6 ; divisor1            ; work         ;
+;                |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst7 ; divisor1            ; work         ;
+;                |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst8 ; divisor1            ; work         ;
+;                |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24|divisor8:inst|divisor1:inst  ; divisor1            ; work         ;
+;       |pulso:inst3|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst|pulso:inst3                                                        ; pulso               ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -243,10 +293,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 34    ;
+; Total registers                              ; 86    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 26    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -258,19 +308,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 3                           ;
-; cycloneiii_ff         ; 34                          ;
-;     CLR               ; 8                           ;
-;     plain             ; 26                          ;
-; cycloneiii_lcell_comb ; 35                          ;
-;     normal            ; 35                          ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 7                           ;
+; boundary_port         ; 4                           ;
+; cycloneiii_ff         ; 86                          ;
+;     CLR               ; 26                          ;
+;     plain             ; 60                          ;
+; cycloneiii_io_obuf    ; 1                           ;
+; cycloneiii_lcell_comb ; 97                          ;
+;     normal            ; 97                          ;
+;         1 data inputs ; 58                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 18                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.46                        ;
+; Average LUT depth     ; 1.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -289,7 +340,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Jun 24 16:38:25 2023
+    Info: Processing started: Sat Jun 24 17:25:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto1 -c projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -333,11 +384,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file pulso.b
     Info (12023): Found entity 1: pulso
 Info (12021): Found 1 design units, including 1 entities, in source file chave_led_buzzer.bdf
     Info (12023): Found entity 1: chave_led_buzzer
-Info (12127): Elaborating entity "testes" for the top level hierarchy
-Info (12128): Elaborating entity "divisor1" for hierarchy "divisor1:inst27"
-Info (12128): Elaborating entity "freq_440hz" for hierarchy "freq_440hz:inst24"
-Info (12128): Elaborating entity "contador_sync_8bits" for hierarchy "freq_440hz:inst24|contador_sync_8bits:inst4"
-Info (12128): Elaborating entity "divisor8" for hierarchy "freq_440hz:inst24|divisor8:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file key_debouncer.bdf
+    Info (12023): Found entity 1: key_debouncer
+Info (12127): Elaborating entity "projeto1" for the top level hierarchy
+Info (12128): Elaborating entity "chave_led_buzzer" for hierarchy "chave_led_buzzer:inst"
+Info (12128): Elaborating entity "pulso" for hierarchy "chave_led_buzzer:inst|pulso:inst3"
+Info (12128): Elaborating entity "divisor1" for hierarchy "chave_led_buzzer:inst|divisor1:inst17"
+Info (12128): Elaborating entity "freq_2hz" for hierarchy "chave_led_buzzer:inst|freq_2hz:inst31"
+Info (12128): Elaborating entity "contador_sync_8bits" for hierarchy "chave_led_buzzer:inst|freq_2hz:inst31|contador_sync_8bits:inst13"
+Info (12128): Elaborating entity "divisor16" for hierarchy "chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst"
+Info (12128): Elaborating entity "divisor8" for hierarchy "chave_led_buzzer:inst|freq_2hz:inst31|divisor16:inst|divisor8:inst1"
+Info (12128): Elaborating entity "key_debouncer" for hierarchy "chave_led_buzzer:inst|key_debouncer:inst1"
+Info (12128): Elaborating entity "freq_440hz" for hierarchy "chave_led_buzzer:inst|key_debouncer:inst1|freq_440hz:inst24"
+Info (12128): Elaborating entity "freq_523hz" for hierarchy "chave_led_buzzer:inst|freq_523hz:inst30"
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "beep" and its non-tri-state driver.
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "beep~synth"
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity contador1 -section_id Top was ignored
@@ -366,14 +429,15 @@ Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does no
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity contador1 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 42 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 695 megabytes
-    Info: Processing ended: Sat Jun 24 16:38:31 2023
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 104 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 694 megabytes
+    Info: Processing ended: Sat Jun 24 17:25:14 2023
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:16
 
 
