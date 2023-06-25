@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY buffer_1bit
+set_global_assignment -name TOP_LEVEL_ENTITY projeto1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:05:14  JUNE 22, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -95,6 +95,10 @@ set_global_assignment -name BDF_FILE registrador.bdf
 set_global_assignment -name BDF_FILE comparador.bdf
 set_global_assignment -name BDF_FILE multiplicador1.bdf
 set_global_assignment -name BDF_FILE buffer_1bit.bdf
+set_global_assignment -name BDF_FILE banco_de_registradores.bdf
+set_global_assignment -name BDF_FILE binary_to_decimal.bdf
+set_global_assignment -name BDF_FILE chave_4bits.bdf
+set_global_assignment -name BDF_FILE OR16.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

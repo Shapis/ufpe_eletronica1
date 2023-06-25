@@ -4,11 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "out",
+					"name" : "beep",
 					"strict" : false
 				},
 				{
-					"name" : "in",
+					"name" : "LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY4",
+					"strict" : false
+				},
+				{
+					"name" : "KEY3",
+					"strict" : false
+				},
+				{
+					"name" : "KEY2",
+					"strict" : false
+				},
+				{
+					"name" : "KEY1",
 					"strict" : false
 				},
 				{

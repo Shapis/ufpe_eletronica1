@@ -154,9 +154,34 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 1184 200 1312 392)
+	(rect 1040 216 1088 248)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 27 34)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1184 200 1312 424)
 	(text "contador_sync_8bits" (rect 5 0 124 15)(font "Intel Clear" (font_size 8)))
-	(text "inst4" (rect 8 175 32 188)(font "Intel Clear" ))
+	(text "inst3" (rect 8 207 32 220)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -219,6 +244,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "128" (rect 0 0 22 15)(font "Intel Clear" (font_size 8)))
 		(text "128" (rect 21 155 43 170)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "reset" (rect 21 171 50 186)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
 	)
 	(port
 		(pt 128 32)
@@ -284,32 +316,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 128 160)(pt 112 160))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 176))
-	)
-)
-(symbol
-	(rect 1040 216 1088 248)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 21 27 34)(font "Intel Clear" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 16 18)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 52 18)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
+		(rectangle (rect 16 16 112 208))
 	)
 )
 (connector

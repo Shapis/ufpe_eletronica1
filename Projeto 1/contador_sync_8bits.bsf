@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 144 208)
+	(rect 16 16 144 240)
 	(text "contador_sync_8bits" (rect 5 0 124 15)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 175 26 188)(font "Intel Clear" ))
+	(text "inst" (rect 8 207 26 220)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -86,6 +86,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "128" (rect 0 0 22 15)(font "Intel Clear" (font_size 8)))
 		(text "128" (rect 21 155 43 170)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "reset" (rect 21 171 50 186)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
 	)
 	(port
 		(pt 128 32)
@@ -151,6 +158,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 128 160)(pt 112 160))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 176))
+		(rectangle (rect 16 16 112 208))
 	)
 )

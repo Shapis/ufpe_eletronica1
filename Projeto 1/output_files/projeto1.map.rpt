@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto1
-Sat Jun 24 23:41:15 2023
+Sun Jun 25 02:36:15 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,10 +13,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 24 23:41:15 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 25 02:36:15 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
-; Top-level Entity Name              ; buffer_1bit                                 ;
+; Top-level Entity Name              ; projeto1                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 1                                           ;
-; Total registers                    ; 1                                           ;
-; Total pins                         ; 3                                           ;
+; Total logic elements               ; 506                                         ;
+;     Total combinational functions  ; 468                                         ;
+;     Dedicated logic registers      ; 404                                         ;
+; Total registers                    ; 404                                         ;
+; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -66,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; buffer_1bit        ; projeto1           ;
+; Top-level entity name                                            ; projeto1           ; projeto1           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,63 +155,470 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processors 3-16        ;   0.2%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; buffer_1bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/buffer_1bit.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
+; projeto1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/projeto1.bdf               ;         ;
+; divisor1.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor1.bdf               ;         ;
+; divisor8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor8.bdf               ;         ;
+; divisor16.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/divisor16.bdf              ;         ;
+; freq_440hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_440hz.bdf             ;         ;
+; freq_523hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_523hz.bdf             ;         ;
+; freq_622hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_622hz.bdf             ;         ;
+; contador_sync_8bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/contador_sync_8bits.bdf    ;         ;
+; freq_740hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_740hz.bdf             ;         ;
+; freq_880hz.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_880hz.bdf             ;         ;
+; freq_1046hz.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_1046hz.bdf            ;         ;
+; freq_2hz.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/freq_2hz.bdf               ;         ;
+; pulso.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/pulso.bdf                  ;         ;
+; chave_led_buzzer.bdf             ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/chave_led_buzzer.bdf       ;         ;
+; key_debouncer.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/key_debouncer.bdf          ;         ;
+; registrador.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/registrador.bdf            ;         ;
+; comparador.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/comparador.bdf             ;         ;
+; multiplicador1.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/multiplicador1.bdf         ;         ;
+; banco_de_registradores.bdf       ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/banco_de_registradores.bdf ;         ;
+; binary_to_decimal.bdf            ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/binary_to_decimal.bdf      ;         ;
+; chave_4bits.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/chave_4bits.bdf            ;         ;
+; OR16.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /home/fedora/Documents/ufpe_eletronica_digital/Projeto 1/OR16.bdf                   ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1     ;
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 1     ;
-;     -- Dedicated logic registers            ; 1     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 3     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; inst  ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 6     ;
-; Average fan-out                             ; 0.86  ;
-+---------------------------------------------+-------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 506            ;
+;                                             ;                ;
+; Total combinational functions               ; 468            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 98             ;
+;     -- 3 input functions                    ; 57             ;
+;     -- <=2 input functions                  ; 313            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 468            ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 404            ;
+;     -- Dedicated logic registers            ; 404            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 10             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; FPGA_CLK~input ;
+; Maximum fan-out                             ; 13             ;
+; Total fan-out                               ; 1878           ;
+; Average fan-out                             ; 2.11           ;
++---------------------------------------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |buffer_1bit               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |buffer_1bit        ; buffer_1bit ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name            ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |projeto1                            ; 468 (7)             ; 404 (0)                   ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |projeto1                                                                                      ; projeto1               ; work         ;
+;    |banco_de_registradores:inst90|   ; 19 (0)              ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90                                                        ; banco_de_registradores ; work         ;
+;       |OR16:inst79|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|OR16:inst79                                            ; OR16                   ; work         ;
+;       |OR16:inst80|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|OR16:inst80                                            ; OR16                   ; work         ;
+;       |OR16:inst81|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|OR16:inst81                                            ; OR16                   ; work         ;
+;       |contador_sync_8bits:inst|     ; 13 (13)             ; 9 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|contador_sync_8bits:inst                               ; contador_sync_8bits    ; work         ;
+;          |pulso:inst1|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|contador_sync_8bits:inst|pulso:inst1                   ; pulso                  ; work         ;
+;    |chave_led_buzzer:inst45|         ; 40 (3)              ; 36 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45                                                              ; chave_led_buzzer       ; work         ;
+;       |divisor1:inst17|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|divisor1:inst17                                              ; divisor1               ; work         ;
+;       |freq_2hz:inst31|              ; 36 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31                                              ; freq_2hz               ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|contador_sync_8bits:inst4                    ; contador_sync_8bits    ; work         ;
+;          |divisor16:inst|            ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst                               ; divisor16              ; work         ;
+;             |divisor8:inst1|         ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1                ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst2 ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst3 ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst4 ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst5 ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst6 ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst7 ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst8 ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst  ; divisor1               ; work         ;
+;             |divisor8:inst|          ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst                 ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst2  ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst3  ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst4  ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst5  ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst6  ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst7  ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst8  ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst   ; divisor1               ; work         ;
+;          |divisor1:inst10|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor1:inst10                              ; divisor1               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor1:inst2                               ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor1:inst3                               ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor1:inst7                               ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor1:inst8                               ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|freq_2hz:inst31|divisor1:inst9                               ; divisor1               ; work         ;
+;       |pulso:inst3|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|pulso:inst3                                                  ; pulso                  ; work         ;
+;       |pulso:inst7|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|pulso:inst7                                                  ; pulso                  ; work         ;
+;    |chave_led_buzzer:inst46|         ; 40 (3)              ; 35 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46                                                              ; chave_led_buzzer       ; work         ;
+;       |divisor1:inst17|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|divisor1:inst17                                              ; divisor1               ; work         ;
+;       |freq_2hz:inst31|              ; 36 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31                                              ; freq_2hz               ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|contador_sync_8bits:inst4                    ; contador_sync_8bits    ; work         ;
+;          |divisor16:inst|            ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst                               ; divisor16              ; work         ;
+;             |divisor8:inst1|         ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1                ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst2 ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst3 ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst4 ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst5 ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst6 ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst7 ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst8 ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst  ; divisor1               ; work         ;
+;             |divisor8:inst|          ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst                 ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst2  ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst3  ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst4  ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst5  ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst6  ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst7  ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst8  ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst   ; divisor1               ; work         ;
+;          |divisor1:inst10|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor1:inst10                              ; divisor1               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor1:inst2                               ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor1:inst3                               ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor1:inst7                               ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor1:inst8                               ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|freq_2hz:inst31|divisor1:inst9                               ; divisor1               ; work         ;
+;       |pulso:inst3|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst46|pulso:inst3                                                  ; pulso                  ; work         ;
+;    |chave_led_buzzer:inst47|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst47                                                              ; chave_led_buzzer       ; work         ;
+;    |chave_led_buzzer:inst65|         ; 40 (3)              ; 36 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65                                                              ; chave_led_buzzer       ; work         ;
+;       |divisor1:inst17|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|divisor1:inst17                                              ; divisor1               ; work         ;
+;       |freq_2hz:inst31|              ; 36 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31                                              ; freq_2hz               ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|contador_sync_8bits:inst4                    ; contador_sync_8bits    ; work         ;
+;          |divisor16:inst|            ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst                               ; divisor16              ; work         ;
+;             |divisor8:inst1|         ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1                ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst2 ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst3 ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst4 ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst5 ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst6 ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst7 ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst8 ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst  ; divisor1               ; work         ;
+;             |divisor8:inst|          ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst                 ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst2  ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst3  ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst4  ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst5  ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst6  ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst7  ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst8  ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst   ; divisor1               ; work         ;
+;          |divisor1:inst10|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor1:inst10                              ; divisor1               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor1:inst2                               ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor1:inst3                               ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor1:inst7                               ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor1:inst8                               ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|freq_2hz:inst31|divisor1:inst9                               ; divisor1               ; work         ;
+;       |pulso:inst3|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|pulso:inst3                                                  ; pulso                  ; work         ;
+;       |pulso:inst7|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst65|pulso:inst7                                                  ; pulso                  ; work         ;
+;    |chave_led_buzzer:inst69|         ; 40 (3)              ; 36 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69                                                              ; chave_led_buzzer       ; work         ;
+;       |divisor1:inst17|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|divisor1:inst17                                              ; divisor1               ; work         ;
+;       |freq_2hz:inst31|              ; 36 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31                                              ; freq_2hz               ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|contador_sync_8bits:inst4                    ; contador_sync_8bits    ; work         ;
+;          |divisor16:inst|            ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst                               ; divisor16              ; work         ;
+;             |divisor8:inst1|         ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1                ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst2 ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst3 ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst4 ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst5 ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst6 ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst7 ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst8 ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst1|divisor1:inst  ; divisor1               ; work         ;
+;             |divisor8:inst|          ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst                 ; divisor8               ; work         ;
+;                |divisor1:inst2|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst2  ; divisor1               ; work         ;
+;                |divisor1:inst3|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst3  ; divisor1               ; work         ;
+;                |divisor1:inst4|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst4  ; divisor1               ; work         ;
+;                |divisor1:inst5|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst5  ; divisor1               ; work         ;
+;                |divisor1:inst6|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst6  ; divisor1               ; work         ;
+;                |divisor1:inst7|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst7  ; divisor1               ; work         ;
+;                |divisor1:inst8|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst8  ; divisor1               ; work         ;
+;                |divisor1:inst|       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor16:inst|divisor8:inst|divisor1:inst   ; divisor1               ; work         ;
+;          |divisor1:inst10|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor1:inst10                              ; divisor1               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor1:inst2                               ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor1:inst3                               ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor1:inst7                               ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor1:inst8                               ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|freq_2hz:inst31|divisor1:inst9                               ; divisor1               ; work         ;
+;       |pulso:inst3|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|pulso:inst3                                                  ; pulso                  ; work         ;
+;       |pulso:inst7|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst69|pulso:inst7                                                  ; pulso                  ; work         ;
+;    |chave_led_buzzer:inst|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst                                                                ; chave_led_buzzer       ; work         ;
+;    |contador_sync_8bits:inst89|      ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|contador_sync_8bits:inst89                                                           ; contador_sync_8bits    ; work         ;
+;    |freq_1046hz:inst83|              ; 22 (0)              ; 18 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83                                                                   ; freq_1046hz            ; work         ;
+;       |contador_sync_8bits:inst2|    ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|contador_sync_8bits:inst2                                         ; contador_sync_8bits    ; work         ;
+;       |divisor1:inst3|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor1:inst3                                                    ; divisor1               ; work         ;
+;       |divisor8:inst|                ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst                                                     ; divisor8               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst2                                      ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst3                                      ; divisor1               ; work         ;
+;          |divisor1:inst4|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst4                                      ; divisor1               ; work         ;
+;          |divisor1:inst5|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst5                                      ; divisor1               ; work         ;
+;          |divisor1:inst6|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst6                                      ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst7                                      ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst8                                      ; divisor1               ; work         ;
+;          |divisor1:inst|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_1046hz:inst83|divisor8:inst|divisor1:inst                                       ; divisor1               ; work         ;
+;    |freq_2hz:inst38|                 ; 35 (0)              ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38                                                                      ; freq_2hz               ; work         ;
+;       |contador_sync_8bits:inst4|    ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|contador_sync_8bits:inst4                                            ; contador_sync_8bits    ; work         ;
+;       |divisor16:inst|               ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst                                                       ; divisor16              ; work         ;
+;          |divisor8:inst1|            ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1                                        ; divisor8               ; work         ;
+;             |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst2                         ; divisor1               ; work         ;
+;             |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst3                         ; divisor1               ; work         ;
+;             |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst4                         ; divisor1               ; work         ;
+;             |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst5                         ; divisor1               ; work         ;
+;             |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst6                         ; divisor1               ; work         ;
+;             |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst7                         ; divisor1               ; work         ;
+;             |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst8                         ; divisor1               ; work         ;
+;             |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst1|divisor1:inst                          ; divisor1               ; work         ;
+;          |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst                                         ; divisor8               ; work         ;
+;             |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst2                          ; divisor1               ; work         ;
+;             |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst3                          ; divisor1               ; work         ;
+;             |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst4                          ; divisor1               ; work         ;
+;             |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst5                          ; divisor1               ; work         ;
+;             |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst6                          ; divisor1               ; work         ;
+;             |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst7                          ; divisor1               ; work         ;
+;             |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst8                          ; divisor1               ; work         ;
+;             |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor16:inst|divisor8:inst|divisor1:inst                           ; divisor1               ; work         ;
+;       |divisor1:inst10|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor1:inst10                                                      ; divisor1               ; work         ;
+;       |divisor1:inst2|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor1:inst2                                                       ; divisor1               ; work         ;
+;       |divisor1:inst3|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor1:inst3                                                       ; divisor1               ; work         ;
+;       |divisor1:inst7|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor1:inst7                                                       ; divisor1               ; work         ;
+;       |divisor1:inst8|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor1:inst8                                                       ; divisor1               ; work         ;
+;       |divisor1:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_2hz:inst38|divisor1:inst9                                                       ; divisor1               ; work         ;
+;    |freq_440hz:inst86|               ; 27 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86                                                                    ; freq_440hz             ; work         ;
+;       |contador_sync_8bits:inst4|    ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|contador_sync_8bits:inst4                                          ; contador_sync_8bits    ; work         ;
+;       |divisor1:inst2|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor1:inst2                                                     ; divisor1               ; work         ;
+;       |divisor1:inst3|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor1:inst3                                                     ; divisor1               ; work         ;
+;       |divisor1:inst7|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor1:inst7                                                     ; divisor1               ; work         ;
+;       |divisor1:inst8|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor1:inst8                                                     ; divisor1               ; work         ;
+;       |divisor1:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor1:inst9                                                     ; divisor1               ; work         ;
+;       |divisor8:inst|                ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst                                                      ; divisor8               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst2                                       ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst3                                       ; divisor1               ; work         ;
+;          |divisor1:inst4|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst4                                       ; divisor1               ; work         ;
+;          |divisor1:inst5|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst5                                       ; divisor1               ; work         ;
+;          |divisor1:inst6|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst6                                       ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst7                                       ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst8                                       ; divisor1               ; work         ;
+;          |divisor1:inst|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_440hz:inst86|divisor8:inst|divisor1:inst                                        ; divisor1               ; work         ;
+;    |freq_740hz:inst12|               ; 24 (0)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12                                                                    ; freq_740hz             ; work         ;
+;       |contador_sync_8bits:inst3|    ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|contador_sync_8bits:inst3                                          ; contador_sync_8bits    ; work         ;
+;       |divisor1:inst2|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor1:inst2                                                     ; divisor1               ; work         ;
+;       |divisor1:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor1:inst9                                                     ; divisor1               ; work         ;
+;       |divisor8:inst|                ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst                                                      ; divisor8               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst2                                       ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst3                                       ; divisor1               ; work         ;
+;          |divisor1:inst4|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst4                                       ; divisor1               ; work         ;
+;          |divisor1:inst5|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst5                                       ; divisor1               ; work         ;
+;          |divisor1:inst6|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst6                                       ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst7                                       ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst8                                       ; divisor1               ; work         ;
+;          |divisor1:inst|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_740hz:inst12|divisor8:inst|divisor1:inst                                        ; divisor1               ; work         ;
+;    |freq_880hz:inst13|               ; 26 (0)              ; 21 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13                                                                    ; freq_880hz             ; work         ;
+;       |contador_sync_8bits:inst7|    ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|contador_sync_8bits:inst7                                          ; contador_sync_8bits    ; work         ;
+;       |divisor1:inst2|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor1:inst2                                                     ; divisor1               ; work         ;
+;       |divisor1:inst3|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor1:inst3                                                     ; divisor1               ; work         ;
+;       |divisor1:inst4|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor1:inst4                                                     ; divisor1               ; work         ;
+;       |divisor1:inst9|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor1:inst9                                                     ; divisor1               ; work         ;
+;       |divisor8:inst|                ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst                                                      ; divisor8               ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst2                                       ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst3                                       ; divisor1               ; work         ;
+;          |divisor1:inst4|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst4                                       ; divisor1               ; work         ;
+;          |divisor1:inst5|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst5                                       ; divisor1               ; work         ;
+;          |divisor1:inst6|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst6                                       ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst7                                       ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst8                                       ; divisor1               ; work         ;
+;          |divisor1:inst|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|freq_880hz:inst13|divisor8:inst|divisor1:inst                                        ; divisor1               ; work         ;
+;    |key_debouncer:inst48|            ; 32 (4)              ; 32 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48                                                                 ; key_debouncer          ; work         ;
+;       |divisor1:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|divisor1:inst25                                                 ; divisor1               ; work         ;
+;       |divisor1:inst26|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|divisor1:inst26                                                 ; divisor1               ; work         ;
+;       |freq_440hz:inst24|            ; 26 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24                                               ; freq_440hz             ; work         ;
+;          |contador_sync_8bits:inst4| ; 13 (13)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|contador_sync_8bits:inst4                     ; contador_sync_8bits    ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor1:inst2                                ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor1:inst3                                ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor1:inst7                                ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor1:inst8                                ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor1:inst9                                ; divisor1               ; work         ;
+;          |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst                                 ; divisor8               ; work         ;
+;             |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst2                  ; divisor1               ; work         ;
+;             |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst3                  ; divisor1               ; work         ;
+;             |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst4                  ; divisor1               ; work         ;
+;             |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst5                  ; divisor1               ; work         ;
+;             |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst6                  ; divisor1               ; work         ;
+;             |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst7                  ; divisor1               ; work         ;
+;             |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst8                  ; divisor1               ; work         ;
+;             |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst48|freq_440hz:inst24|divisor8:inst|divisor1:inst                   ; divisor1               ; work         ;
+;    |key_debouncer:inst49|            ; 33 (4)              ; 32 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49                                                                 ; key_debouncer          ; work         ;
+;       |divisor1:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|divisor1:inst25                                                 ; divisor1               ; work         ;
+;       |divisor1:inst26|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|divisor1:inst26                                                 ; divisor1               ; work         ;
+;       |freq_440hz:inst24|            ; 27 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24                                               ; freq_440hz             ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|contador_sync_8bits:inst4                     ; contador_sync_8bits    ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor1:inst2                                ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor1:inst3                                ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor1:inst7                                ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor1:inst8                                ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor1:inst9                                ; divisor1               ; work         ;
+;          |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst                                 ; divisor8               ; work         ;
+;             |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst2                  ; divisor1               ; work         ;
+;             |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst3                  ; divisor1               ; work         ;
+;             |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst4                  ; divisor1               ; work         ;
+;             |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst5                  ; divisor1               ; work         ;
+;             |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst6                  ; divisor1               ; work         ;
+;             |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst7                  ; divisor1               ; work         ;
+;             |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst8                  ; divisor1               ; work         ;
+;             |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst49|freq_440hz:inst24|divisor8:inst|divisor1:inst                   ; divisor1               ; work         ;
+;    |key_debouncer:inst50|            ; 33 (4)              ; 32 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50                                                                 ; key_debouncer          ; work         ;
+;       |divisor1:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|divisor1:inst25                                                 ; divisor1               ; work         ;
+;       |divisor1:inst26|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|divisor1:inst26                                                 ; divisor1               ; work         ;
+;       |freq_440hz:inst24|            ; 27 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24                                               ; freq_440hz             ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|contador_sync_8bits:inst4                     ; contador_sync_8bits    ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor1:inst2                                ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor1:inst3                                ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor1:inst7                                ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor1:inst8                                ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor1:inst9                                ; divisor1               ; work         ;
+;          |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst                                 ; divisor8               ; work         ;
+;             |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst2                  ; divisor1               ; work         ;
+;             |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst3                  ; divisor1               ; work         ;
+;             |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst4                  ; divisor1               ; work         ;
+;             |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst5                  ; divisor1               ; work         ;
+;             |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst6                  ; divisor1               ; work         ;
+;             |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst7                  ; divisor1               ; work         ;
+;             |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst8                  ; divisor1               ; work         ;
+;             |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst50|freq_440hz:inst24|divisor8:inst|divisor1:inst                   ; divisor1               ; work         ;
+;    |key_debouncer:inst51|            ; 33 (4)              ; 32 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51                                                                 ; key_debouncer          ; work         ;
+;       |divisor1:inst25|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|divisor1:inst25                                                 ; divisor1               ; work         ;
+;       |divisor1:inst26|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|divisor1:inst26                                                 ; divisor1               ; work         ;
+;       |freq_440hz:inst24|            ; 27 (0)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24                                               ; freq_440hz             ; work         ;
+;          |contador_sync_8bits:inst4| ; 14 (14)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|contador_sync_8bits:inst4                     ; contador_sync_8bits    ; work         ;
+;          |divisor1:inst2|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor1:inst2                                ; divisor1               ; work         ;
+;          |divisor1:inst3|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor1:inst3                                ; divisor1               ; work         ;
+;          |divisor1:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor1:inst7                                ; divisor1               ; work         ;
+;          |divisor1:inst8|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor1:inst8                                ; divisor1               ; work         ;
+;          |divisor1:inst9|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor1:inst9                                ; divisor1               ; work         ;
+;          |divisor8:inst|             ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst                                 ; divisor8               ; work         ;
+;             |divisor1:inst2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst2                  ; divisor1               ; work         ;
+;             |divisor1:inst3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst3                  ; divisor1               ; work         ;
+;             |divisor1:inst4|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst4                  ; divisor1               ; work         ;
+;             |divisor1:inst5|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst5                  ; divisor1               ; work         ;
+;             |divisor1:inst6|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst6                  ; divisor1               ; work         ;
+;             |divisor1:inst7|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst7                  ; divisor1               ; work         ;
+;             |divisor1:inst8|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst8                  ; divisor1               ; work         ;
+;             |divisor1:inst|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|key_debouncer:inst51|freq_440hz:inst24|divisor8:inst|divisor1:inst                   ; divisor1               ; work         ;
+;    |multiplicador1:inst44|           ; 1 (1)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|multiplicador1:inst44                                                                ; multiplicador1         ; work         ;
+;       |pulso:inst25|                 ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|multiplicador1:inst44|pulso:inst25                                                   ; pulso                  ; work         ;
+;       |pulso:inst26|                 ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|multiplicador1:inst44|pulso:inst26                                                   ; pulso                  ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                        ;
++------------------------------------------------------------------------------------+------------------------------------------------------+
+; Register name                                                                      ; Reason for Removal                                   ;
++------------------------------------------------------------------------------------+------------------------------------------------------+
+; freq_440hz:inst86|contador_sync_8bits:inst4|pulso:inst1|inst                       ; Stuck at GND due to stuck port clock                 ;
+; chave_led_buzzer:inst69|freq_2hz:inst31|contador_sync_8bits:inst4|pulso:inst1|inst ; Stuck at GND due to stuck port clock                 ;
+; freq_1046hz:inst83|contador_sync_8bits:inst2|pulso:inst1|inst                      ; Stuck at GND due to stuck port clock                 ;
+; freq_880hz:inst13|contador_sync_8bits:inst7|pulso:inst1|inst                       ; Stuck at GND due to stuck port clock                 ;
+; key_debouncer:inst51|freq_440hz:inst24|contador_sync_8bits:inst4|pulso:inst1|inst  ; Stuck at GND due to stuck port clock                 ;
+; chave_led_buzzer:inst46|freq_2hz:inst31|contador_sync_8bits:inst4|pulso:inst1|inst ; Stuck at GND due to stuck port clock                 ;
+; freq_740hz:inst12|contador_sync_8bits:inst3|pulso:inst1|inst                       ; Stuck at GND due to stuck port clock                 ;
+; key_debouncer:inst50|freq_440hz:inst24|contador_sync_8bits:inst4|pulso:inst1|inst  ; Stuck at GND due to stuck port clock                 ;
+; chave_led_buzzer:inst45|freq_2hz:inst31|contador_sync_8bits:inst4|pulso:inst1|inst ; Stuck at GND due to stuck port clock                 ;
+; key_debouncer:inst49|freq_440hz:inst24|contador_sync_8bits:inst4|pulso:inst1|inst  ; Stuck at GND due to stuck port clock                 ;
+; key_debouncer:inst48|freq_440hz:inst24|contador_sync_8bits:inst4|pulso:inst1|inst  ; Stuck at GND due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst7|inst                               ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst7|inst1                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst7|inst2                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst7|inst3                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst11|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst11|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst11|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst11|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst15|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst15|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst15|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst15|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst19|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst19|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst19|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst19|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst23|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst23|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst23|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst23|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst27|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst27|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst27|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst27|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst31|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst31|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst31|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst31|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst35|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst35|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst35|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst35|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst39|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst39|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst39|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst39|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst43|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst43|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst43|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst43|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst47|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst47|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst47|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst47|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst51|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst51|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst51|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst51|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst55|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst55|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst55|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst55|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst59|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst59|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst59|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst59|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst63|inst                              ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst63|inst1                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst63|inst2                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst63|inst3                             ; Stuck at VCC due to stuck port clock                 ;
+; banco_de_registradores:inst90|registrador:inst67|inst                              ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst67|inst1                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst67|inst2                             ; Stuck at GND due to stuck port clear                 ;
+; banco_de_registradores:inst90|registrador:inst67|inst3                             ; Stuck at GND due to stuck port clear                 ;
+; freq_2hz:inst38|contador_sync_8bits:inst4|pulso:inst1|inst                         ; Stuck at GND due to stuck port clock                 ;
+; contador_sync_8bits:inst89|pulso:inst1|inst                                        ; Stuck at GND due to stuck port clock                 ;
+; chave_led_buzzer:inst65|freq_2hz:inst31|contador_sync_8bits:inst4|pulso:inst1|inst ; Stuck at GND due to stuck port clock                 ;
+; chave_led_buzzer:inst46|pulso:inst7|inst                                           ; Merged with chave_led_buzzer:inst45|pulso:inst7|inst ;
+; chave_led_buzzer:inst47|pulso:inst7|inst                                           ; Merged with chave_led_buzzer:inst45|pulso:inst7|inst ;
+; chave_led_buzzer:inst|pulso:inst7|inst                                             ; Merged with chave_led_buzzer:inst45|pulso:inst7|inst ;
+; Total Number of Removed Registers = 81                                             ;                                                      ;
++------------------------------------------------------------------------------------+------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -218,10 +626,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
+; Total registers                              ; 404   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 140   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -230,16 +638,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 3                               ;
-; cycloneiii_ff     ; 1                               ;
-;     plain         ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 10                          ;
+; cycloneiii_ff         ; 404                         ;
+;     CLR               ; 140                         ;
+;     plain             ; 264                         ;
+; cycloneiii_lcell_comb ; 472                         ;
+;     normal            ; 472                         ;
+;         1 data inputs ; 265                         ;
+;         2 data inputs ; 52                          ;
+;         3 data inputs ; 57                          ;
+;         4 data inputs ; 98                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 1.46                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -257,7 +672,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Jun 24 23:41:09 2023
+    Info: Processing started: Sun Jun 25 02:36:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto1 -c projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -309,7 +724,68 @@ Info (12021): Found 1 design units, including 1 entities, in source file multipl
     Info (12023): Found entity 1: multiplicador1
 Info (12021): Found 1 design units, including 1 entities, in source file buffer_1bit.bdf
     Info (12023): Found entity 1: buffer_1bit
-Info (12127): Elaborating entity "buffer_1bit" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file banco_de_registradores.bdf
+    Info (12023): Found entity 1: banco_de_registradores
+Info (12021): Found 1 design units, including 1 entities, in source file binary_to_decimal.bdf
+    Info (12023): Found entity 1: binary_to_decimal
+Info (12021): Found 1 design units, including 1 entities, in source file chave_4bits.bdf
+    Info (12023): Found entity 1: chave_4bits
+Info (12021): Found 1 design units, including 1 entities, in source file OR16.bdf
+    Info (12023): Found entity 1: OR16
+Info (12127): Elaborating entity "projeto1" for the top level hierarchy
+Warning (275008): Primitive "VCC" of instance "inst78" not used
+Info (12128): Elaborating entity "chave_led_buzzer" for hierarchy "chave_led_buzzer:inst65"
+Info (12128): Elaborating entity "pulso" for hierarchy "chave_led_buzzer:inst65|pulso:inst3"
+Info (12128): Elaborating entity "divisor1" for hierarchy "chave_led_buzzer:inst65|divisor1:inst17"
+Info (12128): Elaborating entity "freq_2hz" for hierarchy "chave_led_buzzer:inst65|freq_2hz:inst31"
+Info (12128): Elaborating entity "contador_sync_8bits" for hierarchy "chave_led_buzzer:inst65|freq_2hz:inst31|contador_sync_8bits:inst4"
+Info (12128): Elaborating entity "divisor16" for hierarchy "chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst"
+Info (12128): Elaborating entity "divisor8" for hierarchy "chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1"
+Info (12128): Elaborating entity "multiplicador1" for hierarchy "multiplicador1:inst44"
+Info (12128): Elaborating entity "comparador" for hierarchy "comparador:inst79"
+Warning (275080): Converted elements in bus name "a" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "a[0]" to "a0"
+    Warning (275081): Converted element name(s) from "a[1]" to "a1"
+    Warning (275081): Converted element name(s) from "a[2]" to "a2"
+    Warning (275081): Converted element name(s) from "a[3]" to "a3"
+    Warning (275081): Converted element name(s) from "a[0]" to "a0"
+    Warning (275081): Converted element name(s) from "a[1]" to "a1"
+    Warning (275081): Converted element name(s) from "a[2]" to "a2"
+    Warning (275081): Converted element name(s) from "a[3]" to "a3"
+Warning (275080): Converted elements in bus name "b" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "b[0]" to "b0"
+    Warning (275081): Converted element name(s) from "b[1]" to "b1"
+    Warning (275081): Converted element name(s) from "b[2]" to "b2"
+    Warning (275081): Converted element name(s) from "b[3]" to "b3"
+    Warning (275081): Converted element name(s) from "b[0]" to "b0"
+    Warning (275081): Converted element name(s) from "b[1]" to "b1"
+    Warning (275081): Converted element name(s) from "b[2]" to "b2"
+    Warning (275081): Converted element name(s) from "b[3]" to "b3"
+Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "banco_de_registradores" for hierarchy "banco_de_registradores:inst90"
+Warning (275011): Block or symbol "OR16" of instance "inst77" overlaps another block or symbol
+Warning (275011): Block or symbol "OR16" of instance "inst80" overlaps another block or symbol
+Warning (275008): Primitive "GND" of instance "inst65" not used
+Warning (275008): Primitive "VCC" of instance "inst68" not used
+Info (12128): Elaborating entity "OR16" for hierarchy "banco_de_registradores:inst90|OR16:inst77"
+Info (12128): Elaborating entity "chave_4bits" for hierarchy "banco_de_registradores:inst90|chave_4bits:inst70"
+Info (12128): Elaborating entity "binary_to_decimal" for hierarchy "banco_de_registradores:inst90|binary_to_decimal:inst6"
+Info (12128): Elaborating entity "registrador" for hierarchy "banco_de_registradores:inst90|registrador:inst67"
+Warning (275013): Port "CLK" of type DFF and instance "inst" is missing source signal
+Warning (275013): Port "CLK" of type DFF and instance "inst1" is missing source signal
+Warning (275013): Port "CLK" of type DFF and instance "inst2" is missing source signal
+Warning (275013): Port "CLK" of type DFF and instance "inst3" is missing source signal
+Info (12128): Elaborating entity "key_debouncer" for hierarchy "key_debouncer:inst48"
+Info (12128): Elaborating entity "freq_440hz" for hierarchy "key_debouncer:inst48|freq_440hz:inst24"
+Info (12128): Elaborating entity "freq_523hz" for hierarchy "freq_523hz:inst3"
+Info (12128): Elaborating entity "freq_622hz" for hierarchy "freq_622hz:inst11"
+Info (12128): Elaborating entity "freq_740hz" for hierarchy "freq_740hz:inst12"
+Info (12128): Elaborating entity "freq_880hz" for hierarchy "freq_880hz:inst13"
+Info (12128): Elaborating entity "freq_1046hz" for hierarchy "freq_1046hz:inst83"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer banco_de_registradores:inst90|OR16:inst81|inst2~0
+    Warning (19017): Found clock multiplexer banco_de_registradores:inst90|OR16:inst79|inst2~0
+    Warning (19017): Found clock multiplexer banco_de_registradores:inst90|OR16:inst80|inst2~0
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity contador1 -section_id Top was ignored
@@ -338,14 +814,14 @@ Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does no
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity contador1 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 629 megabytes
-    Info: Processing ended: Sat Jun 24 23:41:15 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:17
+Info (21057): Implemented 516 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 506 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
+    Info: Peak virtual memory: 698 megabytes
+    Info: Processing ended: Sun Jun 25 02:36:15 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
 
 
