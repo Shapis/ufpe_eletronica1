@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto1
-Sun Jun 25 02:36:15 2023
+Sun Jun 25 03:29:21 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,15 +44,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 25 02:36:15 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 25 03:29:21 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
 ; Top-level Entity Name              ; projeto1                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 506                                         ;
-;     Total combinational functions  ; 468                                         ;
-;     Dedicated logic registers      ; 404                                         ;
-; Total registers                    ; 404                                         ;
+; Total logic elements               ; 509                                         ;
+;     Total combinational functions  ; 471                                         ;
+;     Dedicated logic registers      ; 405                                         ;
+; Total registers                    ; 405                                         ;
 ; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -160,7 +160,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
 ;     Processors 3-16        ;   0.2%      ;
 +----------------------------+-------------+
 
@@ -200,20 +200,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 506            ;
+; Estimated Total logic elements              ; 509            ;
 ;                                             ;                ;
-; Total combinational functions               ; 468            ;
+; Total combinational functions               ; 471            ;
 ; Logic element usage by number of LUT inputs ;                ;
 ;     -- 4 input functions                    ; 98             ;
-;     -- 3 input functions                    ; 57             ;
-;     -- <=2 input functions                  ; 313            ;
+;     -- 3 input functions                    ; 58             ;
+;     -- <=2 input functions                  ; 315            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 468            ;
+;     -- normal mode                          ; 471            ;
 ;     -- arithmetic mode                      ; 0              ;
 ;                                             ;                ;
-; Total registers                             ; 404            ;
-;     -- Dedicated logic registers            ; 404            ;
+; Total registers                             ; 405            ;
+;     -- Dedicated logic registers            ; 405            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 10             ;
@@ -222,8 +222,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; FPGA_CLK~input ;
 ; Maximum fan-out                             ; 13             ;
-; Total fan-out                               ; 1878           ;
-; Average fan-out                             ; 2.11           ;
+; Total fan-out                               ; 1886           ;
+; Average fan-out                             ; 2.10           ;
 +---------------------------------------------+----------------+
 
 
@@ -232,12 +232,12 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name            ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |projeto1                            ; 468 (7)             ; 404 (0)                   ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |projeto1                                                                                      ; projeto1               ; work         ;
-;    |banco_de_registradores:inst90|   ; 19 (0)              ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90                                                        ; banco_de_registradores ; work         ;
+; |projeto1                            ; 471 (8)             ; 405 (0)                   ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |projeto1                                                                                      ; projeto1               ; work         ;
+;    |banco_de_registradores:inst90|   ; 21 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90                                                        ; banco_de_registradores ; work         ;
 ;       |OR16:inst79|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|OR16:inst79                                            ; OR16                   ; work         ;
 ;       |OR16:inst80|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|OR16:inst80                                            ; OR16                   ; work         ;
 ;       |OR16:inst81|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|OR16:inst81                                            ; OR16                   ; work         ;
-;       |contador_sync_8bits:inst|     ; 13 (13)             ; 9 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|contador_sync_8bits:inst                               ; contador_sync_8bits    ; work         ;
+;       |contador_sync_8bits:inst|     ; 15 (15)             ; 10 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|contador_sync_8bits:inst                               ; contador_sync_8bits    ; work         ;
 ;          |pulso:inst1|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|banco_de_registradores:inst90|contador_sync_8bits:inst|pulso:inst1                   ; pulso                  ; work         ;
 ;    |chave_led_buzzer:inst45|         ; 40 (3)              ; 36 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45                                                              ; chave_led_buzzer       ; work         ;
 ;       |divisor1:inst17|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto1|chave_led_buzzer:inst45|divisor1:inst17                                              ; divisor1               ; work         ;
@@ -626,7 +626,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 404   ;
+; Total registers                              ; 405   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 140   ;
@@ -642,14 +642,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 404                         ;
+; cycloneiii_ff         ; 405                         ;
 ;     CLR               ; 140                         ;
-;     plain             ; 264                         ;
-; cycloneiii_lcell_comb ; 472                         ;
-;     normal            ; 472                         ;
-;         1 data inputs ; 265                         ;
-;         2 data inputs ; 52                          ;
-;         3 data inputs ; 57                          ;
+;     plain             ; 265                         ;
+; cycloneiii_lcell_comb ; 475                         ;
+;     normal            ; 475                         ;
+;         1 data inputs ; 266                         ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 58                          ;
 ;         4 data inputs ; 98                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
@@ -672,7 +672,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Jun 25 02:36:08 2023
+    Info: Processing started: Sun Jun 25 03:29:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto1 -c projeto1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -733,7 +733,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file chave_4
 Info (12021): Found 1 design units, including 1 entities, in source file OR16.bdf
     Info (12023): Found entity 1: OR16
 Info (12127): Elaborating entity "projeto1" for the top level hierarchy
-Warning (275008): Primitive "VCC" of instance "inst78" not used
 Info (12128): Elaborating entity "chave_led_buzzer" for hierarchy "chave_led_buzzer:inst65"
 Info (12128): Elaborating entity "pulso" for hierarchy "chave_led_buzzer:inst65|pulso:inst3"
 Info (12128): Elaborating entity "divisor1" for hierarchy "chave_led_buzzer:inst65|divisor1:inst17"
@@ -742,6 +741,19 @@ Info (12128): Elaborating entity "contador_sync_8bits" for hierarchy "chave_led_
 Info (12128): Elaborating entity "divisor16" for hierarchy "chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst"
 Info (12128): Elaborating entity "divisor8" for hierarchy "chave_led_buzzer:inst65|freq_2hz:inst31|divisor16:inst|divisor8:inst1"
 Info (12128): Elaborating entity "multiplicador1" for hierarchy "multiplicador1:inst44"
+Info (12128): Elaborating entity "banco_de_registradores" for hierarchy "banco_de_registradores:inst90"
+Warning (275011): Block or symbol "OR16" of instance "inst77" overlaps another block or symbol
+Warning (275011): Block or symbol "OR16" of instance "inst80" overlaps another block or symbol
+Warning (275008): Primitive "GND" of instance "inst65" not used
+Warning (275008): Primitive "VCC" of instance "inst68" not used
+Info (12128): Elaborating entity "OR16" for hierarchy "banco_de_registradores:inst90|OR16:inst77"
+Info (12128): Elaborating entity "chave_4bits" for hierarchy "banco_de_registradores:inst90|chave_4bits:inst70"
+Info (12128): Elaborating entity "binary_to_decimal" for hierarchy "banco_de_registradores:inst90|binary_to_decimal:inst6"
+Info (12128): Elaborating entity "registrador" for hierarchy "banco_de_registradores:inst90|registrador:inst67"
+Warning (275013): Port "CLK" of type DFF and instance "inst" is missing source signal
+Warning (275013): Port "CLK" of type DFF and instance "inst1" is missing source signal
+Warning (275013): Port "CLK" of type DFF and instance "inst2" is missing source signal
+Warning (275013): Port "CLK" of type DFF and instance "inst3" is missing source signal
 Info (12128): Elaborating entity "comparador" for hierarchy "comparador:inst79"
 Warning (275080): Converted elements in bus name "a" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "a[0]" to "a0"
@@ -762,19 +774,6 @@ Warning (275080): Converted elements in bus name "b" using legacy naming rules. 
     Warning (275081): Converted element name(s) from "b[2]" to "b2"
     Warning (275081): Converted element name(s) from "b[3]" to "b3"
 Warning (275002): No superset bus at connection
-Info (12128): Elaborating entity "banco_de_registradores" for hierarchy "banco_de_registradores:inst90"
-Warning (275011): Block or symbol "OR16" of instance "inst77" overlaps another block or symbol
-Warning (275011): Block or symbol "OR16" of instance "inst80" overlaps another block or symbol
-Warning (275008): Primitive "GND" of instance "inst65" not used
-Warning (275008): Primitive "VCC" of instance "inst68" not used
-Info (12128): Elaborating entity "OR16" for hierarchy "banco_de_registradores:inst90|OR16:inst77"
-Info (12128): Elaborating entity "chave_4bits" for hierarchy "banco_de_registradores:inst90|chave_4bits:inst70"
-Info (12128): Elaborating entity "binary_to_decimal" for hierarchy "banco_de_registradores:inst90|binary_to_decimal:inst6"
-Info (12128): Elaborating entity "registrador" for hierarchy "banco_de_registradores:inst90|registrador:inst67"
-Warning (275013): Port "CLK" of type DFF and instance "inst" is missing source signal
-Warning (275013): Port "CLK" of type DFF and instance "inst1" is missing source signal
-Warning (275013): Port "CLK" of type DFF and instance "inst2" is missing source signal
-Warning (275013): Port "CLK" of type DFF and instance "inst3" is missing source signal
 Info (12128): Elaborating entity "key_debouncer" for hierarchy "key_debouncer:inst48"
 Info (12128): Elaborating entity "freq_440hz" for hierarchy "key_debouncer:inst48|freq_440hz:inst24"
 Info (12128): Elaborating entity "freq_523hz" for hierarchy "freq_523hz:inst3"
@@ -814,14 +813,14 @@ Warning (20013): Ignored 24 assignments for entity "contador1" -- entity does no
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity contador1 -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 516 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 519 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 506 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 698 megabytes
-    Info: Processing ended: Sun Jun 25 02:36:15 2023
+    Info (21061): Implemented 509 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
+    Info: Peak virtual memory: 700 megabytes
+    Info: Processing ended: Sun Jun 25 03:29:21 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:19
 
 
