@@ -1,4 +1,3 @@
-# ERROR: No extended dataflow license exists
 # do projeto1_run_msim_gate_vhdl.do
 # if {[file exists gate_work]} {
 # 	vdel -lib gate_work -all
@@ -7,12 +6,12 @@
 # vmap work gate_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work gate_work 
-# Copying /home/fedora/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying /home/pedro/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
 # vcom -93 -work work {projeto1.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:14 on Jun 24,2023
+# Start time: 19:55:17 on Jun 25,2023
 # vcom -reportprogress 300 -93 -work work projeto1.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -25,14 +24,16 @@
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity contador_sync_decresc_mod10
-# -- Compiling architecture structure of contador_sync_decresc_mod10
-# End time: 18:15:14 on Jun 24,2023, Elapsed time: 0:00:00
+# -- Compiling entity prioridade
+# -- Compiling architecture structure of prioridade
+# End time: 19:55:17 on Jun 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.contador_sync_decresc_mod10
-# vsim work.contador_sync_decresc_mod10 
-# Start time: 18:15:17 on Jun 24,2023
+# 
+# stdin: <EOF>
+vsim work.prioridade
+# vsim work.prioridade 
+# Start time: 19:55:21 on Jun 25,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -42,7 +43,7 @@ vsim work.contador_sync_decresc_mod10
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.contador_sync_decresc_mod10(structure)
+# Loading work.prioridade(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
@@ -50,65 +51,38 @@ vsim work.contador_sync_decresc_mod10
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 add wave -position insertpoint  \
-sim:/contador_sync_decresc_mod10/led \
-sim:/contador_sync_decresc_mod10/clk_out \
-sim:/contador_sync_decresc_mod10/clk_in
-force -freeze sim:/contador_sync_decresc_mod10/clk_in 1 0, 0 {50 ps} -r 100
+sim:/prioridade/freq6 \
+sim:/prioridade/freq5 \
+sim:/prioridade/freq4 \
+sim:/prioridade/freq3 \
+sim:/prioridade/freq2 \
+sim:/prioridade/freq1 \
+sim:/prioridade/f_out \
+sim:/prioridade/enable6 \
+sim:/prioridade/enable5 \
+sim:/prioridade/enable4 \
+sim:/prioridade/enable3 \
+sim:/prioridade/enable2 \
+sim:/prioridade/enable1
+force -freeze sim:/prioridade/enable6 0 0
+force -freeze sim:/prioridade/enable5 0 0
+force -freeze sim:/prioridade/enable4 0 0
+force -freeze sim:/prioridade/enable3 0 0
+force -freeze sim:/prioridade/enable2 0 0
+force -freeze sim:/prioridade/enable1 1 0
+force -freeze sim:/prioridade/freq1 1 0, 0 {25 ps} -r 50
+force -freeze sim:/prioridade/freq6 0 0
+force -freeze sim:/prioridade/freq5 0 0
+force -freeze sim:/prioridade/freq4 0 0
+force -freeze sim:/prioridade/freq3 0 0
+force -freeze sim:/prioridade/freq2 0 0
 run
+force -freeze sim:/prioridade/freq3 1 0, 0 {50 ps} -r 100
+force -freeze sim:/prioridade/enable3 1 0
 run
+force -freeze sim:/prioridade/enable1 0 0
+force -freeze sim:/prioridade/enable2 1 0
+force -freeze sim:/prioridade/freq2 1 0, 0 {15 ps} -r 30
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 18:16:01 on Jun 24,2023, Elapsed time: 0:00:44
+# End time: 19:57:26 on Jun 25,2023, Elapsed time: 0:02:05
 # Errors: 0, Warnings: 0
