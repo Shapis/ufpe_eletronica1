@@ -1,5 +1,5 @@
 Fitter report for projeto1
-Wed Jun 28 14:15:53 2023
+Wed Jun 28 14:28:41 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jun 28 14:15:53 2023       ;
+; Fitter Status                      ; Successful - Wed Jun 28 14:28:41 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto1                                    ;
 ; Top-level Entity Name              ; projeto1                                    ;
@@ -2157,7 +2157,7 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 2.29 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 2.39 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2166,8 +2166,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 1/output_files/projeto1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 971 megabytes
-    Info: Processing ended: Wed Jun 28 14:15:53 2023
+    Info: Peak virtual memory: 954 megabytes
+    Info: Processing ended: Wed Jun 28 14:28:41 2023
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:15
 
