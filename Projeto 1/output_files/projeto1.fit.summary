@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Jun 25 04:18:39 2023
+Fitter Status : Successful - Wed Jun 28 14:28:41 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : projeto1
-Top-level Entity Name : OR16
+Top-level Entity Name : projeto1
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 5 / 6,272 ( < 1 % )
-    Total combinational functions : 5 / 6,272 ( < 1 % )
-    Dedicated logic registers : 0 / 6,272 ( 0 % )
-Total registers : 0
-Total pins : 17 / 92 ( 18 % )
+Total logic elements : 1,024 / 6,272 ( 16 % )
+    Total combinational functions : 668 / 6,272 ( 11 % )
+    Dedicated logic registers : 538 / 6,272 ( 9 % )
+Total registers : 538
+Total pins : 10 / 92 ( 11 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
