@@ -8,9 +8,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 1/simulation/modelsim
-Ehard_block
-Z1 w1687733255
+Z0 dC:/Users/gabil/Downloads/ufpe_eletronica_digital-main/ufpe_eletronica_digital-main/ufpe_eletronica_digital-main/Projeto 1/simulation/modelsim
+Ed7seg
+Z1 w1688243552
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -22,19 +22,68 @@ R0
 Z8 8projeto1.vho
 Z9 Fprojeto1.vho
 l0
-L35 1
-Vi9a_SfXm?YhLI2dhm1j^51
-!s100 >mXi5[`cD`bFC`UBKA<om3
+L78 1
+V;hSX1TNGL>E>B?RIG]Xi60
+!s100 S@2KRUU3=d1@8bKaMKek_1
 Z10 OV;C;2020.1;71
 31
-Z11 !s110 1687733717
+Z11 !s110 1688243623
 !i10b 1
-Z12 !s108 1687733717.000000
+Z12 !s108 1688243623.000000
 Z13 !s90 -reportprogress|300|-93|-work|work|projeto1.vho|
 !s107 projeto1.vho|
 !i113 1
 Z14 o-93 -work work
 Z15 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 5 d7seg 0 22 ;hSX1TNGL>E>B?RIG]Xi60
+!i122 0
+l162
+L110 368
+V3ca_<NbmC9DYSa>kJ9jjj2
+!s100 eV=L5=gWX5T=`M@@H_C[f2
+R10
+31
+R11
+!i10b 1
+R12
+R13
+Z16 !s107 projeto1.vho|
+!i113 1
+R14
+R15
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 0
+R0
+R8
+R9
+l0
+L35 1
+Vi9a_SfXm?YhLI2dhm1j^51
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R16
+!i113 1
+R14
+R15
 Astructure
 R2
 R3
@@ -48,59 +97,6 @@ l65
 L51 20
 VWdBQm4eNm6eGHO;iQNz`j1
 !s100 [5;Wd8QGQ>@2NGoJ1I]Y43
-R10
-31
-R11
-!i10b 1
-R12
-R13
-Z16 !s107 projeto1.vho|
-!i113 1
-R14
-R15
-Eprioridade
-R1
-R3
-R7
-R2
-Z17 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
-R4
-R5
-R6
-Z18 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 0
-R0
-R8
-R9
-l0
-L80 1
-V6^a9h?Z>j>7Une__:VEa73
-!s100 A0a4QJbJnc=71h?l6O=6C2
-R10
-31
-R11
-!i10b 1
-R12
-R13
-R16
-!i113 1
-R14
-R15
-Astructure
-R3
-R7
-R2
-R17
-R4
-R5
-R6
-R18
-DEx4 work 10 prioridade 0 22 6^a9h?Z>j>7Une__:VEa73
-!i122 0
-l201
-L114 833
-VH<ZCRAPBhzfIK<Ql_YgH^2
-!s100 2;GKa9kGUdR@=9?BgXGdV1
 R10
 31
 R11

@@ -1,3 +1,4 @@
+# Reading pref.tcl
 # do projeto1_run_msim_gate_vhdl.do
 # if {[file exists gate_work]} {
 # 	vdel -lib gate_work -all
@@ -6,12 +7,11 @@
 # vmap work gate_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work gate_work 
-# Copying /home/pedro/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
 # vcom -93 -work work {projeto1.vho}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:55:17 on Jun 25,2023
+# Start time: 17:33:43 on Jul 01,2023
 # vcom -reportprogress 300 -93 -work work projeto1.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,67 +22,51 @@
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Compiling entity prioridade
-# -- Compiling architecture structure of prioridade
-# End time: 19:55:17 on Jun 25,2023, Elapsed time: 0:00:00
+# -- Compiling entity d7seg
+# -- Compiling architecture structure of d7seg
+# End time: 17:33:43 on Jul 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+# End time: 17:33:38 on Jul 01,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 # 
-# stdin: <EOF>
-vsim work.prioridade
-# vsim work.prioridade 
-# Start time: 19:55:21 on Jun 25,2023
+vsim work.d7seg
+# vsim work.d7seg 
+# Start time: 17:33:50 on Jul 01,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.prioridade(structure)
+# Loading work.d7seg(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
 add wave -position insertpoint  \
-sim:/prioridade/freq6 \
-sim:/prioridade/freq5 \
-sim:/prioridade/freq4 \
-sim:/prioridade/freq3 \
-sim:/prioridade/freq2 \
-sim:/prioridade/freq1 \
-sim:/prioridade/f_out \
-sim:/prioridade/enable6 \
-sim:/prioridade/enable5 \
-sim:/prioridade/enable4 \
-sim:/prioridade/enable3 \
-sim:/prioridade/enable2 \
-sim:/prioridade/enable1
-force -freeze sim:/prioridade/enable6 0 0
-force -freeze sim:/prioridade/enable5 0 0
-force -freeze sim:/prioridade/enable4 0 0
-force -freeze sim:/prioridade/enable3 0 0
-force -freeze sim:/prioridade/enable2 0 0
-force -freeze sim:/prioridade/enable1 1 0
-force -freeze sim:/prioridade/freq1 1 0, 0 {25 ps} -r 50
-force -freeze sim:/prioridade/freq6 0 0
-force -freeze sim:/prioridade/freq5 0 0
-force -freeze sim:/prioridade/freq4 0 0
-force -freeze sim:/prioridade/freq3 0 0
-force -freeze sim:/prioridade/freq2 0 0
+sim:/d7seg/SEG0 \
+sim:/d7seg/BIT0 \
+sim:/d7seg/BIT1 \
+sim:/d7seg/BIT2 \
+sim:/d7seg/BIT3 \
+sim:/d7seg/SEG1 \
+sim:/d7seg/SEG2 \
+sim:/d7seg/SEG3 \
+sim:/d7seg/SEG4 \
+sim:/d7seg/SEG5 \
+sim:/d7seg/SEG6 \
+sim:/d7seg/DIG1
+force -freeze sim:/d7seg/BIT1 0 0
+force -freeze sim:/d7seg/BIT2 0 0
+force -freeze sim:/d7seg/BIT3 0 0
+force -freeze sim:/d7seg/BIT0 0 0
 run
-force -freeze sim:/prioridade/freq3 1 0, 0 {50 ps} -r 100
-force -freeze sim:/prioridade/enable3 1 0
 run
-force -freeze sim:/prioridade/enable1 0 0
-force -freeze sim:/prioridade/enable2 1 0
-force -freeze sim:/prioridade/freq2 1 0, 0 {15 ps} -r 30
 run
-# End time: 19:57:26 on Jun 25,2023, Elapsed time: 0:02:05
+force -freeze sim:/d7seg/BIT0 1 0
+run
+# End time: 17:37:34 on Jul 01,2023, Elapsed time: 0:03:44
 # Errors: 0, Warnings: 0
