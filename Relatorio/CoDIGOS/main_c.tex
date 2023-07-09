@@ -1,0 +1,112 @@
+\chapter{Código main em C}
+\label{cap:mainc}
+
+\begin{minted} {c} {
+
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include "hwlib.h"
+#include "socal/socal.h"
+#include "socal/hps.h"
+#include "socal/alt_gpio.h"
+#include "hps_0.h"
+
+#define REGS_BASE (ALT_LWFPGASLVS_OFST)
+#define REGS_SPAN (0x00200000)
+#define HW_REGS_MASK ( HW_REGS_SPAN - 1 )
+int main()
+{
+	printf("1\n");
+
+	int fd;
+	void *virtual_base;
+	int loop_count;
+	void *pwm_addr;
+	void *ram_base_addr;
+//	void *ram_addr;
+	int counter = 0;
+	
+	int duty_cycle1 = 90;
+	int duty_cycle2 = 50;
+	
+	printf("2\n");
+
+	printf("ALT_STM_OFST Value: 0x%08x\n", ALT_STM_OFST);
+	printf("ALT_LWFPGASLVS_OFST Value: 0x%08x\n", ALT_LWFPGASLVS_OFST);
+
+	// map the address space for the LED registers into user space so we can interact with them.
+	// we'll actually map in the entire CSR span of the HPS since we want to access various registers within that span
+	if ((fd = open( "/dev/mem", (O_RDWR | O_SYNC))) == -1) 
+	{
+		printf("ERROR: could not open \"/dev/mem\"...\n");
+		return -1;
+	}
+
+	printf("3\n");
+
+	virtual_base = mmap(NULL, REGS_SPAN, PROT_READ | PROT_WRITE, MAP_SHARED, fd, REGS_BASE);
+
+	if (virtual_base == MAP_FAILED) 
+	{
+		printf("ERROR: mmap() failed...\n");
+		close(fd);
+		return -1;
+	}
+	
+	printf("4\n");
+
+	pwm_addr = virtual_base + LED_BASE;
+	ram_base_addr = virtual_base + ONCHIP_MEMORY2_0_BASE;
+	
+	// Guardando os valores de duty cycle na RAM
+	
+	*(uint32_t *)(ram_base_addr) = duty_cycle1;
+	
+	usleep(1000*100);
+	
+	*(uint32_t *)(ram_base_addr + 0x4) = duty_cycle2;
+	
+	// Varia o duty cycle dentro do Loop e manda para o PIO conectado a um LED
+	
+	while (loop_count < 100) 
+	{	
+		printf("5\n");
+		
+		//*(uint32_t *)(ram_base_addr) = counter;
+		usleep(100*100);
+		
+		// Set LEDs to counter value
+		*(uint32_t *)pwm_addr = counter;
+		usleep(1000*100);
+		printf("6\n");
+
+		// Wait 0.5s
+		usleep(500*1000);
+		
+		//*(uint32_t *)ram_base_addr = counter;
+		// Update the counter so it is never more than 8 bits
+		if (counter++ >= 256)
+			counter = 0;
+
+		printf("Counter: %i\n", counter);
+
+		// Increment loop counter
+		++loop_count;		
+	}	
+	
+	// Clean up our memory mapping and exit
+	if (munmap(virtual_base, REGS_SPAN) != 0) 
+	{
+		printf("ERROR: munmap() failed...\n");
+		close(fd);
+		return -1;
+	}
+
+	close(fd);
+	return 0;
+}
+
+
+\end{minted}

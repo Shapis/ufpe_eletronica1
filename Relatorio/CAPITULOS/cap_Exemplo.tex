@@ -1,0 +1,63 @@
+\chapter[TÍTULO CURTO PARA APARECER NO SUMÁRIO(CASO NECESSÁRIO)]{TÍTULO DO CAPÍTULO, TEM QUE SER ESCRITO EM MAIÚSCULO}
+\label{cap_Exemplo}
+
+Toda equação deve ser citada no texto, A Eq. (\ref{eq:5.1}) exemplifica uma equação. Use o editor de equações no seguinte link \url{https://latex.codecogs.com/eqneditor/editor.php}
+
+\begin{equation}\label{eq:5.1}
+\mathbf{F}=\mathbf{E}\mathbf{\Lambda}\mathbf{E}^T,
+\end{equation}
+
+Exemplo de tabela:
+
+\begin{table}[htb]
+\ABNTEXfontereduzida
+\caption[Multiplicidade dos autovalores da matriz $N \times N$ da DFT.]{Multiplicidade dos autovalores da matriz $N \times N$ da DFT.}
+\label{tab:eigenval_real}
+\begin{center}
+	\begin{tabular}{c|cccc}
+          \hline
+            $N$  &  $1$    &  $-i$   &  $-1$ &  $i$  \\ \hline
+        $4L$  & $L+1$ & $L  $ & $L$ & $L-1  $  \\ [3pt]
+        $4L+1$& $L+1$ & $L  $ & $L  $ & $L  $  \\ [3pt]
+        $4L+2$& $L+1$ & $L$ & $L+1  $ & $L  $ \\ [3pt]
+        $4L+3$& $L+1$ & $L+1$ & $L+1  $ & $L$\\ [3pt]
+          \hline
+        \end{tabular}
+\end{center}       
+\legend{Fonte:~\cite{McClellan}.}
+\end{table}
+
+\section{SEÇÃO TAMBÉM ESCRITO EM MAIÚSCULO}\label{sec:related}
+
+Exemplo de teorema:
+
+\begin{theorem}\label{theo:optimal} \cite{Kuznetsov_2015}~
+Assumindo que $N\geq 3$,
+\vspace{-0.5cm}
+\begin{enumerate}
+\item[i.] Se $N = 2K +1$, existem apenas $K+1$ vetores pares não-nulos que satisfazem $l(\mathbf{u})+l(\mathbf{Fu}) = N +1$ e apenas $K$ vetores ímpares não-nulos satisfazendo $l(\mathbf{v}) + l(\mathbf{Fv}) \leq N + 3$.
+\item[ii.] Se $N = 2K$, existem apenas $K - 1$ vetores pares não-nulos que satisfazem $u(K) = (Fu)(K)= 0$ e
+$l(\mathbf{u}) + l(\mathbf{Fu}) \leq N + 2$ e apenas $K - 1$ vetores ímpares  não-nulos satisfazendo $l(\mathbf{v}) + l(\mathbf{Fv}) \leq N + 2$.
+\end{enumerate}
+\end{theorem}
+Em~\cite{Kuznetsov_2015}, expressões explícitas para os vetores descritos no Teorema~~\ref{theo:optimal} são dadas para todos os valores de $N$. A seguir, descreve-se como construir esses vetores para $N=4L+1$.
+
+
+\subsection{Subseção escrito em minúsculo}\label{sec:pei}
+
+Exemplo de figura:
+
+\begin{figure}[!hpt] 
+	\centering	
+	\caption[Distribuição dos autovalores de $\mathbf{S}_{\overline{\mathbf{T}}}$ no plano complexo.]{Distribuição dos autovalores de $\mathbf{S}_{\overline{\mathbf{T}}}$ no plano complexo, para~\subref{imaeig} $N=5$,~\subref{imbeig} $N=9$,~\subref{imceig} $N=13$ e~\subref{imdeig} $N=17$.}
+	\label{fig:eigs}
+\subfloat[][]{\label{imaeig}\includegraphics[scale=0.31]{./FIGURAS/cap_Exemplo/eigenvaluesn.pdf}}\hspace{0.05cm}
+\subfloat[][]{\label{imbeig}\includegraphics[scale=0.31]{./FIGURAS/cap_Exemplo/eigenvalues1n.pdf}}\hspace{0.05cm}
+\subfloat[][]{\label{imceig}\includegraphics[scale=0.31]{./FIGURAS/cap_Exemplo/eigenvalues2n.pdf}}\hspace{0.05cm}
+\subfloat[][]{\label{imdeig}\includegraphics[scale=0.31]{./FIGURAS/cap_Exemplo/eigenvalues3n.pdf}}
+\legend{Fonte:~\cite{Neto_2017}.}
+\end{figure}
+
+
+
+

@@ -1,0 +1,23 @@
+
+\chapter{Resultados}\label{cap_4_Classificacao}
+
+Os requerimentos do projeto foram finalizados. Porém, foram feitas algumas alterações para fins didáticos:
+
+\begin{itemize}
+    \item Foi implementado um banco de registradores que armazenam a senha fixa. Esse banco de registradores pode ser visto na seção (2.8).
+    \item Os quatro push-buttons foram utilizados para a inserção da senha, com cada um acendendo seu respectivo LED e acionando o buzzer com uma devida frequência. O funcionamento dos push-buttons e dos LED's pode ser visto no manual de operações.
+    \item Foi utilizado ambos contadores crescentes e decrescentes. Para aprender o funcionamento de ambos.
+    \item Foi implementado, no display de sete segmentos, um contador regressivo para indicar o tempo que o usuário tem para inserir a senha. Esse display pode ser visto no manual de operações.
+    \item Foi implementado um contador, que pode funcionar tanto crescente quanto decrescente, de 8 bits, para dividir o clock nas frequências do buzzer, com exceção da frequência de 1Hz. Nela foi utilizado o LPM Counter. Isso pode ser visto na seção 2.4
+    \item Foi implementado um debouncer de 110Hz para os push-buttons da placa, que pode ser visto na seção 2.7.
+\end{itemize}
+
+\section{Vídeo}
+
+\href{https://drive.google.com/file/d/1tNwCKX1g5BIK9-MFe4KzjO6rrqYe75fk/view?usp=sharing}{Vídeo do funcionamento da placa}
+
+O vídeo acima mostra o funcionamento prático do projeto implementado à placa, a senha armazenada pela placa é "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0".
+
+Inicialmente a senha foi inserida corretamente até a entrada do número "3" (três), a quarta entrada foi deixada vazia para que o "0" (zero) seja armazenado, porém como o valor correto é o número "4" (quatro), a placa emite um som grave e reinicia o processo de recebimento da senha.
+
+Nesta nova tentativa, a senha foi inserida corretamente do início ao fim, resultando no sinal audível contínuo do buzzer que só foi interrompido ao desligar a placa.

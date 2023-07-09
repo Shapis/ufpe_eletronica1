@@ -1,0 +1,557 @@
+%% abtex2-modelo-trabalho-academico.tex, v-1.9.6 laurocesar
+%% Copyright 2012-2016 by abnTeX2 group at http://www.abntex.net.br/ 
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on 
+%% http://www.abntex.net.br/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+%% ------------------------------------------------
+%% Este arquivo é baseado na classe abnTeX2 e foi editado por Guilherme Boaviagem Ribeiro (guilherme.boaviagem@gmail.com) visando
+%% se adequar às normas da Biblioteca do Centro de Tecnologia e Geociências (CTG) da Universidade
+%% Federal de Pernambuco (UFPE). Em março de 2018 este layout foi aceito na Biblioteca Central,
+%% como parte dos protocolos após a defesa.
+% % ------------------------------------------------
+
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% -----------------------------------------------------------------------
+%==============================================
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em recto e verso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	fleqn,              % Neto - Tentando alinhar todas as equacoes
+	% -- opções da classe abntex2 --
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	sumario=abnt-6027-2012,
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+%==============================================-
+\makeatletter
+  \@ifclasswith{abntex2}{chapter=TITLE}{
+    \begingroup
+    \def\x#1chapter=TITLE,#2\@nil{%
+      \endgroup\def\@classoptionslist{#1#2}%
+    }\expandafter\x\@classoptionslist\@nil
+  }{}
+
+  \@ifclasswith{abntex2}{section=TITLE}{
+    \begingroup
+    \def\x#1section=TITLE,#2\@nil{%
+      \endgroup\def\@classoptionslist{#1#2}%
+    }\expandafter\x\@classoptionslist\@nil
+  }
+\makeatother
+%==============================================-
+
+% Pacotes básicos
+% ---
+%\usepackage{lmodern}			% Usa a fonte Latin Modern(lmodern)	% arev -> Parece com Arial
+\usepackage{times}					 			%%%
+%\renewcommand{\familydefault}{\sfdefault}		%%%
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{subfig}				% Inclusão de Subfiguras
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{pdfpages}           % insere páginas PDF
+\usepackage{nomencl}			% insere nomenclatura
+\usepackage{multirow}
+\usepackage{calc}
+\usepackage{mathtools}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{lipsum}
+\usepackage{minted}
+\usepackage{float}
+
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage[dvipsnames]{xcolor}
+
+
+% Pacotes adicionados por mim (Jose Rodrigues de Oliveira Neto)
+%\usepackage{indentfirst}
+\usepackage{lettrine}
+\usepackage{amsmath,amsfonts,amsthm}										% Math packages
+\usepackage{epsfig,subfig}
+\usepackage{mathdots,multirow,tabu}
+%\usepackage[pdftex]{graphicx}											% Enable pdflatex
+\usepackage{url}
+\usepackage{etoolbox}
+\gappto{\UrlBreaks}{\UrlOrds}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{rotating}           % rotacionar tabelas
+% ---
+% ---
+\usepackage{amssymb}     % qed
+\usepackage{thmtools}    % Front end para amsthm (\declaretheorem)
+\declaretheorem[style=definition,name=Definição,parent=chapter,qed=]{definition} %\qedsymbol
+\declaretheorem[style=plain,name=Lema,parent=chapter,qed=]{lemma}
+\declaretheorem[style=plain,name=Teorema,parent=chapter,qed=]{theorem}
+\declaretheorem[style=plain,name=Axioma,parent=chapter,qed=]{axioma}
+\declaretheorem[style=plain,name=Corolário,parent=chapter,qed=]{corollary}
+\declaretheorem[style=plain,name=Proposição,parent=chapter,qed=]{proposition}
+\declaretheorem[style=plain,name=Prova,numbered=no,qed=$\blacksquare$]{prova}
+\declaretheorem[style=plain,name=Propriedade,parent=chapter,qed=]{property}
+
+\newcommand{\bfemph}[1]{\textbf{#1}} %Mudar o emph de itálico para negrito para tentar resolver o problema das citações que mudou na nova NBR 6023-2018
+\renewcommand{\emph}[1]{\bfemph{#1}}
+
+%\setlength{\mathindent}{0pt} %Tentando alinha todas as equações
+% FIM (Jose Rodrigues de Oliveira Neto)
+
+% ---
+\renewcommand{\ABNTEXchapterfont}{\fontfamily{cmr}\fontseries{b}\selectfont}
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+
+% NEW COMMANDS
+\newcommand{\doublecitep}[2]{\citep[como citado em \citealp{#2}]{#1}} % double citations, the result is \citep[como citado em  \citealp{someotherguykey2013}]{someguykey2010}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\rmfamily\mdseries}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsectionfont}{\rmfamily\mdseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsectionfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXchapterfont}{\ABNTEXsectionfont\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+%
+% Fontes das entradas do sumario
+%
+\renewcommand{\cftsubsubsectionfont}{\mdseries} 
+\renewcommand{\cftsubsubsectionpagefont}{\cftsubsectionfont}
+
+\renewcommand{\cftsubsectionfont}{\mdseries} 
+\renewcommand{\cftsubsectionpagefont}{\cftsubsectionfont}
+%
+\renewcommand{\cftsectionfont}{\bfseries}
+\renewcommand{\cftsectionpagefont}{\cftsectionfont}
+%
+\renewcommand{\cftchapterfont}{\bfseries}
+\renewcommand{\cftchapterpagefont}{\normalsize\cftchapterfont}
+
+\renewcommand{\folhaderostoname}{FOLHA DE ROSTO}
+\renewcommand{\epigraphname}{EP\'IGRAFE}
+\renewcommand{\dedicatorianame}{DEDICAT\'ORIA}
+\renewcommand{\agradecimentosname}{AGRADECIMENTOS}
+\renewcommand{\folhadeaprovacaoname}{FOLHA DE APROVA\c C\~AO}
+\renewcommand{\resumoname}{RESUMO}
+\renewcommand{\listadesimbolosname}{LISTA DE S\'IMBOLOS}
+\addto\captionsbrazil{% portugues-brasil
+	%% ajusta nomes padroes do babel
+	\renewcommand{\bibname}{REFER\^ENCIAS}
+	\renewcommand{\listfigurename}{LISTA DE ILUSTRA\c C\~OES}
+	\renewcommand{\listtablename}{LISTA DE TABELAS}
+	\renewcommand{\contentsname}{SUM\'ARIO}
+	%% ajusta nomes usados com a macro \autoref
+}
+
+
+
+
+
+\makeatother
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links #aqui
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=black,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\input{PRETEXTUAIS/capa}
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto*
+% ---
+
+% ---
+% Inserir a ficha catalográfica
+% ---
+
+% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
+% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
+% Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo:
+%
+%\begin{fichacatalografica} %Descomentar caso necessário 
+%\includepdf{DECLARACOES/fichacatalografica.pdf}
+%\end{fichacatalografica}
+
+%\begin{fichacatalografica} %Descomentar caso necessário 
+%\includepdf{DECLARACOES/Ata_Sidney_assinado_HAC_assinado.pdf}
+%\end{fichacatalografica}
+
+%\begin{fichacatalografica}
+%\vspace*{\fill}
+%	\sffamily
+%	\vspace*{\fill}					% Posição vertical
+%	\begin{center}					% Minipage Centralizado
+%	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
+%	\small
+%	\imprimirautor
+%	%Sobrenome, Nome do autor
+%	
+%	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+%	\imprimirlocal, \imprimirdata-
+%	
+%	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+%	
+%	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+%	
+%	\hspace{0.5cm}
+%	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+%	\imprimirdata.}\\
+%	
+%	\hspace{0.5cm}
+%		1. Palavra-chave1.
+%		2. Palavra-chave2.
+%		2. Palavra-chave3.
+%		I. Orientador.
+%		II. Universidade xxx.
+%		III. Faculdade de xxx.
+%		IV. Título 			
+%	\end{minipage}}
+%	\end{center}
+
+%\end{fichacatalografica}
+% ---
+
+% ---
+% Inserir errata
+% ---
+%\begin{errata}
+%Elemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
+%
+%\vspace{\onelineskip}
+%
+%FERRIGNO, C. R. A. \textbf{Tratamento de neoplasias ósseas apendiculares com
+%reimplantação de enxerto ósseo autólogo autoclavado associado ao plasma
+%rico em plaquetas}: estudo crítico na cirurgia de preservação de membro em
+%cães. 2011. 128 f. Tese (Livre-Docência) - Faculdade de Medicina Veterinária e
+%Zootecnia, Universidade de São Paulo, São Paulo, 2011.
+%
+%\begin{table}[htb]
+%\center
+%\footnotesize
+%\begin{tabular}{|p{1.4cm}|p{1cm}|p{3cm}|p{3cm}|}
+%  \hline
+%   \textbf{Folha} & \textbf{Linha}  & \textbf{Onde se lê}  & \textbf{Leia-se}  \\
+%    \hline
+%    1 & 10 & auto-conclavo & autoconclavo\\
+%   \hline
+%\end{tabular}
+%\end{table}
+%
+%\end{errata}
+% ---
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+%\includepdf{folhadeaprovacao.pdf}
+% DESCOMENTAR CASO NECESSÁRIO
+%\begin{folhadeaprovacao}
+%
+%\begin{center}
+%
+%{\rmfamily\mdseries\normalsize\imprimirautor}
+%\vspace*{\fill}\vspace*{\fill}
+%\begin{center}
+%  \rmfamily\bfseries\normalsize\imprimirtitulo
+%\end{center}
+%\vspace*{\fill}
+%
+%\hspace{.45\textwidth}
+%\begin{minipage}{.5\textwidth}
+%    \imprimirpreambulo
+%\end{minipage}%
+%\vspace*{\fill}
+%\end{center}    
+%Aprovado em: $\underline{\quad 23\quad }\mathbf{/}\underline{\quad 01 \quad }/\underline{\,\,\,2019\,\,\,}$.
+%\assinatura{\imprimirorientador ~(Orientador) \\ Universidade Federal de Pernambuco} 
+%\assinatura{\imprimircoorientador (Coorientador) \\  Carleton University}
+%\assinatura{Prof. Dr. Ricardo Menezes Campello de Souza (Examinador Interno) \\ Universidade Federal de Pernambuco}
+%\assinatura{Prof. Dr. Daniel Pedro Bezerra Chaves (Examinador Interno) \\ Universidade Federal de Pernambuco}
+%\assinatura{Prof. Dr. Eduardo Shirlippe Goes Leandro (Examinador Externo) \\ Universidade Federal de Pernambuco}
+%\assinatura{Prof. Dr. Francisco Madeiro Bernardino Jr. (Examinador Externo) \\  Universidade de Pernambuco}
+%  
+%%\begin{center}
+%%{\normalsize\imprimirlocal}
+%%\par
+%%{\normalsize\imprimirdata}
+%%%\vspace*{1cm}
+%%\end{center}
+%
+%\end{folhadeaprovacao}
+% ---
+
+% --------------------------------------
+% Dedicatória
+% --------------------------------------
+
+%\include{PRETEXTUAIS/dedicatoria}
+
+% --------------------------------------
+% Epígrafe
+% --------------------------------------
+%\include{PRETEXTUAIS/epigrafe}
+
+
+% --------------------------------------
+% RESUMOS
+% --------------------------------------
+
+\include{PRETEXTUAIS/resumos}
+
+% --------------------------------------
+% inserir lista de ilustrações
+% --------------------------------------
+%\pdfbookmark[0]{\listfigurename}{lof}
+%\listoffigures*
+%\cleardoublepage
+
+
+% --------------------------------------
+% inserir lista de tabelas
+% --------------------------------------
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
+
+
+
+% --------------------------------------
+% inserir lista de abreviações
+% --------------------------------------
+\include{PRETEXTUAIS/siglas}
+
+
+% --------------------------------------
+% inserir o sumario
+% --------------------------------------
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+\include{./CAPITULOS/cap_1_Introducao}
+\include{./CAPITULOS/cap_2_Desenvolvimento}
+\include{./CAPITULOS/cap_3_Manual_de_Operações}
+\include{./CAPITULOS/cap_4_Resultados}
+\include{./CAPITULOS/cap_5_Discussão_dos_Resultados}
+\include{./CAPITULOS/cap_6_Conclusao}
+%\include{./CAPITULOS/cap_Exemplo}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\begin{comment}
+    
+
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+%\bibliography{abntex2-modelo-references}
+\bibliography{bib_tese}{}
+\markboth{REFERÊNCIAS}{ }
+
+
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+% ---
+% Inicia os apêndices
+% ---
+\begin{apendicesenv}
+
+%\include{./CAPITULOS/apendice_2}
+
+\end{apendicesenv}
+% ---
+
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+
+% ---
+% Inicia os anexos
+% ---
+%\begin{anexosenv}
+%
+%% Imprime uma página indicando o início dos anexos
+%%\partanexos
+%
+%\chapter*{ANEXO}
+%\label{ch:anexo}
+%\addcontentsline{toc}{chapter}{ANEXO}
+%\markboth{ANEXO}{ANEXO}
+%
+%\begin{center}
+%IMAGENS DE TESTE UTILIZADAS
+%\end{center}
+%
+%\lipsum[1]
+%
+%
+%\end{anexosenv}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+\phantompart
+\printindex
+%---------------------------------------------------------------------
+\end{comment}
+\end{document}
