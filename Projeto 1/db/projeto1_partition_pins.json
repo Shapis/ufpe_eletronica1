@@ -28,15 +28,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dig1",
+					"name" : "SEG1",
 					"strict" : false
 				},
 				{
-					"name" : "seg1",
-					"strict" : false
-				},
-				{
-					"name" : "seg2",
+					"name" : "SEG2",
 					"strict" : false
 				},
 				{
