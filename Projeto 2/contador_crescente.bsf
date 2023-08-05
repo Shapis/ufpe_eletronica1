@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 288 160)
+	(rect 16 16 168 160)
 	(text "contador_crescente" (rect 5 0 84 12)(font "Arial" ))
 	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
@@ -34,15 +34,15 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 48)
 		(input)
-		(text "load" (rect 0 0 15 12)(font "Arial" ))
-		(text "load" (rect 21 43 36 55)(font "Arial" ))
+		(text "clr" (rect 0 0 9 12)(font "Arial" ))
+		(text "clr" (rect 21 43 30 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "clr" (rect 0 0 9 12)(font "Arial" ))
-		(text "clr" (rect 21 59 30 71)(font "Arial" ))
+		(text "load" (rect 0 0 15 12)(font "Arial" ))
+		(text "load" (rect 21 59 36 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
@@ -55,23 +55,23 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 96)
 		(input)
-		(text "d[LOG2(max_cnt)..1]" (rect 0 0 86 12)(font "Arial" ))
-		(text "d[LOG2(max_cnt)..1]" (rect 21 91 107 103)(font "Arial" ))
+		(text "d[4..1]" (rect 0 0 24 12)(font "Arial" ))
+		(text "d[4..1]" (rect 21 91 45 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
-		(pt 272 32)
+		(pt 152 32)
 		(output)
-		(text "q[LOG2(max_cnt)..1]" (rect 0 0 86 12)(font "Arial" ))
-		(text "q[LOG2(max_cnt)..1]" (rect 165 27 251 39)(font "Arial" ))
-		(line (pt 272 32)(pt 256 32)(line_width 3))
+		(text "q[4..1]" (rect 0 0 24 12)(font "Arial" ))
+		(text "q[4..1]" (rect 107 27 131 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(port
-		(pt 272 48)
+		(pt 152 48)
 		(output)
 		(text "tc" (rect 0 0 7 12)(font "Arial" ))
-		(text "tc" (rect 244 43 251 55)(font "Arial" ))
-		(line (pt 272 48)(pt 256 48)(line_width 1))
+		(text "tc" (rect 124 43 131 55)(font "Arial" ))
+		(line (pt 152 48)(pt 136 48)(line_width 1))
 	)
 	(parameter
 		"min_cnt"
@@ -84,7 +84,7 @@ https://fpgasoftware.intel.com/eula.
 		""
 	)
 	(drawing
-		(rectangle (rect 16 16 256 128)(line_width 1))
+		(rectangle (rect 16 16 136 128)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 288 -64 388 16))
+	(annotation_block (parameter)(rect 168 -64 268 16))
 )

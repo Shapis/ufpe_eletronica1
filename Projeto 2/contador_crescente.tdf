@@ -1,12 +1,14 @@
 PARAMETERS ( min_cnt = 1, max_cnt = 6);
 
-CONSTANT n = LOG2(max_cnt);
+CONSTANT n = 4;
 
 SUBDESIGN contador_crescente
 (
-	clk, load, clr : INPUT;
+	clk : INPUT;
+	clr : INPUT = GND;
+	load : INPUT = GND;
 	ena : INPUT = VCC;
-	d[n..1] : INPUT;
+	d[n..1] : INPUT = GND;
 	q[n..1] : OUTPUT;
 	tc : OUTPUT;
 )

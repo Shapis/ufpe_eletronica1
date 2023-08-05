@@ -18,21 +18,37 @@ seg[6] <= display:inst2.seg[6]
 
 |projeto2|display:inst2
 count[0] => _.IN0
-count[0] => _.IN1
+count[0] => _.IN3
 count[0] => _.IN0
-count[0] => _.IN1
+count[0] => _.IN3
 count[0] => _.IN0
-count[0] => seg[5]~7.IN1
+count[0] => seg[5]~7.IN3
 count[0] => _.IN0
-count[0] => _.IN1
+count[0] => _.IN3
 count[1] => _.IN0
 count[1] => _.IN0
+count[1] => _.IN2
+count[1] => _.IN2
 count[1] => _.IN0
 count[1] => _.IN0
-count[1] => _.IN0
-count[1] => _.IN0
-count[1] => _.IN0
-count[1] => _.IN0
+count[1] => _.IN2
+count[1] => _.IN2
+count[2] => _.IN0
+count[2] => _.IN0
+count[2] => _.IN0
+count[2] => _.IN0
+count[2] => _.IN0
+count[2] => _.IN0
+count[2] => _.IN0
+count[2] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
+count[3] => _.IN0
 d1[0] => seg[0]~6.IN1
 d1[1] => seg[1]~5.IN1
 d1[2] => seg[2]~4.IN1
@@ -67,14 +83,29 @@ seg[5] <= seg[5].DB_MAX_OUTPUT_PORT_TYPE
 seg[6] <= seg[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|contador:inst4
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
+|projeto2|contador_crescente:inst3
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|contador:inst
@@ -161,18 +192,29 @@ segmentos[5] <= segmentos[5].DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|contador:inst6
-clock => count[4].CLK
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
+|projeto2|contador_crescente:inst4
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|contador:inst5
