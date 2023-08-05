@@ -1,6 +1,6 @@
 SUBDESIGN display
 (
-    count[1..0]: INPUT;
+    count[3..0]: INPUT;
 	 d1[6..0]: INPUT = VCC;
 	 d2[6..0]: INPUT = VCC;
 	 d3[6..0]: INPUT = VCC;

@@ -27,8 +27,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 32)
 		(input)
-		(text "count[1..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "count[1..0]" (rect 21 27 61 39)(font "Arial" ))
+		(text "count[3..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "count[3..0]" (rect 21 27 62 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
