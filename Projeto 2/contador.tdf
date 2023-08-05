@@ -16,9 +16,9 @@ alt : tff;
 BEGIN
     count[].clk = clock;
     alt.clk = clock;
-    IF count[] < overflow THEN
+    IF count[].q < overflow THEN
         count[].d = count[] + 1;
-    ELSIF count[] >= overflow THEN
+    ELSIF count[].q >= overflow THEN
         count[].d = 0;
         alt.t = VCC;
     END IF;

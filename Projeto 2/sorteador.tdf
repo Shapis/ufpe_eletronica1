@@ -8,29 +8,36 @@ SUBDESIGN sorteador
 VARIABLE
 dezena[4..1] : dff;
 unidade[4..1] : dff;
-push : tff;
+push1[4..1] : dff;
+push2[4..1] : dff;
 
 BEGIN
 unidade[].clk = clock;
-push.clk = !button;
-push.t = VCC;
+dezena[].clk = clock;
 
-	IF unidade < 9 THEN
-		unidade = unidade + 1;
+push1[].clk = !button;
+push2[].clk = !button;
+
+push1[].d = dezena[];
+push2[].d = unidade[];
+
+
+	IF dezena[] == 6 & unidade[] == 0 THEN
+		dezena[].d = dezena[] - 6;
+		unidade[].d = unidade[] + 1;
+		
+	ELSIF unidade[] < 9 THEN
+		unidade[].d = unidade[] + 1;
+		dezena[].d = dezena[];
+	
 	ELSE
-		unidade = 0;
-		dezena = dezena + 1;
+		unidade[].d = 0;
+		dezena[].d = dezena[] + 1;
 	END IF;
+	
+	
 
-	IF dezena == 6 & unidade == 1 THEN
-		dezena = 0;
-		unidade = 1;
-	END IF;
 
-	IF push.q == 1 THEN
-		d1 = dezena;
-		d2 = unidade;
-		push.clrn = GND;
-	END IF;	
-
+d1[] = push1[];
+d2[] = push2[];
 END;

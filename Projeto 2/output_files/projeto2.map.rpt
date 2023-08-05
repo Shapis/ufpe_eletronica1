@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Sat Aug 05 15:15:35 2023
+Sat Aug 05 16:51:16 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,21 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: contador:inst4
- 12. Parameter Settings for User Entity Instance: contador:inst
- 13. Parameter Settings for User Entity Instance: contador:inst6
- 14. Parameter Settings for User Entity Instance: contador:inst5
- 15. Parameter Settings for User Entity Instance: debouncer:inst1|contador:count
- 16. Parameter Settings for User Entity Instance: debouncer:inst1|contador:divisor
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -51,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Aug 05 15:15:35 2023       ;
+; Analysis & Synthesis Status        ; Failed - Sat Aug 05 16:51:16 2023           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 80                                          ;
-;     Total combinational functions  ; 78                                          ;
-;     Dedicated logic registers      ; 52                                          ;
-; Total registers                    ; 52                                          ;
-; Total pins                         ; 14                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -163,209 +149,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-; contador.tdf                     ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf                  ;         ;
-; display.tdf                      ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf                   ;         ;
-; projeto2.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/projeto2.bdf                  ;         ;
-; conversor_numero_segmento.tdf    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf ;         ;
-; debouncer.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf                 ;         ;
-; sorteador.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf                 ;         ;
-; contador.inc                     ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.inc                  ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 80          ;
-;                                             ;             ;
-; Total combinational functions               ; 78          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 24          ;
-;     -- 3 input functions                    ; 7           ;
-;     -- <=2 input functions                  ; 47          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 44          ;
-;     -- arithmetic mode                      ; 34          ;
-;                                             ;             ;
-; Total registers                             ; 52          ;
-;     -- Dedicated logic registers            ; 52          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 14          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 32          ;
-; Total fan-out                               ; 372         ;
-; Average fan-out                             ; 2.35        ;
-+---------------------------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
-; |projeto2                  ; 78 (0)              ; 52 (0)                    ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |projeto2                                  ; projeto2    ; work         ;
-;    |contador:inst4|        ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst4                   ; contador    ; work         ;
-;    |contador:inst5|        ; 14 (14)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst5                   ; contador    ; work         ;
-;    |contador:inst6|        ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst6                   ; contador    ; work         ;
-;    |contador:inst|         ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                    ; contador    ; work         ;
-;    |debouncer:inst1|       ; 24 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|debouncer:inst1                  ; debouncer   ; work         ;
-;       |contador:divisor|   ; 22 (22)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|debouncer:inst1|contador:divisor ; contador    ; work         ;
-;    |display:inst2|         ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                    ; display     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+--------------------------------------------+--------------------------------------+
-; Register name                              ; Reason for Removal                   ;
-+--------------------------------------------+--------------------------------------+
-; sorteador:inst8|dezena[1..4]               ; Stuck at GND due to stuck port clock ;
-; sorteador:inst8|push                       ; Stuck at GND due to stuck port clear ;
-; sorteador:inst8|unidade[1..4]              ; Lost fanout                          ;
-; debouncer:inst1|contador:count|count[1..4] ; Lost fanout                          ;
-; debouncer:inst1|contador:count|alt         ; Lost fanout                          ;
-; Total Number of Removed Registers = 14     ;                                      ;
-+--------------------------------------------+--------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                               ;
-+---------------------------+-------------------------+-------------------------------------------------------------------------------------+
-; Register name             ; Reason for Removal      ; Registers Removed due to This Register                                              ;
-+---------------------------+-------------------------+-------------------------------------------------------------------------------------+
-; sorteador:inst8|dezena[4] ; Stuck at GND            ; sorteador:inst8|unidade[4], sorteador:inst8|unidade[3], sorteador:inst8|unidade[2], ;
-;                           ; due to stuck port clock ; sorteador:inst8|unidade[1]                                                          ;
-+---------------------------+-------------------------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 52    ;
-; Number of registers using Synchronous Clear  ; 37    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador:inst4 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; overflow       ; 3     ; Untyped                            ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador:inst ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; overflow       ; 16000 ; Untyped                           ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador:inst6 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; overflow       ; 9     ; Untyped                            ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador:inst5 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; overflow       ; 750   ; Untyped                            ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:inst1|contador:count ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; overflow       ; 9     ; Untyped                                            ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:inst1|contador:divisor ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; overflow       ; 50000 ; Untyped                                              ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 14                          ;
-; cycloneiii_ff         ; 52                          ;
-;     SCLR              ; 37                          ;
-;     plain             ; 15                          ;
-; cycloneiii_lcell_comb ; 83                          ;
-;     arith             ; 34                          ;
-;         2 data inputs ; 31                          ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 49                          ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 24                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.06                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -374,7 +162,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Aug 05 15:15:24 2023
+    Info: Processing started: Sat Aug 05 16:51:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -390,47 +178,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file convers
     Info (12023): Found entity 1: conversor_numero_segmento File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debouncer.tdf
     Info (12023): Found entity 1: debouncer File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 3
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 18
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 19
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 19
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 21
-Warning (287004): Group name "dezena" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 22
-Warning (287004): Group name "dezena" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 22
-Warning (287004): Group name "dezena" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 25
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 25
-Warning (287004): Group name "dezena" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 26
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 27
-Warning (287004): Group name "d1" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 31
-Warning (287004): Group name "dezena" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 31
-Warning (287004): Group name "d2" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 32
-Warning (287004): Group name "unidade" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file sorteador.tdf
     Info (12023): Found entity 1: sorteador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 1
 Info (12127): Elaborating entity "projeto2" for the top level hierarchy
-Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
-Info (12128): Elaborating entity "contador" for hierarchy "contador:inst4"
-Info (12128): Elaborating entity "contador" for hierarchy "contador:inst"
-Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "conversor_numero_segmento:inst7"
-Info (12128): Elaborating entity "contador" for hierarchy "contador:inst6"
-Info (12128): Elaborating entity "contador" for hierarchy "contador:inst5"
-Info (12128): Elaborating entity "sorteador" for hierarchy "sorteador:inst8"
-Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:inst1"
-Info (12128): Elaborating entity "contador" for hierarchy "debouncer:inst1|contador:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
-Info (12128): Elaborating entity "contador" for hierarchy "debouncer:inst1|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 9 registers lost all their fanouts during netlist optimizations.
-Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "debouncer:inst1|ff[2]~0" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 94 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 80 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Sat Aug 05 15:15:35 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:21
+Error (275024): Width mismatch in port "numero[4..1]" of instance "inst7" and type conversor_numero_segmento -- source is ""q[3..1]" (ID contador:inst6)"
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
+    Error: Peak virtual memory: 4707 megabytes
+    Error: Processing ended: Sat Aug 05 16:51:16 2023
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:19
 
 

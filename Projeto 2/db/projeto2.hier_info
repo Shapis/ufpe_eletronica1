@@ -4,7 +4,6 @@ dig[2] <= display:inst2.dig[2]
 dig[3] <= display:inst2.dig[3]
 dig[4] <= display:inst2.dig[4]
 clock => contador:inst.clock
-clock => sorteador:inst8.clock
 clock => debouncer:inst1.clock
 key[1] => debouncer:inst1.button
 led[1] <= debouncer:inst1.result
@@ -177,7 +176,6 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|contador:inst5
-clock => count[10].CLK
 clock => count[9].CLK
 clock => count[8].CLK
 clock => count[7].CLK
@@ -198,7 +196,6 @@ q[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
 q[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
 q[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -253,19 +250,24 @@ segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|sorteador:inst8
+clock => dezena[4].CLK
+clock => dezena[3].CLK
+clock => dezena[2].CLK
+clock => dezena[1].CLK
 clock => unidade[4].CLK
 clock => unidade[3].CLK
 clock => unidade[2].CLK
 clock => unidade[1].CLK
-button => push.IN0
-d1[1] <= d1[1].DB_MAX_OUTPUT_PORT_TYPE
-d1[2] <= d1[2].DB_MAX_OUTPUT_PORT_TYPE
-d1[3] <= d1[3].DB_MAX_OUTPUT_PORT_TYPE
-d1[4] <= d1[4].DB_MAX_OUTPUT_PORT_TYPE
-d2[1] <= d2[1].DB_MAX_OUTPUT_PORT_TYPE
-d2[2] <= d2[2].DB_MAX_OUTPUT_PORT_TYPE
-d2[3] <= d2[3].DB_MAX_OUTPUT_PORT_TYPE
-d2[4] <= d2[4].DB_MAX_OUTPUT_PORT_TYPE
+button => push1[4].IN0
+button => push2[4].IN0
+d1[1] <= push1[1].DB_MAX_OUTPUT_PORT_TYPE
+d1[2] <= push1[2].DB_MAX_OUTPUT_PORT_TYPE
+d1[3] <= push1[3].DB_MAX_OUTPUT_PORT_TYPE
+d1[4] <= push1[4].DB_MAX_OUTPUT_PORT_TYPE
+d2[1] <= push2[1].DB_MAX_OUTPUT_PORT_TYPE
+d2[2] <= push2[2].DB_MAX_OUTPUT_PORT_TYPE
+d2[3] <= push2[3].DB_MAX_OUTPUT_PORT_TYPE
+d2[4] <= push2[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|debouncer:inst1
