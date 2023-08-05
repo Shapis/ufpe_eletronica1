@@ -1,0 +1,31 @@
+SUBDESIGN display
+(
+    count[1..0]: INPUT;
+	 d1[6..0]: INPUT = VCC;
+	 d2[6..0]: INPUT = VCC;
+	 d3[6..0]: INPUT = VCC;
+	 dig[4..1]: OUTPUT;
+	 seg[6..0]: OUTPUT;
+)
+
+
+BEGIN
+DEFAULTS
+	dig[] = VCC;
+END DEFAULTS;
+
+CASE count IS
+		WHEN 0 => dig[4] = GND;
+		WHEN 1 => dig[3] = GND;
+		WHEN 2 => dig[2] = GND;
+		WHEN 3 => dig[1] = GND;
+END CASE;
+
+CASE count IS
+		WHEN 0 => seg[] = d1[];
+		WHEN 1 => seg[] = B"0111111";
+		WHEN 2 => seg[] = d2[];
+		WHEN 3 => seg[] = d3[];
+END CASE;
+
+END;

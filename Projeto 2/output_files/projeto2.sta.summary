@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -3.264
+TNS   : -65.136
+
+Type  : Slow 1200mV 85C Model Setup 'contador:inst|alt'
+Slack : -2.793
+TNS   : -20.228
+
+Type  : Slow 1200mV 85C Model Setup 'contador:inst5|alt'
+Slack : -0.408
+TNS   : -1.443
+
+Type  : Slow 1200mV 85C Model Setup 'debouncer:inst1|contador:divisor|alt'
+Slack : -0.365
+TNS   : -0.365
+
+Type  : Slow 1200mV 85C Model Hold 'contador:inst|alt'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'contador:inst5|alt'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debouncer:inst1|contador:divisor|alt'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -50.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contador:inst|alt'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contador:inst5|alt'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debouncer:inst1|contador:divisor|alt'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -3.037
+TNS   : -58.181
+
+Type  : Slow 1200mV 0C Model Setup 'contador:inst|alt'
+Slack : -2.534
+TNS   : -17.602
+
+Type  : Slow 1200mV 0C Model Setup 'contador:inst5|alt'
+Slack : -0.267
+TNS   : -0.900
+
+Type  : Slow 1200mV 0C Model Setup 'debouncer:inst1|contador:divisor|alt'
+Slack : -0.159
+TNS   : -0.159
+
+Type  : Slow 1200mV 0C Model Hold 'contador:inst|alt'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'contador:inst5|alt'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debouncer:inst1|contador:divisor|alt'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -50.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contador:inst|alt'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contador:inst5|alt'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debouncer:inst1|contador:divisor|alt'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -0.835
+TNS   : -8.457
+
+Type  : Fast 1200mV 0C Model Setup 'contador:inst|alt'
+Slack : -0.616
+TNS   : -1.896
+
+Type  : Fast 1200mV 0C Model Setup 'debouncer:inst1|contador:divisor|alt'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'contador:inst5|alt'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'contador:inst|alt'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'contador:inst5|alt'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'debouncer:inst1|contador:divisor|alt'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -37.095
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contador:inst|alt'
+Slack : -1.000
+TNS   : -13.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contador:inst5|alt'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debouncer:inst1|contador:divisor|alt'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------
