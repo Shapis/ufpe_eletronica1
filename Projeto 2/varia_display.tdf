@@ -1,5 +1,6 @@
 INCLUDE "contador_crescente.inc";
 INCLUDE "contador.inc";
+INCLUDE "lfsr.inc";
 
 SUBDESIGN varia_display
 (
@@ -13,18 +14,25 @@ SUBDESIGN varia_display
 	 
 )
 VARIABLE
-	divisor : contador WITH (overflow = 128424657);
-	count : contador_crescente WITH (min_cnt = 0, max_cnt = 1);
+	divisor : contador WITH (overflow = 128424657); -- frequencia para 3s
+	div_sorteio : contador WITH (overflow = 12500000); -- frequencia 2Hz
+	count : contador_crescente WITH (min_cnt = 0, max_cnt = 1); -- maquina de estados
+	spin : lfsr;
 
 BEGIN
+	div_sorteio.clock = clock;
+	spin.clock = div_sorteio.clk_out;
+
 	IF count.q[] == 0 THEN
 		count.clk = pulso;
 		d_display[] = d_atual[];
 		u_display[] = u_atual[];
+		spin.sinal = GND;
 	ELSIF count.q[] == 1 THEN
 		divisor.clock = clock;
-		d_display[] = B"0001";
-		u_display[] = B"0010";
+		spin.sinal = VCC;
+		d_display[] = spin.dezena[];
+		u_display[] = spin.unidade[];
 		count.clk = divisor.clk_out;
 	END IF;
 		

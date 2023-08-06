@@ -1,11 +1,14 @@
 INCLUDE "conversor_numero_segmento.inc";
+INCLUDE "varia_display";
 
 SUBDESIGN display
 (
     count[3..0]: INPUT;
+	 clock : INPUT;
 	 d1[4..1]: INPUT;
-	 d2[4..1]: INPUT;
-	 d3[4..1]: INPUT;
+	 d2[6..1][4..1]: INPUT;
+	 d3[6..1][4..1]: INPUT;
+	 pulso : INPUT;
 	 dig[4..1]: OUTPUT;
 	 seg[6..0]: OUTPUT;
 )
@@ -13,15 +16,71 @@ VARIABLE
 convd1 : conversor_numero_segmento;
 convd2 : conversor_numero_segmento;
 convd3 : conversor_numero_segmento;
+varia1 : varia_display;
+varia2 : varia_display;
+varia3 : varia_display;
+varia4 : varia_display;
+varia5 : varia_display;
+varia6 : varia_display;
 
 BEGIN
 DEFAULTS
 	dig[] = VCC;
 END DEFAULTS;
 
-convd1.numero[] = d1[];
-convd2.numero[] = d2[];
-convd3.numero[] = d3[];
+varia1.clock = clock;
+varia2.clock = clock;
+varia3.clock = clock;
+varia4.clock = clock;
+varia5.clock = clock;
+varia6.clock = clock;
+
+
+
+CASE d1[] IS
+	WHEN 1 => 
+		varia1.pulso = pulso;
+		varia1.d_atual[] = d2[1][];
+		varia1.u_atual[] = d3[1][];
+		convd1.numero[] = 1;
+		convd2.numero[] = varia1.d_display[];
+		convd3.numero[] = varia1.u_display[];
+	WHEN 2 => 
+		varia2.pulso = pulso;
+		varia2.d_atual[] = d2[2][];
+		varia2.u_atual[] = d3[2][];
+		convd1.numero[] = 2;
+		convd2.numero[] = varia2.d_display[];
+		convd3.numero[] = varia2.u_display[];
+	WHEN 3 => 
+		varia3.pulso = pulso;
+		varia3.d_atual[] = d2[3][];
+		varia3.u_atual[] = d3[3][];
+		convd1.numero[] = 3;
+		convd2.numero[] = varia3.d_display[];
+		convd3.numero[] = varia3.u_display[];
+	WHEN 4 => 
+		varia4.pulso = pulso;
+		varia4.d_atual[] = d2[4][];
+		varia4.u_atual[] = d3[4][];
+		convd1.numero[] = 4;
+		convd2.numero[] = varia4.d_display[];
+		convd3.numero[] = varia4.u_display[];
+	WHEN 5 => 
+		varia5.pulso = pulso;
+		varia5.d_atual[] = d2[5][];
+		varia5.u_atual[] = d3[5][];
+		convd1.numero[] = 5;
+		convd2.numero[] = varia5.d_display[];
+		convd3.numero[] = varia5.u_display[];
+	WHEN 6 =>
+		varia6.pulso = pulso;
+		varia6.d_atual[] = d2[6][];
+		varia6.u_atual[] = d3[6][];
+		convd1.numero[] = 6;
+		convd2.numero[] = varia6.d_display[];
+		convd3.numero[] = varia6.u_display[];
+END CASE;
 
 
 CASE count IS
