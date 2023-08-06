@@ -8,10 +8,11 @@ SUBDESIGN registrador
 	button1 : INPUT;
 	button3 : INPUT;
 	clock : INPUT;
-	led[2] : OUTPUT;
 	atual[4..1] : OUTPUT;
 	d_atual[4..1] : OUTPUT;
 	u_atual[4..1] : OUTPUT;
+	dezenas_sorteadas[6..1][4..1] : OUTPUT;
+	unidades_sorteadas[6..1][4..1] : OUTPUT;
 )
 VARIABLE
 deb : debouncer;
@@ -22,9 +23,6 @@ sorteio : sorteador;
 d[6..1][4..1] : dff;
 u[6..1][4..1] : dff;
 temp : tff;
-flag : NODE;
-
-
 
 
 BEGIN
@@ -35,10 +33,6 @@ count.clk = divisor.clk_out;
 deb.clock = clock;
 deb.button = button1;
 temp.t = VCC;
-led[2] = temp.q;
-
-
-
 
 sorteio.clock = div_sorteio.clk_out;
 
@@ -96,7 +90,6 @@ CASE count.q[]+1 IS
 				u[6..4][].d = u[6..4][].q;
 				d[2..1][].d = d[2..1][].q;
 				u[2..1][].d = u[2..1][].q;
-
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -114,7 +107,6 @@ CASE count.q[]+1 IS
 				u[6..5][].d = u[6..5][].q;
 				d[3..1][].d = d[3..1][].q;
 				u[3..1][].d = u[3..1][].q;
-
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -132,7 +124,6 @@ CASE count.q[]+1 IS
 				u[6..5][].d = u[6..5][].q;
 				d[4..1][].d = d[4..1][].q;
 				u[4..1][].d = u[4..1][].q;
-
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -148,7 +139,6 @@ CASE count.q[]+1 IS
 				u[6][].d = sorteio.d2[];
 				d[5..1][].d = d[5..1][].q;
 				u[5..1][].d = u[5..1][].q;
-
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -161,5 +151,8 @@ END CASE;
 
 
 atual[] = count.q[]+1;
+
+dezenas_sorteadas[][] = d[][];
+unidades_sorteadas[][] = u[][];
 
 END;
