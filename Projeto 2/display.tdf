@@ -3,9 +3,9 @@ INCLUDE "conversor_numero_segmento.inc";
 SUBDESIGN display
 (
     count[3..0]: INPUT;
-	 d1[6..0]: INPUT = VCC;
-	 d2[6..0]: INPUT = VCC;
-	 d3[6..0]: INPUT = VCC;
+	 d1[4..1]: INPUT;
+	 d2[4..1]: INPUT;
+	 d3[4..1]: INPUT;
 	 dig[4..1]: OUTPUT;
 	 seg[6..0]: OUTPUT;
 )
@@ -19,6 +19,11 @@ DEFAULTS
 	dig[] = VCC;
 END DEFAULTS;
 
+convd1.numero[] = d1[];
+convd2.numero[] = d2[];
+convd3.numero[] = d3[];
+
+
 CASE count IS
 		WHEN 0 => dig[4] = GND;
 		WHEN 1 => dig[3] = GND;
@@ -27,10 +32,10 @@ CASE count IS
 END CASE;
 
 CASE count IS
-		WHEN 0 => seg[] = d1[];
+		WHEN 0 => seg[] = convd1.segmentos[];
 		WHEN 1 => seg[] = B"0111111";
-		WHEN 2 => seg[] = d2[];
-		WHEN 3 => seg[] = d3[];
+		WHEN 2 => seg[] = convd2.segmentos[];
+		WHEN 3 => seg[] = convd3.segmentos[];
 END CASE;
 
 END;

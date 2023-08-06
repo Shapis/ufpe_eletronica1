@@ -4,6 +4,7 @@ INCLUDE "contador.inc";
 SUBDESIGN varia_display
 (
     clock : INPUT;
+	 pulso : INPUT;
 	 d_atual[4..1] : INPUT;
 	 u_atual[4..1] : INPUT;
 	 button2 : INPUT;
@@ -12,19 +13,19 @@ SUBDESIGN varia_display
 	 
 )
 VARIABLE
-	divisor : contador WITH (overflow = 25000000); -- frequencia de 1Hz
+	divisor : contador WITH (overflow = 128424657);
 	count : contador_crescente WITH (min_cnt = 0, max_cnt = 1);
-	conta3 : contador_crescente WITH (min_cnt = 0, max_cnt = 2);
 
 BEGIN
 	IF count.q[] == 0 THEN
-		count.clk = clock;
-	ELSIF count.q[] == 1 THEN
-		divisor.clock = clock;
-		conta3.clk = divisor.clk_out;
+		count.clk = pulso;
 		d_display[] = d_atual[];
 		u_display[] = u_atual[];
-		count.clk = conta3.tc;
+	ELSIF count.q[] == 1 THEN
+		divisor.clock = clock;
+		d_display[] = B"0001";
+		u_display[] = B"0010";
+		count.clk = divisor.clk_out;
 	END IF;
 		
 END;

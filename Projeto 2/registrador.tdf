@@ -17,7 +17,7 @@ SUBDESIGN registrador
 )
 VARIABLE
 deb : debouncer;
-divisor : contador WITH (overflow = 125000000); -- frequencia 0.2Hz
+divisor : contador WITH (overflow = 12500000000); -- frequencia 0.2Hz
 div_sorteio : contador WITH (overflow = 16000); -- frequencia aprox. 1500 Hz
 count : contador_crescente WITH (min_cnt = 0, max_cnt = 5);
 sorteio : sorteador;

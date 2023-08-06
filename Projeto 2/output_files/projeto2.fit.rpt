@@ -1,5 +1,5 @@
 Fitter report for projeto2
-Sun Aug 06 15:35:36 2023
+Sun Aug 06 17:06:23 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -69,17 +69,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Aug 06 15:35:36 2023       ;
+; Fitter Status                      ; Successful - Sun Aug 06 17:06:23 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,035 / 6,272 ( 17 % )                      ;
-;     Total combinational functions  ; 1,009 / 6,272 ( 16 % )                      ;
-;     Dedicated logic registers      ; 352 / 6,272 ( 6 % )                         ;
-; Total registers                    ; 352                                         ;
+; Total logic elements               ; 1,085 / 6,272 ( 17 % )                      ;
+;     Total combinational functions  ; 1,053 / 6,272 ( 17 % )                      ;
+;     Dedicated logic registers      ; 388 / 6,272 ( 6 % )                         ;
+; Total registers                    ; 388                                         ;
 ; Total pins                         ; 28 / 92 ( 30 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -156,14 +156,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.5%      ;
-;     Processor 3            ;   2.1%      ;
-;     Processor 4            ;   1.9%      ;
+;     Processor 2            ;   2.7%      ;
+;     Processor 3            ;   1.6%      ;
+;     Processor 4            ;   1.4%      ;
 +----------------------------+-------------+
 
 
@@ -239,8 +239,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1435 ) ; 0.00 % ( 0 / 1435 )        ; 0.00 % ( 0 / 1435 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1435 ) ; 0.00 % ( 0 / 1435 )        ; 0.00 % ( 0 / 1435 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 1514 ) ; 0.00 % ( 0 / 1514 )        ; 0.00 % ( 0 / 1514 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1514 ) ; 0.00 % ( 0 / 1514 )        ; 0.00 % ( 0 / 1514 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -263,7 +263,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 1425 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1504 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -279,26 +279,26 @@ The pin-out file can be found in C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_e
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 1,035 / 6,272 ( 17 % ) ;
-;     -- Combinational with no register       ; 683                    ;
-;     -- Register only                        ; 26                     ;
-;     -- Combinational with a register        ; 326                    ;
+; Total logic elements                        ; 1,085 / 6,272 ( 17 % ) ;
+;     -- Combinational with no register       ; 697                    ;
+;     -- Register only                        ; 32                     ;
+;     -- Combinational with a register        ; 356                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 692                    ;
+;     -- 4 input functions                    ; 699                    ;
 ;     -- 3 input functions                    ; 135                    ;
-;     -- <=2 input functions                  ; 182                    ;
-;     -- Register only                        ; 26                     ;
+;     -- <=2 input functions                  ; 219                    ;
+;     -- Register only                        ; 32                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 879                    ;
-;     -- arithmetic mode                      ; 130                    ;
+;     -- normal mode                          ; 891                    ;
+;     -- arithmetic mode                      ; 162                    ;
 ;                                             ;                        ;
-; Total registers*                            ; 352 / 6,684 ( 5 % )    ;
-;     -- Dedicated logic registers            ; 352 / 6,272 ( 6 % )    ;
+; Total registers*                            ; 388 / 6,684 ( 6 % )    ;
+;     -- Dedicated logic registers            ; 388 / 6,272 ( 6 % )    ;
 ;     -- I/O registers                        ; 0 / 412 ( 0 % )        ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 80 / 392 ( 20 % )      ;
+; Total LABs:  partially or completely used   ; 82 / 392 ( 21 % )      ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 28 / 92 ( 30 % )       ;
 ;     -- Clock pins                           ; 2 / 3 ( 67 % )         ;
@@ -309,19 +309,19 @@ The pin-out file can be found in C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_e
 ; Total block memory implementation bits      ; 0 / 276,480 ( 0 % )    ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )         ;
 ; PLLs                                        ; 0 / 2 ( 0 % )          ;
-; Global signals                              ; 7                      ;
-;     -- Global clocks                        ; 7 / 10 ( 70 % )        ;
+; Global signals                              ; 6                      ;
+;     -- Global clocks                        ; 6 / 10 ( 60 % )        ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 3.0% / 2.8% / 3.2%     ;
-; Peak interconnect usage (total/H/V)         ; 6.5% / 6.2% / 7.0%     ;
-; Maximum fan-out                             ; 193                    ;
-; Highest non-global fan-out                  ; 124                    ;
-; Total fan-out                               ; 4451                   ;
-; Average fan-out                             ; 3.06                   ;
+; Average interconnect usage (total/H/V)      ; 4.3% / 4.0% / 4.7%     ;
+; Peak interconnect usage (total/H/V)         ; 9.9% / 9.6% / 10.2%    ;
+; Maximum fan-out                             ; 170                    ;
+; Highest non-global fan-out                  ; 169                    ;
+; Total fan-out                               ; 4657                   ;
+; Average fan-out                             ; 3.03                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -334,33 +334,33 @@ The pin-out file can be found in C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_e
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 1035 / 6272 ( 17 % ) ; 0 / 6272 ( 0 % )               ;
-;     -- Combinational with no register       ; 683                  ; 0                              ;
-;     -- Register only                        ; 26                   ; 0                              ;
-;     -- Combinational with a register        ; 326                  ; 0                              ;
+; Total logic elements                        ; 1085 / 6272 ( 17 % ) ; 0 / 6272 ( 0 % )               ;
+;     -- Combinational with no register       ; 697                  ; 0                              ;
+;     -- Register only                        ; 32                   ; 0                              ;
+;     -- Combinational with a register        ; 356                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 692                  ; 0                              ;
+;     -- 4 input functions                    ; 699                  ; 0                              ;
 ;     -- 3 input functions                    ; 135                  ; 0                              ;
-;     -- <=2 input functions                  ; 182                  ; 0                              ;
-;     -- Register only                        ; 26                   ; 0                              ;
+;     -- <=2 input functions                  ; 219                  ; 0                              ;
+;     -- Register only                        ; 32                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 879                  ; 0                              ;
-;     -- arithmetic mode                      ; 130                  ; 0                              ;
+;     -- normal mode                          ; 891                  ; 0                              ;
+;     -- arithmetic mode                      ; 162                  ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 352                  ; 0                              ;
-;     -- Dedicated logic registers            ; 352 / 6272 ( 6 % )   ; 0 / 6272 ( 0 % )               ;
+; Total registers                             ; 388                  ; 0                              ;
+;     -- Dedicated logic registers            ; 388 / 6272 ( 6 % )   ; 0 / 6272 ( 0 % )               ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 80 / 392 ( 20 % )    ; 0 / 392 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 82 / 392 ( 21 % )    ; 0 / 392 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 28                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )       ; 0 / 30 ( 0 % )                 ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
-; Clock control block                         ; 7 / 12 ( 58 % )      ; 0 / 12 ( 0 % )                 ;
+; Clock control block                         ; 6 / 12 ( 50 % )      ; 0 / 12 ( 0 % )                 ;
 ;                                             ;                      ;                                ;
 ; Connections                                 ;                      ;                                ;
 ;     -- Input Connections                    ; 0                    ; 0                              ;
@@ -369,8 +369,8 @@ The pin-out file can be found in C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_e
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 4446                 ; 5                              ;
-;     -- Registered Connections               ; 1689                 ; 0                              ;
+;     -- Total Connections                    ; 4652                 ; 5                              ;
+;     -- Registered Connections               ; 1779                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -402,7 +402,7 @@ The pin-out file can be found in C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_e
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clock  ; 23    ; 1        ; 0            ; 11           ; 7            ; 313                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; clock  ; 23    ; 1        ; 0            ; 11           ; 7            ; 321                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; key[1] ; 88    ; 5        ; 34           ; 12           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -680,16 +680,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                    ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                              ; Entity Name                 ; Library Name ;
 +-----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+-----------------------------+--------------+
-; |projeto2                                     ; 1035 (0)    ; 352 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 28   ; 0            ; 683 (0)      ; 26 (0)            ; 326 (0)          ; |projeto2                                                        ; projeto2                    ; work         ;
+; |projeto2                                     ; 1085 (0)    ; 388 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 28   ; 0            ; 697 (0)      ; 32 (0)            ; 356 (0)          ; |projeto2                                                        ; projeto2                    ; work         ;
 ;    |contador:inst|                            ; 18 (18)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 1 (1)             ; 14 (14)          ; |projeto2|contador:inst                                          ; contador                    ; work         ;
 ;    |contador_crescente:inst3|                 ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |projeto2|contador_crescente:inst3                               ; contador_crescente          ; work         ;
-;    |controle:inst1|                           ; 22 (0)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 2 (0)             ; 19 (0)           ; |projeto2|controle:inst1                                         ; controle                    ; work         ;
-;       |debouncer:debounc1|                    ; 22 (4)      ; 20 (3)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 2 (2)             ; 19 (1)           ; |projeto2|controle:inst1|debouncer:debounc1                      ; debouncer                   ; work         ;
-;          |contador:divisor|                   ; 18 (18)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 18 (18)          ; |projeto2|controle:inst1|debouncer:debounc1|contador:divisor     ; contador                    ; work         ;
-;    |conversor_numero_segmento:inst8|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|conversor_numero_segmento:inst8                        ; conversor_numero_segmento   ; work         ;
-;    |display:inst2|                            ; 39 (39)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 39 (39)      ; 0 (0)             ; 0 (0)            ; |projeto2|display:inst2                                          ; display                     ; work         ;
-;    |lcd_controler:inst15|                     ; 117 (117)   ; 37 (37)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 80 (80)      ; 0 (0)             ; 37 (37)          ; |projeto2|lcd_controler:inst15                                   ; lcd_controler               ; work         ;
-;    |lcd_logic:inst14|                         ; 139 (127)   ; 44 (44)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 95 (83)      ; 16 (16)           ; 28 (28)          ; |projeto2|lcd_logic:inst14                                       ; lcd_logic                   ; work         ;
+;    |controle:inst1|                           ; 22 (0)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 3 (0)             ; 17 (0)           ; |projeto2|controle:inst1                                         ; controle                    ; work         ;
+;       |debouncer:debounc1|                    ; 22 (4)      ; 20 (3)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 3 (2)             ; 17 (1)           ; |projeto2|controle:inst1|debouncer:debounc1                      ; debouncer                   ; work         ;
+;          |contador:divisor|                   ; 18 (18)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 16 (16)          ; |projeto2|controle:inst1|debouncer:debounc1|contador:divisor     ; contador                    ; work         ;
+;    |display:inst2|                            ; 42 (41)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 42 (41)      ; 0 (0)             ; 0 (0)            ; |projeto2|display:inst2                                          ; display                     ; work         ;
+;       |conversor_numero_segmento:convd1|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|display:inst2|conversor_numero_segmento:convd1         ; conversor_numero_segmento   ; work         ;
+;    |lcd_controler:inst15|                     ; 119 (119)   ; 37 (37)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (82)      ; 0 (0)             ; 37 (37)          ; |projeto2|lcd_controler:inst15                                   ; lcd_controler               ; work         ;
+;    |lcd_logic:inst14|                         ; 133 (121)   ; 44 (44)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 89 (77)      ; 16 (16)           ; 28 (28)          ; |projeto2|lcd_logic:inst14                                       ; lcd_logic                   ; work         ;
 ;       |conversor_binario4_binario8:conv_d[1]| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_d[1] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_d[2]| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_d[2] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_d[3]| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_d[3] ; conversor_binario4_binario8 ; work         ;
@@ -702,17 +702,20 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |conversor_binario4_binario8:conv_u[4]| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[4] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[5]| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[5] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[6]| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[6] ; conversor_binario4_binario8 ; work         ;
-;    |registrador:inst4|                        ; 420 (354)   ; 93 (49)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 325 (304)    ; 5 (0)             ; 90 (51)          ; |projeto2|registrador:inst4                                      ; registrador                 ; work         ;
+;    |registrador:inst4|                        ; 421 (346)   ; 100 (49)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 320 (297)    ; 5 (0)             ; 96 (51)          ; |projeto2|registrador:inst4                                      ; registrador                 ; work         ;
 ;       |contador:div_sorteio|                  ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; |projeto2|registrador:inst4|contador:div_sorteio                 ; contador                    ; work         ;
-;       |contador:divisor|                      ; 38 (38)     ; 28 (28)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 2 (2)             ; 26 (26)          ; |projeto2|registrador:inst4|contador:divisor                     ; contador                    ; work         ;
-;       |contador_crescente:count|              ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |projeto2|registrador:inst4|contador_crescente:count             ; contador_crescente          ; work         ;
-;       |debouncer:deb|                         ; 10 (4)      ; 4 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (1)        ; 2 (2)             ; 3 (1)            ; |projeto2|registrador:inst4|debouncer:deb                        ; debouncer                   ; work         ;
-;          |contador:divisor|                   ; 6 (6)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 2 (2)            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor       ; contador                    ; work         ;
+;       |contador:divisor|                      ; 46 (46)     ; 35 (35)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 1 (1)             ; 35 (35)          ; |projeto2|registrador:inst4|contador:divisor                     ; contador                    ; work         ;
+;       |contador_crescente:count|              ; 4 (4)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 3 (3)            ; |projeto2|registrador:inst4|contador_crescente:count             ; contador_crescente          ; work         ;
+;       |debouncer:deb|                         ; 10 (4)      ; 4 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (1)        ; 3 (2)             ; 1 (1)            ; |projeto2|registrador:inst4|debouncer:deb                        ; debouncer                   ; work         ;
+;          |contador:divisor|                   ; 6 (6)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 0 (0)            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor       ; contador                    ; work         ;
 ;       |sorteador:sorteio|                     ; 13 (13)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 8 (8)            ; |projeto2|registrador:inst4|sorteador:sorteio                    ; sorteador                   ; work         ;
-;    |song_starwars_25MHz:inst9|                ; 280 (0)     ; 141 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 139 (0)      ; 2 (0)             ; 139 (0)          ; |projeto2|song_starwars_25MHz:inst9                              ; song_starwars_25MHz         ; work         ;
-;       |controlador:control|                   ; 156 (156)   ; 93 (93)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 63 (63)      ; 0 (0)             ; 93 (93)          ; |projeto2|song_starwars_25MHz:inst9|controlador:control          ; controlador                 ; work         ;
+;    |song_starwars_25MHz:inst9|                ; 275 (0)     ; 141 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 134 (0)      ; 2 (0)             ; 139 (0)          ; |projeto2|song_starwars_25MHz:inst9                              ; song_starwars_25MHz         ; work         ;
+;       |controlador:control|                   ; 151 (151)   ; 93 (93)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 58 (58)      ; 0 (0)             ; 93 (93)          ; |projeto2|song_starwars_25MHz:inst9|controlador:control          ; controlador                 ; work         ;
 ;       |divisor_clock:div_clock|               ; 38 (38)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 20 (20)          ; |projeto2|song_starwars_25MHz:inst9|divisor_clock:div_clock      ; divisor_clock               ; work         ;
 ;       |temporizador:temp|                     ; 86 (86)     ; 28 (28)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 58 (58)      ; 2 (2)             ; 26 (26)          ; |projeto2|song_starwars_25MHz:inst9|temporizador:temp            ; temporizador                ; work         ;
+;    |varia_display:inst7|                      ; 54 (11)     ; 29 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (11)      ; 5 (0)             ; 24 (0)           ; |projeto2|varia_display:inst7                                    ; varia_display               ; work         ;
+;       |contador:divisor|                      ; 42 (42)     ; 28 (28)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 5 (5)             ; 23 (23)          ; |projeto2|varia_display:inst7|contador:divisor                   ; contador                    ; work         ;
+;       |contador_crescente:count|              ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |projeto2|varia_display:inst7|contador_crescente:count           ; contador_crescente          ; work         ;
 +-----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -768,40 +771,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                      ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
-; clock                                                     ; PIN_23             ; 121     ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; clock                                                     ; PIN_23             ; 193     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; contador:inst|alt                                         ; FF_X33_Y12_N3      ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; contador:inst|op_1~1                                      ; LCCOMB_X32_Y12_N2  ; 16      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; controle:inst1|debouncer:debounc1|contador:divisor|alt    ; FF_X19_Y4_N31      ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; controle:inst1|debouncer:debounc1|ff[2]~0                 ; LCCOMB_X19_Y4_N12  ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; lcd_controler:inst15|clk_count[22]~57                     ; LCCOMB_X11_Y19_N8  ; 22      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; lcd_logic:inst14|lcd_bus[2]~9                             ; LCCOMB_X18_Y15_N14 ; 39      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; registrador:inst4|contador:div_sorteio|alt                ; FF_X33_Y12_N5      ; 8       ; Clock                     ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; registrador:inst4|contador:divisor|alt                    ; FF_X14_Y8_N1       ; 3       ; Clock                     ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; registrador:inst4|contador:divisor|op_1~7                 ; LCCOMB_X13_Y8_N30  ; 28      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; registrador:inst4|debouncer:deb|contador:divisor|alt      ; FF_X19_Y4_N25      ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; registrador:inst4|debouncer:deb|contador:divisor|op_1~3   ; LCCOMB_X19_Y4_N28  ; 17      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; registrador:inst4|debouncer:deb|ff[2]~0                   ; LCCOMB_X19_Y4_N20  ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; registrador:inst4|temp~0                                  ; LCCOMB_X17_Y13_N30 ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; song_starwars_25MHz:inst9|controlador:control|clk_out     ; LCCOMB_X4_Y11_N4   ; 20      ; Clock                     ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; song_starwars_25MHz:inst9|divisor_clock:div_clock|op_1~35 ; LCCOMB_X10_Y8_N6   ; 18      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
-; song_starwars_25MHz:inst9|temporizador:temp|q~9           ; LCCOMB_X8_Y10_N28  ; 124     ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; clock                                                     ; PIN_23             ; 170     ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; clock                                                     ; PIN_23             ; 152     ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; contador:inst|alt                                         ; FF_X1_Y18_N31      ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; contador:inst|op_1~1                                      ; LCCOMB_X3_Y18_N28  ; 16      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; controle:inst1|debouncer:debounc1|contador:divisor|alt    ; FF_X22_Y12_N3      ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; controle:inst1|debouncer:debounc1|ff[2]~0                 ; LCCOMB_X22_Y12_N8  ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; lcd_controler:inst15|clk_count[22]~57                     ; LCCOMB_X7_Y20_N8   ; 22      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; lcd_logic:inst14|lcd_bus[2]~10                            ; LCCOMB_X10_Y17_N24 ; 38      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; registrador:inst4|contador:div_sorteio|alt                ; FF_X13_Y14_N13     ; 9       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; registrador:inst4|contador:divisor|alt                    ; FF_X11_Y17_N9      ; 5       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; registrador:inst4|contador:divisor|op_1~9                 ; LCCOMB_X12_Y18_N24 ; 35      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; registrador:inst4|debouncer:deb|contador:divisor|alt      ; FF_X22_Y12_N13     ; 2       ; Clock                     ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; registrador:inst4|debouncer:deb|contador:divisor|op_1~3   ; LCCOMB_X22_Y12_N6  ; 17      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; registrador:inst4|debouncer:deb|ff[2]~0                   ; LCCOMB_X22_Y12_N24 ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; registrador:inst4|temp~0                                  ; LCCOMB_X16_Y13_N24 ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; song_starwars_25MHz:inst9|controlador:control|clk_out     ; LCCOMB_X1_Y11_N20  ; 20      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; song_starwars_25MHz:inst9|divisor_clock:div_clock|op_1~35 ; LCCOMB_X8_Y10_N10  ; 18      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; song_starwars_25MHz:inst9|temporizador:temp|q~9           ; LCCOMB_X4_Y11_N4   ; 123     ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; varia_display:inst7|_~0                                   ; LCCOMB_X11_Y10_N8  ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; varia_display:inst7|_~1                                   ; LCCOMB_X21_Y9_N22  ; 2       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; varia_display:inst7|_~1                                   ; LCCOMB_X21_Y9_N22  ; 27      ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; varia_display:inst7|contador:divisor|op_1~8               ; LCCOMB_X21_Y9_N2   ; 28      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                      ;
-+--------------------------------------------------------+------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                   ; Location         ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------+------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clock                                                  ; PIN_23           ; 193     ; 6                                    ; Global Clock         ; GCLK2            ; --                        ;
-; contador:inst|alt                                      ; FF_X33_Y12_N3    ; 2       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; controle:inst1|debouncer:debounc1|contador:divisor|alt ; FF_X19_Y4_N31    ; 2       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; registrador:inst4|contador:div_sorteio|alt             ; FF_X33_Y12_N5    ; 8       ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
-; registrador:inst4|contador:divisor|alt                 ; FF_X14_Y8_N1     ; 3       ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
-; registrador:inst4|debouncer:deb|contador:divisor|alt   ; FF_X19_Y4_N25    ; 2       ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
-; song_starwars_25MHz:inst9|controlador:control|clk_out  ; LCCOMB_X4_Y11_N4 ; 20      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
-+--------------------------------------------------------+------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                       ;
++--------------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                   ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; clock                                                  ; PIN_23            ; 152     ; 6                                    ; Global Clock         ; GCLK2            ; --                        ;
+; contador:inst|alt                                      ; FF_X1_Y18_N31     ; 2       ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
+; controle:inst1|debouncer:debounc1|contador:divisor|alt ; FF_X22_Y12_N3     ; 2       ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; registrador:inst4|debouncer:deb|contador:divisor|alt   ; FF_X22_Y12_N13    ; 2       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; song_starwars_25MHz:inst9|controlador:control|clk_out  ; LCCOMB_X1_Y11_N20 ; 20      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
+; varia_display:inst7|_~1                                ; LCCOMB_X21_Y9_N22 ; 27      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
++--------------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +------------------------------------------------+
@@ -809,158 +815,160 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 1,462 / 32,401 ( 5 % ) ;
-; C16 interconnects     ; 12 / 1,326 ( < 1 % )   ;
-; C4 interconnects      ; 711 / 21,816 ( 3 % )   ;
-; Direct links          ; 299 / 32,401 ( < 1 % ) ;
-; Global clocks         ; 7 / 10 ( 70 % )        ;
-; Local interconnects   ; 695 / 10,320 ( 7 % )   ;
-; R24 interconnects     ; 15 / 1,289 ( 1 % )     ;
-; R4 interconnects      ; 806 / 28,186 ( 3 % )   ;
+; Block interconnects   ; 1,739 / 32,401 ( 5 % ) ;
+; C16 interconnects     ; 16 / 1,326 ( 1 % )     ;
+; C4 interconnects      ; 1,022 / 21,816 ( 5 % ) ;
+; Direct links          ; 307 / 32,401 ( < 1 % ) ;
+; Global clocks         ; 6 / 10 ( 60 % )        ;
+; Local interconnects   ; 555 / 10,320 ( 5 % )   ;
+; R24 interconnects     ; 12 / 1,289 ( < 1 % )   ;
+; R4 interconnects      ; 1,214 / 28,186 ( 4 % ) ;
 +-----------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.94) ; Number of LABs  (Total = 80) ;
+; Number of Logic Elements  (Average = 13.23) ; Number of LABs  (Total = 82) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 5                            ;
-; 2                                           ; 2                            ;
+; 1                                           ; 6                            ;
+; 2                                           ; 3                            ;
 ; 3                                           ; 1                            ;
-; 4                                           ; 2                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 2                            ;
-; 7                                           ; 2                            ;
-; 8                                           ; 1                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 0                            ;
 ; 9                                           ; 1                            ;
 ; 10                                          ; 1                            ;
-; 11                                          ; 2                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 4                            ;
-; 14                                          ; 1                            ;
-; 15                                          ; 7                            ;
-; 16                                          ; 47                           ;
+; 11                                          ; 1                            ;
+; 12                                          ; 3                            ;
+; 13                                          ; 5                            ;
+; 14                                          ; 2                            ;
+; 15                                          ; 12                           ;
+; 16                                          ; 45                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.97) ; Number of LABs  (Total = 80) ;
+; LAB-wide Signals  (Average = 1.02) ; Number of LABs  (Total = 82) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 57                           ;
-; 1 Clock enable                     ; 8                            ;
-; 1 Sync. clear                      ; 6                            ;
-; 1 Sync. load                       ; 1                            ;
-; 2 Clocks                           ; 6                            ;
+; 1 Clock                            ; 60                           ;
+; 1 Clock enable                     ; 9                            ;
+; 1 Sync. clear                      ; 8                            ;
+; 2 Clocks                           ; 7                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 17.07) ; Number of LABs  (Total = 80) ;
+; Number of Signals Sourced  (Average = 17.66) ; Number of LABs  (Total = 82) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 5                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 0                            ;
+; 1                                            ; 4                            ;
+; 2                                            ; 3                            ;
+; 3                                            ; 2                            ;
 ; 4                                            ; 2                            ;
-; 5                                            ; 2                            ;
+; 5                                            ; 0                            ;
 ; 6                                            ; 1                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 1                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 2                            ;
-; 15                                           ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 3                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 4                            ;
 ; 16                                           ; 8                            ;
-; 17                                           ; 4                            ;
+; 17                                           ; 3                            ;
 ; 18                                           ; 9                            ;
-; 19                                           ; 11                           ;
-; 20                                           ; 5                            ;
+; 19                                           ; 8                            ;
+; 20                                           ; 10                           ;
 ; 21                                           ; 3                            ;
 ; 22                                           ; 1                            ;
 ; 23                                           ; 1                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 2                            ;
+; 24                                           ; 3                            ;
+; 25                                           ; 3                            ;
 ; 26                                           ; 2                            ;
-; 27                                           ; 4                            ;
-; 28                                           ; 2                            ;
-; 29                                           ; 3                            ;
+; 27                                           ; 5                            ;
+; 28                                           ; 3                            ;
+; 29                                           ; 0                            ;
 ; 30                                           ; 1                            ;
 ; 31                                           ; 1                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.25) ; Number of LABs  (Total = 80) ;
+; Number of Signals Sourced Out  (Average = 7.66) ; Number of LABs  (Total = 82) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 8                            ;
-; 2                                               ; 4                            ;
-; 3                                               ; 8                            ;
-; 4                                               ; 7                            ;
-; 5                                               ; 6                            ;
-; 6                                               ; 3                            ;
-; 7                                               ; 5                            ;
-; 8                                               ; 5                            ;
+; 1                                               ; 13                           ;
+; 2                                               ; 1                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 8                            ;
+; 5                                               ; 5                            ;
+; 6                                               ; 7                            ;
+; 7                                               ; 3                            ;
+; 8                                               ; 8                            ;
 ; 9                                               ; 7                            ;
 ; 10                                              ; 6                            ;
-; 11                                              ; 3                            ;
-; 12                                              ; 9                            ;
-; 13                                              ; 3                            ;
-; 14                                              ; 4                            ;
-; 15                                              ; 2                            ;
+; 11                                              ; 5                            ;
+; 12                                              ; 6                            ;
+; 13                                              ; 6                            ;
+; 14                                              ; 5                            ;
+; 15                                              ; 1                            ;
+; 16                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 15.44) ; Number of LABs  (Total = 80) ;
+; Number of Distinct Inputs  (Average = 16.01) ; Number of LABs  (Total = 82) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 1                            ;
 ; 2                                            ; 3                            ;
-; 3                                            ; 8                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 1                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 3                            ;
+; 3                                            ; 9                            ;
+; 4                                            ; 2                            ;
+; 5                                            ; 2                            ;
+; 6                                            ; 2                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 2                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 3                            ;
 ; 11                                           ; 1                            ;
 ; 12                                           ; 2                            ;
-; 13                                           ; 3                            ;
-; 14                                           ; 3                            ;
-; 15                                           ; 4                            ;
-; 16                                           ; 3                            ;
-; 17                                           ; 8                            ;
-; 18                                           ; 5                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 3                            ;
-; 21                                           ; 4                            ;
-; 22                                           ; 2                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 3                            ;
-; 25                                           ; 3                            ;
-; 26                                           ; 2                            ;
-; 27                                           ; 4                            ;
-; 28                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 5                            ;
+; 17                                           ; 4                            ;
+; 18                                           ; 3                            ;
+; 19                                           ; 6                            ;
+; 20                                           ; 2                            ;
+; 21                                           ; 2                            ;
+; 22                                           ; 5                            ;
+; 23                                           ; 6                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 2                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 3                            ;
+; 28                                           ; 1                            ;
 ; 29                                           ; 1                            ;
-; 30                                           ; 0                            ;
+; 30                                           ; 1                            ;
 ; 31                                           ; 0                            ;
-; 32                                           ; 2                            ;
-; 33                                           ; 0                            ;
+; 32                                           ; 1                            ;
+; 33                                           ; 2                            ;
 ; 34                                           ; 1                            ;
+; 35                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1092,14 +1100,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                         ;
-+--------------------------------------------+----------------------+-------------------+
-; Source Clock(s)                            ; Destination Clock(s) ; Delay Added in ns ;
-+--------------------------------------------+----------------------+-------------------+
-; clock                                      ; clock                ; 69.7              ;
-; registrador:inst4|contador:div_sorteio|alt ; clock                ; 1.3               ;
-+--------------------------------------------+----------------------+-------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                      ;
++-----------------------------------------------------------------------------------------+----------------------+-------------------+
+; Source Clock(s)                                                                         ; Destination Clock(s) ; Delay Added in ns ;
++-----------------------------------------------------------------------------------------+----------------------+-------------------+
+; clock,registrador:inst4|contador:divisor|alt,registrador:inst4|contador:div_sorteio|alt ; clock                ; 287.3             ;
+; registrador:inst4|contador:divisor|alt                                                  ; clock                ; 117.7             ;
+; clock                                                                                   ; clock                ; 95.6              ;
+; clock,registrador:inst4|contador:divisor|alt                                            ; clock                ; 12.0              ;
++-----------------------------------------------------------------------------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
@@ -1109,106 +1119,106 @@ This will disable optimization of problematic paths and expose them for further 
 +--------------------------------------------------------+--------------------------------------------------------------+-------------------+
 ; Source Register                                        ; Destination Register                                         ; Delay Added in ns ;
 +--------------------------------------------------------+--------------------------------------------------------------+-------------------+
-; contador:inst|alt                                      ; contador:inst|alt                                            ; 3.239             ;
-; registrador:inst4|contador:divisor|alt                 ; registrador:inst4|contador:divisor|alt                       ; 3.142             ;
-; registrador:inst4|debouncer:deb|contador:divisor|alt   ; registrador:inst4|debouncer:deb|contador:divisor|alt         ; 3.047             ;
-; controle:inst1|debouncer:debounc1|contador:divisor|alt ; controle:inst1|debouncer:debounc1|contador:divisor|alt       ; 3.047             ;
-; registrador:inst4|contador:div_sorteio|alt             ; registrador:inst4|contador:div_sorteio|alt                   ; 2.962             ;
-; registrador:inst4|contador:divisor|count[26]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[25]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[27]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[23]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[22]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[21]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[20]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[19]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[18]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[17]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[16]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[15]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[14]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[13]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[12]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[11]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[10]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[9]            ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[8]            ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[7]            ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; registrador:inst4|contador:divisor|count[24]           ; registrador:inst4|contador:divisor|alt                       ; 1.572             ;
-; controle:inst1|debouncer:debounc1|ff[2]                ; registrador:inst4|debouncer:deb|ff[0]                        ; 1.237             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[17]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[16]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[15]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[14]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[12]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[10]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[9]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[8]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[22]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[21]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[20]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[19]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.918             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[27]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.917             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[26]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.917             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[25]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.917             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[24]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.917             ;
-; song_starwars_25MHz:inst9|controlador:control|s1       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.915             ;
-; song_starwars_25MHz:inst9|controlador:control|s2       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.915             ;
-; song_starwars_25MHz:inst9|controlador:control|s21      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.915             ;
-; song_starwars_25MHz:inst9|controlador:control|s22      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.915             ;
-; song_starwars_25MHz:inst9|controlador:control|s88      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s89      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s62      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s77      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s78      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s80      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s81      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s63      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s85      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; clock                                                  ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.914             ;
-; song_starwars_25MHz:inst9|controlador:control|s76      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.894             ;
-; song_starwars_25MHz:inst9|controlador:control|s82      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.892             ;
-; song_starwars_25MHz:inst9|controlador:control|s15      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.888             ;
-; song_starwars_25MHz:inst9|controlador:control|s25      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.887             ;
-; song_starwars_25MHz:inst9|controlador:control|s30      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.884             ;
-; song_starwars_25MHz:inst9|controlador:control|s5       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.878             ;
-; song_starwars_25MHz:inst9|controlador:control|s6       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s11      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s16      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s26      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s83      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s31      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s36      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.859             ;
-; song_starwars_25MHz:inst9|controlador:control|s9       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.841             ;
-; song_starwars_25MHz:inst9|controlador:control|s14      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.841             ;
-; song_starwars_25MHz:inst9|controlador:control|s29      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.841             ;
-; song_starwars_25MHz:inst9|controlador:control|s34      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.841             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[18]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[13]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[11]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[5]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[23]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[7]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[6]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[4]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[3]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[2]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[1]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|temporizador:temp|cnt[0]     ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.840             ;
-; song_starwars_25MHz:inst9|controlador:control|s68      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.835             ;
-; song_starwars_25MHz:inst9|controlador:control|s69      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.834             ;
-; song_starwars_25MHz:inst9|controlador:control|s84      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.833             ;
-; song_starwars_25MHz:inst9|controlador:control|s49      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.827             ;
-; song_starwars_25MHz:inst9|controlador:control|s48      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.826             ;
-; song_starwars_25MHz:inst9|controlador:control|s72      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|cnt[0]     ; 0.789             ;
-; song_starwars_25MHz:inst9|controlador:control|s73      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|cnt[0]     ; 0.777             ;
-; song_starwars_25MHz:inst9|controlador:control|s28      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.776             ;
-; song_starwars_25MHz:inst9|controlador:control|s70      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|cnt[0]     ; 0.776             ;
-; song_starwars_25MHz:inst9|controlador:control|s38      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.774             ;
-; song_starwars_25MHz:inst9|controlador:control|s53      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|cnt[0]     ; 0.774             ;
-; song_starwars_25MHz:inst9|controlador:control|s91      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.770             ;
-; song_starwars_25MHz:inst9|controlador:control|s10      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.765             ;
-; song_starwars_25MHz:inst9|controlador:control|s33      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 0.764             ;
+; contador:inst|alt                                      ; contador:inst|alt                                            ; 3.255             ;
+; registrador:inst4|debouncer:deb|contador:divisor|alt   ; registrador:inst4|debouncer:deb|contador:divisor|alt         ; 3.239             ;
+; controle:inst1|debouncer:debounc1|contador:divisor|alt ; controle:inst1|debouncer:debounc1|contador:divisor|alt       ; 3.239             ;
+; registrador:inst4|contador:divisor|alt                 ; registrador:inst4|contador:divisor|alt                       ; 3.200             ;
+; registrador:inst4|contador:div_sorteio|alt             ; registrador:inst4|contador:div_sorteio|alt                   ; 2.931             ;
+; registrador:inst4|contador_crescente:count|cnt[1]      ; registrador:inst4|u[1][3]                                    ; 2.658             ;
+; registrador:inst4|contador_crescente:count|cnt[3]      ; registrador:inst4|u[1][3]                                    ; 2.658             ;
+; registrador:inst4|contador_crescente:count|cnt[2]      ; registrador:inst4|u[1][3]                                    ; 2.658             ;
+; registrador:inst4|temp                                 ; registrador:inst4|u[1][3]                                    ; 2.658             ;
+; song_starwars_25MHz:inst9|controlador:control|s4       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s8       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s13      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s18      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s24      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s28      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s33      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s38      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.311             ;
+; song_starwars_25MHz:inst9|controlador:control|s3       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.300             ;
+; song_starwars_25MHz:inst9|controlador:control|s23      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.300             ;
+; song_starwars_25MHz:inst9|controlador:control|s43      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.300             ;
+; registrador:inst4|d[2][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[2][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[2][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[2][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[2][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[2][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[2][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[5][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[5][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[5][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[5][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[5][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[5][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[5][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[6][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[6][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[6][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[6][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[6][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[6][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[6][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[3][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[3][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[3][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[3][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[3][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[3][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[4][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[4][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[4][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[4][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[4][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[4][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[1][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[1][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[1][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[1][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[1][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[1][3]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|dezena[4]          ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|dezena[1]          ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|dezena[3]          ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|dezena[2]          ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|d[1][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[4][4]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[4][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[1][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[3][2]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[6][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[5][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[2][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|unidade[3]         ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|unidade[1]         ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|unidade[4]         ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|sorteador:sorteio|unidade[2]         ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; registrador:inst4|u[3][1]                              ; registrador:inst4|d[3][1]                                    ; 2.283             ;
+; song_starwars_25MHz:inst9|controlador:control|s2       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.210             ;
+; song_starwars_25MHz:inst9|controlador:control|s21      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.210             ;
+; song_starwars_25MHz:inst9|controlador:control|s22      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.210             ;
+; song_starwars_25MHz:inst9|controlador:control|s41      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.210             ;
+; song_starwars_25MHz:inst9|controlador:control|s42      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.210             ;
+; song_starwars_25MHz:inst9|controlador:control|s70      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s72      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s73      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s53      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s79      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s86      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s87      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.209             ;
+; song_starwars_25MHz:inst9|controlador:control|s1       ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.208             ;
+; song_starwars_25MHz:inst9|controlador:control|s56      ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.207             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[26]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[27]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[25]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[24]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[22]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[21]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[20]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[19]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[17]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[16]    ; song_starwars_25MHz:inst9|divisor_clock:div_clock|alternador ; 2.180             ;
 +--------------------------------------------------------+--------------------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
@@ -1242,28 +1252,23 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176353): Automatically promoted node clock~input (placed in PIN 23 (CLK1, DIFFCLK_0n))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node song_starwars_25MHz:inst9|temporizador:temp|cnt[23] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 21
-        Info (176357): Destination node song_starwars_25MHz:inst9|temporizador:temp|cnt[18] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 21
-        Info (176357): Destination node song_starwars_25MHz:inst9|temporizador:temp|cnt[13] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 21
-        Info (176357): Destination node song_starwars_25MHz:inst9|temporizador:temp|cnt[11] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 21
-        Info (176357): Destination node song_starwars_25MHz:inst9|temporizador:temp|cnt[5] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 21
-        Info (176357): Destination node song_starwars_25MHz:inst9|controlador:control|s54 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 51
-        Info (176357): Destination node song_starwars_25MHz:inst9|controlador:control|s74 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 51
-        Info (176357): Destination node song_starwars_25MHz:inst9|controlador:control|s44 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 51
-        Info (176357): Destination node song_starwars_25MHz:inst9|controlador:control|s57 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 51
-        Info (176357): Destination node song_starwars_25MHz:inst9|controlador:control|s64 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 51
+        Info (176357): Destination node registrador:inst4|d[6][4] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[6][3] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[6][2] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[6][1] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[5][4] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[5][3] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[5][2] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[5][1] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[4][4] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+        Info (176357): Destination node registrador:inst4|d[4][3] File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
         Info (176358): Non-global destination nodes limited to 10 nodes
+Info (176353): Automatically promoted node varia_display:inst7|_~1 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node varia_display:inst7|contador:divisor|alt File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
 Info (176353): Automatically promoted node song_starwars_25MHz:inst9|controlador:control|clk_out  File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 629
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node registrador:inst4|contador:div_sorteio|alt  File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node registrador:inst4|contador:div_sorteio|alt~1 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
-Info (176353): Automatically promoted node registrador:inst4|contador:divisor|alt  File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node registrador:inst4|contador:divisor|alt~1 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
-        Info (176357): Destination node registrador:inst4|temp~0 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 26
 Info (176353): Automatically promoted node contador:inst|alt  File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
@@ -1340,7 +1345,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "vga_g" is assigned to location or region, but does not exist in design
     Warning (15706): Node "vga_r" is assigned to location or region, but does not exist in design
     Warning (15706): Node "vsync" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1348,12 +1353,13 @@ Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
+Info (170089): 5e+02 ns of routing delay (approximately 1.8% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X11_Y12 to location X22_Y24
+    Info (170196): Router estimated peak interconnect usage is 6% of the available device resources in the region that extends from location X11_Y12 to location X22_Y24
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.94 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:08
+Info (11888): Total time spent on timing analysis during the Fitter is 1.37 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1362,10 +1368,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/output_files/projeto2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 64 warnings
-    Info: Peak virtual memory: 5507 megabytes
-    Info: Processing ended: Sun Aug 06 15:35:37 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 5506 megabytes
+    Info: Processing ended: Sun Aug 06 17:06:23 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +----------------------------+
