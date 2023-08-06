@@ -22,6 +22,7 @@ sorteio : sorteador;
 d[6..1][4..1] : dff;
 u[6..1][4..1] : dff;
 temp : tff;
+flag : NODE;
 
 
 
@@ -33,9 +34,9 @@ count.clk = divisor.clk_out;
 
 deb.clock = clock;
 deb.button = button1;
-temp.clk = deb.result;
 temp.t = VCC;
 led[2] = temp.q;
+
 
 
 
@@ -44,6 +45,11 @@ sorteio.clock = div_sorteio.clk_out;
 IF temp.q == GND THEN
 	d[][].d = d[][].q;
 	u[][].d = u[][].q;
+	temp.clk = deb.result;
+END IF;
+
+IF temp.q == VCC THEN
+	temp.clk = divisor.clk_out;
 END IF;
 
 d[][].clk = clock;

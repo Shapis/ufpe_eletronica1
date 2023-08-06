@@ -20,6 +20,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
 					"name" : "seg[6]",
 					"strict" : false
 				},
@@ -49,6 +53,10 @@
 				},
 				{
 					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "key[1]",
 					"strict" : false
 				}
 			]
