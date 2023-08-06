@@ -1,3 +1,5 @@
+INCLUDE "contador.inc";
+
 SUBDESIGN sorteador
 (
     clock : INPUT;
@@ -11,7 +13,7 @@ unidade[4..1] : dff;
 
 BEGIN
 unidade[].clk = clock;
-dezena[].clk = clock;
+dezena[].clk = clock; 
 
 	IF dezena[] == 6 & unidade[] == 0 THEN
 		dezena[].d = dezena[] - 6;

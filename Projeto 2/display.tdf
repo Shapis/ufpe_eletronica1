@@ -1,3 +1,5 @@
+INCLUDE "conversor_numero_segmento.inc";
+
 SUBDESIGN display
 (
     count[3..0]: INPUT;
@@ -7,7 +9,10 @@ SUBDESIGN display
 	 dig[4..1]: OUTPUT;
 	 seg[6..0]: OUTPUT;
 )
-
+VARIABLE
+convd1 : conversor_numero_segmento;
+convd2 : conversor_numero_segmento;
+convd3 : conversor_numero_segmento;
 
 BEGIN
 DEFAULTS

@@ -13,6 +13,7 @@ SUBDESIGN registrador
 	u_atual[4..1] : OUTPUT;
 	dezenas_sorteadas[6..1][4..1] : OUTPUT;
 	unidades_sorteadas[6..1][4..1] : OUTPUT;
+	sorteio_cout : OUTPUT;
 )
 VARIABLE
 deb : debouncer;
@@ -23,7 +24,7 @@ sorteio : sorteador;
 d[6..1][4..1] : dff;
 u[6..1][4..1] : dff;
 temp : tff;
-
+sort_realizado : NODE; 
 
 BEGIN
 divisor.clock = clock;
@@ -35,6 +36,7 @@ deb.button = button1;
 temp.t = VCC;
 
 sorteio.clock = div_sorteio.clk_out;
+ 
 
 IF temp.q == GND THEN
 	d[][].d = d[][].q;
@@ -58,6 +60,7 @@ CASE count.q[]+1 IS
 				u[1][].d = sorteio.d2[];
 				d[6..2][].d = d[6..2][].q;
 				u[6..2][].d = u[6..2][].q;
+				sort_realizado = VCC;
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -74,6 +77,7 @@ CASE count.q[]+1 IS
 				u[6..3][].d = u[6..3][].q;
 				d[1][].d = d[1][].q;
 				u[1][].d = u[1][].q;
+				sort_realizado = VCC;
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -90,6 +94,7 @@ CASE count.q[]+1 IS
 				u[6..4][].d = u[6..4][].q;
 				d[2..1][].d = d[2..1][].q;
 				u[2..1][].d = u[2..1][].q;
+				sort_realizado = VCC;
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -107,6 +112,7 @@ CASE count.q[]+1 IS
 				u[6..5][].d = u[6..5][].q;
 				d[3..1][].d = d[3..1][].q;
 				u[3..1][].d = u[3..1][].q;
+				sort_realizado = VCC;
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -124,6 +130,7 @@ CASE count.q[]+1 IS
 				u[6..5][].d = u[6..5][].q;
 				d[4..1][].d = d[4..1][].q;
 				u[4..1][].d = u[4..1][].q;
+				sort_realizado = VCC;
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -139,6 +146,7 @@ CASE count.q[]+1 IS
 				u[6][].d = sorteio.d2[];
 				d[5..1][].d = d[5..1][].q;
 				u[5..1][].d = u[5..1][].q;
+				sort_realizado = VCC;
 			ELSE
 				d[][].d = d[][].q;
 				u[][].d = u[][].q;
@@ -154,5 +162,7 @@ atual[] = count.q[]+1;
 
 dezenas_sorteadas[][] = d[][];
 unidades_sorteadas[][] = u[][];
+
+sorteio_cout = sort_realizado;
 
 END;

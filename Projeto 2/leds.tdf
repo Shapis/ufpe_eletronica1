@@ -1,0 +1,15 @@
+INCLUDE "contador_crescente.inc";
+
+SUBDESIGN leds
+(
+    clock : INPUT;
+	 leds_out[4..1] : OUTPUT;
+)
+VARIABLE
+	count : contador_crescente WITH(min_cnt = 0, max_cnt = 6);
+
+BEGIN
+count.clk = clock;
+
+leds_out[] = !count.q[];
+END;

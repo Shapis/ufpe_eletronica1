@@ -18,6 +18,7 @@ BEGIN
     alt.clk = clock;
     IF count[].q < overflow THEN
         count[].d = count[] + 1;
+		  alt.t = GND;
     ELSIF count[].q >= overflow THEN
         count[].d = 0;
         alt.t = VCC;

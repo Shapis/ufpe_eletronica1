@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Sun Aug 06 12:12:38 2023
+Sun Aug 06 15:35:26 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,26 +13,30 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |projeto2|lcd_logic:inst14|char_cnt
-  9. State Machine - |projeto2|lcd_controler:inst15|estado
- 10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Parameter Settings for User Entity Instance: lcd_controler:inst15
- 14. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:count
- 15. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:divisor
- 16. Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor
- 17. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio
- 18. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
- 19. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:count
- 20. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:divisor
- 21. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:count
- 22. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:divisor
- 23. Parameter Settings for User Entity Instance: contador_crescente:inst3
- 24. Parameter Settings for User Entity Instance: contador:inst
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+  8. State Machine - |projeto2|song_starwars_25MHz:inst9|controlador:control|song
+  9. State Machine - |projeto2|lcd_logic:inst14|char_cnt
+ 10. State Machine - |projeto2|lcd_controler:inst15|estado
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Parameter Settings for User Entity Instance: lcd_controler:inst15
+ 15. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:count
+ 16. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:divisor
+ 17. Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor
+ 18. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio
+ 19. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
+ 20. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:count
+ 21. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:divisor
+ 22. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:count
+ 23. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:divisor
+ 24. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
+ 25. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
+ 26. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
+ 27. Parameter Settings for User Entity Instance: contador_crescente:inst3
+ 28. Parameter Settings for User Entity Instance: contador:inst
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
 
 
 
@@ -59,16 +63,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 06 12:12:38 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 06 15:35:26 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 742                                         ;
-;     Total combinational functions  ; 705                                         ;
-;     Dedicated logic registers      ; 211                                         ;
-; Total registers                    ; 211                                         ;
-; Total pins                         ; 24                                          ;
+; Total logic elements               ; 1,046                                       ;
+;     Total combinational functions  ; 1,009                                       ;
+;     Dedicated logic registers      ; 352                                         ;
+; Total registers                    ; 352                                         ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -175,35 +179,43 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
-; contador.tdf                     ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf                    ;         ;
-; display.tdf                      ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf                     ;         ;
-; projeto2.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/projeto2.bdf                    ;         ;
-; conversor_numero_segmento.tdf    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf   ;         ;
-; debouncer.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf                   ;         ;
-; sorteador.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf                   ;         ;
-; contador_crescente.tdf           ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf          ;         ;
-; registrador.tdf                  ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf                 ;         ;
-; controle.tdf                     ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf                    ;         ;
-; conversor_binario4_binario8.tdf  ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf ;         ;
-; lcd_controler.tdf                ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf               ;         ;
-; lcd_logic.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf                   ;         ;
-; contador.inc                     ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.inc                    ;         ;
-; contador_crescente.inc           ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.inc          ;         ;
-; sorteador.inc                    ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.inc                   ;         ;
-; debouncer.inc                    ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.inc                   ;         ;
-; conversor_binario4_binario8.inc  ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.inc ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
++---------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                           ; Library ;
++---------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
+; contador.tdf                                ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf                                ;         ;
+; display.tdf                                 ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf                                 ;         ;
+; projeto2.bdf                                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/projeto2.bdf                                ;         ;
+; conversor_numero_segmento.tdf               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf               ;         ;
+; debouncer.tdf                               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf                               ;         ;
+; sorteador.tdf                               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf                               ;         ;
+; contador_crescente.tdf                      ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf                      ;         ;
+; registrador.tdf                             ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf                             ;         ;
+; controle.tdf                                ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf                                ;         ;
+; conversor_binario4_binario8.tdf             ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf             ;         ;
+; lcd_controler.tdf                           ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf                           ;         ;
+; lcd_logic.tdf                               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf                               ;         ;
+; song_starwars_25MHz/controlador.tdf         ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf         ;         ;
+; song_starwars_25MHz/divisor_clock.tdf       ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf       ;         ;
+; song_starwars_25MHz/song_starwars_25MHz.tdf ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf ;         ;
+; song_starwars_25MHz/temporizador.tdf        ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf        ;         ;
+; conversor_numero_segmento.inc               ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.inc               ;         ;
+; contador.inc                                ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.inc                                ;         ;
+; contador_crescente.inc                      ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.inc                      ;         ;
+; sorteador.inc                               ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.inc                               ;         ;
+; debouncer.inc                               ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.inc                               ;         ;
+; conversor_binario4_binario8.inc             ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.inc             ;         ;
+; song_starwars_25mhz/temporizador.inc        ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25mhz/temporizador.inc        ;         ;
+; song_starwars_25mhz/divisor_clock.inc       ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25mhz/divisor_clock.inc       ;         ;
+; song_starwars_25mhz/controlador.inc         ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25mhz/controlador.inc         ;         ;
++---------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -211,30 +223,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 742         ;
+; Estimated Total logic elements              ; 1,046       ;
 ;                                             ;             ;
-; Total combinational functions               ; 705         ;
+; Total combinational functions               ; 1009        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 505         ;
-;     -- 3 input functions                    ; 93          ;
-;     -- <=2 input functions                  ; 107         ;
+;     -- 4 input functions                    ; 692         ;
+;     -- 3 input functions                    ; 135         ;
+;     -- <=2 input functions                  ; 182         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 634         ;
-;     -- arithmetic mode                      ; 71          ;
+;     -- normal mode                          ; 879         ;
+;     -- arithmetic mode                      ; 130         ;
 ;                                             ;             ;
-; Total registers                             ; 211         ;
-;     -- Dedicated logic registers            ; 211         ;
+; Total registers                             ; 352         ;
+;     -- Dedicated logic registers            ; 352         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 24          ;
+; I/O pins                                    ; 28          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 191         ;
-; Total fan-out                               ; 3078        ;
-; Average fan-out                             ; 3.19        ;
+; Maximum fan-out                             ; 313         ;
+; Total fan-out                               ; 4418        ;
+; Average fan-out                             ; 3.12        ;
 +---------------------------------------------+-------------+
 
 
@@ -243,16 +255,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name                 ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+-----------------------------+--------------+
-; |projeto2                                     ; 705 (0)             ; 211 (0)                   ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |projeto2                                                        ; projeto2                    ; work         ;
+; |projeto2                                     ; 1009 (0)            ; 352 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |projeto2                                                        ; projeto2                    ; work         ;
 ;    |contador:inst|                            ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                                          ; contador                    ; work         ;
 ;    |contador_crescente:inst3|                 ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst3                               ; contador_crescente          ; work         ;
 ;    |controle:inst1|                           ; 19 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1                                         ; controle                    ; work         ;
 ;       |debouncer:debounc1|                    ; 19 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1                      ; debouncer                   ; work         ;
 ;          |contador:divisor|                   ; 17 (17)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1|contador:divisor     ; contador                    ; work         ;
 ;    |conversor_numero_segmento:inst8|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|conversor_numero_segmento:inst8                        ; conversor_numero_segmento   ; work         ;
-;    |display:inst2|                            ; 43 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                          ; display                     ; work         ;
-;    |lcd_controler:inst15|                     ; 114 (114)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                   ; lcd_controler               ; work         ;
-;    |lcd_logic:inst14|                         ; 104 (92)            ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                       ; lcd_logic                   ; work         ;
+;    |display:inst2|                            ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                          ; display                     ; work         ;
+;    |lcd_controler:inst15|                     ; 117 (117)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                   ; lcd_controler               ; work         ;
+;    |lcd_logic:inst14|                         ; 122 (110)           ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                       ; lcd_logic                   ; work         ;
 ;       |conversor_binario4_binario8:conv_d[1]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_d[1] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_d[2]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_d[2] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_d[3]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_d[3] ; conversor_binario4_binario8 ; work         ;
@@ -265,15 +277,121 @@ https://fpgasoftware.intel.com/eula.
 ;       |conversor_binario4_binario8:conv_u[4]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[4] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[5]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[5] ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[6]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[6] ; conversor_binario4_binario8 ; work         ;
-;    |registrador:inst4|                        ; 405 (346)           ; 93 (49)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                      ; registrador                 ; work         ;
+;    |registrador:inst4|                        ; 414 (355)           ; 93 (49)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                      ; registrador                 ; work         ;
 ;       |contador:div_sorteio|                  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio                 ; contador                    ; work         ;
 ;       |contador:divisor|                      ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor                     ; contador                    ; work         ;
 ;       |contador_crescente:count|              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count             ; contador_crescente          ; work         ;
 ;       |debouncer:deb|                         ; 6 (1)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb                        ; debouncer                   ; work         ;
 ;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor       ; contador                    ; work         ;
 ;       |sorteador:sorteio|                     ; 13 (13)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio                    ; sorteador                   ; work         ;
+;    |song_starwars_25MHz:inst9|                ; 278 (0)             ; 141 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9                              ; song_starwars_25MHz         ; work         ;
+;       |controlador:control|                   ; 156 (156)           ; 93 (93)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|controlador:control          ; controlador                 ; work         ;
+;       |divisor_clock:div_clock|               ; 38 (38)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|divisor_clock:div_clock      ; divisor_clock               ; work         ;
+;       |temporizador:temp|                     ; 84 (84)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|temporizador:temp            ; temporizador                ; work         ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |projeto2|song_starwars_25MHz:inst9|controlador:control|song                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+----+----+----+----+----+----+----+----+----+----+-------+
+; Name  ; s91 ; s90 ; s89 ; s88 ; s87 ; s86 ; s85 ; s84 ; s83 ; s82 ; s81 ; s80 ; s79 ; s78 ; s77 ; s76 ; s75 ; s74 ; s73 ; s72 ; s71 ; s70 ; s69 ; s68 ; s67 ; s66 ; s65 ; s64 ; s63 ; s62 ; s61 ; s60 ; s59 ; s58 ; s57 ; s56 ; s55 ; s54 ; s53 ; s52 ; s51 ; s50 ; s49 ; s48 ; s47 ; s46 ; s45 ; s44 ; s43 ; s42 ; s41 ; s40 ; s39 ; s38 ; s37 ; s36 ; s35 ; s34 ; s33 ; s32 ; s31 ; s30 ; s29 ; s28 ; s27 ; s26 ; s25 ; s24 ; s23 ; s22 ; s21 ; s20 ; s19 ; s18 ; s17 ; s16 ; s15 ; s14 ; s13 ; s12 ; s11 ; s10 ; s9 ; s8 ; s7 ; s6 ; s5 ; s4 ; s3 ; s2 ; s1 ; s0 ; START ;
++-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+----+----+----+----+----+----+----+----+----+----+-------+
+; START ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0     ;
+; s0    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1  ; 1     ;
+; s1    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1  ; 0  ; 1     ;
+; s2    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1  ; 0  ; 0  ; 1     ;
+; s3    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1  ; 0  ; 0  ; 0  ; 1     ;
+; s4    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 1  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s5    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 1  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s6    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 1  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s7    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 1  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s8    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 1  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s9    ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s10   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s11   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s12   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s13   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s14   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s15   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s16   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s17   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s18   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s19   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s20   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s21   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s22   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s23   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s24   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s25   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s26   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s27   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s28   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s29   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s30   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s31   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s32   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s33   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s34   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s35   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s36   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s37   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s38   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s39   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s40   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s41   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s42   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s43   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s44   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s45   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s46   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s47   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s48   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s49   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s50   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s51   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s52   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s53   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s54   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s55   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s56   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s57   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s58   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s59   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s60   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s61   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s62   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s63   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s64   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s65   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s66   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s67   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s68   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s69   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s70   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s71   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s72   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s73   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s74   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s75   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s76   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s77   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s78   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s79   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s80   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s81   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s82   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s83   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s84   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s85   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s86   ; 0   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s87   ; 0   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s88   ; 0   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s89   ; 0   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s90   ; 0   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
+; s91   ; 1   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0   ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 0  ; 1     ;
++-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+----+----+----+----+----+----+----+----+----+----+-------+
 
 
 Encoding Type:  One-Hot
@@ -396,9 +514,9 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 211   ;
-; Number of registers using Synchronous Clear  ; 75    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 352   ;
+; Number of registers using Synchronous Clear  ; 93    ;
+; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 38    ;
@@ -514,6 +632,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; n_bits_t       ; 27    ; Untyped                                                         ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n_bits_f       ; 18    ; Untyped                                                               ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n_bits_t       ; 27    ; Untyped                                                           ;
+; n_bits_f       ; 18    ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: contador_crescente:inst3 ;
 +----------------+-------+----------------------------------------------+
@@ -540,24 +689,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 24                          ;
-; cycloneiii_ff         ; 211                         ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 352                         ;
 ;     ENA               ; 38                          ;
-;     SCLR              ; 75                          ;
-;     plain             ; 98                          ;
-; cycloneiii_lcell_comb ; 710                         ;
-;     arith             ; 71                          ;
-;         2 data inputs ; 67                          ;
-;         3 data inputs ; 4                           ;
-;     normal            ; 639                         ;
+;     SCLR              ; 93                          ;
+;     SLD               ; 5                           ;
+;     plain             ; 216                         ;
+; cycloneiii_lcell_comb ; 1014                        ;
+;     arith             ; 130                         ;
+;         2 data inputs ; 110                         ;
+;         3 data inputs ; 20                          ;
+;     normal            ; 884                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 19                          ;
-;         2 data inputs ; 25                          ;
-;         3 data inputs ; 89                          ;
-;         4 data inputs ; 505                         ;
+;         1 data inputs ; 21                          ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 115                         ;
+;         4 data inputs ; 692                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 4.74                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 4.99                        ;
 +-----------------------+-----------------------------+
 
 
@@ -566,7 +716,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -576,16 +726,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Aug 06 12:12:21 2023
+    Info: Processing started: Sun Aug 06 15:35:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador.tdf
     Info (12023): Found entity 1: contador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 5
-Warning (287004): Group name "count" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 17
-Warning (287004): Group name "count" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 24
+Warning (287004): Group name "count" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 22
+Warning (287004): Group name "count" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 29
+Warning (287013): Variable or input pin "convd1" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 13
+Warning (287013): Variable or input pin "convd2" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 14
+Warning (287013): Variable or input pin "convd3" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file display.tdf
-    Info (12023): Found entity 1: display File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 1
+    Info (12023): Found entity 1: display File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file projeto2.bdf
     Info (12023): Found entity 1: projeto2
 Info (12021): Found 1 design units, including 1 entities, in source file conversor_numero_segmento.tdf
@@ -593,7 +746,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file convers
 Info (12021): Found 1 design units, including 1 entities, in source file debouncer.tdf
     Info (12023): Found entity 1: debouncer File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file sorteador.tdf
-    Info (12023): Found entity 1: sorteador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 1
+    Info (12023): Found entity 1: sorteador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file contador_crescente.tdf
     Info (12023): Found entity 1: contador_crescente File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file registrador.tdf
@@ -608,25 +761,44 @@ Info (12021): Found 1 design units, including 1 entities, in source file lcd_con
     Info (12023): Found entity 1: lcd_controler File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_logic.tdf
     Info (12023): Found entity 1: lcd_logic File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file leds.tdf
+    Info (12023): Found entity 1: leds File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/leds.tdf Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file varia_display.tdf
+    Info (12023): Found entity 1: varia_display File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/controlador.tdf
+    Info (12023): Found entity 1: controlador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 37
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/divisor_clock.tdf
+    Info (12023): Found entity 1: divisor_clock File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf Line: 7
+Warning (287009): Result of LOG2 is not an integer -- rounded result to next whole number File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 11
+Warning (287009): Result of LOG2 is not an integer -- rounded result to next whole number File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/song_starwars_25mhz.tdf
+    Info (12023): Found entity 1: song_starwars_25MHz File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/temporizador.tdf
+    Info (12023): Found entity 1: temporizador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 13
 Info (12127): Elaborating entity "projeto2" for the top level hierarchy
 Info (12128): Elaborating entity "lcd_controler" for hierarchy "lcd_controler:inst15"
 Info (12128): Elaborating entity "lcd_logic" for hierarchy "lcd_logic:inst14"
-Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 22
+Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 24
 Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst4"
-Info (12128): Elaborating entity "debouncer" for hierarchy "registrador:inst4|debouncer:deb" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 18
+Info (12128): Elaborating entity "debouncer" for hierarchy "registrador:inst4|debouncer:deb" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
 Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
 Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
-Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
-Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
+Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
+Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 23
 Info (12128): Elaborating entity "controle" for hierarchy "controle:inst1"
 Info (12128): Elaborating entity "debouncer" for hierarchy "controle:inst1|debouncer:debounc3" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 14
+Info (12128): Elaborating entity "song_starwars_25MHz" for hierarchy "song_starwars_25MHz:inst9"
+Info (12128): Elaborating entity "temporizador" for hierarchy "song_starwars_25MHz:inst9|temporizador:temp" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 28
+Info (12128): Elaborating entity "divisor_clock" for hierarchy "song_starwars_25MHz:inst9|divisor_clock:div_clock" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 30
+Info (12128): Elaborating entity "controlador" for hierarchy "song_starwars_25MHz:inst9|controlador:control" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 32
+Warning (287010): Result of division operation "25000000/3" contains a remainder -- truncated result File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 28
 Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "contador_crescente:inst3"
 Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "conversor_numero_segmento:inst8"
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 25
+    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 26
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_rw" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
@@ -636,14 +808,14 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "controle:inst1|debouncer:debounc1|ff[2]~0" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 769 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1077 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 745 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4754 megabytes
-    Info: Processing ended: Sun Aug 06 12:12:38 2023
-    Info: Elapsed time: 00:00:17
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 1049 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4769 megabytes
+    Info: Processing ended: Sun Aug 06 15:35:26 2023
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:24
 
 
