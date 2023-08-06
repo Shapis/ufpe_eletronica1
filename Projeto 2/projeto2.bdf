@@ -306,14 +306,14 @@ https://fpgasoftware.intel.com/eula.
 		(pt 152 32)
 		(output)
 		(text "q[4..1]" (rect 0 0 31 12)(font "Arial" ))
-		(text "q[4..1]" (rect 105 27 131 39)(font "Arial" ))
+		(text "q[4..1]" (rect 105 27 136 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(port
 		(pt 152 48)
 		(output)
 		(text "tc" (rect 0 0 9 12)(font "Arial" ))
-		(text "tc" (rect 124 43 131 55)(font "Arial" ))
+		(text "tc" (rect 124 43 133 55)(font "Arial" ))
 		(line (pt 152 48)(pt 136 48))
 	)
 	(parameter
