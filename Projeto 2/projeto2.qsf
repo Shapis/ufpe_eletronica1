@@ -149,9 +149,12 @@ set_global_assignment -name AHDL_FILE display.tdf
 set_global_assignment -name BDF_FILE projeto2.bdf
 set_global_assignment -name AHDL_FILE conversor_numero_segmento.tdf
 set_global_assignment -name AHDL_FILE debouncer.tdf
+set_global_assignment -name AHDL_FILE sorteador.tdf
+set_global_assignment -name AHDL_FILE contador_crescente.tdf
+set_global_assignment -name AHDL_FILE registrador.tdf
+set_global_assignment -name AHDL_FILE controle.tdf
+set_global_assignment -name AHDL_FILE teste.tdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name AHDL_FILE sorteador.tdf
-set_global_assignment -name AHDL_FILE contador_crescente.tdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

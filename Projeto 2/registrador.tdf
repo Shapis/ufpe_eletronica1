@@ -1,0 +1,150 @@
+INCLUDE "contador.inc";
+INCLUDE "contador_crescente.inc";
+INCLUDE "sorteador.inc";
+INCLUDE "debouncer.inc";
+
+SUBDESIGN registrador
+(
+	button1 : INPUT;
+	button3 : INPUT;
+	clock : INPUT;
+	led[2] : OUTPUT;
+	atual[4..1] : OUTPUT;
+	d_atual[4..1] : OUTPUT;
+	u_atual[4..1] : OUTPUT;
+)
+VARIABLE
+deb : debouncer;
+divisor : contador WITH (overflow = 125000000); -- frequencia 0.2Hz
+div_sorteio : contador WITH (overflow = 16000); -- frequencia aprox. 1500 Hz
+count : contador_crescente WITH (min_cnt = 0, max_cnt = 5);
+sorteio : sorteador;
+d[6..1][4..1] : dff;
+u[6..1][4..1] : dff;
+temp : tff;
+
+
+
+BEGIN
+divisor.clock = clock;
+div_sorteio.clock = clock;
+count.clk = divisor.clk_out;
+
+deb.clock = clock;
+deb.button = button1;
+temp.clk = deb.result;
+temp.t = VCC;
+led[2] = temp.q;
+
+
+
+sorteio.clock = div_sorteio.clk_out;
+
+IF temp.q == GND THEN
+	d[][].d = d[][].q;
+	u[][].d = u[][].q;
+END IF;
+
+d[][].clk = clock;
+u[][].clk = clock;
+
+CASE count.q[]+1 IS
+	WHEN 1 =>
+		IF temp.q == VCC THEN	
+			-- se o valor não tiver sido sorteado, o sorteio é realizado, se não, o resultado se mantém.
+			IF d[1][].q == 0 AND u[1][].q == 0 AND (sorteio.d1[] != d[2][].q AND sorteio.d2[] != u[2][].q) AND (sorteio.d1[] != d[3][].q AND sorteio.d2[] != u[3][].q) AND (sorteio.d1[] != d[4][].q AND sorteio.d2[] != u[4][].q)  AND (sorteio.d1[] != d[5][].q AND sorteio.d2[] != u[5][].q) AND (sorteio.d1[] != d[6][].q AND sorteio.d2[] != u[6][].q) THEN
+				d[1][].d = sorteio.d1[];
+				u[1][].d = sorteio.d2[];
+				d[6..2][].d = d[6..2][].q;
+				u[6..2][].d = u[6..2][].q;
+			ELSE
+				d[][].d = d[][].q;
+				u[][].d = u[][].q;
+			END IF;
+		END IF;
+		d_atual[] = d[1][];
+		u_atual[] = u[1][];
+	WHEN 2 =>
+		IF temp.q == VCC THEN	
+			IF d[2][].q == 0 AND u[2][].q == 0 AND (sorteio.d1[] != d[1][].q AND sorteio.d2[] != u[1][].q) AND (sorteio.d1[] != d[3][].q AND sorteio.d2[] != u[3][].q) AND (sorteio.d1[] != d[4][].q AND sorteio.d2[] != u[4][].q)  AND (sorteio.d1[] != d[5][].q AND sorteio.d2[] != u[5][].q) AND (sorteio.d1[] != d[6][].q AND sorteio.d2[] != u[6][].q) THEN
+				d[2][].d = sorteio.d1[];
+				u[2][].d = sorteio.d2[];
+				d[6..3][].d = d[6..3][].q;
+				u[6..3][].d = u[6..3][].q;
+				d[1][].d = d[1][].q;
+				u[1][].d = u[1][].q;
+			ELSE
+				d[][].d = d[][].q;
+				u[][].d = u[][].q;
+			END IF;
+		END IF;
+		d_atual[] = d[2][];
+		u_atual[] = u[2][];
+	WHEN 3 =>
+		IF temp.q == VCC THEN	
+			IF d[3][].q == 0 AND u[3][].q == 0 AND (sorteio.d1[] != d[1][].q AND sorteio.d2[] != u[1][].q) AND (sorteio.d1[] != d[2][].q AND sorteio.d2[] != u[2][].q) AND (sorteio.d1[] != d[4][].q AND sorteio.d2[] != u[4][].q)  AND (sorteio.d1[] != d[5][].q AND sorteio.d2[] != u[5][].q) AND (sorteio.d1[] != d[6][].q AND sorteio.d2[] != u[6][].q) THEN
+				d[3][].d = sorteio.d1[];
+				u[3][].d = sorteio.d2[];
+				d[6..4][].d = d[6..4][].q;
+				u[6..4][].d = u[6..4][].q;
+				d[2..1][].d = d[2..1][].q;
+				u[2..1][].d = u[2..1][].q;
+			ELSE
+				d[][].d = d[][].q;
+				u[][].d = u[][].q;
+			END IF;
+		END IF;
+		d_atual[] = d[3][];
+		u_atual[] = u[3][];
+	WHEN 4 =>
+		IF temp.q == VCC THEN	
+			IF d[4][].q == 0 AND u[4][].q == 0 AND (sorteio.d1[] != d[1][].q AND sorteio.d2[] != u[1][].q) AND (sorteio.d1[] != d[2][].q AND sorteio.d2[] != u[2][].q) AND (sorteio.d1[] != d[3][].q AND sorteio.d2[] != u[3][].q)  AND (sorteio.d1[] != d[5][].q AND sorteio.d2[] != u[5][].q) AND (sorteio.d1[] != d[6][].q AND sorteio.d2[] != u[6][].q) THEN
+				d[4][].d = sorteio.d1[];
+				u[4][].d = sorteio.d2[];
+				d[6..5][].d = d[6..5][].q;
+				u[6..5][].d = u[6..5][].q;
+				d[3..1][].d = d[3..1][].q;
+				u[3..1][].d = u[3..1][].q;
+			ELSE
+				d[][].d = d[][].q;
+				u[][].d = u[][].q;
+			END IF;
+		END IF;
+		d_atual[] = d[4][];
+		u_atual[] = u[4][];
+	WHEN 5 =>
+		IF temp.q == VCC THEN	
+			IF d[5][].q == 0 AND u[5][].q == 0 AND (sorteio.d1[] != d[1][].q AND sorteio.d2[] != u[1][].q) AND (sorteio.d1[] != d[2][].q AND sorteio.d2[] != u[2][].q) AND (sorteio.d1[] != d[3][].q AND sorteio.d2[] != u[3][].q)  AND (sorteio.d1[] != d[4][].q AND sorteio.d2[] != u[4][].q) AND (sorteio.d1[] != d[6][].q AND sorteio.d2[] != u[6][].q) THEN
+				d[5][].d = sorteio.d1[];
+				u[5][].d = sorteio.d2[];
+				d[6..5][].d = d[6..5][].q;
+				u[6..5][].d = u[6..5][].q;
+				d[4..1][].d = d[4..1][].q;
+				u[4..1][].d = u[4..1][].q;
+			ELSE
+				d[][].d = d[][].q;
+				u[][].d = u[][].q;
+			END IF;
+		END IF;
+		d_atual[] = d[5][];
+		u_atual[] = u[5][];
+	WHEN 6 =>
+		IF temp.q == VCC THEN	
+			IF d[6][].q == 0 AND u[6][].q == 0 AND (sorteio.d1[] != d[1][].q AND sorteio.d2[] != u[1][].q) AND (sorteio.d1[] != d[2][].q AND sorteio.d2[] != u[2][].q) AND (sorteio.d1[] != d[3][].q AND sorteio.d2[] != u[3][].q)  AND (sorteio.d1[] != d[4][].q AND sorteio.d2[] != u[4][].q) AND (sorteio.d1[] != d[5][].q AND sorteio.d2[] != u[5][].q) THEN
+				d[6][].d = sorteio.d1[];
+				u[6][].d = sorteio.d2[];
+				d[5..1][].d = d[5..1][].q;
+				u[5..1][].d = u[5..1][].q;
+			ELSE
+				d[][].d = d[][].q;
+				u[][].d = u[][].q;
+			END IF;
+		END IF;
+		d_atual[] = d[6][];
+		u_atual[] = u[6][];
+END CASE;
+
+
+atual[] = count.q[]+1;
+
+END;

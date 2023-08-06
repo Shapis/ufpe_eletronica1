@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Sat Aug 05 17:14:41 2023
+Sun Aug 06 01:29:33 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -17,13 +17,14 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   9. General Register Statistics
  10. Parameter Settings for User Entity Instance: contador_crescente:inst3
  11. Parameter Settings for User Entity Instance: contador:inst
- 12. Parameter Settings for User Entity Instance: contador_crescente:inst4
- 13. Parameter Settings for User Entity Instance: contador:inst5
- 14. Parameter Settings for User Entity Instance: debouncer:inst1|contador:count
- 15. Parameter Settings for User Entity Instance: debouncer:inst1|contador:divisor
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:count
+ 13. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:divisor
+ 14. Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor
+ 15. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio
+ 16. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -50,15 +51,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Aug 05 17:14:41 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 06 01:29:33 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 122                                         ;
-;     Total combinational functions  ; 112                                         ;
-;     Dedicated logic registers      ; 66                                          ;
-; Total registers                    ; 66                                          ;
+; Total logic elements               ; 496                                         ;
+;     Total combinational functions  ; 494                                         ;
+;     Dedicated logic registers      ; 126                                         ;
+; Total registers                    ; 126                                         ;
 ; Total pins                         ; 14                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -166,8 +167,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -183,7 +185,11 @@ https://fpgasoftware.intel.com/eula.
 ; debouncer.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf                 ;         ;
 ; sorteador.tdf                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf                 ;         ;
 ; contador_crescente.tdf           ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf        ;         ;
+; registrador.tdf                  ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf               ;         ;
 ; contador.inc                     ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.inc                  ;         ;
+; contador_crescente.inc           ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.inc        ;         ;
+; sorteador.inc                    ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.inc                 ;         ;
+; debouncer.inc                    ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.inc                 ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -192,20 +198,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 122         ;
+; Estimated Total logic elements              ; 496         ;
 ;                                             ;             ;
-; Total combinational functions               ; 112         ;
+; Total combinational functions               ; 494         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 51          ;
-;     -- 3 input functions                    ; 14          ;
-;     -- <=2 input functions                  ; 47          ;
+;     -- 4 input functions                    ; 360         ;
+;     -- 3 input functions                    ; 64          ;
+;     -- <=2 input functions                  ; 70          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 79          ;
-;     -- arithmetic mode                      ; 33          ;
+;     -- normal mode                          ; 443         ;
+;     -- arithmetic mode                      ; 51          ;
 ;                                             ;             ;
-; Total registers                             ; 66          ;
-;     -- Dedicated logic registers            ; 66          ;
+; Total registers                             ; 126         ;
+;     -- Dedicated logic registers            ; 126         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 14          ;
@@ -213,41 +219,58 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 32          ;
-; Total fan-out                               ; 528         ;
-; Average fan-out                             ; 2.56        ;
+; Maximum fan-out                             ; 109         ;
+; Total fan-out                               ; 2097        ;
+; Average fan-out                             ; 3.24        ;
 +---------------------------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
-+-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name        ; Library Name ;
-+-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------------+--------------+
-; |projeto2                     ; 112 (0)             ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |projeto2                                  ; projeto2           ; work         ;
-;    |contador:inst5|           ; 13 (13)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst5                   ; contador           ; work         ;
-;    |contador:inst|            ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                    ; contador           ; work         ;
-;    |contador_crescente:inst3| ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst3         ; contador_crescente ; work         ;
-;    |contador_crescente:inst4| ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst4         ; contador_crescente ; work         ;
-;    |debouncer:inst1|          ; 24 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|debouncer:inst1                  ; debouncer          ; work         ;
-;       |contador:divisor|      ; 22 (22)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|debouncer:inst1|contador:divisor ; contador           ; work         ;
-;    |display:inst2|            ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                    ; display            ; work         ;
-;    |sorteador:inst8|          ; 13 (13)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|sorteador:inst8                  ; sorteador          ; work         ;
-+-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                     ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+---------------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name               ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+---------------------------+--------------+
+; |projeto2                            ; 494 (0)             ; 126 (0)                   ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |projeto2                                                  ; projeto2                  ; work         ;
+;    |contador:inst|                   ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                                    ; contador                  ; work         ;
+;    |contador_crescente:inst3|        ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst3                         ; contador_crescente        ; work         ;
+;    |conversor_numero_segmento:inst8| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|conversor_numero_segmento:inst8                  ; conversor_numero_segmento ; work         ;
+;    |display:inst2|                   ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                    ; display                   ; work         ;
+;    |registrador:inst4|               ; 436 (359)           ; 109 (49)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                ; registrador               ; work         ;
+;       |contador:div_sorteio|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio           ; contador                  ; work         ;
+;       |contador:divisor|             ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor               ; contador                  ; work         ;
+;       |contador_crescente:count|     ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count       ; contador_crescente        ; work         ;
+;       |debouncer:deb|                ; 23 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb                  ; debouncer                 ; work         ;
+;          |contador:divisor|          ; 21 (21)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor ; contador                  ; work         ;
+;       |sorteador:sorteio|            ; 14 (14)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio              ; sorteador                 ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                  ;
-+--------------------------------------------+----------------------------------------+
-; Register name                              ; Reason for Removal                     ;
-+--------------------------------------------+----------------------------------------+
-; debouncer:inst1|contador:count|count[1..4] ; Lost fanout                            ;
-; debouncer:inst1|contador:count|alt         ; Lost fanout                            ;
-; contador_crescente:inst3|cnt[3,4]          ; Stuck at GND due to stuck port data_in ;
-; contador_crescente:inst4|cnt[4]            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 8      ;                                        ;
-+--------------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                  ;
++------------------------------------------------------------+----------------------------------------+
+; Register name                                              ; Reason for Removal                     ;
++------------------------------------------------------------+----------------------------------------+
+; registrador:inst4|debouncer:deb|contador:count|count[1..4] ; Lost fanout                            ;
+; registrador:inst4|debouncer:deb|contador:count|alt         ; Lost fanout                            ;
+; registrador:inst4|contador:div_sorteio|count[14]           ; Merged with contador:inst|count[14]    ;
+; registrador:inst4|contador:div_sorteio|count[13]           ; Merged with contador:inst|count[13]    ;
+; registrador:inst4|contador:div_sorteio|count[12]           ; Merged with contador:inst|count[12]    ;
+; registrador:inst4|contador:div_sorteio|count[11]           ; Merged with contador:inst|count[11]    ;
+; registrador:inst4|contador:div_sorteio|count[10]           ; Merged with contador:inst|count[10]    ;
+; registrador:inst4|contador:div_sorteio|count[9]            ; Merged with contador:inst|count[9]     ;
+; registrador:inst4|contador:div_sorteio|count[8]            ; Merged with contador:inst|count[8]     ;
+; registrador:inst4|contador:div_sorteio|count[7]            ; Merged with contador:inst|count[7]     ;
+; registrador:inst4|contador:div_sorteio|count[6]            ; Merged with contador:inst|count[6]     ;
+; registrador:inst4|contador:div_sorteio|count[5]            ; Merged with contador:inst|count[5]     ;
+; registrador:inst4|contador:div_sorteio|count[4]            ; Merged with contador:inst|count[4]     ;
+; registrador:inst4|contador:div_sorteio|count[3]            ; Merged with contador:inst|count[3]     ;
+; registrador:inst4|contador:div_sorteio|count[2]            ; Merged with contador:inst|count[2]     ;
+; registrador:inst4|contador:div_sorteio|count[1]            ; Merged with contador:inst|count[1]     ;
+; contador_crescente:inst3|cnt[3,4]                          ; Stuck at GND due to stuck port data_in ;
+; registrador:inst4|contador_crescente:count|cnt[4]          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 22                     ;                                        ;
++------------------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -255,12 +278,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66    ;
-; Number of registers using Synchronous Clear  ; 36    ;
+; Total registers                              ; 126   ;
+; Number of registers using Synchronous Clear  ; 54    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -286,44 +309,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador_crescente:inst4 ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; min_cnt        ; 1     ; Untyped                                      ;
-; max_cnt        ; 6     ; Untyped                                      ;
-+----------------+-------+----------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:count ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; overflow       ; 9     ; Untyped                                                            ;
++----------------+-------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador:inst5 ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; overflow       ; 500   ; Untyped                            ;
-+----------------+-------+------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:divisor ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; overflow       ; 50000 ; Untyped                                                              ;
++----------------+-------+----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:inst1|contador:count ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; overflow       ; 9     ; Untyped                                            ;
-+----------------+-------+----------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor ;
++----------------+-----------+----------------------------------------------------+
+; Parameter Name ; Value     ; Type                                               ;
++----------------+-----------+----------------------------------------------------+
+; overflow       ; 125000000 ; Untyped                                            ;
++----------------+-----------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:inst1|contador:divisor ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; overflow       ; 50000 ; Untyped                                              ;
-+----------------+-------+------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; overflow       ; 16000 ; Untyped                                                    ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; min_cnt        ; 0     ; Untyped                                                        ;
+; max_cnt        ; 5     ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -333,21 +366,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 14                          ;
-; cycloneiii_ff         ; 66                          ;
-;     SCLR              ; 36                          ;
-;     plain             ; 30                          ;
-; cycloneiii_lcell_comb ; 117                         ;
-;     arith             ; 33                          ;
-;         2 data inputs ; 30                          ;
+; cycloneiii_ff         ; 126                         ;
+;     ENA               ; 2                           ;
+;     SCLR              ; 54                          ;
+;     plain             ; 70                          ;
+; cycloneiii_lcell_comb ; 498                         ;
+;     arith             ; 51                          ;
+;         2 data inputs ; 48                          ;
 ;         3 data inputs ; 3                           ;
-;     normal            ; 84                          ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 51                          ;
+;     normal            ; 447                         ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 61                          ;
+;         4 data inputs ; 360                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.24                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.67                        ;
 +-----------------------+-----------------------------+
 
 
@@ -356,7 +390,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -366,7 +400,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Aug 05 17:14:31 2023
+    Info: Processing started: Sun Aug 06 01:29:21 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -386,31 +420,38 @@ Info (12021): Found 1 design units, including 1 entities, in source file sortead
     Info (12023): Found entity 1: sorteador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_crescente.tdf
     Info (12023): Found entity 1: contador_crescente File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file registrador.tdf
+    Info (12023): Found entity 1: registrador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file controle.tdf
+    Info (12023): Found entity 1: controle File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file teste.tdf
+    Info (12023): Found entity 1: teste File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/teste.tdf Line: 3
 Info (12127): Elaborating entity "projeto2" for the top level hierarchy
 Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "contador_crescente:inst3"
 Info (12128): Elaborating entity "contador" for hierarchy "contador:inst"
-Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "conversor_numero_segmento:inst7"
-Info (12128): Elaborating entity "contador_crescente" for hierarchy "contador_crescente:inst4"
-Info (12128): Elaborating entity "contador" for hierarchy "contador:inst5"
-Info (12128): Elaborating entity "sorteador" for hierarchy "sorteador:inst8"
-Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:inst1"
-Info (12128): Elaborating entity "contador" for hierarchy "debouncer:inst1|contador:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
-Info (12128): Elaborating entity "contador" for hierarchy "debouncer:inst1|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
+Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "conversor_numero_segmento:inst8"
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst4"
+Info (12128): Elaborating entity "debouncer" for hierarchy "registrador:inst4|debouncer:deb" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 17
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 18
+Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
+Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "debouncer:inst1|ff[2]~0" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
+    Info (17048): Logic cell "registrador:inst4|debouncer:deb|ff[2]~0" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 136 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 510 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 122 logic cells
+    Info (21061): Implemented 496 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4761 megabytes
-    Info: Processing ended: Sat Aug 05 17:14:41 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4762 megabytes
+    Info: Processing ended: Sun Aug 06 01:29:33 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:22
 
 

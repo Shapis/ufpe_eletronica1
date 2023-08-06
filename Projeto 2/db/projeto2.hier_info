@@ -4,9 +4,9 @@ dig[2] <= display:inst2.dig[2]
 dig[3] <= display:inst2.dig[3]
 dig[4] <= display:inst2.dig[4]
 clock => contador:inst.clock
-clock => debouncer:inst1.clock
-key[1] => debouncer:inst1.button
-led[1] <= debouncer:inst1.result
+clock => registrador:inst4.clock
+key[1] => registrador:inst4.button1
+led[2] <= registrador:inst4.led[2]
 seg[0] <= display:inst2.seg[0]
 seg[1] <= display:inst2.seg[1]
 seg[2] <= display:inst2.seg[2]
@@ -142,7 +142,7 @@ q[14] <= count[14].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|conversor_numero_segmento:inst7
+|projeto2|conversor_numero_segmento:inst8
 numero[1] => _.IN0
 numero[1] => segmentos[6]~1.IN3
 numero[1] => _.IN0
@@ -192,133 +192,82 @@ segmentos[5] <= segmentos[5].DB_MAX_OUTPUT_PORT_TYPE
 segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|contador_crescente:inst4
-clk => cnt[4].CLK
-clk => cnt[3].CLK
-clk => cnt[2].CLK
-clk => cnt[1].CLK
-clr => _.IN1
-clr => _.IN0
-load => _.IN0
-load => _.IN0
-load => _.IN0
-load => _.IN0
-load => _.IN0
-ena => _.IN1
-ena => _.IN1
-d[1] => _.IN1
-d[2] => _.IN1
-d[3] => _.IN1
-d[4] => _.IN1
-q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
-tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+|projeto2|registrador:inst4
+button1 => debouncer:deb.button
+button3 => ~NO_FANOUT~
+clock => contador:divisor.clock
+clock => contador:div_sorteio.clock
+clock => debouncer:deb.clock
+clock => d[6][4].CLK
+clock => d[6][3].CLK
+clock => d[6][2].CLK
+clock => d[6][1].CLK
+clock => d[5][4].CLK
+clock => d[5][3].CLK
+clock => d[5][2].CLK
+clock => d[5][1].CLK
+clock => d[4][4].CLK
+clock => d[4][3].CLK
+clock => d[4][2].CLK
+clock => d[4][1].CLK
+clock => d[3][4].CLK
+clock => d[3][3].CLK
+clock => d[3][2].CLK
+clock => d[3][1].CLK
+clock => d[2][4].CLK
+clock => d[2][3].CLK
+clock => d[2][2].CLK
+clock => d[2][1].CLK
+clock => d[1][4].CLK
+clock => d[1][3].CLK
+clock => d[1][2].CLK
+clock => d[1][1].CLK
+clock => u[6][4].CLK
+clock => u[6][3].CLK
+clock => u[6][2].CLK
+clock => u[6][1].CLK
+clock => u[5][4].CLK
+clock => u[5][3].CLK
+clock => u[5][2].CLK
+clock => u[5][1].CLK
+clock => u[4][4].CLK
+clock => u[4][3].CLK
+clock => u[4][2].CLK
+clock => u[4][1].CLK
+clock => u[3][4].CLK
+clock => u[3][3].CLK
+clock => u[3][2].CLK
+clock => u[3][1].CLK
+clock => u[2][4].CLK
+clock => u[2][3].CLK
+clock => u[2][2].CLK
+clock => u[2][1].CLK
+clock => u[1][4].CLK
+clock => u[1][3].CLK
+clock => u[1][2].CLK
+clock => u[1][1].CLK
+led[2] <= temp.DB_MAX_OUTPUT_PORT_TYPE
+atual[1] <= op_2.DB_MAX_OUTPUT_PORT_TYPE
+atual[2] <= op_2.DB_MAX_OUTPUT_PORT_TYPE
+atual[3] <= op_2.DB_MAX_OUTPUT_PORT_TYPE
+atual[4] <= op_2.DB_MAX_OUTPUT_PORT_TYPE
+d_atual[1] <= d_atual[1].DB_MAX_OUTPUT_PORT_TYPE
+d_atual[2] <= d_atual[2].DB_MAX_OUTPUT_PORT_TYPE
+d_atual[3] <= d_atual[3].DB_MAX_OUTPUT_PORT_TYPE
+d_atual[4] <= d_atual[4].DB_MAX_OUTPUT_PORT_TYPE
+u_atual[1] <= u_atual[1].DB_MAX_OUTPUT_PORT_TYPE
+u_atual[2] <= u_atual[2].DB_MAX_OUTPUT_PORT_TYPE
+u_atual[3] <= u_atual[3].DB_MAX_OUTPUT_PORT_TYPE
+u_atual[4] <= u_atual[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|contador:inst5
-clock => count[9].CLK
-clock => count[8].CLK
-clock => count[7].CLK
-clock => count[6].CLK
-clock => count[5].CLK
-clock => count[4].CLK
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|projeto2|conversor_numero_segmento:inst9
-numero[1] => _.IN0
-numero[1] => segmentos[6]~1.IN3
-numero[1] => _.IN0
-numero[1] => segmentos[5]~3.IN3
-numero[1] => _.IN0
-numero[1] => segmentos[4]~5.IN3
-numero[1] => _.IN0
-numero[1] => segmentos[6]~7.IN3
-numero[1] => _.IN0
-numero[1] => segmentos[4]~8.IN3
-numero[2] => _.IN0
-numero[2] => _.IN0
-numero[2] => segmentos[5]~2.IN2
-numero[2] => segmentos[5]~3.IN2
-numero[2] => _.IN0
-numero[2] => _.IN0
-numero[2] => segmentos[1]~6.IN2
-numero[2] => segmentos[6]~7.IN2
-numero[2] => _.IN0
-numero[2] => _.IN0
-numero[3] => _.IN0
-numero[3] => _.IN0
-numero[3] => _.IN0
-numero[3] => _.IN0
-numero[3] => segmentos[4]~4.IN1
-numero[3] => segmentos[4]~5.IN1
-numero[3] => segmentos[1]~6.IN1
-numero[3] => segmentos[6]~7.IN1
-numero[3] => _.IN0
-numero[3] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => _.IN0
-numero[4] => segmentos[4]~8.IN0
-segmentos[0] <= segmentos[0].DB_MAX_OUTPUT_PORT_TYPE
-segmentos[1] <= segmentos[1].DB_MAX_OUTPUT_PORT_TYPE
-segmentos[2] <= segmentos[2].DB_MAX_OUTPUT_PORT_TYPE
-segmentos[3] <= segmentos[3].DB_MAX_OUTPUT_PORT_TYPE
-segmentos[4] <= segmentos[4].DB_MAX_OUTPUT_PORT_TYPE
-segmentos[5] <= segmentos[5].DB_MAX_OUTPUT_PORT_TYPE
-segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|projeto2|sorteador:inst8
-clock => dezena[4].CLK
-clock => dezena[3].CLK
-clock => dezena[2].CLK
-clock => dezena[1].CLK
-clock => unidade[4].CLK
-clock => unidade[3].CLK
-clock => unidade[2].CLK
-clock => unidade[1].CLK
-button => push1[4].IN0
-button => push2[4].IN0
-d1[1] <= push1[1].DB_MAX_OUTPUT_PORT_TYPE
-d1[2] <= push1[2].DB_MAX_OUTPUT_PORT_TYPE
-d1[3] <= push1[3].DB_MAX_OUTPUT_PORT_TYPE
-d1[4] <= push1[4].DB_MAX_OUTPUT_PORT_TYPE
-d2[1] <= push2[1].DB_MAX_OUTPUT_PORT_TYPE
-d2[2] <= push2[2].DB_MAX_OUTPUT_PORT_TYPE
-d2[3] <= push2[3].DB_MAX_OUTPUT_PORT_TYPE
-d2[4] <= push2[4].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|projeto2|debouncer:inst1
+|projeto2|registrador:inst4|debouncer:deb
 button => ff[0].IN0
 clock => contador:divisor.clock
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|debouncer:inst1|contador:count
+|projeto2|registrador:inst4|debouncer:deb|contador:count
 clock => count[4].CLK
 clock => count[3].CLK
 clock => count[2].CLK
@@ -332,7 +281,7 @@ q[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|debouncer:inst1|contador:divisor
+|projeto2|registrador:inst4|debouncer:deb|contador:divisor
 clock => count[16].CLK
 clock => count[15].CLK
 clock => count[14].CLK
@@ -370,7 +319,195 @@ q[16] <= count[16].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|conversor_numero_segmento:inst10
+|projeto2|registrador:inst4|contador:divisor
+clock => count[27].CLK
+clock => count[26].CLK
+clock => count[25].CLK
+clock => count[24].CLK
+clock => count[23].CLK
+clock => count[22].CLK
+clock => count[21].CLK
+clock => count[20].CLK
+clock => count[19].CLK
+clock => count[18].CLK
+clock => count[17].CLK
+clock => count[16].CLK
+clock => count[15].CLK
+clock => count[14].CLK
+clock => count[13].CLK
+clock => count[12].CLK
+clock => count[11].CLK
+clock => count[10].CLK
+clock => count[9].CLK
+clock => count[8].CLK
+clock => count[7].CLK
+clock => count[6].CLK
+clock => count[5].CLK
+clock => count[4].CLK
+clock => count[3].CLK
+clock => count[2].CLK
+clock => count[1].CLK
+clock => alt.CLK
+clr => _.IN0
+q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= count[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= count[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= count[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= count[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= count[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= count[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= count[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= count[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= count[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= count[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= count[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= count[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= count[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= count[25].DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= count[26].DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= count[27].DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|registrador:inst4|contador:div_sorteio
+clock => count[14].CLK
+clock => count[13].CLK
+clock => count[12].CLK
+clock => count[11].CLK
+clock => count[10].CLK
+clock => count[9].CLK
+clock => count[8].CLK
+clock => count[7].CLK
+clock => count[6].CLK
+clock => count[5].CLK
+clock => count[4].CLK
+clock => count[3].CLK
+clock => count[2].CLK
+clock => count[1].CLK
+clock => alt.CLK
+clr => _.IN0
+q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= count[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= count[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= count[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= count[14].DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|registrador:inst4|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|registrador:inst4|sorteador:sorteio
+clock => dezena[4].CLK
+clock => dezena[3].CLK
+clock => dezena[2].CLK
+clock => dezena[1].CLK
+clock => unidade[4].CLK
+clock => unidade[3].CLK
+clock => unidade[2].CLK
+clock => unidade[1].CLK
+d1[1] <= dezena[1].DB_MAX_OUTPUT_PORT_TYPE
+d1[2] <= dezena[2].DB_MAX_OUTPUT_PORT_TYPE
+d1[3] <= dezena[3].DB_MAX_OUTPUT_PORT_TYPE
+d1[4] <= dezena[4].DB_MAX_OUTPUT_PORT_TYPE
+d2[1] <= unidade[1].DB_MAX_OUTPUT_PORT_TYPE
+d2[2] <= unidade[2].DB_MAX_OUTPUT_PORT_TYPE
+d2[3] <= unidade[3].DB_MAX_OUTPUT_PORT_TYPE
+d2[4] <= unidade[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|conversor_numero_segmento:inst6
+numero[1] => _.IN0
+numero[1] => segmentos[6]~1.IN3
+numero[1] => _.IN0
+numero[1] => segmentos[5]~3.IN3
+numero[1] => _.IN0
+numero[1] => segmentos[4]~5.IN3
+numero[1] => _.IN0
+numero[1] => segmentos[6]~7.IN3
+numero[1] => _.IN0
+numero[1] => segmentos[4]~8.IN3
+numero[2] => _.IN0
+numero[2] => _.IN0
+numero[2] => segmentos[5]~2.IN2
+numero[2] => segmentos[5]~3.IN2
+numero[2] => _.IN0
+numero[2] => _.IN0
+numero[2] => segmentos[1]~6.IN2
+numero[2] => segmentos[6]~7.IN2
+numero[2] => _.IN0
+numero[2] => _.IN0
+numero[3] => _.IN0
+numero[3] => _.IN0
+numero[3] => _.IN0
+numero[3] => _.IN0
+numero[3] => segmentos[4]~4.IN1
+numero[3] => segmentos[4]~5.IN1
+numero[3] => segmentos[1]~6.IN1
+numero[3] => segmentos[6]~7.IN1
+numero[3] => _.IN0
+numero[3] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => _.IN0
+numero[4] => segmentos[4]~8.IN0
+segmentos[0] <= segmentos[0].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= segmentos[1].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= segmentos[2].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= segmentos[3].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= segmentos[4].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= segmentos[5].DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|conversor_numero_segmento:inst7
 numero[1] => _.IN0
 numero[1] => segmentos[6]~1.IN3
 numero[1] => _.IN0
