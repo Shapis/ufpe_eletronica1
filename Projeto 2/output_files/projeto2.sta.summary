@@ -3,176 +3,104 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -7.942
-TNS   : -2840.071
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : -2.672
-TNS   : -24.861
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : -1.683
-TNS   : -15.229
+Slack : -7.861
+TNS   : -2437.099
 
 Type  : Slow 1200mV 85C Model Setup 'registrador:inst4|contador:div_sorteio|alt'
-Slack : -1.317
-TNS   : -14.884
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : -1.213
-TNS   : -14.459
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : -1.197
-TNS   : -11.859
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : -1.173
-TNS   : -10.288
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : -1.159
-TNS   : -10.372
+Slack : -2.826
+TNS   : -26.843
 
 Type  : Slow 1200mV 85C Model Setup 'registrador:inst4|debouncer:deb|contador:divisor|alt'
-Slack : -0.663
-TNS   : -0.663
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia2|contador:divisor|alt'
-Slack : -0.611
-TNS   : -0.611
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia3|contador:divisor|alt'
-Slack : -0.519
-TNS   : -0.519
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : -0.509
-TNS   : -0.509
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia5|contador:divisor|alt'
-Slack : -0.506
-TNS   : -0.506
+Slack : -0.552
+TNS   : -0.650
 
 Type  : Slow 1200mV 85C Model Setup 'registrador:inst4|contador:divisor|alt'
-Slack : -0.455
-TNS   : -1.282
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia6|contador:divisor|alt'
-Slack : -0.448
-TNS   : -0.448
-
-Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia1|contador:divisor|alt'
-Slack : -0.436
-TNS   : -0.436
-
-Type  : Slow 1200mV 85C Model Setup 'contador:inst|alt'
-Slack : 0.045
-TNS   : 0.000
+Slack : -0.421
+TNS   : -1.179
 
 Type  : Slow 1200mV 85C Model Setup 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
-Slack : 0.085
+Slack : -0.085
+TNS   : -0.085
+
+Type  : Slow 1200mV 85C Model Setup 'contador:inst|alt'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
+Slack : 0.114
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
-Slack : 0.075
+Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
+Slack : 0.114
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'registrador:inst4|debouncer:deb|contador:divisor|alt'
-Slack : 0.309
+Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
+Slack : 0.114
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
 Slack : 0.431
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : 0.466
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Hold 'contador:inst|alt'
-Slack : 0.485
+Slack : 0.453
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'registrador:inst4|contador:divisor|alt'
 Slack : 0.485
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'registrador:inst4|contador:div_sorteio|alt'
+Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
 Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : 0.545
+Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : 0.574
+Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : 0.601
+Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : 0.817
+Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : 0.829
+Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia5|contador:divisor|alt'
-Slack : 0.846
+Type  : Slow 1200mV 85C Model Hold 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
+Slack : 0.528
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : 0.860
+Type  : Slow 1200mV 85C Model Hold 'registrador:inst4|debouncer:deb|contador:divisor|alt'
+Slack : 0.551
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia3|contador:divisor|alt'
-Slack : 0.882
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia6|contador:divisor|alt'
-Slack : 0.906
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia1|contador:divisor|alt'
-Slack : 0.922
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'display:inst2|varia_display:varia2|contador:divisor|alt'
-Slack : 0.993
+Type  : Slow 1200mV 85C Model Hold 'registrador:inst4|contador:div_sorteio|alt'
+Slack : 0.796
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -977.895
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
+TNS   : -745.013
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'registrador:inst4|contador:div_sorteio|alt'
 Slack : -1.487
@@ -180,7 +108,7 @@ TNS   : -19.331
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'registrador:inst4|contador:divisor|alt'
 Slack : -1.487
-TNS   : -5.954
+TNS   : -5.948
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
 Slack : -1.487
@@ -194,213 +122,141 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contador:inst|alt'
 Slack : -1.487
 TNS   : -2.974
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia1|contador:divisor|alt'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia2|contador:divisor|alt'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia3|contador:divisor|alt'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia4|contador:divisor|alt'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia5|contador:divisor|alt'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia6|contador:divisor|alt'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -7.497
-TNS   : -2617.217
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : -2.494
-TNS   : -22.673
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : -1.508
-TNS   : -13.164
+Slack : -7.350
+TNS   : -2254.275
 
 Type  : Slow 1200mV 0C Model Setup 'registrador:inst4|contador:div_sorteio|alt'
-Slack : -1.200
-TNS   : -12.847
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : -1.071
-TNS   : -12.564
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : -1.039
-TNS   : -9.974
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : -1.002
-TNS   : -8.486
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : -0.973
-TNS   : -8.349
+Slack : -2.552
+TNS   : -24.353
 
 Type  : Slow 1200mV 0C Model Setup 'registrador:inst4|debouncer:deb|contador:divisor|alt'
-Slack : -0.545
-TNS   : -0.545
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia2|contador:divisor|alt'
-Slack : -0.486
-TNS   : -0.486
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia3|contador:divisor|alt'
-Slack : -0.398
-TNS   : -0.398
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : -0.392
-TNS   : -0.392
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia5|contador:divisor|alt'
-Slack : -0.383
-TNS   : -0.383
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia6|contador:divisor|alt'
-Slack : -0.329
-TNS   : -0.329
-
-Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia1|contador:divisor|alt'
-Slack : -0.319
-TNS   : -0.319
+Slack : -0.443
+TNS   : -0.443
 
 Type  : Slow 1200mV 0C Model Setup 'registrador:inst4|contador:divisor|alt'
-Slack : -0.302
-TNS   : -0.831
-
-Type  : Slow 1200mV 0C Model Setup 'contador:inst|alt'
-Slack : 0.133
-TNS   : 0.000
+Slack : -0.282
+TNS   : -0.755
 
 Type  : Slow 1200mV 0C Model Setup 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
-Slack : 0.178
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Slow 1200mV 0C Model Setup 'contador:inst|alt'
+Slack : 0.091
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
-Slack : -0.057
-TNS   : -0.057
+Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'registrador:inst4|debouncer:deb|contador:divisor|alt'
-Slack : 0.250
+Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.380
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : 0.401
+Slack : 0.381
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'contador:inst|alt'
-Slack : 0.430
+Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'registrador:inst4|contador:divisor|alt'
 Slack : 0.430
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'registrador:inst4|contador:div_sorteio|alt'
+Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
 Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : 0.505
+Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
+Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : 0.536
+Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
+Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : 0.564
+Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
+Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : 0.757
+Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : 0.769
+Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
+Slack : 0.445
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia5|contador:divisor|alt'
-Slack : 0.769
+Type  : Slow 1200mV 0C Model Hold 'registrador:inst4|debouncer:deb|contador:divisor|alt'
+Slack : 0.487
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : 0.778
+Type  : Slow 1200mV 0C Model Hold 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
+Slack : 0.493
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia3|contador:divisor|alt'
-Slack : 0.799
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia6|contador:divisor|alt'
-Slack : 0.826
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia1|contador:divisor|alt'
-Slack : 0.842
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'display:inst2|varia_display:varia2|contador:divisor|alt'
-Slack : 0.904
+Type  : Slow 1200mV 0C Model Hold 'registrador:inst4|contador:div_sorteio|alt'
+Slack : 0.740
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -999.365
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : -1.487
-TNS   : -19.331
+TNS   : -745.013
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'registrador:inst4|contador:div_sorteio|alt'
 Slack : -1.487
-TNS   : -19.331
+TNS   : -19.363
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'registrador:inst4|contador:divisor|alt'
 Slack : -1.487
-TNS   : -6.187
+TNS   : -6.003
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
 Slack : -1.487
-TNS   : -4.483
+TNS   : -4.461
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'registrador:inst4|debouncer:deb|contador:divisor|alt'
 Slack : -1.487
@@ -410,201 +266,129 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contador:inst|alt'
 Slack : -1.487
 TNS   : -2.974
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : -1.487
-TNS   : -1.495
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia1|contador:divisor|alt'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia2|contador:divisor|alt'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia3|contador:divisor|alt'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia5|contador:divisor|alt'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia6|contador:divisor|alt'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
 Slack : -1.487
 TNS   : -1.487
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -3.095
-TNS   : -821.774
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : -0.589
-TNS   : -3.885
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : -0.113
-TNS   : -0.494
+Slack : -3.083
+TNS   : -799.806
 
 Type  : Fast 1200mV 0C Model Setup 'registrador:inst4|contador:div_sorteio|alt'
-Slack : -0.091
-TNS   : -0.116
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : 0.023
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : 0.034
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : 0.056
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : 0.059
-TNS   : 0.000
+Slack : -0.713
+TNS   : -4.581
 
 Type  : Fast 1200mV 0C Model Setup 'registrador:inst4|debouncer:deb|contador:divisor|alt'
-Slack : 0.338
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia2|contador:divisor|alt'
-Slack : 0.349
+Slack : 0.376
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'registrador:inst4|contador:divisor|alt'
-Slack : 0.366
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia3|contador:divisor|alt'
-Slack : 0.377
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : 0.381
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia5|contador:divisor|alt'
 Slack : 0.384
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia6|contador:divisor|alt'
-Slack : 0.409
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia1|contador:divisor|alt'
-Slack : 0.413
+Type  : Fast 1200mV 0C Model Setup 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
+Slack : 0.533
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'contador:inst|alt'
-Slack : 0.599
+Slack : 0.564
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
-Slack : 0.610
+Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
+Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
-Slack : 0.059
+Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
+Slack : 0.626
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'registrador:inst4|debouncer:deb|contador:divisor|alt'
-Slack : 0.114
+Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
+Slack : 0.626
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.177
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : 0.181
+Slack : 0.102
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'contador:inst|alt'
-Slack : 0.201
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'registrador:inst4|debouncer:deb|contador:divisor|alt'
+Slack : 0.194
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'registrador:inst4|contador:divisor|alt'
 Slack : 0.201
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : 0.207
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'registrador:inst4|contador:div_sorteio|alt'
+Type  : Fast 1200mV 0C Model Hold 'controle:inst1|debouncer:debounc1|contador:divisor|alt'
 Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : 0.230
+Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : 0.247
+Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : 0.333
+Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : 0.335
+Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia5|contador:divisor|alt'
-Slack : 0.359
+Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia4|contador:divisor|alt'
-Slack : 0.371
+Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
+Slack : 0.208
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia3|contador:divisor|alt'
-Slack : 0.381
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia6|contador:divisor|alt'
-Slack : 0.386
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia1|contador:divisor|alt'
-Slack : 0.394
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'display:inst2|varia_display:varia2|contador:divisor|alt'
-Slack : 0.419
+Type  : Fast 1200mV 0C Model Hold 'registrador:inst4|contador:div_sorteio|alt'
+Slack : 0.323
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -680.454
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia1|contador:div_sorteio|alt'
-Slack : -1.000
-TNS   : -13.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia2|contador:div_sorteio|alt'
-Slack : -1.000
-TNS   : -13.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia3|contador:div_sorteio|alt'
-Slack : -1.000
-TNS   : -13.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia4|contador:div_sorteio|alt'
-Slack : -1.000
-TNS   : -13.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia5|contador:div_sorteio|alt'
-Slack : -1.000
-TNS   : -13.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia6|contador:div_sorteio|alt'
-Slack : -1.000
-TNS   : -13.000
+TNS   : -525.228
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'registrador:inst4|contador:div_sorteio|alt'
 Slack : -1.000
@@ -626,27 +410,27 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contador:inst|alt'
 Slack : -1.000
 TNS   : -2.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia1|contador:divisor|alt'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[1]|contador_grande:freq3s|cnt[10]'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia2|contador:divisor|alt'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[2]|contador_grande:freq3s|cnt[10]'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia3|contador:divisor|alt'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[3]|contador_grande:freq3s|cnt[10]'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia4|contador:divisor|alt'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[4]|contador_grande:freq3s|cnt[10]'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia5|contador:divisor|alt'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[5]|contador_grande:freq3s|cnt[10]'
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia6|contador:divisor|alt'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display:inst2|varia_display:varia[6]|contador_grande:freq3s|cnt[10]'
 Slack : -1.000
 TNS   : -1.000
 

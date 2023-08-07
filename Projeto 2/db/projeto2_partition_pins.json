@@ -76,6 +76,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
 					"name" : "seg[6]",
 					"strict" : false
 				},

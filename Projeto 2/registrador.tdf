@@ -18,8 +18,8 @@ SUBDESIGN registrador
 VARIABLE
 deb : debouncer;
 divisor : contador WITH (overflow = 125000000); -- frequencia 0.2Hz
-div_sorteio : contador WITH (overflow = 1600); -- frequencia aprox. 1500 Hz
-count : contador_crescente WITH (min_cnt = 0, max_cnt = 5);
+div_sorteio : contador WITH (overflow = 1600);
+count : contador_crescente WITH (min_cnt = 1, max_cnt = 6);
 sorteio : sorteador;
 d[6..1][4..1] : dff;
 u[6..1][4..1] : dff;
@@ -51,7 +51,7 @@ END IF;
 d[][].clk = clock;
 u[][].clk = clock;
 
-CASE count.q[]+1 IS
+CASE count.q[] IS
 	WHEN 1 =>
 		IF temp.q == VCC THEN	
 			-- se o valor não tiver sido sorteado, o sorteio é realizado, se não, o resultado se mantém.
@@ -158,7 +158,7 @@ CASE count.q[]+1 IS
 END CASE;
 
 
-atual[] = count.q[]+1;
+atual[] = count.q[];
 
 dezenas_sorteadas[][] = d[][];
 unidades_sorteadas[][] = u[][];

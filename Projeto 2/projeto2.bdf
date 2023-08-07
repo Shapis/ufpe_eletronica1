@@ -190,6 +190,23 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(annotation_block (location)(rect 1016 952 1080 976))
 )
+(pin
+	(output)
+	(rect 1280 288 1456 304)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "led[4]" (rect 90 0 117 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1456 304 1512 328))
+)
 (symbol
 	(rect -368 184 -128 264)
 	(text "contador" (rect 5 0 47 12)(font "Arial" ))
@@ -716,6 +733,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "seg[6..0]" (rect 127 43 163 55)(font "Arial" ))
 		(line (pt 184 48)(pt 168 48)(line_width 3))
 	)
+	(port
+		(pt 184 64)
+		(output)
+		(text "led" (rect 0 0 14 12)(font "Arial" ))
+		(text "led" (rect 152 59 163 71)(font "Arial" ))
+		(line (pt 184 64)(pt 168 64))
+	)
 	(drawing
 		(rectangle (rect 16 16 168 128))
 	)
@@ -870,11 +894,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt -64 232)
 )
 (connector
-	(pt 88 232)
-	(pt 1024 232)
-	(bus)
-)
-(connector
 	(pt 1312 232)
 	(pt 1208 232)
 	(bus)
@@ -955,6 +974,19 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 200 536)
 	(pt 1016 536)
+)
+(connector
+	(pt 88 232)
+	(pt 1024 232)
+	(bus)
+)
+(connector
+	(pt 1208 264)
+	(pt 1280 264)
+)
+(connector
+	(pt 1280 264)
+	(pt 1280 296)
 )
 (junction (pt 304 784))
 (junction (pt 256 504))

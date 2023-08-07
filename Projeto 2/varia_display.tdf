@@ -1,39 +1,41 @@
-INCLUDE "contador_crescente.inc";
+INCLUDE "contador_grande.inc";
 INCLUDE "contador.inc";
 INCLUDE "lfsr.inc";
 
 SUBDESIGN varia_display
 (
     clock : INPUT;
-	 pulso : INPUT;
-	 d_atual[4..1] : INPUT;
-	 u_atual[4..1] : INPUT;
-	 button2 : INPUT;
-	 d_display[4..1] : OUTPUT;
-	 u_display[4..1] : OUTPUT;
-	 
+     pulso : INPUT;
+     d_atual[4..1] : INPUT;
+     u_atual[4..1] : INPUT;
+     button2 : INPUT;
+     d_display[4..1] : OUTPUT;
+     u_display[4..1] : OUTPUT;
+     led : OUTPUT;
 )
 VARIABLE
-	divisor : contador WITH (overflow = 128424657); -- frequencia para 3s
-	div_sorteio : contador WITH (overflow = 12500000); -- frequencia 2Hz
-	count : contador_crescente WITH (min_cnt = 0, max_cnt = 1); -- maquina de estados
-	spin : lfsr;
+    freq3s : contador_grande WITH (min_cnt = 0, max_cnt = 75000000); -- frequencia para 3s
+    freq2hz : contador_grande WITH (min_cnt = 0, max_cnt = 12500000); -- frequencia 2Hz
+    count : contador_grande WITH (min_cnt = 0, max_cnt = 1); -- maquina de estados
+    spin : lfsr;
 
-BEGIN
-	div_sorteio.clock = clock;
-	spin.clock = div_sorteio.clk_out;
-
-	IF count.q[] == 0 THEN
-		count.clk = pulso;
-		d_display[] = d_atual[];
-		u_display[] = u_atual[];
-		spin.sinal = GND;
-	ELSIF count.q[] == 1 THEN
-		divisor.clock = clock;
-		spin.sinal = VCC;
-		d_display[] = spin.dezena[];
-		u_display[] = spin.unidade[];
-		count.clk = divisor.clk_out;
-	END IF;
-		
+BEGIN 
+    spin.clock = freq2hz.tc;
+	 freq2hz.clk = clock;
+	 
+    IF count.q[] == 0 THEN
+        count.clk = pulso;
+        d_display[] = d_atual[];
+        u_display[] = u_atual[];
+        spin.sinal = GND;
+		  led = VCC;
+    ELSIF count.q[] == 1 THEN
+		  freq3s.clk = clock;
+        spin.sinal = VCC;
+        d_display[] = spin.dezena[];
+        u_display[] = spin.unidade[];
+        count.clk = freq3s.tc;
+		  led = GND;
+    END IF;
+        
 END;
