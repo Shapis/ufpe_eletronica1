@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Mon Aug 07 07:27:07 2023
+Mon Aug  7 11:44:04 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -30,29 +30,29 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  22. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:divisor
  23. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:count
  24. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:divisor
- 25. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
- 26. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
- 27. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
- 28. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador_grande:freq3s
- 29. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador_grande:freq2hz
- 30. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:count
- 31. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador_grande:freq3s
- 32. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador_grande:freq2hz
- 33. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:count
- 34. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador_grande:freq3s
- 35. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador_grande:freq2hz
- 36. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:count
- 37. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador_grande:freq3s
- 38. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador_grande:freq2hz
- 39. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:count
- 40. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador_grande:freq3s
- 41. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador_grande:freq2hz
- 42. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:count
- 43. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador_grande:freq3s
- 44. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador_grande:freq2hz
- 45. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:count
- 46. Parameter Settings for User Entity Instance: contador_crescente:inst3
- 47. Parameter Settings for User Entity Instance: contador:inst
+ 25. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:freq2hz
+ 26. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:contador6
+ 27. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:count
+ 28. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:freq2hz
+ 29. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:contador6
+ 30. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:count
+ 31. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:freq2hz
+ 32. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:contador6
+ 33. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:count
+ 34. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:freq2hz
+ 35. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:contador6
+ 36. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:count
+ 37. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:freq2hz
+ 38. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:contador6
+ 39. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:count
+ 40. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:freq2hz
+ 41. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:contador6
+ 42. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:count
+ 43. Parameter Settings for User Entity Instance: contador_crescente:inst3
+ 44. Parameter Settings for User Entity Instance: contador:inst
+ 45. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
+ 46. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
+ 47. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
  48. Post-Synthesis Netlist Statistics for Top Partition
  49. Elapsed Time Per Partition
  50. Analysis & Synthesis Messages
@@ -82,16 +82,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 07 07:27:07 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Aug  7 11:44:04 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,582                                       ;
-;     Total combinational functions  ; 1,538                                       ;
-;     Dedicated logic registers      ; 758                                         ;
-; Total registers                    ; 758                                         ;
-; Total pins                         ; 29                                          ;
+; Total logic elements               ; 1,016                                       ;
+;     Total combinational functions  ; 972                                         ;
+;     Dedicated logic registers      ; 437                                         ;
+; Total registers                    ; 437                                         ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -190,10 +190,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -204,47 +204,47 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
-+---------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path            ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                           ; Library ;
-+---------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; contador.tdf                                ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf                                ;         ;
-; display.tdf                                 ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf                                 ;         ;
-; projeto2.bdf                                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/projeto2.bdf                                ;         ;
-; conversor_numero_segmento.tdf               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf               ;         ;
-; debouncer.tdf                               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf                               ;         ;
-; sorteador.tdf                               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf                               ;         ;
-; contador_crescente.tdf                      ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf                      ;         ;
-; registrador.tdf                             ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf                             ;         ;
-; controle.tdf                                ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf                                ;         ;
-; conversor_binario4_binario8.tdf             ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf             ;         ;
-; lcd_controler.tdf                           ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf                           ;         ;
-; lcd_logic.tdf                               ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf                               ;         ;
-; varia_display.tdf                           ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf                           ;         ;
-; song_starwars_25MHz/controlador.tdf         ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf         ;         ;
-; song_starwars_25MHz/divisor_clock.tdf       ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf       ;         ;
-; song_starwars_25MHz/song_starwars_25MHz.tdf ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf ;         ;
-; song_starwars_25MHz/temporizador.tdf        ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf        ;         ;
-; contador_n.tdf                              ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_n.tdf                              ;         ;
-; lfsr.tdf                                    ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lfsr.tdf                                    ;         ;
-; contador_grande.tdf                         ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_grande.tdf                         ;         ;
-; detector_sorteios.tdf                       ; yes             ; User AHDL File                     ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf                       ;         ;
-; conversor_numero_segmento.inc               ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.inc               ;         ;
-; varia_display.inc                           ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.inc                           ;         ;
-; detector_sorteios.inc                       ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.inc                       ;         ;
-; contador.inc                                ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.inc                                ;         ;
-; contador_n.inc                              ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_n.inc                              ;         ;
-; contador_crescente.inc                      ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.inc                      ;         ;
-; sorteador.inc                               ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.inc                               ;         ;
-; debouncer.inc                               ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.inc                               ;         ;
-; conversor_binario4_binario8.inc             ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.inc             ;         ;
-; contador_grande.inc                         ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_grande.inc                         ;         ;
-; lfsr.inc                                    ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lfsr.inc                                    ;         ;
-; song_starwars_25mhz/temporizador.inc        ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25mhz/temporizador.inc        ;         ;
-; song_starwars_25mhz/divisor_clock.inc       ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25mhz/divisor_clock.inc       ;         ;
-; song_starwars_25mhz/controlador.inc         ; yes             ; Auto-Found AHDL File               ; C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25mhz/controlador.inc         ;         ;
-+---------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                     ;
++---------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                ; Library ;
++---------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; contador.tdf                                ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador.tdf                                ;         ;
+; display.tdf                                 ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf                                 ;         ;
+; projeto2.bdf                                ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/projeto2.bdf                                ;         ;
+; conversor_numero_segmento.tdf               ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf               ;         ;
+; debouncer.tdf                               ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.tdf                               ;         ;
+; sorteador.tdf                               ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/sorteador.tdf                               ;         ;
+; contador_crescente.tdf                      ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf                      ;         ;
+; registrador.tdf                             ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf                             ;         ;
+; controle.tdf                                ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/controle.tdf                                ;         ;
+; conversor_binario4_binario8.tdf             ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf             ;         ;
+; lcd_controler.tdf                           ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf                           ;         ;
+; lcd_logic.tdf                               ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf                               ;         ;
+; varia_display.tdf                           ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.tdf                           ;         ;
+; song_starwars_25MHz/controlador.tdf         ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf         ;         ;
+; song_starwars_25MHz/divisor_clock.tdf       ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf       ;         ;
+; song_starwars_25MHz/song_starwars_25MHz.tdf ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf ;         ;
+; song_starwars_25MHz/temporizador.tdf        ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf        ;         ;
+; contador_n.tdf                              ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_n.tdf                              ;         ;
+; lfsr.tdf                                    ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lfsr.tdf                                    ;         ;
+; detector_sorteios.tdf                       ; yes             ; User AHDL File                     ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf                       ;         ;
+; conversor_numero_segmento.inc               ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.inc               ;         ;
+; varia_display.inc                           ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.inc                           ;         ;
+; detector_sorteios.inc                       ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.inc                       ;         ;
+; contador.inc                                ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador.inc                                ;         ;
+; contador_n.inc                              ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_n.inc                              ;         ;
+; contador_crescente.inc                      ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_crescente.inc                      ;         ;
+; sorteador.inc                               ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/sorteador.inc                               ;         ;
+; debouncer.inc                               ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.inc                               ;         ;
+; conversor_binario4_binario8.inc             ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.inc             ;         ;
+; contador_grande.inc                         ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_grande.inc                         ;         ;
+; lfsr.inc                                    ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lfsr.inc                                    ;         ;
+; pulso_to_clock.inc                          ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/pulso_to_clock.inc                          ;         ;
+; song_starwars_25MHz/temporizador.inc        ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.inc        ;         ;
+; song_starwars_25MHz/divisor_clock.inc       ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.inc       ;         ;
+; song_starwars_25MHz/controlador.inc         ; yes             ; Auto-Found AHDL File               ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.inc         ;         ;
++---------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -252,96 +252,92 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,582       ;
+; Estimated Total logic elements              ; 1,016       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1538        ;
+; Total combinational functions               ; 972         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 795         ;
-;     -- 3 input functions                    ; 189         ;
-;     -- <=2 input functions                  ; 554         ;
+;     -- 4 input functions                    ; 534         ;
+;     -- 3 input functions                    ; 130         ;
+;     -- <=2 input functions                  ; 308         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1107        ;
-;     -- arithmetic mode                      ; 431         ;
+;     -- normal mode                          ; 756         ;
+;     -- arithmetic mode                      ; 216         ;
 ;                                             ;             ;
-; Total registers                             ; 758         ;
-;     -- Dedicated logic registers            ; 758         ;
+; Total registers                             ; 437         ;
+;     -- Dedicated logic registers            ; 437         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 29          ;
+; I/O pins                                    ; 28          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 474         ;
-; Total fan-out                               ; 6862        ;
-; Average fan-out                             ; 2.92        ;
+; Maximum fan-out                             ; 202         ;
+; Total fan-out                               ; 4300        ;
+; Average fan-out                             ; 2.94        ;
 +---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
-+-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+-----------------------------+--------------+
-; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                    ; Entity Name                 ; Library Name ;
-+-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+-----------------------------+--------------+
-; |projeto2                                     ; 1538 (0)            ; 758 (0)                   ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |projeto2                                                              ; projeto2                    ; work         ;
-;    |contador:inst|                            ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                                                ; contador                    ; work         ;
-;    |contador_crescente:inst3|                 ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst3                                     ; contador_crescente          ; work         ;
-;    |controle:inst1|                           ; 19 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1                                               ; controle                    ; work         ;
-;       |debouncer:debounc1|                    ; 19 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1                            ; debouncer                   ; work         ;
-;          |contador:divisor|                   ; 17 (17)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1|contador:divisor           ; contador                    ; work         ;
-;    |display:inst2|                            ; 656 (92)            ; 396 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                                ; display                     ; work         ;
-;       |varia_display:varia[1]|                ; 94 (2)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                         ; varia_display               ; work         ;
-;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:count          ; contador                    ; work         ;
-;          |contador_grande:freq2hz|            ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador_grande:freq2hz ; contador_grande             ; work         ;
-;          |contador_grande:freq3s|             ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador_grande:freq3s  ; contador_grande             ; work         ;
-;          |lfsr:spin|                          ; 24 (24)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin               ; lfsr                        ; work         ;
-;       |varia_display:varia[2]|                ; 94 (2)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]                         ; varia_display               ; work         ;
-;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:count          ; contador                    ; work         ;
-;          |contador_grande:freq2hz|            ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador_grande:freq2hz ; contador_grande             ; work         ;
-;          |contador_grande:freq3s|             ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador_grande:freq3s  ; contador_grande             ; work         ;
-;          |lfsr:spin|                          ; 24 (24)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin               ; lfsr                        ; work         ;
-;       |varia_display:varia[3]|                ; 94 (2)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                         ; varia_display               ; work         ;
-;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:count          ; contador                    ; work         ;
-;          |contador_grande:freq2hz|            ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador_grande:freq2hz ; contador_grande             ; work         ;
-;          |contador_grande:freq3s|             ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador_grande:freq3s  ; contador_grande             ; work         ;
-;          |lfsr:spin|                          ; 24 (24)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin               ; lfsr                        ; work         ;
-;       |varia_display:varia[4]|                ; 94 (2)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]                         ; varia_display               ; work         ;
-;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:count          ; contador                    ; work         ;
-;          |contador_grande:freq2hz|            ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador_grande:freq2hz ; contador_grande             ; work         ;
-;          |contador_grande:freq3s|             ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador_grande:freq3s  ; contador_grande             ; work         ;
-;          |lfsr:spin|                          ; 24 (24)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|lfsr:spin               ; lfsr                        ; work         ;
-;       |varia_display:varia[5]|                ; 94 (2)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]                         ; varia_display               ; work         ;
-;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:count          ; contador                    ; work         ;
-;          |contador_grande:freq2hz|            ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador_grande:freq2hz ; contador_grande             ; work         ;
-;          |contador_grande:freq3s|             ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador_grande:freq3s  ; contador_grande             ; work         ;
-;          |lfsr:spin|                          ; 24 (24)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin               ; lfsr                        ; work         ;
-;       |varia_display:varia[6]|                ; 94 (2)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]                         ; varia_display               ; work         ;
-;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:count          ; contador                    ; work         ;
-;          |contador_grande:freq2hz|            ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador_grande:freq2hz ; contador_grande             ; work         ;
-;          |contador_grande:freq3s|             ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador_grande:freq3s  ; contador_grande             ; work         ;
-;          |lfsr:spin|                          ; 24 (24)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin               ; lfsr                        ; work         ;
-;    |lcd_controler:inst15|                     ; 118 (118)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                         ; lcd_controler               ; work         ;
-;    |lcd_logic:inst14|                         ; 89 (83)             ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                             ; lcd_logic                   ; work         ;
-;       |conversor_binario4_binario8:conv_u[1]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[1]       ; conversor_binario4_binario8 ; work         ;
-;       |conversor_binario4_binario8:conv_u[2]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[2]       ; conversor_binario4_binario8 ; work         ;
-;       |conversor_binario4_binario8:conv_u[3]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[3]       ; conversor_binario4_binario8 ; work         ;
-;       |conversor_binario4_binario8:conv_u[4]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[4]       ; conversor_binario4_binario8 ; work         ;
-;       |conversor_binario4_binario8:conv_u[5]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[5]       ; conversor_binario4_binario8 ; work         ;
-;       |conversor_binario4_binario8:conv_u[6]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[6]       ; conversor_binario4_binario8 ; work         ;
-;    |registrador:inst4|                        ; 363 (283)           ; 103 (43)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                            ; registrador                 ; work         ;
-;       |contador:div_sorteio|                  ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio                       ; contador                    ; work         ;
-;       |contador:divisor|                      ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor                           ; contador                    ; work         ;
-;       |contador_crescente:count|              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count                   ; contador_crescente          ; work         ;
-;       |debouncer:deb|                         ; 6 (1)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb                              ; debouncer                   ; work         ;
-;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor             ; contador                    ; work         ;
-;       |sorteador:sorteio|                     ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio                          ; sorteador                   ; work         ;
-;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio|contador_n:contador      ; contador_n                  ; work         ;
-;    |song_starwars_25MHz:inst9|                ; 274 (0)             ; 141 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9                                    ; song_starwars_25MHz         ; work         ;
-;       |controlador:control|                   ; 152 (152)           ; 93 (93)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|controlador:control                ; controlador                 ; work         ;
-;       |divisor_clock:div_clock|               ; 38 (38)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|divisor_clock:div_clock            ; divisor_clock               ; work         ;
-;       |temporizador:temp|                     ; 84 (84)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|temporizador:temp                  ; temporizador                ; work         ;
-+-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+-----------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name                 ; Library Name ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-----------------------------+--------------+
+; |projeto2                                     ; 972 (0)             ; 437 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |projeto2                                                         ; projeto2                    ; work         ;
+;    |contador:inst|                            ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                                           ; contador                    ; work         ;
+;    |contador_crescente:inst3|                 ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst3                                ; contador_crescente          ; work         ;
+;    |controle:inst1|                           ; 19 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1                                          ; controle                    ; work         ;
+;       |debouncer:debounc1|                    ; 19 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1                       ; debouncer                   ; work         ;
+;          |contador:divisor|                   ; 17 (17)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1|contador:divisor      ; contador                    ; work         ;
+;    |display:inst2|                            ; 364 (93)            ; 216 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                           ; display                     ; work         ;
+;       |varia_display:varia[1]|                ; 45 (3)              ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                    ; varia_display               ; work         ;
+;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:contador6 ; contador                    ; work         ;
+;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:count     ; contador                    ; work         ;
+;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:freq2hz   ; contador                    ; work         ;
+;          |lfsr:spin|                          ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[2]|                ; 45 (3)              ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]                    ; varia_display               ; work         ;
+;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:contador6 ; contador                    ; work         ;
+;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:count     ; contador                    ; work         ;
+;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:freq2hz   ; contador                    ; work         ;
+;          |lfsr:spin|                          ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[3]|                ; 45 (3)              ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                    ; varia_display               ; work         ;
+;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:contador6 ; contador                    ; work         ;
+;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:count     ; contador                    ; work         ;
+;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq2hz   ; contador                    ; work         ;
+;          |lfsr:spin|                          ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[4]|                ; 45 (3)              ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]                    ; varia_display               ; work         ;
+;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:contador6 ; contador                    ; work         ;
+;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:count     ; contador                    ; work         ;
+;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:freq2hz   ; contador                    ; work         ;
+;          |lfsr:spin|                          ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[5]|                ; 45 (3)              ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]                    ; varia_display               ; work         ;
+;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:contador6 ; contador                    ; work         ;
+;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:count     ; contador                    ; work         ;
+;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:freq2hz   ; contador                    ; work         ;
+;          |lfsr:spin|                          ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[6]|                ; 46 (4)              ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]                    ; varia_display               ; work         ;
+;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:contador6 ; contador                    ; work         ;
+;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:count     ; contador                    ; work         ;
+;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:freq2hz   ; contador                    ; work         ;
+;          |lfsr:spin|                          ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin          ; lfsr                        ; work         ;
+;    |lcd_controler:inst15|                     ; 114 (114)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                    ; lcd_controler               ; work         ;
+;    |lcd_logic:inst14|                         ; 88 (82)             ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                        ; lcd_logic                   ; work         ;
+;       |conversor_binario4_binario8:conv_u[1]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[1]  ; conversor_binario4_binario8 ; work         ;
+;       |conversor_binario4_binario8:conv_u[2]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[2]  ; conversor_binario4_binario8 ; work         ;
+;       |conversor_binario4_binario8:conv_u[3]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[3]  ; conversor_binario4_binario8 ; work         ;
+;       |conversor_binario4_binario8:conv_u[4]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[4]  ; conversor_binario4_binario8 ; work         ;
+;       |conversor_binario4_binario8:conv_u[5]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[5]  ; conversor_binario4_binario8 ; work         ;
+;       |conversor_binario4_binario8:conv_u[6]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[6]  ; conversor_binario4_binario8 ; work         ;
+;    |registrador:inst4|                        ; 368 (288)           ; 103 (43)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                       ; registrador                 ; work         ;
+;       |contador:div_sorteio|                  ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio                  ; contador                    ; work         ;
+;       |contador:divisor|                      ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor                      ; contador                    ; work         ;
+;       |contador_crescente:count|              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count              ; contador_crescente          ; work         ;
+;       |debouncer:deb|                         ; 6 (1)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb                         ; debouncer                   ; work         ;
+;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor        ; contador                    ; work         ;
+;       |sorteador:sorteio|                     ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio                     ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio|contador_n:contador ; contador_n                  ; work         ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -509,18 +505,48 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------+--------------------------------------------------------------------------+
 ; Register name                                                ; Reason for Removal                                                       ;
 +--------------------------------------------------------------+--------------------------------------------------------------------------+
+; display:inst2|varia_display:varia[1]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|sorteador:sorteio|DECIMAL[8]               ; Stuck at GND due to stuck port data_in                                   ;
 ; lcd_logic:inst14|lcd_bus[8]                                  ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; controle:inst1|debouncer:debounc1|contador:count|count[1..4] ; Lost fanout                                                              ;
 ; controle:inst1|debouncer:debounc1|contador:count|alt         ; Lost fanout                                                              ;
 ; registrador:inst4|debouncer:deb|contador:count|count[1..4]   ; Lost fanout                                                              ;
 ; registrador:inst4|debouncer:deb|contador:count|alt           ; Lost fanout                                                              ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[1]|lfsr:spin|d[3]          ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|d[4]          ; Merged with display:inst2|varia_display:varia[1]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[2]|lfsr:spin|d[3]          ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|d[4]          ; Merged with display:inst2|varia_display:varia[2]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[3]|lfsr:spin|d[3]          ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|d[4]          ; Merged with display:inst2|varia_display:varia[3]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[4]|lfsr:spin|d[3]          ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|d[4]          ; Merged with display:inst2|varia_display:varia[4]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[5]|lfsr:spin|d[3]          ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|d[4]          ; Merged with display:inst2|varia_display:varia[5]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[6]|lfsr:spin|d[3]          ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|d[4]          ; Merged with display:inst2|varia_display:varia[6]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[4]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[4]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[4]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[4]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[4]    ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[4]    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|debouncer:deb|contador:divisor|count[16]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[16] ;
 ; registrador:inst4|debouncer:deb|contador:divisor|count[15]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[15] ;
 ; registrador:inst4|debouncer:deb|contador:divisor|count[14]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[14] ;
@@ -538,35 +564,200 @@ Encoding Type:  One-Hot
 ; registrador:inst4|debouncer:deb|contador:divisor|count[2]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[2]  ;
 ; registrador:inst4|debouncer:deb|contador:divisor|count[1]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[1]  ;
 ; lcd_controler:inst15|rw                                      ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[1]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[2]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[3]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[4]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[5]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[1]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[2]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[3]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[4]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[5]|lfsr:spin|d[2]          ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[6]|lfsr:spin|d[2]          ;
 ; display:inst2|varia_display:varia[6]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[5]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[4]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[3]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[2]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[1]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[7]    ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[7]    ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[7]    ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[7]    ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[7]    ; Stuck at VCC due to stuck port data_in                                   ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[7]    ; Stuck at VCC due to stuck port data_in                                   ;
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[0..27]       ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|START          ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s0             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s1             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s2             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s3             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s4             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s5             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s6             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s7             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s8             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s9             ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s10            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s11            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s12            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s13            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s14            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s15            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s16            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s17            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s18            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s19            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s20            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s21            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s22            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s23            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s24            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s25            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s26            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s27            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s28            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s29            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s30            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s31            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s32            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s33            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s34            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s35            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s36            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s37            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s38            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s39            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s40            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s41            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s42            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s43            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s44            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s45            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s46            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s47            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s48            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s49            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s50            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s51            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s52            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s53            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s54            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s55            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s56            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s57            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s58            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s59            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s60            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s61            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s62            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s63            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s64            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s65            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s66            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s67            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s68            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s69            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s70            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s71            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s72            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s73            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s74            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s75            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s76            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s77            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s78            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s79            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s80            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s81            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s82            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s83            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s84            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s85            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s86            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s87            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s88            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s89            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s90            ; Lost fanout                                                              ;
+; song_starwars_25MHz:inst9|controlador:control|s91            ; Lost fanout                                                              ;
 ; lcd_logic:inst14|char_34                                     ; Stuck at GND due to stuck port data_in                                   ;
 ; contador_crescente:inst3|cnt[3,4]                            ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|contador_crescente:count|cnt[4]            ; Stuck at GND due to stuck port data_in                                   ;
-; registrador:inst4|d[4][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
-; registrador:inst4|d[6][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[1][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|d[4][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[5][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|d[6][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[2][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[3][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
-; Total Number of Removed Registers = 51                       ;                                                                          ;
+; Total Number of Removed Registers = 214                      ;                                                                          ;
 +--------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                            ;
-+---------------------------------------------------+---------------------------+----------------------------------------+
-; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register ;
-+---------------------------------------------------+---------------------------+----------------------------------------+
-; lcd_logic:inst14|lcd_bus[8]                       ; Stuck at GND              ; lcd_controler:inst15|rw                ;
-;                                                   ; due to stuck port data_in ;                                        ;
-; registrador:inst4|contador_crescente:count|cnt[4] ; Stuck at GND              ; registrador:inst4|d[6][4]              ;
-;                                                   ; due to stuck port data_in ;                                        ;
-+---------------------------------------------------+---------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------------+
+; Register name                                       ; Reason for Removal        ; Registers Removed due to This Register                     ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------------+
+; song_starwars_25MHz:inst9|temporizador:temp|cnt[27] ; Lost Fanouts              ; song_starwars_25MHz:inst9|temporizador:temp|cnt[26],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[25],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[24],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[23],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[22],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[21],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[20],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[19],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[18],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[17],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[16],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[15],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[14],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[13],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[12],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[11],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[10],       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[9],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[8],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[7],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[6],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[5],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[4],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[3],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[2],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[1],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|temporizador:temp|cnt[0],        ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|START,       ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s3,          ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s4,          ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s8,          ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s9,          ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s13,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s14,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s18,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s19,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s23,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s24,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s29,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s34,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s39,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s44,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s45,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s46,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s47,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s57,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s58,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s59,         ;
+;                                                     ;                           ; song_starwars_25MHz:inst9|controlador:control|s88          ;
+; display:inst2|varia_display:varia[1]|lfsr:spin|d[5] ; Stuck at VCC              ; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[4], ;
+;                                                     ; due to stuck port data_in ; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[7]  ;
+; display:inst2|varia_display:varia[2]|lfsr:spin|d[5] ; Stuck at VCC              ; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[4], ;
+;                                                     ; due to stuck port data_in ; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[7]  ;
+; display:inst2|varia_display:varia[3]|lfsr:spin|d[5] ; Stuck at VCC              ; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[4], ;
+;                                                     ; due to stuck port data_in ; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[7]  ;
+; display:inst2|varia_display:varia[4]|lfsr:spin|d[5] ; Stuck at VCC              ; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[4], ;
+;                                                     ; due to stuck port data_in ; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[7]  ;
+; display:inst2|varia_display:varia[5]|lfsr:spin|d[5] ; Stuck at VCC              ; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[4], ;
+;                                                     ; due to stuck port data_in ; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[7]  ;
+; display:inst2|varia_display:varia[6]|lfsr:spin|d[5] ; Stuck at VCC              ; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[4], ;
+;                                                     ; due to stuck port data_in ; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[7]  ;
+; lcd_logic:inst14|lcd_bus[8]                         ; Stuck at GND              ; lcd_controler:inst15|rw                                    ;
+;                                                     ; due to stuck port data_in ;                                                            ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -574,9 +765,9 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 758   ;
-; Number of registers using Synchronous Clear  ; 414   ;
-; Number of registers using Synchronous Load   ; 11    ;
+; Total registers                              ; 437   ;
+; Number of registers using Synchronous Clear  ; 228   ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 36    ;
@@ -703,56 +894,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; n_bits_t       ; 27    ; Untyped                                                         ;
-+----------------+-------+-----------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:freq2hz ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; overflow       ; 12500000 ; Untyped                                                                ;
++----------------+----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; n_bits_f       ; 18    ; Untyped                                                               ;
-+----------------+-------+-----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; n_bits_t       ; 27    ; Untyped                                                           ;
-; n_bits_f       ; 18    ; Untyped                                                           ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador_grande:freq3s ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value     ; Type                                                                        ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; min_cnt        ; 0         ; Untyped                                                                     ;
-; max_cnt        ; 112500000 ; Untyped                                                                     ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador_grande:freq2hz ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                          ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; min_cnt        ; 0        ; Untyped                                                                       ;
-; max_cnt        ; 18750000 ; Untyped                                                                       ;
-+----------------+----------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:contador6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; overflow       ; 5     ; Untyped                                                                     ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -766,25 +924,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador_grande:freq3s ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value     ; Type                                                                        ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; min_cnt        ; 0         ; Untyped                                                                     ;
-; max_cnt        ; 112500000 ; Untyped                                                                     ;
-+----------------+-----------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:freq2hz ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; overflow       ; 12500000 ; Untyped                                                                ;
++----------------+----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador_grande:freq2hz ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                          ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; min_cnt        ; 0        ; Untyped                                                                       ;
-; max_cnt        ; 18750000 ; Untyped                                                                       ;
-+----------------+----------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:contador6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; overflow       ; 5     ; Untyped                                                                     ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -798,25 +954,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador_grande:freq3s ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value     ; Type                                                                        ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; min_cnt        ; 0         ; Untyped                                                                     ;
-; max_cnt        ; 112500000 ; Untyped                                                                     ;
-+----------------+-----------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:freq2hz ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; overflow       ; 12500000 ; Untyped                                                                ;
++----------------+----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador_grande:freq2hz ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                          ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; min_cnt        ; 0        ; Untyped                                                                       ;
-; max_cnt        ; 18750000 ; Untyped                                                                       ;
-+----------------+----------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:contador6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; overflow       ; 5     ; Untyped                                                                     ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -830,25 +984,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador_grande:freq3s ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value     ; Type                                                                        ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; min_cnt        ; 0         ; Untyped                                                                     ;
-; max_cnt        ; 112500000 ; Untyped                                                                     ;
-+----------------+-----------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:freq2hz ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; overflow       ; 12500000 ; Untyped                                                                ;
++----------------+----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador_grande:freq2hz ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                          ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; min_cnt        ; 0        ; Untyped                                                                       ;
-; max_cnt        ; 18750000 ; Untyped                                                                       ;
-+----------------+----------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:contador6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; overflow       ; 5     ; Untyped                                                                     ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -862,25 +1014,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador_grande:freq3s ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value     ; Type                                                                        ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; min_cnt        ; 0         ; Untyped                                                                     ;
-; max_cnt        ; 112500000 ; Untyped                                                                     ;
-+----------------+-----------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:freq2hz ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; overflow       ; 12500000 ; Untyped                                                                ;
++----------------+----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador_grande:freq2hz ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                          ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; min_cnt        ; 0        ; Untyped                                                                       ;
-; max_cnt        ; 18750000 ; Untyped                                                                       ;
-+----------------+----------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:contador6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; overflow       ; 5     ; Untyped                                                                     ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -894,25 +1044,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador_grande:freq3s ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value     ; Type                                                                        ;
-+----------------+-----------+-----------------------------------------------------------------------------+
-; min_cnt        ; 0         ; Untyped                                                                     ;
-; max_cnt        ; 112500000 ; Untyped                                                                     ;
-+----------------+-----------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:freq2hz ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; overflow       ; 12500000 ; Untyped                                                                ;
++----------------+----------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador_grande:freq2hz ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                          ;
-+----------------+----------+-------------------------------------------------------------------------------+
-; min_cnt        ; 0        ; Untyped                                                                       ;
-; max_cnt        ; 18750000 ; Untyped                                                                       ;
-+----------------+----------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:contador6 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; overflow       ; 5     ; Untyped                                                                     ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -947,30 +1095,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; n_bits_t       ; 27    ; Untyped                                                         ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n_bits_f       ; 18    ; Untyped                                                               ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n_bits_t       ; 27    ; Untyped                                                           ;
+; n_bits_f       ; 18    ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 29                          ;
-; cycloneiii_ff         ; 758                         ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 437                         ;
 ;     ENA               ; 36                          ;
-;     SCLR              ; 414                         ;
-;     SLD               ; 11                          ;
-;     plain             ; 297                         ;
-; cycloneiii_lcell_comb ; 1543                        ;
-;     arith             ; 431                         ;
-;         2 data inputs ; 397                         ;
-;         3 data inputs ; 34                          ;
-;     normal            ; 1112                        ;
+;     SCLR              ; 228                         ;
+;     plain             ; 173                         ;
+; cycloneiii_lcell_comb ; 978                         ;
+;     arith             ; 216                         ;
+;         2 data inputs ; 204                         ;
+;         3 data inputs ; 12                          ;
+;     normal            ; 762                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 39                          ;
-;         2 data inputs ; 122                         ;
-;         3 data inputs ; 155                         ;
-;         4 data inputs ; 795                         ;
+;         1 data inputs ; 38                          ;
+;         2 data inputs ; 71                          ;
+;         3 data inputs ; 118                         ;
+;         4 data inputs ; 534                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.12                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 3.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -979,7 +1157,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -989,125 +1167,126 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Aug 07 07:26:51 2023
+    Info: Processing started: Mon Aug  7 11:43:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador.tdf
-    Info (12023): Found entity 1: contador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 5
-Warning (287004): Group name "count" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 84
-Warning (287004): Group name "count" is missing brackets ([ ]) File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 91
+    Info (12023): Found entity 1: contador File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 5
+Warning (287004): Group name "count" is missing brackets ([ ]) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 117
+Warning (287004): Group name "count" is missing brackets ([ ]) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 124
 Info (12021): Found 1 design units, including 1 entities, in source file display.tdf
-    Info (12023): Found entity 1: display File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 5
+    Info (12023): Found entity 1: display File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file projeto2.bdf
     Info (12023): Found entity 1: projeto2
 Info (12021): Found 1 design units, including 1 entities, in source file conversor_numero_segmento.tdf
-    Info (12023): Found entity 1: conversor_numero_segmento File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf Line: 1
+    Info (12023): Found entity 1: conversor_numero_segmento File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/conversor_numero_segmento.tdf Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debouncer.tdf
-    Info (12023): Found entity 1: debouncer File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 3
+    Info (12023): Found entity 1: debouncer File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file sorteador.tdf
-    Info (12023): Found entity 1: sorteador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 3
+    Info (12023): Found entity 1: sorteador File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file contador_crescente.tdf
-    Info (12023): Found entity 1: contador_crescente File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf Line: 5
+    Info (12023): Found entity 1: contador_crescente File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file registrador.tdf
-    Info (12023): Found entity 1: registrador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 6
+    Info (12023): Found entity 1: registrador File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file controle.tdf
-    Info (12023): Found entity 1: controle File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 3
+    Info (12023): Found entity 1: controle File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file teste.tdf
-    Info (12023): Found entity 1: teste File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/teste.tdf Line: 3
+    Info (12023): Found entity 1: teste File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/teste.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file conversor_binario4_binario8.tdf
-    Info (12023): Found entity 1: conversor_binario4_binario8 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf Line: 1
+    Info (12023): Found entity 1: conversor_binario4_binario8 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_controler.tdf
-    Info (12023): Found entity 1: lcd_controler File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf Line: 16
+    Info (12023): Found entity 1: lcd_controler File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_logic.tdf
-    Info (12023): Found entity 1: lcd_logic File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 9
+    Info (12023): Found entity 1: lcd_logic File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file leds.tdf
-    Info (12023): Found entity 1: leds File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/leds.tdf Line: 3
-Warning (287002): Group MSB q1 overrides BIT0 = LSB in actual or default Options Statement File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.inc Line: 26
+    Info (12023): Found entity 1: leds File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/leds.tdf Line: 3
+Warning (287002): Group MSB q1 overrides BIT0 = LSB in actual or default Options Statement File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador.inc Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file varia_display.tdf
-    Info (12023): Found entity 1: varia_display File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/controlador.tdf
-    Info (12023): Found entity 1: controlador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 37
-Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/divisor_clock.tdf
-    Info (12023): Found entity 1: divisor_clock File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf Line: 7
-Warning (287009): Result of LOG2 is not an integer -- rounded result to next whole number File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 11
-Warning (287009): Result of LOG2 is not an integer -- rounded result to next whole number File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 16
-Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/song_starwars_25mhz.tdf
-    Info (12023): Found entity 1: song_starwars_25MHz File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 19
-Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25mhz/temporizador.tdf
-    Info (12023): Found entity 1: temporizador File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 13
+    Info (12023): Found entity 1: varia_display File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25MHz/controlador.tdf
+    Info (12023): Found entity 1: controlador File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 37
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25MHz/divisor_clock.tdf
+    Info (12023): Found entity 1: divisor_clock File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf Line: 7
+Warning (287009): Result of LOG2 is not an integer -- rounded result to next whole number File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 11
+Warning (287009): Result of LOG2 is not an integer -- rounded result to next whole number File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25MHz/song_starwars_25MHz.tdf
+    Info (12023): Found entity 1: song_starwars_25MHz File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file song_starwars_25MHz/temporizador.tdf
+    Info (12023): Found entity 1: temporizador File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/temporizador.tdf Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file contador_n.tdf
-    Info (12023): Found entity 1: contador_n File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_n.tdf Line: 6
+    Info (12023): Found entity 1: contador_n File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_n.tdf Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file lfsr.tdf
-    Info (12023): Found entity 1: lfsr File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lfsr.tdf Line: 1
+    Info (12023): Found entity 1: lfsr File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lfsr.tdf Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_grande.tdf
-    Info (12023): Found entity 1: contador_grande File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador_grande.tdf Line: 5
-Warning (287013): Variable or input pin "conv_d6" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
-Warning (287013): Variable or input pin "conv_d5" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
-Warning (287013): Variable or input pin "conv_d4" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
-Warning (287013): Variable or input pin "conv_d3" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
-Warning (287013): Variable or input pin "conv_d2" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
-Warning (287013): Variable or input pin "conv_d1" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
-Warning (287013): Variable or input pin "conv_u6" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
-Warning (287013): Variable or input pin "conv_u5" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
-Warning (287013): Variable or input pin "conv_u4" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
-Warning (287013): Variable or input pin "conv_u3" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
-Warning (287013): Variable or input pin "conv_u2" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
-Warning (287013): Variable or input pin "conv_u1" is defined but never used. File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
+    Info (12023): Found entity 1: contador_grande File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador_grande.tdf Line: 5
+Warning (287013): Variable or input pin "conv_d6" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
+Warning (287013): Variable or input pin "conv_d5" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
+Warning (287013): Variable or input pin "conv_d4" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
+Warning (287013): Variable or input pin "conv_d3" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
+Warning (287013): Variable or input pin "conv_d2" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
+Warning (287013): Variable or input pin "conv_d1" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 16
+Warning (287013): Variable or input pin "conv_u6" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
+Warning (287013): Variable or input pin "conv_u5" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
+Warning (287013): Variable or input pin "conv_u4" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
+Warning (287013): Variable or input pin "conv_u3" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
+Warning (287013): Variable or input pin "conv_u2" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
+Warning (287013): Variable or input pin "conv_u1" is defined but never used. File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file detector_sorteios.tdf
-    Info (12023): Found entity 1: detector_sorteios File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 9
+    Info (12023): Found entity 1: detector_sorteios File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/detector_sorteios.tdf Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file pulso_to_clock.tdf
+    Info (12023): Found entity 1: pulso_to_clock File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/pulso_to_clock.tdf Line: 1
 Info (12127): Elaborating entity "projeto2" for the top level hierarchy
 Info (12128): Elaborating entity "lcd_controler" for hierarchy "lcd_controler:inst15"
 Info (12128): Elaborating entity "lcd_logic" for hierarchy "lcd_logic:inst14"
-Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 24
+Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 24
 Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst4"
-Info (12128): Elaborating entity "debouncer" for hierarchy "registrador:inst4|debouncer:deb" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 18
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
-Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
-Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
-Info (12128): Elaborating entity "contador_n" for hierarchy "registrador:inst4|sorteador:sorteio|contador_n:contador" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 12
+Info (12128): Elaborating entity "debouncer" for hierarchy "registrador:inst4|debouncer:deb" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 18
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:count" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:divisor" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
+Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
+Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
+Info (12128): Elaborating entity "contador_n" for hierarchy "registrador:inst4|sorteador:sorteio|contador_n:contador" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 12
 Info (12128): Elaborating entity "controle" for hierarchy "controle:inst1"
-Info (12128): Elaborating entity "debouncer" for hierarchy "controle:inst1|debouncer:debounc3" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 14
-Info (12128): Elaborating entity "song_starwars_25MHz" for hierarchy "song_starwars_25MHz:inst9"
-Info (12128): Elaborating entity "temporizador" for hierarchy "song_starwars_25MHz:inst9|temporizador:temp" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 28
-Info (12128): Elaborating entity "divisor_clock" for hierarchy "song_starwars_25MHz:inst9|divisor_clock:div_clock" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 30
-Info (12128): Elaborating entity "controlador" for hierarchy "song_starwars_25MHz:inst9|controlador:control" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 32
-Warning (287010): Result of division operation "25000000/3" contains a remainder -- truncated result File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 28
+Info (12128): Elaborating entity "debouncer" for hierarchy "controle:inst1|debouncer:debounc3" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 14
 Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
-Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "display:inst2|conversor_numero_segmento:convd1" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 16
-Info (12128): Elaborating entity "varia_display" for hierarchy "display:inst2|varia_display:varia[6]" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 19
-Info (12128): Elaborating entity "contador_grande" for hierarchy "display:inst2|varia_display:varia[6]|contador_grande:freq3s" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 17
-Info (12128): Elaborating entity "contador_grande" for hierarchy "display:inst2|varia_display:varia[6]|contador_grande:freq2hz" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 18
-Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|varia_display:varia[6]|contador:count" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 19
-Warning (287002): Group MSB q1 overrides BIT0 = LSB in actual or default Options Statement File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 10
-Warning (287002): Group MSB count1 overrides BIT0 = LSB in actual or default Options Statement File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
-Info (12128): Elaborating entity "lfsr" for hierarchy "display:inst2|varia_display:varia[6]|lfsr:spin" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 20
-Info (12128): Elaborating entity "detector_sorteios" for hierarchy "display:inst2|detector_sorteios:detector" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 21
+Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "display:inst2|conversor_numero_segmento:convd1" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 17
+Info (12128): Elaborating entity "varia_display" for hierarchy "display:inst2|varia_display:varia[6]" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 20
+Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|varia_display:varia[6]|contador:freq2hz" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 18
+Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|varia_display:varia[6]|contador:contador6" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 19
+Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|varia_display:varia[6]|contador:count" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 20
+Warning (287002): Group MSB q1 overrides BIT0 = LSB in actual or default Options Statement File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 10
+Warning (287002): Group MSB count1 overrides BIT0 = LSB in actual or default Options Statement File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
+Info (12128): Elaborating entity "lfsr" for hierarchy "display:inst2|varia_display:varia[6]|lfsr:spin" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 21
+Info (12128): Elaborating entity "detector_sorteios" for hierarchy "display:inst2|detector_sorteios:detector" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 22
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "contador_crescente:inst3"
 Info (12128): Elaborating entity "contador" for hierarchy "contador:inst"
+Info (12128): Elaborating entity "song_starwars_25MHz" for hierarchy "song_starwars_25MHz:inst9"
+Info (12128): Elaborating entity "temporizador" for hierarchy "song_starwars_25MHz:inst9|temporizador:temp" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 28
+Info (12128): Elaborating entity "divisor_clock" for hierarchy "song_starwars_25MHz:inst9|divisor_clock:div_clock" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 30
+Info (12128): Elaborating entity "controlador" for hierarchy "song_starwars_25MHz:inst9|controlador:control" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 32
+Warning (287010): Result of division operation "25000000/3" contains a remainder -- truncated result File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf Line: 28
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 25
+    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 25
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_rw" is stuck at GND
-    Warning (13410): Pin "led[4]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 10 registers lost all their fanouts during netlist optimizations.
+Info (17049): 131 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "registrador:inst4|debouncer:deb|ff[2]~0" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
-    Info (17048): Logic cell "controle:inst1|debouncer:debounc1|ff[2]~0" File: C:/Users/pedro/OneDrive/햞ea de Trabalho/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
+    Info (17048): Logic cell "registrador:inst4|debouncer:deb|ff[2]~0" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
+    Info (17048): Logic cell "controle:inst1|debouncer:debounc1|ff[2]~0" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1614 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1047 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 1585 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Mon Aug 07 07:27:07 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 1019 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 450 megabytes
+    Info: Processing ended: Mon Aug  7 11:44:04 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

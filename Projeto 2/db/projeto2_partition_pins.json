@@ -12,10 +12,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "buzzer",
-					"strict" : false
-				},
-				{
 					"name" : "dig[4]",
 					"strict" : false
 				},
@@ -73,6 +69,10 @@
 				},
 				{
 					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
 					"strict" : false
 				},
 				{
