@@ -14,9 +14,9 @@ SUBDESIGN varia_display
      led : OUTPUT;
 )
 VARIABLE
-    freq3s : contador_grande WITH (min_cnt = 0, max_cnt = 75000000); -- frequencia para 3s
-    freq2hz : contador_grande WITH (min_cnt = 0, max_cnt = 12500000); -- frequencia 2Hz
-    count : contador_grande WITH (min_cnt = 0, max_cnt = 1); -- maquina de estados
+    freq3s : contador_grande WITH (min_cnt = 0, max_cnt = 112500000); -- frequencia para 3s
+    freq2hz : contador_grande WITH (min_cnt = 0, max_cnt = 18750000); -- frequencia 2Hz
+    count : contador WITH (overflow = 1); -- maquina de estados
     spin : lfsr;
 
 BEGIN 
@@ -24,18 +24,16 @@ BEGIN
 	 freq2hz.clk = clock;
 	 
     IF count.q[] == 0 THEN
-        count.clk = pulso;
+        count.clock = pulso;
         d_display[] = d_atual[];
         u_display[] = u_atual[];
         spin.sinal = GND;
-		  led = VCC;
     ELSIF count.q[] == 1 THEN
 		  freq3s.clk = clock;
         spin.sinal = VCC;
         d_display[] = spin.dezena[];
         u_display[] = spin.unidade[];
-        count.clk = freq3s.tc;
-		  led = GND;
+        count.clock = freq3s.tc;
     END IF;
         
 END;
