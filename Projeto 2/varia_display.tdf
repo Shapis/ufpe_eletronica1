@@ -19,9 +19,13 @@ VARIABLE
     contador6 : contador WITH (overflow = 5);
     count : contador WITH (overflow = 1); -- maquina de estados
     spin : lfsr;
+	 d_sorteada[4..1] : dff;
+	 u_sorteada[4..1] : dff;
 
 BEGIN 
-	 spin.clock = freq2hz.clk_out;
+	 spin.clock = clock;
+	 d_sorteada[].clk = freq2hz.clk_out;
+	 u_sorteada[].clk = freq2hz.clk_out;
 
     IF count.q[] == 0 THEN
         count.clock = pulso;
@@ -31,9 +35,10 @@ BEGIN
 		  freq2hz.clock = clock;
 		  contador6.clock = freq2hz.clk_out;
 		  led = contador6.clk_out;
-        d_display[] = spin.dezena[];
-        u_display[] = spin.unidade[];
+        d_sorteada[].d = spin.dezena[];
+        u_sorteada[].d = spin.unidade[];
         count.clock = contador6.clk_out;
-    END IF;
-        
+		  d_display[] = d_sorteada[];
+		  u_display[] = u_sorteada[];
+    END IF;      
 END;

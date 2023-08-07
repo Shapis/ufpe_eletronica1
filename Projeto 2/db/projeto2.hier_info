@@ -1713,6 +1713,7 @@ segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[6]
+clock => lfsr:spin.clock
 clock => _.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
@@ -1867,6 +1868,7 @@ unidade[4] <= DECIMAL[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[5]
+clock => lfsr:spin.clock
 clock => _.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
@@ -2021,6 +2023,7 @@ unidade[4] <= DECIMAL[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[4]
+clock => lfsr:spin.clock
 clock => _.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
@@ -2175,6 +2178,7 @@ unidade[4] <= DECIMAL[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[3]
+clock => lfsr:spin.clock
 clock => _.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
@@ -2329,6 +2333,7 @@ unidade[4] <= DECIMAL[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[2]
+clock => lfsr:spin.clock
 clock => _.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
@@ -2483,6 +2488,7 @@ unidade[4] <= DECIMAL[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[1]
+clock => lfsr:spin.clock
 clock => _.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
