@@ -157,4 +157,17 @@ set_global_assignment -name AHDL_FILE teste.tdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name AHDL_FILE conversor_binario4_binario8.tdf
+set_global_assignment -name AHDL_FILE lcd_controler.tdf
+set_global_assignment -name AHDL_FILE lcd_logic.tdf
+set_global_assignment -name AHDL_FILE leds.tdf
+set_global_assignment -name AHDL_FILE varia_display.tdf
+set_global_assignment -name AHDL_FILE song_starwars_25MHz/controlador.tdf
+set_global_assignment -name AHDL_FILE song_starwars_25MHz/divisor_clock.tdf
+set_global_assignment -name AHDL_FILE song_starwars_25MHz/song_starwars_25MHz.tdf
+set_global_assignment -name AHDL_FILE song_starwars_25MHz/temporizador.tdf
+set_global_assignment -name AHDL_FILE contador_n.tdf
+set_global_assignment -name AHDL_FILE lfsr.tdf
+set_global_assignment -name AHDL_FILE contador_grande.tdf
+set_global_assignment -name AHDL_FILE detector_sorteios.tdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

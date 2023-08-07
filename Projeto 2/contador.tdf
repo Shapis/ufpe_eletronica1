@@ -5,6 +5,7 @@ PARAMETERS(
 SUBDESIGN contador
 (
     clock : INPUT;
+	 ena : INPUT = VCC;
 	 clr : INPUT = VCC;
     q[CEIL(LOG2(overflow))..1] : OUTPUT;
     clk_out : OUTPUT;
@@ -14,10 +15,14 @@ count[CEIL(LOG2(overflow))..1]: dff;
 alt : tff;
 
 BEGIN
-    count[].clk = clock;
+    
     alt.clk = clock;
+	 IF ena == VCC THEN
+		count[].clk = clock;
+	 END IF;
     IF count[].q < overflow THEN
         count[].d = count[] + 1;
+		  alt.t = GND;
     ELSIF count[].q >= overflow THEN
         count[].d = 0;
         alt.t = VCC;

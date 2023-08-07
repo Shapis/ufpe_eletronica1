@@ -1,0 +1,39 @@
+INCLUDE "contador_grande.inc";
+INCLUDE "contador.inc";
+INCLUDE "lfsr.inc";
+
+SUBDESIGN varia_display
+(
+    clock : INPUT;
+     pulso : INPUT;
+     d_atual[4..1] : INPUT;
+     u_atual[4..1] : INPUT;
+     button2 : INPUT;
+     d_display[4..1] : OUTPUT;
+     u_display[4..1] : OUTPUT;
+     led : OUTPUT;
+)
+VARIABLE
+    freq3s : contador_grande WITH (min_cnt = 0, max_cnt = 112500000); -- frequencia para 3s
+    freq2hz : contador_grande WITH (min_cnt = 0, max_cnt = 18750000); -- frequencia 2Hz
+    count : contador WITH (overflow = 1); -- maquina de estados
+    spin : lfsr;
+
+BEGIN 
+    spin.clock = freq2hz.tc;
+	 freq2hz.clk = clock;
+	 
+    IF count.q[] == 0 THEN
+        count.clock = pulso;
+        d_display[] = d_atual[];
+        u_display[] = u_atual[];
+        spin.sinal = GND;
+    ELSIF count.q[] == 1 THEN
+		  freq3s.clk = clock;
+        spin.sinal = VCC;
+        d_display[] = spin.dezena[];
+        u_display[] = spin.unidade[];
+        count.clock = freq3s.tc;
+    END IF;
+        
+END;
