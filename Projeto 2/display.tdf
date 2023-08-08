@@ -9,9 +9,11 @@ SUBDESIGN display
 	 d1[4..1]: INPUT;
 	 d2[6..1][4..1]: INPUT;
 	 d3[6..1][4..1]: INPUT;
+	 button2 : INPUT;
 	 dig[4..1]: OUTPUT;
 	 seg[6..0]: OUTPUT;
 	 led : OUTPUT;
+
 )
 VARIABLE
 convd1 : conversor_numero_segmento;
@@ -26,6 +28,9 @@ BEGIN
 DEFAULTS
 	dig[] = VCC;
 END DEFAULTS;
+
+
+varia[].button2 = button2;
 
 detector.d[][] = d2[][];
 detector.u[][] = d3[][];

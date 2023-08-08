@@ -27,7 +27,7 @@ BEGIN
         count[].d = 0;
         alt.t = VCC;
     ELSE
-        cnt[].d = cnt[].q;
+        count[].d = count[].q;
     END IF;
      
     q[] = count[];

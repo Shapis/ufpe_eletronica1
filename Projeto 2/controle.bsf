@@ -41,9 +41,16 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 64)
 		(input)
-		(text "btn3in" (rect 0 0 22 12)(font "Arial" ))
-		(text "btn3in" (rect 21 59 43 71)(font "Arial" ))
+		(text "btn2in" (rect 0 0 22 12)(font "Arial" ))
+		(text "btn2in" (rect 21 59 43 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "btn3in" (rect 0 0 22 12)(font "Arial" ))
+		(text "btn3in" (rect 21 75 43 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
 		(pt 152 32)
@@ -55,9 +62,16 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 152 48)
 		(output)
-		(text "btn3out" (rect 0 0 28 12)(font "Arial" ))
-		(text "btn3out" (rect 103 43 131 55)(font "Arial" ))
+		(text "btn2out" (rect 0 0 28 12)(font "Arial" ))
+		(text "btn2out" (rect 103 43 131 55)(font "Arial" ))
 		(line (pt 152 48)(pt 136 48)(line_width 1))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "btn3out" (rect 0 0 28 12)(font "Arial" ))
+		(text "btn3out" (rect 103 59 131 71)(font "Arial" ))
+		(line (pt 152 64)(pt 136 64)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 136 96)(line_width 1))

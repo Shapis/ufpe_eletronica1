@@ -16,29 +16,37 @@ SUBDESIGN varia_display
 )
 VARIABLE
     freq2hz : contador WITH (overflow = 12500000); -- frequencia para 3s
+	 freq5hz : contador WITH (overflow = 5000000);
     contador6 : contador WITH (overflow = 5);
     count : contador WITH (overflow = 1); -- maquina de estados
     spin : lfsr;
-	 d_sorteada[4..1] : dff;
-	 u_sorteada[4..1] : dff;
+	 toggle_frequencia : tff;
 
 BEGIN 
-	 spin.clock = clock;
-	 d_sorteada[].clk = freq2hz.clk_out;
-	 u_sorteada[].clk = freq2hz.clk_out;
+		toggle_frequencia.t = VCC;
+		toggle_frequencia.clk = button2;
+		led = toggle_frequencia;
+		
+		IF toggle_frequencia == GND THEN
+			spin.clock = freq2hz.clk_out;
+		ELSE 
+			spin.clock = freq5hz.clk_out;
+		END IF;
+
+	  spin.seed_unidade[] = u_atual[];
 
     IF count.q[] == 0 THEN
         count.clock = pulso;
         d_display[] = d_atual[];
         u_display[] = u_atual[];
-    ELSIF count.q[] == 1 THEN	  
-		  freq2hz.clock = clock;
-		  contador6.clock = freq2hz.clk_out;
-		  led = contador6.clk_out;
-        d_sorteada[].d = spin.dezena[];
-        u_sorteada[].d = spin.unidade[];
+    ELSIF count.q[] == 1 THEN      
+			 freq5hz.clock = clock;
+          freq2hz.clock = clock;
+          contador6.clock = freq2hz.clk_out;
+          
+        d_display[] = spin.dezena[];
+        u_display[] = spin.unidade[];
         count.clock = contador6.clk_out;
-		  d_display[] = d_sorteada[];
-		  u_display[] = u_sorteada[];
-    END IF;      
+    END IF;
+        
 END;
