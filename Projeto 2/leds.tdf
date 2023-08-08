@@ -9,7 +9,7 @@ SUBDESIGN leds
 
 BEGIN
 
-IF leds_out[] == 6 THEN
+IF !leds_out[] == 6 THEN
 		song = VCC;
 END IF;
 

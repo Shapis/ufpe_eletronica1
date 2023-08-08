@@ -1,6 +1,8 @@
 INCLUDE "conversor_numero_segmento.inc";
 INCLUDE "varia_display.inc";
 INCLUDE "detector_sorteios.inc";
+INCLUDE "contador.inc";
+INCLUDE "contador_crescente.inc";
 
 SUBDESIGN display
 (
@@ -24,12 +26,17 @@ convd3 : conversor_numero_segmento;
 varia[6..1] : varia_display;
 check_pulso : tff;
 detector : detector_sorteios;
+freq1562hz : contador WITH (overflow = 16000);
+divisor4 : contador_crescente WITH (min_cnt = 0, max_cnt = 3);
 
 
 BEGIN
 DEFAULTS
 	dig[] = VCC;
 END DEFAULTS;
+
+freq1562hz.clock = clock;
+divisor4.clk = freq1562hz.clk_out;
 
 unidades_final[][] = varia[].u_final[];
 dezenas_final[][] = varia[].d_final[];
@@ -112,14 +119,14 @@ CASE d1[] IS
 END CASE;
 
 
-CASE count IS
+CASE divisor4.q IS
 		WHEN 0 => dig[4] = GND;
 		WHEN 1 => dig[3] = GND;
 		WHEN 2 => dig[2] = GND;
 		WHEN 3 => dig[1] = GND;
 END CASE;
 
-CASE count IS
+CASE divisor4.q IS
 		WHEN 0 => seg[] = convd1.segmentos[];
 		WHEN 1 => seg[] = B"0111111";
 		WHEN 2 => seg[] = convd2.segmentos[];

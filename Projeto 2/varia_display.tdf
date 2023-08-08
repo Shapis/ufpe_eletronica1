@@ -59,7 +59,7 @@ BEGIN
 					d_final[] = B"0000";
 				   u_final[] = B"0000";
 			      spin.seed[] = u_atual[];
-			      freq5hz.clock = clock;
+					freq5hz.clock = clock;
 					freq2hz.clock = clock;
                contador6.clock = freq2hz.clk_out;
 					d_display[] = spin.dezena[];

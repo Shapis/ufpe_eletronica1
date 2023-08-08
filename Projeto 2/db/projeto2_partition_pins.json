@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "buzzer",
+					"strict" : false
+				},
+				{
 					"name" : "dig[4]",
 					"strict" : false
 				},
