@@ -133,7 +133,7 @@ BEGIN
 	END IF;
 	
 	TABLE
-		FLAG[] => qnt_sorteio[];
+		FLAG[] => !qnt_sorteio[];
 		B"000000" => B"000";
 		B"000001" => B"001";
 		B"000010" => B"001";

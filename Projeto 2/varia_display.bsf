@@ -76,9 +76,23 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 208 64)
 		(output)
+		(text "d_final[4..1]" (rect 0 0 46 12)(font "Arial" ))
+		(text "d_final[4..1]" (rect 141 59 187 71)(font "Arial" ))
+		(line (pt 208 64)(pt 192 64)(line_width 3))
+	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "u_final[4..1]" (rect 0 0 46 12)(font "Arial" ))
+		(text "u_final[4..1]" (rect 141 75 187 87)(font "Arial" ))
+		(line (pt 208 80)(pt 192 80)(line_width 3))
+	)
+	(port
+		(pt 208 96)
+		(output)
 		(text "led" (rect 0 0 10 12)(font "Arial" ))
-		(text "led" (rect 177 59 187 71)(font "Arial" ))
-		(line (pt 208 64)(pt 192 64)(line_width 1))
+		(text "led" (rect 177 91 187 103)(font "Arial" ))
+		(line (pt 208 96)(pt 192 96)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 192 128)(line_width 1))

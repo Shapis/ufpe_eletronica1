@@ -13,6 +13,8 @@ SUBDESIGN display
 	 dig[4..1]: OUTPUT;
 	 seg[6..0]: OUTPUT;
 	 led : OUTPUT;
+	 unidades_final[6..1][4..1] : OUTPUT;
+	 dezenas_final[6..1][4..1] : OUTPUT;
 
 )
 VARIABLE
@@ -29,6 +31,8 @@ DEFAULTS
 	dig[] = VCC;
 END DEFAULTS;
 
+unidades_final[][] = varia[].u_final[];
+dezenas_final[][] = varia[].d_final[];
 
 varia[].button2 = button2;
 

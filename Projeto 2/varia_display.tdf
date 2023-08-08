@@ -5,20 +5,22 @@ INCLUDE "pulso_to_clock";
 
 SUBDESIGN varia_display
 (
-    clock : INPUT;
+     clock : INPUT;
      pulso : INPUT;
      d_atual[4..1] : INPUT;
      u_atual[4..1] : INPUT;
      button2 : INPUT;
      d_display[4..1] : OUTPUT;
      u_display[4..1] : OUTPUT;
+	  d_final[4..1] : OUTPUT;
+	  u_final[4..1] : OUTPUT;
      led : OUTPUT;
 )
 VARIABLE
     freq2hz : contador WITH (overflow = 12500000); -- frequencia para 3s
 	 freq5hz : contador WITH (overflow = 5000000);
     contador6 : contador WITH (overflow = 5);
-    count : contador WITH (overflow = 1); -- maquina de estados
+    count : contador WITH (overflow = 3); -- maquina de estados
     spin : lfsr;
 	 toggle_frequencia : tff;
 
@@ -39,7 +41,11 @@ BEGIN
         count.clock = pulso;
         d_display[] = d_atual[];
         u_display[] = u_atual[];
+		  d_final = d_atual[];
+		  u_final = u_atual[];
     ELSIF count.q[] == 1 THEN
+			 d_final[] = B"0000";
+			 u_final[] = B"0000";
 			 spin.seed[] = u_atual[];
 			 freq5hz.clock = clock;
           freq2hz.clock = clock;
@@ -48,6 +54,11 @@ BEGIN
         d_display[] = spin.dezena[];
         u_display[] = spin.unidade[];
         count.clock = contador6.clk_out;
+	 ELSE 
+		  d_final[] = d_atual[];
+		  u_final[] = u_atual[];
+		  d_display[] = d_atual[];
+        u_display[] = u_atual[];
     END IF;
         
 END;
