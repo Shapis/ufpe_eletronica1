@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Tue Aug  8 03:18:23 2023
+Tue Aug  8 03:32:14 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -88,7 +88,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug  8 03:18:23 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug  8 03:32:14 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
@@ -232,6 +232,7 @@ https://fpgasoftware.intel.com/eula.
 ; conversor_binario4_binario8.tdf             ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/conversor_binario4_binario8.tdf             ;         ;
 ; lcd_controler.tdf                           ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lcd_controler.tdf                           ;         ;
 ; lcd_logic.tdf                               ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf                               ;         ;
+; leds.tdf                                    ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/leds.tdf                                    ;         ;
 ; varia_display.tdf                           ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf                           ;         ;
 ; song_starwars_25MHz/controlador.tdf         ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/controlador.tdf         ;         ;
 ; song_starwars_25MHz/divisor_clock.tdf       ; yes             ; User AHDL File                     ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/divisor_clock.tdf       ;         ;
@@ -343,7 +344,8 @@ https://fpgasoftware.intel.com/eula.
 ;          |contador:freq5hz|      ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:freq5hz   ; contador           ; work         ;
 ;          |lfsr:spin|             ; 36 (36)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin          ; lfsr               ; work         ;
 ;    |lcd_controler:inst15|        ; 112 (112)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                    ; lcd_controler      ; work         ;
-;    |lcd_logic:inst14|            ; 130 (130)           ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                        ; lcd_logic          ; work         ;
+;    |lcd_logic:inst14|            ; 119 (119)           ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                        ; lcd_logic          ; work         ;
+;    |leds:inst5|                  ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|leds:inst5                                              ; leds               ; work         ;
 ;    |registrador:inst4|           ; 358 (283)           ; 100 (44)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                       ; registrador        ; work         ;
 ;       |contador:div_sorteio|     ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio                  ; contador           ; work         ;
 ;       |contador:divisor|         ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor                      ; contador           ; work         ;
@@ -1200,7 +1202,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug  8 03:18:15 2023
+    Info: Processing started: Tue Aug  8 03:32:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -1276,7 +1278,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file pulso_t
 Info (12127): Elaborating entity "projeto2" for the top level hierarchy
 Info (12128): Elaborating entity "lcd_controler" for hierarchy "lcd_controler:inst15"
 Info (12128): Elaborating entity "lcd_logic" for hierarchy "lcd_logic:inst14"
-Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 25
+Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 23
 Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
 Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "display:inst2|conversor_numero_segmento:convd1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 21
 Info (12128): Elaborating entity "varia_display" for hierarchy "display:inst2|varia_display:varia[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 24
@@ -1298,6 +1300,7 @@ Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|con
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
 Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
 Info (12128): Elaborating entity "contador_n" for hierarchy "registrador:inst4|sorteador:sorteio|contador_n:contador" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 12
+Info (12128): Elaborating entity "leds" for hierarchy "leds:inst5"
 Info (12128): Elaborating entity "song_starwars_25MHz" for hierarchy "song_starwars_25MHz:inst9"
 Info (12128): Elaborating entity "temporizador" for hierarchy "song_starwars_25MHz:inst9|temporizador:temp" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 28
 Info (12128): Elaborating entity "divisor_clock" for hierarchy "song_starwars_25MHz:inst9|divisor_clock:div_clock" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 30
@@ -1334,8 +1337,8 @@ Info (21057): Implemented 1560 device resources after synthesis - the final reso
     Info (21059): Implemented 26 output pins
     Info (21061): Implemented 1530 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 500 megabytes
-    Info: Processing ended: Tue Aug  8 03:18:23 2023
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Tue Aug  8 03:32:14 2023
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:18
 
