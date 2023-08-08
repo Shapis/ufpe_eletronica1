@@ -2996,7 +2996,6 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|registrador:inst4
-button1 => test_led.DATAIN
 button1 => _.IN1
 button3 => toggle_pause.CLK
 clock => _.IN1
@@ -3111,7 +3110,7 @@ unidades_sorteadas[6][2] <= u[6][2].DB_MAX_OUTPUT_PORT_TYPE
 unidades_sorteadas[6][3] <= u[6][3].DB_MAX_OUTPUT_PORT_TYPE
 unidades_sorteadas[6][4] <= u[6][4].DB_MAX_OUTPUT_PORT_TYPE
 pause <= toggle_pause.DB_MAX_OUTPUT_PORT_TYPE
-test_led <= button1.DB_MAX_OUTPUT_PORT_TYPE
+test_led <= test_led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|registrador:inst4|contador:divisor

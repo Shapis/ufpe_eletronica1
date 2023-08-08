@@ -48,7 +48,7 @@ temp.t = VCC;
 
 sorteio.clock = div_sorteio.clk_out;
 
-test_led = button1;
+test_led = !toggle_pause;
 
 IF temp.q == GND THEN
 	d[][].d = d[][].q;
