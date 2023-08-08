@@ -12,18 +12,13 @@ DECIMAL[8..1]: dff;
 BEGIN
 d[].clk = clock;
 
-IF sinal == GND THEN
-	d[].d = 10;
-ELSE
-	d[1].d = d[2] $ d[5];
-	d[2].d = d[1].q;
-	d[3].d = d[2].q;
-	d[4].d = d[3].q;
-	d[5].d = d[4].q;
-	d[6].d = d[5].q;
-END IF;
-	
 
+d[1].d = d[2] $ d[5];
+d[2].d = d[1].q;
+d[3].d = d[2].q;
+d[4].d = d[3].q;
+d[5].d = VCC;
+d[6].d = d[5].q;
 
 
 dezena[4..1] = DECIMAL[8..5];

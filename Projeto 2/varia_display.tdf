@@ -1,6 +1,7 @@
 INCLUDE "contador_grande.inc";
 INCLUDE "contador.inc";
 INCLUDE "lfsr.inc";
+INCLUDE "pulso_to_clock";
 
 SUBDESIGN varia_display
 (
@@ -14,26 +15,30 @@ SUBDESIGN varia_display
      led : OUTPUT;
 )
 VARIABLE
-    freq3s : contador_grande WITH (min_cnt = 0, max_cnt = 112500000); -- frequencia para 3s
-    freq2hz : contador_grande WITH (min_cnt = 0, max_cnt = 18750000); -- frequencia 2Hz
+    freq2hz : contador WITH (overflow = 12500000); -- frequencia para 3s
+    contador6 : contador WITH (overflow = 5);
     count : contador WITH (overflow = 1); -- maquina de estados
     spin : lfsr;
+	 d_sorteada[4..1] : dff;
+	 u_sorteada[4..1] : dff;
 
 BEGIN 
-    spin.clock = freq2hz.tc;
-	 freq2hz.clk = clock;
-	 
+	 spin.clock = clock;
+	 d_sorteada[].clk = freq2hz.clk_out;
+	 u_sorteada[].clk = freq2hz.clk_out;
+
     IF count.q[] == 0 THEN
         count.clock = pulso;
         d_display[] = d_atual[];
         u_display[] = u_atual[];
-        spin.sinal = GND;
-    ELSIF count.q[] == 1 THEN
-		  freq3s.clk = clock;
-        spin.sinal = VCC;
-        d_display[] = spin.dezena[];
-        u_display[] = spin.unidade[];
-        count.clock = freq3s.tc;
-    END IF;
-        
+    ELSIF count.q[] == 1 THEN	  
+		  freq2hz.clock = clock;
+		  contador6.clock = freq2hz.clk_out;
+		  led = contador6.clk_out;
+        d_sorteada[].d = spin.dezena[];
+        u_sorteada[].d = spin.unidade[];
+        count.clock = contador6.clk_out;
+		  d_display[] = d_sorteada[];
+		  u_display[] = u_sorteada[];
+    END IF;      
 END;
