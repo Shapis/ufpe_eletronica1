@@ -1385,6 +1385,31 @@ q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
 tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|projeto2|display:inst2|varia_display:varia[6]|contador_crescente:contador15
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |projeto2|display:inst2|varia_display:varia[6]|contador_crescente:count
 clk => cnt[4].CLK
 clk => cnt[3].CLK
@@ -1607,6 +1632,31 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[5]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|display:inst2|varia_display:varia[5]|contador_crescente:contador15
 clk => cnt[4].CLK
 clk => cnt[3].CLK
 clk => cnt[2].CLK
@@ -1877,6 +1927,31 @@ q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
 tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|projeto2|display:inst2|varia_display:varia[4]|contador_crescente:contador15
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |projeto2|display:inst2|varia_display:varia[4]|contador_crescente:count
 clk => cnt[4].CLK
 clk => cnt[3].CLK
@@ -2099,6 +2174,31 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[3]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|display:inst2|varia_display:varia[3]|contador_crescente:contador15
 clk => cnt[4].CLK
 clk => cnt[3].CLK
 clk => cnt[2].CLK
@@ -2369,6 +2469,31 @@ q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
 tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|projeto2|display:inst2|varia_display:varia[2]|contador_crescente:contador15
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |projeto2|display:inst2|varia_display:varia[2]|contador_crescente:count
 clk => cnt[4].CLK
 clk => cnt[3].CLK
@@ -2591,6 +2716,31 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[1]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|display:inst2|varia_display:varia[1]|contador_crescente:contador15
 clk => cnt[4].CLK
 clk => cnt[3].CLK
 clk => cnt[2].CLK

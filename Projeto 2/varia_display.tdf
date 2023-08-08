@@ -19,9 +19,10 @@ SUBDESIGN varia_display
      led : OUTPUT;
 )
 VARIABLE
-    freq2hz : contador WITH (overflow = 12500000); -- frequencia para 3s
+    freq2hz : contador WITH (overflow = 12500000); 
 	 freq5hz : contador WITH (overflow = 5000000);
     contador6 : contador_crescente WITH (min_cnt = 0, max_cnt = 6);
+	 contador15 : contador_crescente WITH (min_cnt = 0, max_cnt = 15);
     count : contador_crescente WITH (min_cnt = 0, max_cnt = 2); -- controle da maquina de estados
     spin : lfsr;
 	 toggle_frequencia : tff;
@@ -68,10 +69,15 @@ BEGIN
 						freq5hz.clock = clock;
 						freq2hz.clock = clock;
 					END IF;
-               contador6.clk = freq2hz.clk_out;
+						contador6.clk = freq2hz.clk_out;
+						contador15.clk = freq5hz.clk_out;
+					IF toggle_frequencia == GND THEN
+						count.clk = contador6.tc;
+					ELSE 
+						count.clk = contador15.tc;
+					END IF;
 					d_display[] = spin.dezena[];
 					u_display[] = spin.unidade[];
-					count.clk = contador6.tc;
 					estado = durante_o_sorteio;
 				ELSE 
 					estado = depois_do_sorteio;
