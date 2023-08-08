@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Tue Aug  8 07:42:02 2023
+Tue Aug  8 08:44:45 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -65,16 +65,26 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  57. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:count
  58. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:divisor
  59. Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor
- 60. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio
- 61. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
- 62. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio|contador_n:contador
- 63. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
- 64. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
- 65. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
- 66. Parameter Settings for User Entity Instance: contador_crescente:inst12
- 67. Post-Synthesis Netlist Statistics for Top Partition
- 68. Elapsed Time Per Partition
- 69. Analysis & Synthesis Messages
+ 60. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio1
+ 61. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio2
+ 62. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio3
+ 63. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio4
+ 64. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio5
+ 65. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio6
+ 66. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
+ 67. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[6]|contador_n:contador
+ 68. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[5]|contador_n:contador
+ 69. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[4]|contador_n:contador
+ 70. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[3]|contador_n:contador
+ 71. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[2]|contador_n:contador
+ 72. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[1]|contador_n:contador
+ 73. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
+ 74. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
+ 75. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
+ 76. Parameter Settings for User Entity Instance: contador_crescente:inst12
+ 77. Post-Synthesis Netlist Statistics for Top Partition
+ 78. Elapsed Time Per Partition
+ 79. Analysis & Synthesis Messages
 
 
 
@@ -101,15 +111,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug  8 07:42:02 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug  8 08:44:45 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,875                                       ;
-;     Total combinational functions  ; 1,836                                       ;
-;     Dedicated logic registers      ; 818                                         ;
-; Total registers                    ; 818                                         ;
+; Total logic elements               ; 2,823                                       ;
+;     Total combinational functions  ; 2,779                                       ;
+;     Dedicated logic registers      ; 942                                         ;
+; Total registers                    ; 942                                         ;
 ; Total pins                         ; 32                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -212,20 +222,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
-;     Processor 9            ;   0.1%      ;
-;     Processors 10-16       ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
+;     Processor 5            ;   0.2%      ;
+;     Processor 6            ;   0.2%      ;
+;     Processor 7            ;   0.2%      ;
+;     Processor 8            ;   0.2%      ;
+;     Processors 9-16        ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -279,20 +288,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,875       ;
+; Estimated Total logic elements              ; 2,823       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1836        ;
+; Total combinational functions               ; 2779        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 1053        ;
-;     -- 3 input functions                    ; 265         ;
-;     -- <=2 input functions                  ; 518         ;
+;     -- 4 input functions                    ; 1778        ;
+;     -- 3 input functions                    ; 370         ;
+;     -- <=2 input functions                  ; 631         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1435        ;
-;     -- arithmetic mode                      ; 401         ;
+;     -- normal mode                          ; 2314        ;
+;     -- arithmetic mode                      ; 465         ;
 ;                                             ;             ;
-; Total registers                             ; 818         ;
-;     -- Dedicated logic registers            ; 818         ;
+; Total registers                             ; 942         ;
+;     -- Dedicated logic registers            ; 942         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 32          ;
@@ -300,9 +309,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 190         ;
-; Total fan-out                               ; 8114        ;
-; Average fan-out                             ; 2.99        ;
+; Maximum fan-out                             ; 249         ;
+; Total fan-out                               ; 11867       ;
+; Average fan-out                             ; 3.14        ;
 +---------------------------------------------+-------------+
 
 
@@ -311,7 +320,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Entity Name                 ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+-----------------------------+--------------+
-; |projeto2                                     ; 1836 (0)            ; 818 (0)                   ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |projeto2                                                                    ; projeto2                    ; work         ;
+; |projeto2                                     ; 2779 (0)            ; 942 (0)                   ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |projeto2                                                                    ; projeto2                    ; work         ;
 ;    |contador_crescente:inst12|                ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst12                                          ; contador_crescente          ; work         ;
 ;    |controle:inst1|                           ; 29 (0)              ; 28 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1                                                     ; controle                    ; work         ;
 ;       |debouncer:debounc1|                    ; 19 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1                                  ; debouncer                   ; work         ;
@@ -320,16 +329,16 @@ https://fpgasoftware.intel.com/eula.
 ;          |contador:divisor|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc2|contador:divisor                 ; contador                    ; work         ;
 ;       |debouncer:debounc3|                    ; 7 (2)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc3                                  ; debouncer                   ; work         ;
 ;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc3|contador:divisor                 ; contador                    ; work         ;
-;    |display:inst2|                            ; 928 (138)           ; 467 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                                      ; display                     ; work         ;
+;    |display:inst2|                            ; 931 (133)           ; 467 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                                      ; display                     ; work         ;
 ;       |contador:freq1562hz|                   ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|contador:freq1562hz                                  ; contador                    ; work         ;
 ;       |contador_crescente:divisor4|           ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|contador_crescente:divisor4                          ; contador_crescente          ; work         ;
-;       |varia_display:varia[1]|                ; 128 (21)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                               ; varia_display               ; work         ;
+;       |varia_display:varia[1]|                ; 129 (21)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:freq5hz              ; contador                    ; work         ;
 ;          |contador_crescente:contador15|      ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador_crescente:contador15 ; contador_crescente          ; work         ;
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador_crescente:count      ; contador_crescente          ; work         ;
-;          |lfsr:spin|                          ; 36 (36)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin                     ; lfsr                        ; work         ;
+;          |lfsr:spin|                          ; 37 (37)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin                     ; lfsr                        ; work         ;
 ;       |varia_display:varia[2]|                ; 127 (21)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:freq5hz              ; contador                    ; work         ;
@@ -337,13 +346,13 @@ https://fpgasoftware.intel.com/eula.
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador_crescente:count      ; contador_crescente          ; work         ;
 ;          |lfsr:spin|                          ; 35 (35)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin                     ; lfsr                        ; work         ;
-;       |varia_display:varia[3]|                ; 130 (21)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                               ; varia_display               ; work         ;
+;       |varia_display:varia[3]|                ; 132 (22)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq5hz              ; contador                    ; work         ;
 ;          |contador_crescente:contador15|      ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador_crescente:contador15 ; contador_crescente          ; work         ;
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador_crescente:count      ; contador_crescente          ; work         ;
-;          |lfsr:spin|                          ; 38 (38)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin                     ; lfsr                        ; work         ;
+;          |lfsr:spin|                          ; 39 (39)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin                     ; lfsr                        ; work         ;
 ;       |varia_display:varia[4]|                ; 130 (20)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:freq5hz              ; contador                    ; work         ;
@@ -351,23 +360,22 @@ https://fpgasoftware.intel.com/eula.
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador_crescente:count      ; contador_crescente          ; work         ;
 ;          |lfsr:spin|                          ; 39 (39)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|lfsr:spin                     ; lfsr                        ; work         ;
-;       |varia_display:varia[5]|                ; 129 (20)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]                               ; varia_display               ; work         ;
+;       |varia_display:varia[5]|                ; 130 (20)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:freq5hz              ; contador                    ; work         ;
 ;          |contador_crescente:contador15|      ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador_crescente:contador15 ; contador_crescente          ; work         ;
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador_crescente:count      ; contador_crescente          ; work         ;
-;          |lfsr:spin|                          ; 38 (38)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin                     ; lfsr                        ; work         ;
-;       |varia_display:varia[6]|                ; 127 (20)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]                               ; varia_display               ; work         ;
+;          |lfsr:spin|                          ; 39 (39)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin                     ; lfsr                        ; work         ;
+;       |varia_display:varia[6]|                ; 131 (20)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:freq5hz              ; contador                    ; work         ;
 ;          |contador_crescente:contador15|      ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador_crescente:contador15 ; contador_crescente          ; work         ;
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador_crescente:count      ; contador_crescente          ; work         ;
-;          |lfsr:spin|                          ; 36 (36)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin                     ; lfsr                        ; work         ;
-;    |lcd_controler:inst15|                     ; 119 (119)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                               ; lcd_controler               ; work         ;
-;    |lcd_logic:inst14|                         ; 114 (108)           ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                                   ; lcd_logic                   ; work         ;
-;       |conversor_binario4_binario8:conv_u[1]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[1]             ; conversor_binario4_binario8 ; work         ;
+;          |lfsr:spin|                          ; 40 (40)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin                     ; lfsr                        ; work         ;
+;    |lcd_controler:inst15|                     ; 114 (114)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                               ; lcd_controler               ; work         ;
+;    |lcd_logic:inst14|                         ; 114 (109)           ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                                   ; lcd_logic                   ; work         ;
 ;       |conversor_binario4_binario8:conv_u[2]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[2]             ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[3]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[3]             ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[4]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[4]             ; conversor_binario4_binario8 ; work         ;
@@ -375,14 +383,29 @@ https://fpgasoftware.intel.com/eula.
 ;       |conversor_binario4_binario8:conv_u[6]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[6]             ; conversor_binario4_binario8 ; work         ;
 ;    |leds:inst5|                               ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|leds:inst5                                                         ; leds                        ; work         ;
 ;    |mute_buzzer:inst|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|mute_buzzer:inst                                                   ; mute_buzzer                 ; work         ;
-;    |registrador:inst4|                        ; 356 (281)           ; 100 (44)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                                  ; registrador                 ; work         ;
-;       |contador:div_sorteio|                  ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio                             ; contador                    ; work         ;
+;    |registrador:inst4|                        ; 1300 (1049)         ; 224 (44)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                                  ; registrador                 ; work         ;
+;       |contador:div_sorteio1|                 ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio1                            ; contador                    ; work         ;
+;       |contador:div_sorteio2|                 ; 15 (15)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio2                            ; contador                    ; work         ;
+;       |contador:div_sorteio3|                 ; 15 (15)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio3                            ; contador                    ; work         ;
+;       |contador:div_sorteio4|                 ; 15 (15)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio4                            ; contador                    ; work         ;
+;       |contador:div_sorteio5|                 ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio5                            ; contador                    ; work         ;
+;       |contador:div_sorteio6|                 ; 13 (13)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio6                            ; contador                    ; work         ;
 ;       |contador:divisor|                      ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor                                 ; contador                    ; work         ;
-;       |contador_crescente:count|              ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count                         ; contador_crescente          ; work         ;
-;       |sorteador:sorteio|                     ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio                                ; sorteador                   ; work         ;
-;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio|contador_n:contador            ; contador_n                  ; work         ;
-;    |song_starwars_25MHz:inst9|                ; 275 (0)             ; 141 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9                                          ; song_starwars_25MHz         ; work         ;
-;       |controlador:control|                   ; 153 (153)           ; 93 (93)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|controlador:control                      ; controlador                 ; work         ;
+;       |contador_crescente:count|              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count                         ; contador_crescente          ; work         ;
+;       |sorteador:sorteio[1]|                  ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[1]                             ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[1]|contador_n:contador         ; contador_n                  ; work         ;
+;       |sorteador:sorteio[2]|                  ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[2]                             ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[2]|contador_n:contador         ; contador_n                  ; work         ;
+;       |sorteador:sorteio[3]|                  ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[3]                             ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[3]|contador_n:contador         ; contador_n                  ; work         ;
+;       |sorteador:sorteio[4]|                  ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[4]                             ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[4]|contador_n:contador         ; contador_n                  ; work         ;
+;       |sorteador:sorteio[5]|                  ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[5]                             ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[5]|contador_n:contador         ; contador_n                  ; work         ;
+;       |sorteador:sorteio[6]|                  ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[6]                             ; sorteador                   ; work         ;
+;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio[6]|contador_n:contador         ; contador_n                  ; work         ;
+;    |song_starwars_25MHz:inst9|                ; 276 (0)             ; 141 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9                                          ; song_starwars_25MHz         ; work         ;
+;       |controlador:control|                   ; 154 (154)           ; 93 (93)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|controlador:control                      ; controlador                 ; work         ;
 ;       |divisor_clock:div_clock|               ; 38 (38)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|divisor_clock:div_clock                  ; divisor_clock               ; work         ;
 ;       |temporizador:temp|                     ; 84 (84)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|song_starwars_25MHz:inst9|temporizador:temp                        ; temporizador                ; work         ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+-----------------------------+--------------+
@@ -625,7 +648,12 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
 ; Register name                                                            ; Reason for Removal                                                       ;
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
-; registrador:inst4|sorteador:sorteio|DECIMAL[8]                           ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|sorteador:sorteio[1]|DECIMAL[8]                        ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|sorteador:sorteio[2]|DECIMAL[8]                        ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|sorteador:sorteio[3]|DECIMAL[8]                        ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|sorteador:sorteio[4]|DECIMAL[8]                        ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|sorteador:sorteio[5]|DECIMAL[8]                        ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|sorteador:sorteio[6]|DECIMAL[8]                        ; Stuck at GND due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[8]                ; Stuck at GND due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[8]                ; Stuck at GND due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[8]                ; Stuck at GND due to stuck port data_in                                   ;
@@ -701,20 +729,20 @@ Encoding Type:  One-Hot
 ; registrador:inst4|d[6][4]                                                ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[2][4]                                                ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[3][4]                                                ; Stuck at GND due to stuck port data_in                                   ;
-; Total Number of Removed Registers = 87                                   ;                                                                          ;
+; Total Number of Removed Registers = 92                                   ;                                                                          ;
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                          ;
-+---------------------------------------------------+---------------------------+------------------------------------------------------+
-; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register               ;
-+---------------------------------------------------+---------------------------+------------------------------------------------------+
-; registrador:inst4|contador_crescente:count|cnt[4] ; Stuck at GND              ; registrador:inst4|d[5][4], registrador:inst4|d[6][4] ;
-;                                                   ; due to stuck port data_in ;                                                      ;
-; lcd_logic:inst14|lcd_bus[8]                       ; Stuck at GND              ; lcd_controler:inst15|rw                              ;
-;                                                   ; due to stuck port data_in ;                                                      ;
-+---------------------------------------------------+---------------------------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                            ;
++---------------------------------------------------+---------------------------+----------------------------------------+
+; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------------------------+---------------------------+----------------------------------------+
+; lcd_logic:inst14|lcd_bus[8]                       ; Stuck at GND              ; lcd_controler:inst15|rw                ;
+;                                                   ; due to stuck port data_in ;                                        ;
+; registrador:inst4|contador_crescente:count|cnt[4] ; Stuck at GND              ; registrador:inst4|d[5][4]              ;
+;                                                   ; due to stuck port data_in ;                                        ;
++---------------------------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -722,8 +750,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 818   ;
-; Number of registers using Synchronous Clear  ; 378   ;
+; Total registers                              ; 942   ;
+; Number of registers using Synchronous Clear  ; 452   ;
 ; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -1158,13 +1186,63 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; overflow       ; 1600  ; Untyped                                                    ;
-+----------------+-------+------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; overflow       ; 1600  ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio2 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; overflow       ; 1500  ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio3 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; overflow       ; 1400  ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio4 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; overflow       ; 1300  ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio5 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; overflow       ; 1200  ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio6 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; overflow       ; 1000  ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1179,14 +1257,69 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio|contador_n:contador ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; overflow       ; 60    ; Untyped                                                                     ;
-; reset          ; 1     ; Untyped                                                                     ;
-+----------------+-------+-----------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[6]|contador_n:contador ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; overflow       ; 60    ; Untyped                                                                        ;
+; reset          ; 1     ; Untyped                                                                        ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[5]|contador_n:contador ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; overflow       ; 60    ; Untyped                                                                        ;
+; reset          ; 1     ; Untyped                                                                        ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[4]|contador_n:contador ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; overflow       ; 60    ; Untyped                                                                        ;
+; reset          ; 1     ; Untyped                                                                        ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[3]|contador_n:contador ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; overflow       ; 60    ; Untyped                                                                        ;
+; reset          ; 1     ; Untyped                                                                        ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[2]|contador_n:contador ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; overflow       ; 60    ; Untyped                                                                        ;
+; reset          ; 1     ; Untyped                                                                        ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio[1]|contador_n:contador ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; overflow       ; 60    ; Untyped                                                                        ;
+; reset          ; 1     ; Untyped                                                                        ;
++----------------+-------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1238,24 +1371,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 32                          ;
-; cycloneiii_ff         ; 818                         ;
+; cycloneiii_ff         ; 942                         ;
 ;     ENA               ; 37                          ;
-;     SCLR              ; 378                         ;
+;     SCLR              ; 452                         ;
 ;     SLD               ; 5                           ;
-;     plain             ; 398                         ;
-; cycloneiii_lcell_comb ; 1843                        ;
-;     arith             ; 401                         ;
-;         2 data inputs ; 367                         ;
-;         3 data inputs ; 34                          ;
-;     normal            ; 1442                        ;
+;     plain             ; 448                         ;
+; cycloneiii_lcell_comb ; 2786                        ;
+;     arith             ; 465                         ;
+;         2 data inputs ; 421                         ;
+;         3 data inputs ; 44                          ;
+;     normal            ; 2321                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 54                          ;
-;         2 data inputs ; 103                         ;
-;         3 data inputs ; 231                         ;
-;         4 data inputs ; 1053                        ;
+;         1 data inputs ; 64                          ;
+;         2 data inputs ; 152                         ;
+;         3 data inputs ; 326                         ;
+;         4 data inputs ; 1778                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.10                        ;
-; Average LUT depth     ; 4.32                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 5.16                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1264,7 +1397,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -1274,7 +1407,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug  8 07:41:43 2023
+    Info: Processing started: Tue Aug  8 08:44:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -1365,9 +1498,6 @@ Info (12128): Elaborating entity "contador_crescente" for hierarchy "display:ins
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "display:inst2|varia_display:varia[6]|contador_crescente:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 26
 Info (12128): Elaborating entity "lfsr" for hierarchy "display:inst2|varia_display:varia[6]|lfsr:spin" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 27
 Info (12128): Elaborating entity "varia_display" for hierarchy "display:inst2|varia_display:varia[1]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 27
-Warning (287004): Group name "d_final" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 57
-Warning (287004): Group name "u_final" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 58
-Warning (287004): Group name "q" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 64
 Info (12128): Elaborating entity "detector_sorteios" for hierarchy "display:inst2|detector_sorteios:detector" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 29
 Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|contador:freq1562hz" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 30
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "display:inst2|contador_crescente:divisor4" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 31
@@ -1377,10 +1507,15 @@ Info (12128): Elaborating entity "contador" for hierarchy "controle:inst1|deboun
 Info (12128): Elaborating entity "contador" for hierarchy "controle:inst1|debouncer:debounc1|contador:divisor" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
 Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst4"
 Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
-Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
-Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
-Info (12128): Elaborating entity "contador_n" for hierarchy "registrador:inst4|sorteador:sorteio|contador_n:contador" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 12
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio3" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio4" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 23
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio5" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio6" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 25
+Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 26
+Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 27
+Info (12128): Elaborating entity "contador_n" for hierarchy "registrador:inst4|sorteador:sorteio[6]|contador_n:contador" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 12
 Info (12128): Elaborating entity "mute_buzzer" for hierarchy "mute_buzzer:inst"
 Info (12128): Elaborating entity "song_starwars_25MHz" for hierarchy "song_starwars_25MHz:inst9"
 Info (12128): Elaborating entity "temporizador" for hierarchy "song_starwars_25MHz:inst9|temporizador:temp" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/song_starwars_25MHz/song_starwars_25MHz.tdf Line: 28
@@ -1396,9 +1531,7 @@ Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer display:inst2|varia_display:varia[4]|_~6 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 27
     Warning (19017): Found clock multiplexer display:inst2|varia_display:varia[5]|_~6 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 27
     Warning (19017): Found clock multiplexer display:inst2|varia_display:varia[6]|_~6 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 27
-    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 25
-Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer display:inst2|_~0
+    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 30
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_rw" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
@@ -1410,14 +1543,14 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "controle:inst1|debouncer:debounc2|ff[2]~0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1916 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2864 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 1884 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 503 megabytes
-    Info: Processing ended: Tue Aug  8 07:42:02 2023
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (21061): Implemented 2832 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 517 megabytes
+    Info: Processing ended: Tue Aug  8 08:44:45 2023
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:33
 
 
