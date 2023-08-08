@@ -10,7 +10,7 @@ d[6..1] : dff;
 DECIMAL[8..1]: dff;
 
 BEGIN
-d[].clk = !clock;
+d[].clk = clock;
 
 IF d[] != 0 THEN
     d[1].d = d[2] $ d[5];
@@ -19,13 +19,20 @@ IF d[] != 0 THEN
     d[4].d = d[3].q;
     d[5].d = d[4].q;
     d[6].d = d[5].q;
+    dezena[4..1] = DECIMAL[8..5];
+    unidade[4..1] = DECIMAL[4..1];
 ELSE
     d[2..1].d = B"11";
     d[6..3].d = seed[];
+    dezena[4..3] = B"00";
+    dezena[2..1] = seed[2..3];
+    unidade[3..1] = seed[1..3];
+    DECIMAL[8..6] = B"000";
+    DECIMAL[5] = seed[4];
+     DECIMAL[4] = B"0";
+    DECIMAL[3..1] = seed[1..3];
 END IF;
 
-dezena[4..1] = DECIMAL[8..5];
-unidade[4..1] = DECIMAL[4..1];
 DECIMAL[].clk = clock;
 TABLE
 	d[] => DECIMAL[];

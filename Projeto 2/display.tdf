@@ -45,7 +45,8 @@ check_pulso.clk = detector.pulso[2];
 varia[].clock = clock;
 
 led = !(varia[1].led OR varia[2].led OR varia[3].led OR varia[4].led OR varia[5].led OR varia[6].led);
-
+varia[].d_atual[] = d2[][];
+varia[].u_atual[] = d3[][];
 
 CASE d1[] IS
 	WHEN 1 => 
@@ -55,8 +56,6 @@ CASE d1[] IS
 		varia[4].pulso = detector.pulso[4];
 		varia[5].pulso = detector.pulso[5];
 		varia[6].pulso = detector.pulso[6];
-		varia[1].d_atual[] = d2[1][];
-		varia[1].u_atual[] = d3[1][];
 		convd1.numero[] = 1;
 		convd2.numero[] = varia[1].d_display[];
 		convd3.numero[] = varia[1].u_display[];
@@ -67,8 +66,6 @@ CASE d1[] IS
 		varia[4].pulso = detector.pulso[4];
 		varia[5].pulso = detector.pulso[5];
 		varia[6].pulso = detector.pulso[6];
-		varia[2].d_atual[] = d2[2][];
-		varia[2].u_atual[] = d3[2][];
 		convd1.numero[] = 2;
 		convd2.numero[] = varia[2].d_display[];
 		convd3.numero[] = varia[2].u_display[];
@@ -79,8 +76,6 @@ CASE d1[] IS
 		varia[4].pulso = detector.pulso[4];
 		varia[5].pulso = detector.pulso[5];
 		varia[6].pulso = detector.pulso[6];
-		varia[3].d_atual[] = d2[3][];
-		varia[3].u_atual[] = d3[3][];
 		convd1.numero[] = 3;
 		convd2.numero[] = varia[3].d_display[];
 		convd3.numero[] = varia[3].u_display[];
@@ -91,8 +86,6 @@ CASE d1[] IS
 		varia[4].pulso = detector.pulso[4];
 		varia[5].pulso = detector.pulso[5];
 		varia[6].pulso = detector.pulso[6];
-		varia[4].d_atual[] = d2[4][];
-		varia[4].u_atual[] = d3[4][];
 		convd1.numero[] = 4;
 		convd2.numero[] = varia[4].d_display[];
 		convd3.numero[] = varia[4].u_display[];
@@ -103,8 +96,6 @@ CASE d1[] IS
 		varia[4].pulso = detector.pulso[4];
 		varia[5].pulso = detector.pulso[5];
 		varia[6].pulso = detector.pulso[6];
-		varia[5].d_atual[] = d2[5][];
-		varia[5].u_atual[] = d3[5][];
 		convd1.numero[] = 5;
 		convd2.numero[] = varia[5].d_display[];
 		convd3.numero[] = varia[5].u_display[];
@@ -115,8 +106,6 @@ CASE d1[] IS
 		varia[4].pulso = detector.pulso[4];
 		varia[5].pulso = detector.pulso[5];
 		varia[6].pulso = detector.pulso[6];
-		varia[6].d_atual[] = d2[6][];
-		varia[6].u_atual[] = d3[6][];
 		convd1.numero[] = 6;
 		convd2.numero[] = varia[6].d_display[];
 		convd3.numero[] = varia[6].u_display[];
