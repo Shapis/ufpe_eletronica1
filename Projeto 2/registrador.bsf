@@ -80,6 +80,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "unidades_sorteadas[6..1][4..1]" (rect 109 91 227 103)(font "Arial" ))
 		(line (pt 248 96)(pt 232 96)(line_width 3))
 	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "led_test" (rect 0 0 30 12)(font "Arial" ))
+		(text "led_test" (rect 197 107 227 119)(font "Arial" ))
+		(line (pt 248 112)(pt 232 112)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 232 128)(line_width 1))
 	)

@@ -16,6 +16,7 @@ SUBDESIGN lcd_logic (
 	lcd_bar[9..0]	: OUTPUT; --(9) rs (8) rw (7..0) dado char
 	qnt_sorteio[3..1] : OUTPUT;
 	song : OUTPUT;
+	flags[6..1] : OUTPUT;
 )
 VARIABLE
 	lcd_enable 					: DFF;

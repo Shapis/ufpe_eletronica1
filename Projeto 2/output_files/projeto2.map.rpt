@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Tue Aug  8 00:13:44 2023
+Tue Aug  8 01:16:58 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -20,50 +20,48 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  12. Removed Registers Triggering Further Register Optimizations
  13. General Register Statistics
  14. Parameter Settings for User Entity Instance: lcd_controler:inst15
- 15. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:count
- 16. Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:divisor
- 17. Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor
- 18. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio
- 19. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
- 20. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio|contador_n:contador
- 21. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:count
- 22. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:divisor
- 23. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc2|contador:count
- 24. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc2|contador:divisor
- 25. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:count
- 26. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:divisor
- 27. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:freq2hz
- 28. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:freq5hz
- 29. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:contador6
- 30. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:count
- 31. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:freq2hz
- 32. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:freq5hz
- 33. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:contador6
- 34. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:count
- 35. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:freq2hz
- 36. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:freq5hz
- 37. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:contador6
- 38. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:count
- 39. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:freq2hz
- 40. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:freq5hz
- 41. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:contador6
- 42. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:count
- 43. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:freq2hz
- 44. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:freq5hz
- 45. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:contador6
- 46. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:count
- 47. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:freq2hz
- 48. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:freq5hz
- 49. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:contador6
- 50. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:count
- 51. Parameter Settings for User Entity Instance: contador_crescente:inst3
- 52. Parameter Settings for User Entity Instance: contador:inst
- 53. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
- 54. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
- 55. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
- 56. Post-Synthesis Netlist Statistics for Top Partition
- 57. Elapsed Time Per Partition
- 58. Analysis & Synthesis Messages
+ 15. Parameter Settings for User Entity Instance: registrador:inst4|contador:divisor
+ 16. Parameter Settings for User Entity Instance: registrador:inst4|contador:div_sorteio
+ 17. Parameter Settings for User Entity Instance: registrador:inst4|contador_crescente:count
+ 18. Parameter Settings for User Entity Instance: registrador:inst4|sorteador:sorteio|contador_n:contador
+ 19. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:count
+ 20. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc1|contador:divisor
+ 21. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc2|contador:count
+ 22. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc2|contador:divisor
+ 23. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:count
+ 24. Parameter Settings for User Entity Instance: controle:inst1|debouncer:debounc3|contador:divisor
+ 25. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:freq2hz
+ 26. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:freq5hz
+ 27. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:contador6
+ 28. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[6]|contador:count
+ 29. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:freq2hz
+ 30. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:freq5hz
+ 31. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:contador6
+ 32. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[5]|contador:count
+ 33. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:freq2hz
+ 34. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:freq5hz
+ 35. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:contador6
+ 36. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[4]|contador:count
+ 37. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:freq2hz
+ 38. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:freq5hz
+ 39. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:contador6
+ 40. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[3]|contador:count
+ 41. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:freq2hz
+ 42. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:freq5hz
+ 43. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:contador6
+ 44. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[2]|contador:count
+ 45. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:freq2hz
+ 46. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:freq5hz
+ 47. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:contador6
+ 48. Parameter Settings for User Entity Instance: display:inst2|varia_display:varia[1]|contador:count
+ 49. Parameter Settings for User Entity Instance: contador_crescente:inst3
+ 50. Parameter Settings for User Entity Instance: contador:inst
+ 51. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|temporizador:temp
+ 52. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|divisor_clock:div_clock
+ 53. Parameter Settings for User Entity Instance: song_starwars_25MHz:inst9|controlador:control
+ 54. Post-Synthesis Netlist Statistics for Top Partition
+ 55. Elapsed Time Per Partition
+ 56. Analysis & Synthesis Messages
 
 
 
@@ -90,15 +88,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug  8 00:13:44 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug  8 01:16:58 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,209                                       ;
-;     Total combinational functions  ; 1,163                                       ;
-;     Dedicated logic registers      ; 597                                         ;
-; Total registers                    ; 597                                         ;
+; Total logic elements               ; 1,354                                       ;
+;     Total combinational functions  ; 1,309                                       ;
+;     Dedicated logic registers      ; 634                                         ;
+; Total registers                    ; 634                                         ;
 ; Total pins                         ; 30                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -201,7 +199,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -209,11 +207,11 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 2            ;   0.2%      ;
 ;     Processor 3            ;   0.2%      ;
 ;     Processor 4            ;   0.2%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
-;     Processors 9-16        ;   0.1%      ;
+;     Processor 5            ;   0.2%      ;
+;     Processor 6            ;   0.2%      ;
+;     Processor 7            ;   0.2%      ;
+;     Processor 8            ;   0.2%      ;
+;     Processors 9-16        ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -265,20 +263,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,209       ;
+; Estimated Total logic elements              ; 1,354       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1163        ;
+; Total combinational functions               ; 1309        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 548         ;
-;     -- 3 input functions                    ; 146         ;
-;     -- <=2 input functions                  ; 469         ;
+;     -- 4 input functions                    ; 659         ;
+;     -- 3 input functions                    ; 199         ;
+;     -- <=2 input functions                  ; 451         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 821         ;
+;     -- normal mode                          ; 967         ;
 ;     -- arithmetic mode                      ; 342         ;
 ;                                             ;             ;
-; Total registers                             ; 597         ;
-;     -- Dedicated logic registers            ; 597         ;
+; Total registers                             ; 634         ;
+;     -- Dedicated logic registers            ; 634         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 30          ;
@@ -286,9 +284,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 209         ;
-; Total fan-out                               ; 5163        ;
-; Average fan-out                             ; 2.84        ;
+; Maximum fan-out                             ; 182         ;
+; Total fan-out                               ; 5823        ;
+; Average fan-out                             ; 2.91        ;
 +---------------------------------------------+-------------+
 
 
@@ -297,65 +295,65 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name                 ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-----------------------------+--------------+
-; |projeto2                                     ; 1163 (0)            ; 597 (0)                   ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |projeto2                                                         ; projeto2                    ; work         ;
+; |projeto2                                     ; 1309 (0)            ; 634 (0)                   ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |projeto2                                                         ; projeto2                    ; work         ;
 ;    |contador:inst|                            ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador:inst                                           ; contador                    ; work         ;
 ;    |contador_crescente:inst3|                 ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|contador_crescente:inst3                                ; contador_crescente          ; work         ;
-;    |controle:inst1|                           ; 26 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1                                          ; controle                    ; work         ;
+;    |controle:inst1|                           ; 29 (0)              ; 28 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1                                          ; controle                    ; work         ;
 ;       |debouncer:debounc1|                    ; 19 (2)              ; 20 (3)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1                       ; debouncer                   ; work         ;
 ;          |contador:divisor|                   ; 17 (17)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc1|contador:divisor      ; contador                    ; work         ;
-;       |debouncer:debounc2|                    ; 7 (2)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc2                       ; debouncer                   ; work         ;
-;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc2|contador:divisor      ; contador                    ; work         ;
-;    |display:inst2|                            ; 571 (96)            ; 372 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                           ; display                     ; work         ;
-;       |varia_display:varia[1]|                ; 80 (7)              ; 62 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                    ; varia_display               ; work         ;
+;       |debouncer:debounc2|                    ; 3 (2)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc2                       ; debouncer                   ; work         ;
+;          |contador:divisor|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc2|contador:divisor      ; contador                    ; work         ;
+;       |debouncer:debounc3|                    ; 7 (2)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc3                       ; debouncer                   ; work         ;
+;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc3|contador:divisor      ; contador                    ; work         ;
+;    |display:inst2|                            ; 704 (103)           ; 408 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                           ; display                     ; work         ;
+;       |varia_display:varia[1]|                ; 101 (7)             ; 68 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                    ; varia_display               ; work         ;
 ;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:contador6 ; contador                    ; work         ;
 ;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:count     ; contador                    ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:freq2hz   ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|contador:freq5hz   ; contador                    ; work         ;
-;          |lfsr:spin|                          ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin          ; lfsr                        ; work         ;
-;       |varia_display:varia[2]|                ; 79 (6)              ; 62 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]                    ; varia_display               ; work         ;
+;          |lfsr:spin|                          ; 27 (27)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[2]|                ; 100 (6)             ; 68 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]                    ; varia_display               ; work         ;
 ;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:contador6 ; contador                    ; work         ;
 ;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:count     ; contador                    ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:freq2hz   ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador:freq5hz   ; contador                    ; work         ;
-;          |lfsr:spin|                          ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin          ; lfsr                        ; work         ;
-;       |varia_display:varia[3]|                ; 79 (6)              ; 62 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                    ; varia_display               ; work         ;
+;          |lfsr:spin|                          ; 27 (27)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[3]|                ; 100 (6)             ; 68 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                    ; varia_display               ; work         ;
 ;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:contador6 ; contador                    ; work         ;
 ;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:count     ; contador                    ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq2hz   ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq5hz   ; contador                    ; work         ;
-;          |lfsr:spin|                          ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin          ; lfsr                        ; work         ;
-;       |varia_display:varia[4]|                ; 79 (6)              ; 62 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]                    ; varia_display               ; work         ;
+;          |lfsr:spin|                          ; 27 (27)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[4]|                ; 100 (6)             ; 68 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]                    ; varia_display               ; work         ;
 ;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:contador6 ; contador                    ; work         ;
 ;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:count     ; contador                    ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:freq2hz   ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|contador:freq5hz   ; contador                    ; work         ;
-;          |lfsr:spin|                          ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|lfsr:spin          ; lfsr                        ; work         ;
-;       |varia_display:varia[5]|                ; 79 (6)              ; 62 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]                    ; varia_display               ; work         ;
+;          |lfsr:spin|                          ; 27 (27)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[4]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[5]|                ; 100 (6)             ; 68 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]                    ; varia_display               ; work         ;
 ;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:contador6 ; contador                    ; work         ;
 ;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:count     ; contador                    ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:freq2hz   ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|contador:freq5hz   ; contador                    ; work         ;
-;          |lfsr:spin|                          ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin          ; lfsr                        ; work         ;
-;       |varia_display:varia[6]|                ; 79 (6)              ; 62 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]                    ; varia_display               ; work         ;
+;          |lfsr:spin|                          ; 27 (27)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin          ; lfsr                        ; work         ;
+;       |varia_display:varia[6]|                ; 100 (6)             ; 68 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]                    ; varia_display               ; work         ;
 ;          |contador:contador6|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:contador6 ; contador                    ; work         ;
 ;          |contador:count|                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:count     ; contador                    ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:freq2hz   ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 30 (30)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|contador:freq5hz   ; contador                    ; work         ;
-;          |lfsr:spin|                          ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin          ; lfsr                        ; work         ;
-;    |lcd_controler:inst15|                     ; 115 (115)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                    ; lcd_controler               ; work         ;
-;    |lcd_logic:inst14|                         ; 77 (71)             ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                        ; lcd_logic                   ; work         ;
+;          |lfsr:spin|                          ; 27 (27)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin          ; lfsr                        ; work         ;
+;    |lcd_controler:inst15|                     ; 113 (113)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_controler:inst15                                    ; lcd_controler               ; work         ;
+;    |lcd_logic:inst14|                         ; 88 (82)             ; 44 (44)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14                                        ; lcd_logic                   ; work         ;
 ;       |conversor_binario4_binario8:conv_u[1]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[1]  ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[2]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[2]  ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[3]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[3]  ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[4]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[4]  ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[5]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[5]  ; conversor_binario4_binario8 ; work         ;
 ;       |conversor_binario4_binario8:conv_u[6]| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|lcd_logic:inst14|conversor_binario4_binario8:conv_u[6]  ; conversor_binario4_binario8 ; work         ;
-;    |registrador:inst4|                        ; 355 (279)           ; 103 (43)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                       ; registrador                 ; work         ;
+;    |registrador:inst4|                        ; 356 (282)           ; 100 (44)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4                                       ; registrador                 ; work         ;
 ;       |contador:div_sorteio|                  ; 14 (14)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:div_sorteio                  ; contador                    ; work         ;
 ;       |contador:divisor|                      ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador:divisor                      ; contador                    ; work         ;
 ;       |contador_crescente:count|              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|contador_crescente:count              ; contador_crescente          ; work         ;
-;       |debouncer:deb|                         ; 2 (1)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb                         ; debouncer                   ; work         ;
-;          |contador:divisor|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|debouncer:deb|contador:divisor        ; contador                    ; work         ;
 ;       |sorteador:sorteio|                     ; 21 (14)             ; 13 (7)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio                     ; sorteador                   ; work         ;
 ;          |contador_n:contador|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|registrador:inst4|sorteador:sorteio|contador_n:contador ; contador_n                  ; work         ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-----------------------------+--------------+
@@ -526,89 +524,53 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------+--------------------------------------------------------------------------+
 ; Register name                                                ; Reason for Removal                                                       ;
 +--------------------------------------------------------------+--------------------------------------------------------------------------+
-; display:inst2|varia_display:varia[1]|lfsr:spin|d[4]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[2]|lfsr:spin|d[4]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[3]|lfsr:spin|d[4]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[4]|lfsr:spin|d[4]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[5]|lfsr:spin|d[4]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[6]|lfsr:spin|d[4]          ; Stuck at VCC due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[8]    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|sorteador:sorteio|DECIMAL[8]               ; Stuck at GND due to stuck port data_in                                   ;
 ; lcd_logic:inst14|lcd_bus[8]                                  ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[1]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[2]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[3]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[4]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[5]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[6]|lfsr:spin|d[5]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[1]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[2]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[3]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[4]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[5]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[6]|lfsr:spin|d[6]          ; Stuck at VCC due to stuck port data_in                                   ;
+; controle:inst1|debouncer:debounc3|contador:count|count[1..4] ; Lost fanout                                                              ;
+; controle:inst1|debouncer:debounc3|contador:count|alt         ; Lost fanout                                                              ;
 ; controle:inst1|debouncer:debounc2|contador:count|count[1..4] ; Lost fanout                                                              ;
 ; controle:inst1|debouncer:debounc2|contador:count|alt         ; Lost fanout                                                              ;
 ; controle:inst1|debouncer:debounc1|contador:count|count[1..4] ; Lost fanout                                                              ;
 ; controle:inst1|debouncer:debounc1|contador:count|alt         ; Lost fanout                                                              ;
-; registrador:inst4|debouncer:deb|contador:count|count[1..4]   ; Lost fanout                                                              ;
-; registrador:inst4|debouncer:deb|contador:count|alt           ; Lost fanout                                                              ;
-; display:inst2|varia_display:varia[1]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[1]|lfsr:spin|d[3]          ;
-; display:inst2|varia_display:varia[2]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[2]|lfsr:spin|d[3]          ;
-; display:inst2|varia_display:varia[3]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[3]|lfsr:spin|d[3]          ;
-; display:inst2|varia_display:varia[4]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[4]|lfsr:spin|d[3]          ;
-; display:inst2|varia_display:varia[5]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[5]|lfsr:spin|d[3]          ;
-; display:inst2|varia_display:varia[6]|lfsr:spin|d[1]          ; Merged with display:inst2|varia_display:varia[6]|lfsr:spin|d[3]          ;
-; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[5]    ; Merged with display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[1]    ;
-; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[5]    ; Merged with display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[1]    ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[16] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[16] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[16]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[16] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[16] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[16] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[15] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[15] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[15]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[15] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[15] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[15] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[14] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[14] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[14]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[14] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[14] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[14] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[13] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[13] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[13]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[13] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[13] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[13] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[12] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[12] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[12]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[12] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[12] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[12] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[11] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[11] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[11]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[11] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[11] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[11] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[10] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[10] ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[10]   ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[10] ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[10] ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[10] ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[9]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[9]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[9]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[9]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[9]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[9]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[8]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[8]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[8]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[8]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[8]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[8]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[7]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[7]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[7]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[7]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[7]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[7]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[6]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[6]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[6]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[6]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[6]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[6]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[5]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[5]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[5]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[5]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[5]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[5]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[4]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[4]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[4]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[4]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[4]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[4]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[3]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[3]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[3]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[3]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[3]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[3]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[2]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[2]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[2]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[2]  ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[2]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[2]  ;
 ; controle:inst1|debouncer:debounc2|contador:divisor|count[1]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[1]  ;
-; registrador:inst4|debouncer:deb|contador:divisor|count[1]    ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[1]  ;
-; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[5]    ; Merged with display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[1]    ;
-; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[5]    ; Merged with display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[1]    ;
-; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[5]    ; Merged with display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[1]    ;
-; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[5]    ; Merged with display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[1]    ;
+; controle:inst1|debouncer:debounc3|contador:divisor|count[1]  ; Merged with controle:inst1|debouncer:debounc1|contador:divisor|count[1]  ;
 ; lcd_controler:inst15|rw                                      ; Stuck at GND due to stuck port data_in                                   ;
-; display:inst2|varia_display:varia[1]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[1]|lfsr:spin|d[2]          ;
-; display:inst2|varia_display:varia[2]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[2]|lfsr:spin|d[2]          ;
-; display:inst2|varia_display:varia[3]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[3]|lfsr:spin|d[2]          ;
-; display:inst2|varia_display:varia[4]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[4]|lfsr:spin|d[2]          ;
-; display:inst2|varia_display:varia[5]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[5]|lfsr:spin|d[2]          ;
-; display:inst2|varia_display:varia[6]|lfsr:spin|DECIMAL[1]    ; Merged with display:inst2|varia_display:varia[6]|lfsr:spin|d[2]          ;
 ; display:inst2|varia_display:varia[1]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[2]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
 ; display:inst2|varia_display:varia[3]|contador:count|count[0] ; Stuck at GND due to stuck port data_in                                   ;
@@ -712,13 +674,13 @@ Encoding Type:  One-Hot
 ; lcd_logic:inst14|char_34                                     ; Stuck at GND due to stuck port data_in                                   ;
 ; contador_crescente:inst3|cnt[3,4]                            ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|contador_crescente:count|cnt[4]            ; Stuck at GND due to stuck port data_in                                   ;
-; registrador:inst4|d[1][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
-; registrador:inst4|d[2][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
-; registrador:inst4|d[3][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[4][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[5][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
 ; registrador:inst4|d[6][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
-; Total Number of Removed Registers = 229                      ;                                                                          ;
+; registrador:inst4|d[1][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|d[2][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
+; registrador:inst4|d[3][4]                                    ; Stuck at GND due to stuck port data_in                                   ;
+; Total Number of Removed Registers = 193                      ;                                                                          ;
 +--------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
@@ -786,9 +748,9 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 597   ;
+; Total registers                              ; 634   ;
 ; Number of registers using Synchronous Clear  ; 360   ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 37    ;
@@ -810,26 +772,6 @@ Encoding Type:  One-Hot
 ; inc_dec        ; 1     ; Unsigned Binary                          ;
 ; shift          ; 0     ; Unsigned Binary                          ;
 +----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:count ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; overflow       ; 9     ; Untyped                                                            ;
-+----------------+-------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registrador:inst4|debouncer:deb|contador:divisor ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; overflow       ; 50000 ; Untyped                                                              ;
-+----------------+-------+----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1233,23 +1175,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 30                          ;
-; cycloneiii_ff         ; 597                         ;
+; cycloneiii_ff         ; 634                         ;
 ;     ENA               ; 37                          ;
 ;     SCLR              ; 360                         ;
-;     plain             ; 200                         ;
-; cycloneiii_lcell_comb ; 1169                        ;
+;     SLD               ; 6                           ;
+;     plain             ; 231                         ;
+; cycloneiii_lcell_comb ; 1315                        ;
 ;     arith             ; 342                         ;
 ;         2 data inputs ; 324                         ;
 ;         3 data inputs ; 18                          ;
-;     normal            ; 827                         ;
+;     normal            ; 973                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 53                          ;
-;         2 data inputs ; 97                          ;
-;         3 data inputs ; 128                         ;
-;         4 data inputs ; 548                         ;
+;         1 data inputs ; 49                          ;
+;         2 data inputs ; 83                          ;
+;         3 data inputs ; 181                         ;
+;         4 data inputs ; 659                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.70                        ;
+; Average LUT depth     ; 3.67                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1268,14 +1211,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug  8 00:13:37 2023
+    Info: Processing started: Tue Aug  8 01:16:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador.tdf
     Info (12023): Found entity 1: contador File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 5
-Warning (287004): Group name "count" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 125
-Warning (287004): Group name "count" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 132
+Warning (287004): Group name "count" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 122
+Warning (287004): Group name "count" is missing brackets ([ ]) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 129
 Info (12021): Found 1 design units, including 1 entities, in source file display.tdf
     Info (12023): Found entity 1: display File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file projeto2.bdf
@@ -1289,7 +1232,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file sortead
 Info (12021): Found 1 design units, including 1 entities, in source file contador_crescente.tdf
     Info (12023): Found entity 1: contador_crescente File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/contador_crescente.tdf Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file registrador.tdf
-    Info (12023): Found entity 1: registrador File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 6
+    Info (12023): Found entity 1: registrador File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file controle.tdf
     Info (12023): Found entity 1: controle File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file teste.tdf
@@ -1342,16 +1285,15 @@ Info (12128): Elaborating entity "lcd_controler" for hierarchy "lcd_controler:in
 Info (12128): Elaborating entity "lcd_logic" for hierarchy "lcd_logic:inst14"
 Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 24
 Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst4"
-Info (12128): Elaborating entity "debouncer" for hierarchy "registrador:inst4|debouncer:deb" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 18
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|debouncer:deb|contador:divisor" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
-Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
-Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
-Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 22
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:divisor" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 18
+Info (12128): Elaborating entity "contador" for hierarchy "registrador:inst4|contador:div_sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 19
+Info (12128): Elaborating entity "contador_crescente" for hierarchy "registrador:inst4|contador_crescente:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 20
+Info (12128): Elaborating entity "sorteador" for hierarchy "registrador:inst4|sorteador:sorteio" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 21
 Info (12128): Elaborating entity "contador_n" for hierarchy "registrador:inst4|sorteador:sorteio|contador_n:contador" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/sorteador.tdf Line: 12
 Info (12128): Elaborating entity "controle" for hierarchy "controle:inst1"
-Info (12128): Elaborating entity "debouncer" for hierarchy "controle:inst1|debouncer:debounc3" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 17
+Info (12128): Elaborating entity "debouncer" for hierarchy "controle:inst1|debouncer:debounc1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/controle.tdf Line: 15
+Info (12128): Elaborating entity "contador" for hierarchy "controle:inst1|debouncer:debounc1|contador:count" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 11
+Info (12128): Elaborating entity "contador" for hierarchy "controle:inst1|debouncer:debounc1|contador:divisor" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 12
 Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
 Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "display:inst2|conversor_numero_segmento:convd1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 19
 Info (12128): Elaborating entity "varia_display" for hierarchy "display:inst2|varia_display:varia[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 22
@@ -1362,7 +1304,6 @@ Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|varia_d
 Warning (287002): Group MSB q1 overrides BIT0 = LSB in actual or default Options Statement File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 10
 Warning (287002): Group MSB count1 overrides BIT0 = LSB in actual or default Options Statement File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/contador.tdf Line: 14
 Info (12128): Elaborating entity "lfsr" for hierarchy "display:inst2|varia_display:varia[6]|lfsr:spin" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 22
-Warning (287013): Variable or input pin "seed_unidade" is defined but never used. File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lfsr.tdf Line: 5
 Info (12128): Elaborating entity "detector_sorteios" for hierarchy "display:inst2|detector_sorteios:detector" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 24
 Info (12128): Elaborating entity "contador_crescente" for hierarchy "contador_crescente:inst3"
 Info (12128): Elaborating entity "contador" for hierarchy "contador:inst"
@@ -1378,29 +1319,24 @@ Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer display:inst2|varia_display:varia[4]|_~5 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 22
     Warning (19017): Found clock multiplexer display:inst2|varia_display:varia[5]|_~5 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 22
     Warning (19017): Found clock multiplexer display:inst2|varia_display:varia[6]|_~5 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 22
-    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 25
+    Warning (19017): Found clock multiplexer registrador:inst4|temp~1 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/registrador.tdf Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_rw" is stuck at GND
-    Warning (13410): Pin "led[1]" is stuck at GND
-    Warning (13410): Pin "led[2]" is stuck at GND
-    Warning (13410): Pin "led[3]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 136 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "controle:inst1|debouncer:debounc2|ff[2]~0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
-    Info (17048): Logic cell "registrador:inst4|debouncer:deb|ff[2]~0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
+    Info (17048): Logic cell "controle:inst1|debouncer:debounc3|ff[2]~0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
     Info (17048): Logic cell "controle:inst1|debouncer:debounc1|ff[2]~0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
+    Info (17048): Logic cell "controle:inst1|debouncer:debounc2|ff[2]~0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/debouncer.tdf Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "key[3]"
-Info (21057): Implemented 1242 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1387 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 26 output pins
-    Info (21061): Implemented 1212 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 496 megabytes
-    Info: Processing ended: Tue Aug  8 00:13:44 2023
+    Info (21061): Implemented 1357 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 497 megabytes
+    Info: Processing ended: Tue Aug  8 01:16:58 2023
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
 

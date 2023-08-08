@@ -1,8 +1,7 @@
 SUBDESIGN lfsr
 (
   clock : INPUT;
-  sinal : INPUT;
-  seed_unidade[4..1] : INPUT;
+  seed[4..1]: INPUT;
   dezena[4..1] : OUTPUT;
   unidade[4..1] : OUTPUT;
 )
@@ -11,23 +10,23 @@ d[6..1] : dff;
 DECIMAL[8..1]: dff;
 
 BEGIN
-d[].clk = clock;
+d[].clk = !clock;
 
-
-
-
-d[1].d = d[2] $ d[5];
-d[2].d = d[1].q;
-d[3].d = d[2].q;
-d[4].d = VCC;
-d[5].d = d[4].q;
-d[6].d = d[5].q;
-
+IF d[] != 0 THEN
+    d[1].d = d[2] $ d[5];
+    d[2].d = d[1].q;
+    d[3].d = d[2].q;
+    d[4].d = d[3].q;
+    d[5].d = d[4].q;
+    d[6].d = d[5].q;
+ELSE
+    d[2..1].d = B"11";
+    d[6..3].d = seed[];
+END IF;
 
 dezena[4..1] = DECIMAL[8..5];
 unidade[4..1] = DECIMAL[4..1];
 DECIMAL[].clk = clock;
-
 TABLE
 	d[] => DECIMAL[];
 	B"000000" => B"01010000";

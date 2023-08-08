@@ -26,5 +26,5 @@ BEGIN
 	btn2out = debounc2.result;
 	debounc3.clock = clock;
 	debounc3.button = btn3in;
-	btn3out = debounc1.result;
+	btn3out = debounc3.result;
 END;

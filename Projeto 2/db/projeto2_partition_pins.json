@@ -60,6 +60,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
 					"name" : "led[4]",
 					"strict" : false
 				},
@@ -96,11 +108,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "key[2]",
+					"name" : "key[3]",
 					"strict" : false
 				},
 				{
 					"name" : "key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "key[2]",
 					"strict" : false
 				}
 			]

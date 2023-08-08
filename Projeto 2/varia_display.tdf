@@ -33,13 +33,14 @@ BEGIN
 			spin.clock = freq5hz.clk_out;
 		END IF;
 
-	  spin.seed_unidade[] = u_atual[];
+	  
 
     IF count.q[] == 0 THEN
         count.clock = pulso;
         d_display[] = d_atual[];
         u_display[] = u_atual[];
-    ELSIF count.q[] == 1 THEN      
+    ELSIF count.q[] == 1 THEN
+			 spin.seed[] = u_atual[];
 			 freq5hz.clock = clock;
           freq2hz.clock = clock;
           contador6.clock = freq2hz.clk_out;
