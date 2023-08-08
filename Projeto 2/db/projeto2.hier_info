@@ -1225,6 +1225,7 @@ segmentos[6] <= segmentos[6].DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|display:inst2|varia_display:varia[6]
 clock => _.IN1
 clock => _.IN1
+clock => estado.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
@@ -1459,6 +1460,7 @@ unidade[4] <= unidade[4].DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|display:inst2|varia_display:varia[5]
 clock => _.IN1
 clock => _.IN1
+clock => estado.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
@@ -1693,6 +1695,7 @@ unidade[4] <= unidade[4].DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|display:inst2|varia_display:varia[4]
 clock => _.IN1
 clock => _.IN1
+clock => estado.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
@@ -1927,6 +1930,7 @@ unidade[4] <= unidade[4].DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|display:inst2|varia_display:varia[3]
 clock => _.IN1
 clock => _.IN1
+clock => estado.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
@@ -2161,6 +2165,7 @@ unidade[4] <= unidade[4].DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|display:inst2|varia_display:varia[2]
 clock => _.IN1
 clock => _.IN1
+clock => estado.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
@@ -2395,6 +2400,7 @@ unidade[4] <= unidade[4].DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|display:inst2|varia_display:varia[1]
 clock => _.IN1
 clock => _.IN1
+clock => estado.IN1
 pulso => _.IN1
 d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
@@ -2946,6 +2952,7 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 |projeto2|registrador:inst4
 button1 => _.IN1
 button3 => toggle_pause.CLK
+clock => _.IN1
 clock => _.IN1
 clock => contador:div_sorteio.clock
 clock => d[6][4].CLK

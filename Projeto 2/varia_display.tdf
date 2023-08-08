@@ -20,9 +20,14 @@ VARIABLE
     freq2hz : contador WITH (overflow = 12500000); -- frequencia para 3s
 	 freq5hz : contador WITH (overflow = 5000000);
     contador6 : contador WITH (overflow = 5);
-    count : contador WITH (overflow = 3); -- maquina de estados
+    count : contador WITH (overflow = 3); -- controle da maquina de estados
     spin : lfsr;
 	 toggle_frequencia : tff;
+	 estado: MACHINE WITH STATES (
+					 antes_do_sorteio,
+					 durante_o_sorteio,
+					 depois_do_sorteio
+				);
 
 BEGIN 
 		toggle_frequencia.t = VCC;
@@ -34,31 +39,42 @@ BEGIN
 		ELSE 
 			spin.clock = freq5hz.clk_out;
 		END IF;
+		
+		estado.clk = clock; -- Sincronizacao da maquina de estados
 
-	  
-
-    IF count.q[] == 0 THEN
-        count.clock = pulso;
-        d_display[] = d_atual[];
-        u_display[] = u_atual[];
-		  d_final = d_atual[];
-		  u_final = u_atual[];
-    ELSIF count.q[] == 1 THEN
-			 d_final[] = B"0000";
-			 u_final[] = B"0000";
-			 spin.seed[] = u_atual[];
-			 freq5hz.clock = clock;
-          freq2hz.clock = clock;
-          contador6.clock = freq2hz.clk_out;
-          
-        d_display[] = spin.dezena[];
-        u_display[] = spin.unidade[];
-        count.clock = contador6.clk_out;
-	 ELSE 
-		  d_final[] = d_atual[];
-		  u_final[] = u_atual[];
-		  d_display[] = d_atual[];
-        u_display[] = u_atual[];
-    END IF;
-        
+	  CASE estado IS
+			WHEN antes_do_sorteio =>
+				IF count.q[] == 0 THEN
+					count.clock = pulso;
+					d_display[] = d_atual[];
+					u_display[] = u_atual[];
+				   d_final = d_atual[];
+				   u_final = u_atual[];
+					estado = antes_do_sorteio;
+				ELSE 
+					estado = durante_o_sorteio;
+				END IF;
+			WHEN durante_o_sorteio =>
+				IF count.q[] == 1 THEN
+					d_final[] = B"0000";
+				   u_final[] = B"0000";
+			      spin.seed[] = u_atual[];
+			      freq5hz.clock = clock;
+					freq2hz.clock = clock;
+               contador6.clock = freq2hz.clk_out;
+					d_display[] = spin.dezena[];
+					u_display[] = spin.unidade[];
+					count.clock = contador6.clk_out;
+					estado = durante_o_sorteio;
+				ELSE 
+					estado = depois_do_sorteio;
+				END IF;
+			WHEN depois_do_sorteio =>
+			IF count.q[] == 2 THEN
+					d_final[] = d_atual[];
+				   u_final[] = u_atual[];
+		         d_display[] = d_atual[];
+               u_display[] = u_atual[];
+				END IF;
+		END CASE;
 END;

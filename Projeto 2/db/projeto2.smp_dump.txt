@@ -95,6 +95,42 @@ s89 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 s90 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 s91 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
+State Machine - |projeto2|display:inst2|varia_display:varia[1]|estado
+Name depois_do_sorteio durante_o_sorteio antes_do_sorteio 
+antes_do_sorteio 0 0 0 
+durante_o_sorteio 0 1 1 
+depois_do_sorteio 1 0 1 
+
+State Machine - |projeto2|display:inst2|varia_display:varia[2]|estado
+Name depois_do_sorteio durante_o_sorteio antes_do_sorteio 
+antes_do_sorteio 0 0 0 
+durante_o_sorteio 0 1 1 
+depois_do_sorteio 1 0 1 
+
+State Machine - |projeto2|display:inst2|varia_display:varia[3]|estado
+Name depois_do_sorteio durante_o_sorteio antes_do_sorteio 
+antes_do_sorteio 0 0 0 
+durante_o_sorteio 0 1 1 
+depois_do_sorteio 1 0 1 
+
+State Machine - |projeto2|display:inst2|varia_display:varia[4]|estado
+Name depois_do_sorteio durante_o_sorteio antes_do_sorteio 
+antes_do_sorteio 0 0 0 
+durante_o_sorteio 0 1 1 
+depois_do_sorteio 1 0 1 
+
+State Machine - |projeto2|display:inst2|varia_display:varia[5]|estado
+Name depois_do_sorteio durante_o_sorteio antes_do_sorteio 
+antes_do_sorteio 0 0 0 
+durante_o_sorteio 0 1 1 
+depois_do_sorteio 1 0 1 
+
+State Machine - |projeto2|display:inst2|varia_display:varia[6]|estado
+Name depois_do_sorteio durante_o_sorteio antes_do_sorteio 
+antes_do_sorteio 0 0 0 
+durante_o_sorteio 0 1 1 
+depois_do_sorteio 1 0 1 
+
 State Machine - |projeto2|lcd_logic:inst14|char_cnt
 Name char_34 char_33 char_32 char_31 char_30 char_29 char_28 char_27 char_26 char_25 char_24 char_23 char_22 char_21 char_20 char_19 char_18 char_17 char_16 char_15 char_14 char_13 char_12 char_11 char_10 char_09 char_08 char_07 char_06 char_05 char_04 char_03 char_02 char_01 char_00 
 char_00 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 

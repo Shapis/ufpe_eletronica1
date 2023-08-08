@@ -26,6 +26,12 @@ toggle_pause : tff;
 
 BEGIN
 
+IF count.q[] == 0 THEN
+	count.clk = clock;
+ELSE
+	count.clk = divisor.clk_out;
+END IF;
+
 IF toggle_pause == GND THEN
 	divisor.clock = clock;
 END  IF;

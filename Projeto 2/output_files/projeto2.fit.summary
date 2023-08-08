@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Aug  8 03:32:22 2023
+Fitter Status : Successful - Tue Aug  8 04:04:41 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : projeto2
 Top-level Entity Name : projeto2
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 1,520 / 6,272 ( 24 % )
-    Total combinational functions : 1,487 / 6,272 ( 24 % )
-    Dedicated logic registers : 640 / 6,272 ( 10 % )
-Total registers : 640
+Total logic elements : 1,536 / 6,272 ( 24 % )
+    Total combinational functions : 1,503 / 6,272 ( 24 % )
+    Dedicated logic registers : 658 / 6,272 ( 10 % )
+Total registers : 658
 Total pins : 30 / 92 ( 33 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
