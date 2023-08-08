@@ -12,7 +12,8 @@ SUBDESIGN registrador
 	u_atual[4..1] : OUTPUT;
 	dezenas_sorteadas[6..1][4..1] : OUTPUT;
 	unidades_sorteadas[6..1][4..1] : OUTPUT;
-	led_test : OUTPUT;
+	pause : OUTPUT;
+	test_led : OUTPUT;
 )
 VARIABLE
 divisor : contador WITH (overflow = 125000000); -- frequencia 0.2Hz
@@ -36,7 +37,7 @@ IF toggle_pause == GND THEN
 	divisor.clock = clock;
 END  IF;
 
-led_test = !toggle_pause;
+pause = toggle_pause;
 
 div_sorteio.clock = clock;
 count.clk = divisor.clk_out;
@@ -47,11 +48,14 @@ temp.t = VCC;
 
 sorteio.clock = div_sorteio.clk_out;
 
+test_led = button1;
 
 IF temp.q == GND THEN
 	d[][].d = d[][].q;
 	u[][].d = u[][].q;
-	temp.clk = button1; -- Controle do sorteio
+	--IF toggle_pause == GND THEN , isso aqui nao funciona, eu nao sei por que.
+		temp.clk = button1; -- Controle do sorteio
+	--END IF;
 END IF;
 
 IF temp.q == VCC THEN

@@ -28,7 +28,7 @@ lcd_d[7] <= lcd_controler:inst15.lcd_data[7]
 led[1] <= leds:inst5.leds_out[1]
 led[2] <= leds:inst5.leds_out[2]
 led[3] <= leds:inst5.leds_out[3]
-led[4] <= registrador:inst4.led_test
+led[4] <= registrador:inst4.test_led
 seg[0] <= display:inst2.seg[0]
 seg[1] <= display:inst2.seg[1]
 seg[2] <= display:inst2.seg[2]
@@ -984,6 +984,12 @@ button2 => varia_display:varia[4].button2
 button2 => varia_display:varia[3].button2
 button2 => varia_display:varia[2].button2
 button2 => varia_display:varia[1].button2
+pause => varia_display:varia[6].pause
+pause => varia_display:varia[5].pause
+pause => varia_display:varia[4].pause
+pause => varia_display:varia[3].pause
+pause => varia_display:varia[2].pause
+pause => varia_display:varia[1].pause
 dig[1] <= dig[1].DB_MAX_OUTPUT_PORT_TYPE
 dig[2] <= dig[2].DB_MAX_OUTPUT_PORT_TYPE
 dig[3] <= dig[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -995,7 +1001,7 @@ seg[3] <= seg[3].DB_MAX_OUTPUT_PORT_TYPE
 seg[4] <= seg[4].DB_MAX_OUTPUT_PORT_TYPE
 seg[5] <= seg[5].DB_MAX_OUTPUT_PORT_TYPE
 seg[6] <= seg[6].DB_MAX_OUTPUT_PORT_TYPE
-led <= led.DB_MAX_OUTPUT_PORT_TYPE
+led <= varia_display:varia[1].led
 unidades_final[1][1] <= varia_display:varia[1].u_final[1]
 unidades_final[1][2] <= varia_display:varia[1].u_final[2]
 unidades_final[1][3] <= varia_display:varia[1].u_final[3]
@@ -1201,43 +1207,30 @@ clock => _.IN1
 clock => _.IN1
 clock => estado.IN1
 pulso => _.IN1
-d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
-d_atual[1] => d_final[1]~7.IN1
-d_atual[1] => d_display[1]~11.IN1
-d_atual[2] => d_display[2]~2.IN1
+d_atual[1] => d_display[1]~7.IN1
 d_atual[2] => d_final[2]~2.IN1
-d_atual[2] => d_final[2]~6.IN1
-d_atual[2] => d_display[2]~10.IN1
-d_atual[3] => d_display[3]~1.IN1
+d_atual[2] => d_display[2]~6.IN1
 d_atual[3] => d_final[3]~1.IN1
-d_atual[3] => d_final[3]~5.IN1
-d_atual[3] => d_display[3]~9.IN1
-d_atual[4] => d_display[4]~0.IN1
+d_atual[3] => d_display[3]~5.IN1
 d_atual[4] => d_final[4]~0.IN1
-d_atual[4] => d_final[4]~4.IN1
-d_atual[4] => d_display[4]~8.IN1
-u_atual[1] => u_display[1]~3.IN1
-u_atual[1] => u_final[1]~3.IN1
+d_atual[4] => d_display[4]~4.IN1
 u_atual[1] => _.IN1
-u_atual[1] => u_final[1]~7.IN1
-u_atual[1] => u_display[1]~11.IN1
-u_atual[2] => u_display[2]~2.IN1
-u_atual[2] => u_final[2]~2.IN1
+u_atual[1] => u_final[1]~3.IN1
+u_atual[1] => u_display[1]~7.IN1
 u_atual[2] => _.IN1
-u_atual[2] => u_final[2]~6.IN1
-u_atual[2] => u_display[2]~10.IN1
-u_atual[3] => u_display[3]~1.IN1
-u_atual[3] => u_final[3]~1.IN1
+u_atual[2] => u_final[2]~2.IN1
+u_atual[2] => u_display[2]~6.IN1
 u_atual[3] => _.IN1
-u_atual[3] => u_final[3]~5.IN1
-u_atual[3] => u_display[3]~9.IN1
-u_atual[4] => u_display[4]~0.IN1
-u_atual[4] => u_final[4]~0.IN1
+u_atual[3] => u_final[3]~1.IN1
+u_atual[3] => u_display[3]~5.IN1
 u_atual[4] => _.IN1
-u_atual[4] => u_final[4]~4.IN1
-u_atual[4] => u_display[4]~8.IN1
+u_atual[4] => u_final[4]~0.IN1
+u_atual[4] => u_display[4]~4.IN1
 button2 => toggle_frequencia.CLK
+pause => led.IN0
+pause => _.IN0
+pause => _.IN0
 d_display[1] <= d_display[1].DB_MAX_OUTPUT_PORT_TYPE
 d_display[2] <= d_display[2].DB_MAX_OUTPUT_PORT_TYPE
 d_display[3] <= d_display[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -1254,7 +1247,7 @@ u_final[1] <= u_final[1].DB_MAX_OUTPUT_PORT_TYPE
 u_final[2] <= u_final[2].DB_MAX_OUTPUT_PORT_TYPE
 u_final[3] <= u_final[3].DB_MAX_OUTPUT_PORT_TYPE
 u_final[4] <= u_final[4].DB_MAX_OUTPUT_PORT_TYPE
-led <= toggle_frequencia.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[6]|contador:freq2hz
@@ -1367,30 +1360,54 @@ q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[6]|contador:contador6
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[6]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[6]|contador:count
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[6]|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[6]|lfsr:spin
@@ -1436,43 +1453,30 @@ clock => _.IN1
 clock => _.IN1
 clock => estado.IN1
 pulso => _.IN1
-d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
-d_atual[1] => d_final[1]~7.IN1
-d_atual[1] => d_display[1]~11.IN1
-d_atual[2] => d_display[2]~2.IN1
+d_atual[1] => d_display[1]~7.IN1
 d_atual[2] => d_final[2]~2.IN1
-d_atual[2] => d_final[2]~6.IN1
-d_atual[2] => d_display[2]~10.IN1
-d_atual[3] => d_display[3]~1.IN1
+d_atual[2] => d_display[2]~6.IN1
 d_atual[3] => d_final[3]~1.IN1
-d_atual[3] => d_final[3]~5.IN1
-d_atual[3] => d_display[3]~9.IN1
-d_atual[4] => d_display[4]~0.IN1
+d_atual[3] => d_display[3]~5.IN1
 d_atual[4] => d_final[4]~0.IN1
-d_atual[4] => d_final[4]~4.IN1
-d_atual[4] => d_display[4]~8.IN1
-u_atual[1] => u_display[1]~3.IN1
-u_atual[1] => u_final[1]~3.IN1
+d_atual[4] => d_display[4]~4.IN1
 u_atual[1] => _.IN1
-u_atual[1] => u_final[1]~7.IN1
-u_atual[1] => u_display[1]~11.IN1
-u_atual[2] => u_display[2]~2.IN1
-u_atual[2] => u_final[2]~2.IN1
+u_atual[1] => u_final[1]~3.IN1
+u_atual[1] => u_display[1]~7.IN1
 u_atual[2] => _.IN1
-u_atual[2] => u_final[2]~6.IN1
-u_atual[2] => u_display[2]~10.IN1
-u_atual[3] => u_display[3]~1.IN1
-u_atual[3] => u_final[3]~1.IN1
+u_atual[2] => u_final[2]~2.IN1
+u_atual[2] => u_display[2]~6.IN1
 u_atual[3] => _.IN1
-u_atual[3] => u_final[3]~5.IN1
-u_atual[3] => u_display[3]~9.IN1
-u_atual[4] => u_display[4]~0.IN1
-u_atual[4] => u_final[4]~0.IN1
+u_atual[3] => u_final[3]~1.IN1
+u_atual[3] => u_display[3]~5.IN1
 u_atual[4] => _.IN1
-u_atual[4] => u_final[4]~4.IN1
-u_atual[4] => u_display[4]~8.IN1
+u_atual[4] => u_final[4]~0.IN1
+u_atual[4] => u_display[4]~4.IN1
 button2 => toggle_frequencia.CLK
+pause => led.IN0
+pause => _.IN0
+pause => _.IN0
 d_display[1] <= d_display[1].DB_MAX_OUTPUT_PORT_TYPE
 d_display[2] <= d_display[2].DB_MAX_OUTPUT_PORT_TYPE
 d_display[3] <= d_display[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -1489,7 +1493,7 @@ u_final[1] <= u_final[1].DB_MAX_OUTPUT_PORT_TYPE
 u_final[2] <= u_final[2].DB_MAX_OUTPUT_PORT_TYPE
 u_final[3] <= u_final[3].DB_MAX_OUTPUT_PORT_TYPE
 u_final[4] <= u_final[4].DB_MAX_OUTPUT_PORT_TYPE
-led <= toggle_frequencia.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[5]|contador:freq2hz
@@ -1602,30 +1606,54 @@ q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[5]|contador:contador6
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[5]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[5]|contador:count
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[5]|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[5]|lfsr:spin
@@ -1671,43 +1699,30 @@ clock => _.IN1
 clock => _.IN1
 clock => estado.IN1
 pulso => _.IN1
-d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
-d_atual[1] => d_final[1]~7.IN1
-d_atual[1] => d_display[1]~11.IN1
-d_atual[2] => d_display[2]~2.IN1
+d_atual[1] => d_display[1]~7.IN1
 d_atual[2] => d_final[2]~2.IN1
-d_atual[2] => d_final[2]~6.IN1
-d_atual[2] => d_display[2]~10.IN1
-d_atual[3] => d_display[3]~1.IN1
+d_atual[2] => d_display[2]~6.IN1
 d_atual[3] => d_final[3]~1.IN1
-d_atual[3] => d_final[3]~5.IN1
-d_atual[3] => d_display[3]~9.IN1
-d_atual[4] => d_display[4]~0.IN1
+d_atual[3] => d_display[3]~5.IN1
 d_atual[4] => d_final[4]~0.IN1
-d_atual[4] => d_final[4]~4.IN1
-d_atual[4] => d_display[4]~8.IN1
-u_atual[1] => u_display[1]~3.IN1
-u_atual[1] => u_final[1]~3.IN1
+d_atual[4] => d_display[4]~4.IN1
 u_atual[1] => _.IN1
-u_atual[1] => u_final[1]~7.IN1
-u_atual[1] => u_display[1]~11.IN1
-u_atual[2] => u_display[2]~2.IN1
-u_atual[2] => u_final[2]~2.IN1
+u_atual[1] => u_final[1]~3.IN1
+u_atual[1] => u_display[1]~7.IN1
 u_atual[2] => _.IN1
-u_atual[2] => u_final[2]~6.IN1
-u_atual[2] => u_display[2]~10.IN1
-u_atual[3] => u_display[3]~1.IN1
-u_atual[3] => u_final[3]~1.IN1
+u_atual[2] => u_final[2]~2.IN1
+u_atual[2] => u_display[2]~6.IN1
 u_atual[3] => _.IN1
-u_atual[3] => u_final[3]~5.IN1
-u_atual[3] => u_display[3]~9.IN1
-u_atual[4] => u_display[4]~0.IN1
-u_atual[4] => u_final[4]~0.IN1
+u_atual[3] => u_final[3]~1.IN1
+u_atual[3] => u_display[3]~5.IN1
 u_atual[4] => _.IN1
-u_atual[4] => u_final[4]~4.IN1
-u_atual[4] => u_display[4]~8.IN1
+u_atual[4] => u_final[4]~0.IN1
+u_atual[4] => u_display[4]~4.IN1
 button2 => toggle_frequencia.CLK
+pause => led.IN0
+pause => _.IN0
+pause => _.IN0
 d_display[1] <= d_display[1].DB_MAX_OUTPUT_PORT_TYPE
 d_display[2] <= d_display[2].DB_MAX_OUTPUT_PORT_TYPE
 d_display[3] <= d_display[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -1724,7 +1739,7 @@ u_final[1] <= u_final[1].DB_MAX_OUTPUT_PORT_TYPE
 u_final[2] <= u_final[2].DB_MAX_OUTPUT_PORT_TYPE
 u_final[3] <= u_final[3].DB_MAX_OUTPUT_PORT_TYPE
 u_final[4] <= u_final[4].DB_MAX_OUTPUT_PORT_TYPE
-led <= toggle_frequencia.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[4]|contador:freq2hz
@@ -1837,30 +1852,54 @@ q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[4]|contador:contador6
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[4]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[4]|contador:count
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[4]|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[4]|lfsr:spin
@@ -1906,43 +1945,30 @@ clock => _.IN1
 clock => _.IN1
 clock => estado.IN1
 pulso => _.IN1
-d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
-d_atual[1] => d_final[1]~7.IN1
-d_atual[1] => d_display[1]~11.IN1
-d_atual[2] => d_display[2]~2.IN1
+d_atual[1] => d_display[1]~7.IN1
 d_atual[2] => d_final[2]~2.IN1
-d_atual[2] => d_final[2]~6.IN1
-d_atual[2] => d_display[2]~10.IN1
-d_atual[3] => d_display[3]~1.IN1
+d_atual[2] => d_display[2]~6.IN1
 d_atual[3] => d_final[3]~1.IN1
-d_atual[3] => d_final[3]~5.IN1
-d_atual[3] => d_display[3]~9.IN1
-d_atual[4] => d_display[4]~0.IN1
+d_atual[3] => d_display[3]~5.IN1
 d_atual[4] => d_final[4]~0.IN1
-d_atual[4] => d_final[4]~4.IN1
-d_atual[4] => d_display[4]~8.IN1
-u_atual[1] => u_display[1]~3.IN1
-u_atual[1] => u_final[1]~3.IN1
+d_atual[4] => d_display[4]~4.IN1
 u_atual[1] => _.IN1
-u_atual[1] => u_final[1]~7.IN1
-u_atual[1] => u_display[1]~11.IN1
-u_atual[2] => u_display[2]~2.IN1
-u_atual[2] => u_final[2]~2.IN1
+u_atual[1] => u_final[1]~3.IN1
+u_atual[1] => u_display[1]~7.IN1
 u_atual[2] => _.IN1
-u_atual[2] => u_final[2]~6.IN1
-u_atual[2] => u_display[2]~10.IN1
-u_atual[3] => u_display[3]~1.IN1
-u_atual[3] => u_final[3]~1.IN1
+u_atual[2] => u_final[2]~2.IN1
+u_atual[2] => u_display[2]~6.IN1
 u_atual[3] => _.IN1
-u_atual[3] => u_final[3]~5.IN1
-u_atual[3] => u_display[3]~9.IN1
-u_atual[4] => u_display[4]~0.IN1
-u_atual[4] => u_final[4]~0.IN1
+u_atual[3] => u_final[3]~1.IN1
+u_atual[3] => u_display[3]~5.IN1
 u_atual[4] => _.IN1
-u_atual[4] => u_final[4]~4.IN1
-u_atual[4] => u_display[4]~8.IN1
+u_atual[4] => u_final[4]~0.IN1
+u_atual[4] => u_display[4]~4.IN1
 button2 => toggle_frequencia.CLK
+pause => led.IN0
+pause => _.IN0
+pause => _.IN0
 d_display[1] <= d_display[1].DB_MAX_OUTPUT_PORT_TYPE
 d_display[2] <= d_display[2].DB_MAX_OUTPUT_PORT_TYPE
 d_display[3] <= d_display[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -1959,7 +1985,7 @@ u_final[1] <= u_final[1].DB_MAX_OUTPUT_PORT_TYPE
 u_final[2] <= u_final[2].DB_MAX_OUTPUT_PORT_TYPE
 u_final[3] <= u_final[3].DB_MAX_OUTPUT_PORT_TYPE
 u_final[4] <= u_final[4].DB_MAX_OUTPUT_PORT_TYPE
-led <= toggle_frequencia.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[3]|contador:freq2hz
@@ -2072,30 +2098,54 @@ q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[3]|contador:contador6
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[3]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[3]|contador:count
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[3]|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[3]|lfsr:spin
@@ -2141,43 +2191,30 @@ clock => _.IN1
 clock => _.IN1
 clock => estado.IN1
 pulso => _.IN1
-d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
-d_atual[1] => d_final[1]~7.IN1
-d_atual[1] => d_display[1]~11.IN1
-d_atual[2] => d_display[2]~2.IN1
+d_atual[1] => d_display[1]~7.IN1
 d_atual[2] => d_final[2]~2.IN1
-d_atual[2] => d_final[2]~6.IN1
-d_atual[2] => d_display[2]~10.IN1
-d_atual[3] => d_display[3]~1.IN1
+d_atual[2] => d_display[2]~6.IN1
 d_atual[3] => d_final[3]~1.IN1
-d_atual[3] => d_final[3]~5.IN1
-d_atual[3] => d_display[3]~9.IN1
-d_atual[4] => d_display[4]~0.IN1
+d_atual[3] => d_display[3]~5.IN1
 d_atual[4] => d_final[4]~0.IN1
-d_atual[4] => d_final[4]~4.IN1
-d_atual[4] => d_display[4]~8.IN1
-u_atual[1] => u_display[1]~3.IN1
-u_atual[1] => u_final[1]~3.IN1
+d_atual[4] => d_display[4]~4.IN1
 u_atual[1] => _.IN1
-u_atual[1] => u_final[1]~7.IN1
-u_atual[1] => u_display[1]~11.IN1
-u_atual[2] => u_display[2]~2.IN1
-u_atual[2] => u_final[2]~2.IN1
+u_atual[1] => u_final[1]~3.IN1
+u_atual[1] => u_display[1]~7.IN1
 u_atual[2] => _.IN1
-u_atual[2] => u_final[2]~6.IN1
-u_atual[2] => u_display[2]~10.IN1
-u_atual[3] => u_display[3]~1.IN1
-u_atual[3] => u_final[3]~1.IN1
+u_atual[2] => u_final[2]~2.IN1
+u_atual[2] => u_display[2]~6.IN1
 u_atual[3] => _.IN1
-u_atual[3] => u_final[3]~5.IN1
-u_atual[3] => u_display[3]~9.IN1
-u_atual[4] => u_display[4]~0.IN1
-u_atual[4] => u_final[4]~0.IN1
+u_atual[3] => u_final[3]~1.IN1
+u_atual[3] => u_display[3]~5.IN1
 u_atual[4] => _.IN1
-u_atual[4] => u_final[4]~4.IN1
-u_atual[4] => u_display[4]~8.IN1
+u_atual[4] => u_final[4]~0.IN1
+u_atual[4] => u_display[4]~4.IN1
 button2 => toggle_frequencia.CLK
+pause => led.IN0
+pause => _.IN0
+pause => _.IN0
 d_display[1] <= d_display[1].DB_MAX_OUTPUT_PORT_TYPE
 d_display[2] <= d_display[2].DB_MAX_OUTPUT_PORT_TYPE
 d_display[3] <= d_display[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -2194,7 +2231,7 @@ u_final[1] <= u_final[1].DB_MAX_OUTPUT_PORT_TYPE
 u_final[2] <= u_final[2].DB_MAX_OUTPUT_PORT_TYPE
 u_final[3] <= u_final[3].DB_MAX_OUTPUT_PORT_TYPE
 u_final[4] <= u_final[4].DB_MAX_OUTPUT_PORT_TYPE
-led <= toggle_frequencia.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[2]|contador:freq2hz
@@ -2307,30 +2344,54 @@ q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[2]|contador:contador6
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[2]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[2]|contador:count
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[2]|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin
@@ -2376,43 +2437,30 @@ clock => _.IN1
 clock => _.IN1
 clock => estado.IN1
 pulso => _.IN1
-d_atual[1] => d_display[1]~3.IN1
 d_atual[1] => d_final[1]~3.IN1
-d_atual[1] => d_final[1]~7.IN1
-d_atual[1] => d_display[1]~11.IN1
-d_atual[2] => d_display[2]~2.IN1
+d_atual[1] => d_display[1]~7.IN1
 d_atual[2] => d_final[2]~2.IN1
-d_atual[2] => d_final[2]~6.IN1
-d_atual[2] => d_display[2]~10.IN1
-d_atual[3] => d_display[3]~1.IN1
+d_atual[2] => d_display[2]~6.IN1
 d_atual[3] => d_final[3]~1.IN1
-d_atual[3] => d_final[3]~5.IN1
-d_atual[3] => d_display[3]~9.IN1
-d_atual[4] => d_display[4]~0.IN1
+d_atual[3] => d_display[3]~5.IN1
 d_atual[4] => d_final[4]~0.IN1
-d_atual[4] => d_final[4]~4.IN1
-d_atual[4] => d_display[4]~8.IN1
-u_atual[1] => u_display[1]~3.IN1
-u_atual[1] => u_final[1]~3.IN1
+d_atual[4] => d_display[4]~4.IN1
 u_atual[1] => _.IN1
-u_atual[1] => u_final[1]~7.IN1
-u_atual[1] => u_display[1]~11.IN1
-u_atual[2] => u_display[2]~2.IN1
-u_atual[2] => u_final[2]~2.IN1
+u_atual[1] => u_final[1]~3.IN1
+u_atual[1] => u_display[1]~7.IN1
 u_atual[2] => _.IN1
-u_atual[2] => u_final[2]~6.IN1
-u_atual[2] => u_display[2]~10.IN1
-u_atual[3] => u_display[3]~1.IN1
-u_atual[3] => u_final[3]~1.IN1
+u_atual[2] => u_final[2]~2.IN1
+u_atual[2] => u_display[2]~6.IN1
 u_atual[3] => _.IN1
-u_atual[3] => u_final[3]~5.IN1
-u_atual[3] => u_display[3]~9.IN1
-u_atual[4] => u_display[4]~0.IN1
-u_atual[4] => u_final[4]~0.IN1
+u_atual[3] => u_final[3]~1.IN1
+u_atual[3] => u_display[3]~5.IN1
 u_atual[4] => _.IN1
-u_atual[4] => u_final[4]~4.IN1
-u_atual[4] => u_display[4]~8.IN1
+u_atual[4] => u_final[4]~0.IN1
+u_atual[4] => u_display[4]~4.IN1
 button2 => toggle_frequencia.CLK
+pause => led.IN0
+pause => _.IN0
+pause => _.IN0
 d_display[1] <= d_display[1].DB_MAX_OUTPUT_PORT_TYPE
 d_display[2] <= d_display[2].DB_MAX_OUTPUT_PORT_TYPE
 d_display[3] <= d_display[3].DB_MAX_OUTPUT_PORT_TYPE
@@ -2429,7 +2477,7 @@ u_final[1] <= u_final[1].DB_MAX_OUTPUT_PORT_TYPE
 u_final[2] <= u_final[2].DB_MAX_OUTPUT_PORT_TYPE
 u_final[3] <= u_final[3].DB_MAX_OUTPUT_PORT_TYPE
 u_final[4] <= u_final[4].DB_MAX_OUTPUT_PORT_TYPE
-led <= toggle_frequencia.DB_MAX_OUTPUT_PORT_TYPE
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[1]|contador:freq2hz
@@ -2542,30 +2590,54 @@ q[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[1]|contador:contador6
-clock => count[3].CLK
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[1]|contador_crescente:contador6
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|projeto2|display:inst2|varia_display:varia[1]|contador:count
-clock => count[2].CLK
-clock => count[1].CLK
-clock => alt.CLK
-ena => _.IN1
-ena => _.IN1
+|projeto2|display:inst2|varia_display:varia[1]|contador_crescente:count
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
 clr => _.IN0
-q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|display:inst2|varia_display:varia[1]|lfsr:spin
@@ -2924,6 +2996,7 @@ clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|registrador:inst4
+button1 => test_led.DATAIN
 button1 => _.IN1
 button3 => toggle_pause.CLK
 clock => _.IN1
@@ -3037,7 +3110,8 @@ unidades_sorteadas[6][1] <= u[6][1].DB_MAX_OUTPUT_PORT_TYPE
 unidades_sorteadas[6][2] <= u[6][2].DB_MAX_OUTPUT_PORT_TYPE
 unidades_sorteadas[6][3] <= u[6][3].DB_MAX_OUTPUT_PORT_TYPE
 unidades_sorteadas[6][4] <= u[6][4].DB_MAX_OUTPUT_PORT_TYPE
-led_test <= led_test.DB_MAX_OUTPUT_PORT_TYPE
+pause <= toggle_pause.DB_MAX_OUTPUT_PORT_TYPE
+test_led <= button1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|registrador:inst4|contador:divisor

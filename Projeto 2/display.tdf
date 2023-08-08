@@ -12,6 +12,7 @@ SUBDESIGN display
 	 d2[6..1][4..1]: INPUT;
 	 d3[6..1][4..1]: INPUT;
 	 button2 : INPUT;
+	 pause : INPUT;
 	 dig[4..1]: OUTPUT;
 	 seg[6..0]: OUTPUT;
 	 led : OUTPUT;
@@ -35,6 +36,8 @@ DEFAULTS
 	dig[] = VCC;
 END DEFAULTS;
 
+led = varia[1].led;
+
 freq1562hz.clock = clock;
 divisor4.clk = freq1562hz.clk_out;
 
@@ -42,6 +45,7 @@ unidades_final[][] = varia[].u_final[];
 dezenas_final[][] = varia[].d_final[];
 
 varia[].button2 = button2;
+varia[].pause = pause;
 
 detector.d[][] = d2[][];
 detector.u[][] = d3[][];
@@ -51,7 +55,7 @@ check_pulso.clk = detector.pulso[2];
 
 varia[].clock = clock;
 
-led = !(varia[1].led OR varia[2].led OR varia[3].led OR varia[4].led OR varia[5].led OR varia[6].led);
+-- led = !(varia[1].led OR varia[2].led OR varia[3].led OR varia[4].led OR varia[5].led OR varia[6].led);
 varia[].d_atual[] = d2[][];
 varia[].u_atual[] = d3[][];
 
