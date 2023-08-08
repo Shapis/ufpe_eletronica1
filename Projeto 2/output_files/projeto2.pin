@@ -159,7 +159,7 @@ led[1]                       : 87        : output : 2.5 V             :         
 key[1]                       : 88        : input  : 2.5 V             :         : 5         : Y              
 key[2]                       : 89        : input  : 2.5 V             :         : 5         : Y              
 key[3]                       : 90        : input  : 2.5 V             :         : 6         : Y              
-GND+                         : 91        :        :                   :         : 6         :                
+key[4]                       : 91        : input  : 2.5 V             :         : 6         : Y              
 CONF_DONE                    : 92        :        :                   :         : 6         :                
 VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
 MSEL0                        : 94        :        :                   :         : 6         :                

@@ -5,13 +5,14 @@ clock => lcd_logic:inst14.clk
 clock => display:inst2.clock
 clock => controle:inst1.clock
 clock => registrador:inst4.clock
-clock => song_starwars_25MHz:inst9.clock
+clock => contador_crescente:inst12.clk
 key[1] => controle:inst1.btn1in
 key[2] => controle:inst1.btn2in
 key[3] => controle:inst1.btn3in
+key[4] => mute_buzzer:inst.enable
 lcd_en <= lcd_controler:inst15.e
 lcd_rs <= lcd_controler:inst15.rs
-buzzer <= song_starwars_25MHz:inst9.buzzer
+buzzer <= mute_buzzer:inst.buzzer
 dig[1] <= display:inst2.dig[1]
 dig[2] <= display:inst2.dig[2]
 dig[3] <= display:inst2.dig[3]
@@ -3194,6 +3195,12 @@ q[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
 clk_out <= alt.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|projeto2|mute_buzzer:inst
+frequencia_musica => buzzer.IN1
+enable => buzzer.IN0
+buzzer <= buzzer.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |projeto2|song_starwars_25MHz:inst9
 clock => controlador:control.clk_in
 clock => temporizador:temp.clk_in
@@ -3913,6 +3920,31 @@ play => _.IN0
 play => _.IN0
 play => _.IN0
 playing <= playing~reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto2|contador_crescente:inst12
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clr => _.IN1
+clr => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+ena => _.IN1
+ena => _.IN1
+d[1] => _.IN1
+d[2] => _.IN1
+d[3] => _.IN1
+d[4] => _.IN1
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+tc <= aux.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto2|leds:inst5
