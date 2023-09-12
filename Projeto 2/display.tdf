@@ -45,7 +45,7 @@ unidades_final[][] = varia[].u_final[];
 dezenas_final[][] = varia[].d_final[];
 
 varia[].button2 = button2;
-varia[].pause = pause;
+varia[].pause = GND;
 
 detector.d[][] = d2[][];
 detector.u[][] = d3[][];

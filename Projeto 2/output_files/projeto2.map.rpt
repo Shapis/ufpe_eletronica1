@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto2
-Tue Aug  8 08:44:45 2023
+Fri Aug 11 14:56:35 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -111,7 +111,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug  8 08:44:45 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 11 14:56:35 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projeto2                                    ;
 ; Top-level Entity Name              ; projeto2                                    ;
@@ -227,7 +227,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
+;     Processor 2            ;   0.2%      ;
 ;     Processor 3            ;   0.2%      ;
 ;     Processor 4            ;   0.2%      ;
 ;     Processor 5            ;   0.2%      ;
@@ -292,8 +292,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Total combinational functions               ; 2779        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 1778        ;
-;     -- 3 input functions                    ; 370         ;
+;     -- 4 input functions                    ; 1779        ;
+;     -- 3 input functions                    ; 369         ;
 ;     -- <=2 input functions                  ; 631         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
@@ -309,8 +309,8 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 249         ;
-; Total fan-out                               ; 11867       ;
+; Maximum fan-out                             ; 261         ;
+; Total fan-out                               ; 11868       ;
 ; Average fan-out                             ; 3.14        ;
 +---------------------------------------------+-------------+
 
@@ -329,7 +329,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |contador:divisor|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc2|contador:divisor                 ; contador                    ; work         ;
 ;       |debouncer:debounc3|                    ; 7 (2)               ; 4 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc3                                  ; debouncer                   ; work         ;
 ;          |contador:divisor|                   ; 5 (5)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|controle:inst1|debouncer:debounc3|contador:divisor                 ; contador                    ; work         ;
-;    |display:inst2|                            ; 931 (133)           ; 467 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                                      ; display                     ; work         ;
+;    |display:inst2|                            ; 931 (134)           ; 467 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2                                                      ; display                     ; work         ;
 ;       |contador:freq1562hz|                   ; 17 (17)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|contador:freq1562hz                                  ; contador                    ; work         ;
 ;       |contador_crescente:divisor4|           ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|contador_crescente:divisor4                          ; contador_crescente          ; work         ;
 ;       |varia_display:varia[1]|                ; 129 (21)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[1]                               ; varia_display               ; work         ;
@@ -346,7 +346,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |contador_crescente:contador6|       ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador_crescente:contador6  ; contador_crescente          ; work         ;
 ;          |contador_crescente:count|           ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|contador_crescente:count      ; contador_crescente          ; work         ;
 ;          |lfsr:spin|                          ; 35 (35)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[2]|lfsr:spin                     ; lfsr                        ; work         ;
-;       |varia_display:varia[3]|                ; 132 (22)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                               ; varia_display               ; work         ;
+;       |varia_display:varia[3]|                ; 131 (21)            ; 75 (4)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]                               ; varia_display               ; work         ;
 ;          |contador:freq2hz|                   ; 32 (32)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq2hz              ; contador                    ; work         ;
 ;          |contador:freq5hz|                   ; 31 (31)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador:freq5hz              ; contador                    ; work         ;
 ;          |contador_crescente:contador15|      ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto2|display:inst2|varia_display:varia[3]|contador_crescente:contador15 ; contador_crescente          ; work         ;
@@ -1384,11 +1384,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 64                          ;
 ;         2 data inputs ; 152                         ;
-;         3 data inputs ; 326                         ;
-;         4 data inputs ; 1778                        ;
+;         3 data inputs ; 325                         ;
+;         4 data inputs ; 1779                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 5.16                        ;
+; Average LUT depth     ; 5.15                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1397,7 +1397,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:16     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -1407,7 +1407,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug  8 08:44:23 2023
+    Info: Processing started: Fri Aug 11 14:56:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto2 -c projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -1489,6 +1489,7 @@ Info (12128): Elaborating entity "lcd_controler" for hierarchy "lcd_controler:in
 Info (12128): Elaborating entity "lcd_logic" for hierarchy "lcd_logic:inst14"
 Info (12128): Elaborating entity "conversor_binario4_binario8" for hierarchy "lcd_logic:inst14|conversor_binario4_binario8:conv_d[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/lcd_logic.tdf Line: 23
 Info (12128): Elaborating entity "display" for hierarchy "display:inst2"
+Warning (287013): Variable or input pin "pause" is defined but never used. File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 15
 Info (12128): Elaborating entity "conversor_numero_segmento" for hierarchy "display:inst2|conversor_numero_segmento:convd1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 24
 Info (12128): Elaborating entity "varia_display" for hierarchy "display:inst2|varia_display:varia[6]" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/display.tdf Line: 27
 Info (12128): Elaborating entity "contador" for hierarchy "display:inst2|varia_display:varia[6]|contador:freq2hz" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 2/varia_display.tdf Line: 22
@@ -1547,10 +1548,10 @@ Info (21057): Implemented 2864 device resources after synthesis - the final reso
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 27 output pins
     Info (21061): Implemented 2832 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
     Info: Peak virtual memory: 517 megabytes
-    Info: Processing ended: Tue Aug  8 08:44:45 2023
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Processing ended: Fri Aug 11 14:56:35 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:34
 
 
