@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Thu Sep 21 15:25:15 2023
+Thu Sep 21 17:02:18 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,16 +14,30 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: horizontal_sync:inst
- 12. Parameter Settings for User Entity Instance: vertical_sync:inst2
- 13. Parameter Settings for Inferred Entity Instance: pixel_generator:inst1|lpm_mult:Mult2
- 14. Parameter Settings for Inferred Entity Instance: pixel_generator:inst1|lpm_mult:Mult3
- 15. lpm_mult Parameter Settings by Entity Instance
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  9. State Machine - |top_entity|ir_verilog:inst|estado_atual
+ 10. State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|prox_estado
+ 11. State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|estado
+ 12. State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|prox_estado
+ 13. State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|estado
+ 14. State Machine - |top_entity|I2C_READ_verilog:inst2|estado
+ 15. State Machine - |top_entity|I2C_READ_verilog:inst2|cnt
+ 16. User-Specified and Inferred Latches
+ 17. Registers Removed During Synthesis
+ 18. Removed Registers Triggering Further Register Optimizations
+ 19. General Register Statistics
+ 20. Inverted Register Statistics
+ 21. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 22. Parameter Settings for User Entity Instance: VGA_interface:inst5|horizontal_sync:hs1
+ 23. Parameter Settings for User Entity Instance: VGA_interface:inst5|vertical_sync:vs1
+ 24. Parameter Settings for Inferred Entity Instance: VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0
+ 25. Parameter Settings for Inferred Entity Instance: VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1
+ 26. lpm_mult Parameter Settings by Entity Instance
+ 27. Port Connectivity Checks: "Mp3:inst4|Over_The_Rainbow:contro"
+ 28. Port Connectivity Checks: "Mp3:inst4|Fur_Elise:control"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,16 +64,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 15:25:15 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 21 17:02:18 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
-; Top-level Entity Name              ; vga_interface_topo                          ;
+; Top-level Entity Name              ; top_entity                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 293                                         ;
-;     Total combinational functions  ; 293                                         ;
-;     Dedicated logic registers      ; 35                                          ;
-; Total registers                    ; 35                                          ;
-; Total pins                         ; 8                                           ;
+; Total logic elements               ; 904                                         ;
+;     Total combinational functions  ; 834                                         ;
+;     Dedicated logic registers      ; 365                                         ;
+; Total registers                    ; 365                                         ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 4                                           ;
@@ -73,7 +87,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; vga_interface_topo ; VGA                ;
+; Top-level entity name                                            ; top_entity         ; VGA                ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                            ; On                 ; Off                ;
 ; Maximum processors allowed for parallel compilation              ; All                ;                    ;
@@ -170,71 +184,90 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-; horizontal_sync.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v      ;         ;
-; vertical_sync.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v        ;         ;
-; pixel_generator.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v      ;         ;
-; vga_interface_topo.bdf           ; yes             ; User Block Diagram/Schematic File  ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vga_interface_topo.bdf ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf           ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc         ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc        ;         ;
-; multcore.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/multcore.inc           ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/bypassff.inc           ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altshift.inc           ;         ;
-; db/mult_p5t.tdf                  ; yes             ; Auto-Generated Megafunction        ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/db/mult_p5t.tdf        ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; leds.v                           ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/leds.v             ;         ;
+; SEG_D_verilog.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v    ;         ;
+; Over_The_Rainbow.v               ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Over_The_Rainbow.v ;         ;
+; Fur_Elise.v                      ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v        ;         ;
+; divisor_clock.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock.v    ;         ;
+; temporizador.v                   ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/temporizador.v     ;         ;
+; Mp3.v                            ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v              ;         ;
+; I2C_READ_verilog.v               ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v ;         ;
+; ir_verilog.v                     ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v       ;         ;
+; top_entity.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/top_entity.bdf     ;         ;
+; horizontal_sync.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v  ;         ;
+; vertical_sync.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v    ;         ;
+; pixel_generator.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v  ;         ;
+; VGA_interface.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v    ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf       ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc     ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc    ;         ;
+; multcore.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/multcore.inc       ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/bypassff.inc       ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altshift.inc       ;         ;
+; db/mult_p5t.tdf                  ; yes             ; Auto-Generated Megafunction        ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/db/mult_p5t.tdf    ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                  ;
-+---------------------------------------------+--------------------------------+
-; Resource                                    ; Usage                          ;
-+---------------------------------------------+--------------------------------+
-; Estimated Total logic elements              ; 293                            ;
-;                                             ;                                ;
-; Total combinational functions               ; 293                            ;
-; Logic element usage by number of LUT inputs ;                                ;
-;     -- 4 input functions                    ; 163                            ;
-;     -- 3 input functions                    ; 60                             ;
-;     -- <=2 input functions                  ; 70                             ;
-;                                             ;                                ;
-; Logic elements by mode                      ;                                ;
-;     -- normal mode                          ; 234                            ;
-;     -- arithmetic mode                      ; 59                             ;
-;                                             ;                                ;
-; Total registers                             ; 35                             ;
-;     -- Dedicated logic registers            ; 35                             ;
-;     -- I/O registers                        ; 0                              ;
-;                                             ;                                ;
-; I/O pins                                    ; 8                              ;
-;                                             ;                                ;
-; Embedded Multiplier 9-bit elements          ; 4                              ;
-;                                             ;                                ;
-; Maximum fan-out node                        ; horizontal_sync:inst|hcount[9] ;
-; Maximum fan-out                             ; 30                             ;
-; Total fan-out                               ; 1081                           ;
-; Average fan-out                             ; 3.11                           ;
-+---------------------------------------------+--------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 904         ;
+;                                             ;             ;
+; Total combinational functions               ; 834         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 432         ;
+;     -- 3 input functions                    ; 142         ;
+;     -- <=2 input functions                  ; 260         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 637         ;
+;     -- arithmetic mode                      ; 197         ;
+;                                             ;             ;
+; Total registers                             ; 365         ;
+;     -- Dedicated logic registers            ; 365         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 28          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 4           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 338         ;
+; Total fan-out                               ; 3757        ;
+; Average fan-out                             ; 2.98        ;
++---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name        ; Library Name ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------------+--------------+
-; |vga_interface_topo                ; 293 (0)             ; 35 (0)                    ; 0           ; 4            ; 0       ; 2         ; 8    ; 0            ; |vga_interface_topo                                                              ; vga_interface_topo ; work         ;
-;    |horizontal_sync:inst|          ; 21 (21)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_interface_topo|horizontal_sync:inst                                         ; horizontal_sync    ; work         ;
-;    |pixel_generator:inst1|         ; 245 (245)           ; 13 (13)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |vga_interface_topo|pixel_generator:inst1                                        ; pixel_generator    ; work         ;
-;       |lpm_mult:Mult2|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_interface_topo|pixel_generator:inst1|lpm_mult:Mult2                         ; lpm_mult           ; work         ;
-;          |mult_p5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_interface_topo|pixel_generator:inst1|lpm_mult:Mult2|mult_p5t:auto_generated ; mult_p5t           ; work         ;
-;       |lpm_mult:Mult3|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_interface_topo|pixel_generator:inst1|lpm_mult:Mult3                         ; lpm_mult           ; work         ;
-;          |mult_p5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_interface_topo|pixel_generator:inst1|lpm_mult:Mult3|mult_p5t:auto_generated ; mult_p5t           ; work         ;
-;    |vertical_sync:inst2|           ; 27 (27)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_interface_topo|vertical_sync:inst2                                          ; vertical_sync      ; work         ;
-+------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                             ;
++---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Entity Name      ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+------------------+--------------+
+; |top_entity                           ; 834 (1)             ; 365 (0)                   ; 0           ; 4            ; 0       ; 2         ; 28   ; 0            ; |top_entity                                                                                ; top_entity       ; work         ;
+;    |I2C_READ_verilog:inst2|           ; 120 (120)           ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|I2C_READ_verilog:inst2                                                         ; I2C_READ_verilog ; work         ;
+;    |Mp3:inst4|                        ; 276 (74)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                                      ; Mp3              ; work         ;
+;       |Fur_Elise:control|             ; 55 (55)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                                                    ; Fur_Elise        ; work         ;
+;       |Over_The_Rainbow:contro|       ; 39 (39)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Over_The_Rainbow:contro                                              ; Over_The_Rainbow ; work         ;
+;       |divisor_clock:div_clk|         ; 50 (50)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|divisor_clock:div_clk                                                ; divisor_clock    ; work         ;
+;       |temporizador:temp|             ; 58 (58)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|temporizador:temp                                                    ; temporizador     ; work         ;
+;    |SEG_D_verilog:inst3|              ; 83 (83)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                                            ; SEG_D_verilog    ; work         ;
+;    |VGA_interface:inst5|              ; 258 (0)             ; 29 (0)                    ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|VGA_interface:inst5                                                            ; VGA_interface    ; work         ;
+;       |horizontal_sync:hs1|           ; 19 (19)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|horizontal_sync:hs1                                        ; horizontal_sync  ; work         ;
+;       |pixel_generator:pg1|           ; 214 (214)           ; 7 (7)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1                                        ; pixel_generator  ; work         ;
+;          |lpm_mult:Mult0|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0                         ; lpm_mult         ; work         ;
+;             |mult_p5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0|mult_p5t:auto_generated ; mult_p5t         ; work         ;
+;          |lpm_mult:Mult1|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1                         ; lpm_mult         ; work         ;
+;             |mult_p5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1|mult_p5t:auto_generated ; mult_p5t         ; work         ;
+;       |vertical_sync:vs1|             ; 25 (25)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|vertical_sync:vs1                                          ; vertical_sync    ; work         ;
+;    |ir_verilog:inst|                  ; 96 (96)             ; 58 (58)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|ir_verilog:inst                                                                ; ir_verilog       ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -256,156 +289,474 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_entity|ir_verilog:inst|estado_atual                                                                              ;
++---------------------------+-------------------------+-------------------------+---------------------------+---------------------------+
+; Name                      ; estado_atual.IDLE_STATE ; estado_atual.DATA_STATE ; estado_atual.ATRASO_450us ; estado_atual.ATRASO_900us ;
++---------------------------+-------------------------+-------------------------+---------------------------+---------------------------+
+; estado_atual.IDLE_STATE   ; 0                       ; 0                       ; 0                         ; 0                         ;
+; estado_atual.ATRASO_900us ; 1                       ; 0                       ; 0                         ; 1                         ;
+; estado_atual.ATRASO_450us ; 1                       ; 0                       ; 1                         ; 0                         ;
+; estado_atual.DATA_STATE   ; 1                       ; 1                       ; 0                         ; 0                         ;
++---------------------------+-------------------------+-------------------------+---------------------------+---------------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|prox_estado                                                                                                                                                                                                                                                                                                                                                                                               ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+; Name            ; prox_estado.s24 ; prox_estado.s23 ; prox_estado.s22 ; prox_estado.s21 ; prox_estado.s20 ; prox_estado.s19 ; prox_estado.s18 ; prox_estado.s17 ; prox_estado.s16 ; prox_estado.s15 ; prox_estado.s14 ; prox_estado.s13 ; prox_estado.s12 ; prox_estado.s11 ; prox_estado.s10 ; prox_estado.s9 ; prox_estado.s8 ; prox_estado.s7 ; prox_estado.s6 ; prox_estado.s5 ; prox_estado.s4 ; prox_estado.s3 ; prox_estado.s2 ; prox_estado.s1 ; prox_estado.s0 ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+; prox_estado.s0  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ;
+; prox_estado.s1  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 1              ;
+; prox_estado.s2  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 1              ;
+; prox_estado.s3  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 1              ;
+; prox_estado.s4  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s5  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s6  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s7  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s8  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s9  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s10 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s11 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s12 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s13 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s14 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s15 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s16 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s17 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s18 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s19 ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s20 ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s21 ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s22 ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s23 ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s24 ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|estado                                                                                                                                                                                                                                                                  ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; estado.s24 ; estado.s23 ; estado.s22 ; estado.s21 ; estado.s20 ; estado.s19 ; estado.s18 ; estado.s17 ; estado.s16 ; estado.s15 ; estado.s14 ; estado.s13 ; estado.s12 ; estado.s11 ; estado.s10 ; estado.s9 ; estado.s8 ; estado.s7 ; estado.s6 ; estado.s5 ; estado.s4 ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; estado.s0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; estado.s1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; estado.s2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; estado.s3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; estado.s4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s13 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s14 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s15 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s16 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s17 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s18 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s19 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s20 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s21 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s22 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s23 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s24 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|prox_estado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+; Name            ; prox_estado.s41 ; prox_estado.s40 ; prox_estado.s39 ; prox_estado.s38 ; prox_estado.s37 ; prox_estado.s36 ; prox_estado.s35 ; prox_estado.s34 ; prox_estado.s33 ; prox_estado.s32 ; prox_estado.s31 ; prox_estado.s30 ; prox_estado.s29 ; prox_estado.s28 ; prox_estado.s27 ; prox_estado.s26 ; prox_estado.s25 ; prox_estado.s24 ; prox_estado.s23 ; prox_estado.s22 ; prox_estado.s21 ; prox_estado.s20 ; prox_estado.s19 ; prox_estado.s18 ; prox_estado.s17 ; prox_estado.s16 ; prox_estado.s15 ; prox_estado.s14 ; prox_estado.s13 ; prox_estado.s12 ; prox_estado.s11 ; prox_estado.s10 ; prox_estado.s9 ; prox_estado.s8 ; prox_estado.s7 ; prox_estado.s6 ; prox_estado.s5 ; prox_estado.s4 ; prox_estado.s3 ; prox_estado.s2 ; prox_estado.s1 ; prox_estado.s0 ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+; prox_estado.s0  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ;
+; prox_estado.s1  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 1              ;
+; prox_estado.s2  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 1              ;
+; prox_estado.s3  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 1              ;
+; prox_estado.s4  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s5  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s6  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s7  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s8  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s9  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s10 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s11 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s12 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s13 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s14 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s15 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s16 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s17 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s18 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s19 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s20 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s21 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s22 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s23 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s24 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s25 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s26 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s27 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s28 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s29 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s30 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s31 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s32 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s33 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s34 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s35 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s36 ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s37 ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s38 ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s39 ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s40 ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
+; prox_estado.s41 ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|estado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name       ; estado.s41 ; estado.s40 ; estado.s39 ; estado.s38 ; estado.s37 ; estado.s36 ; estado.s35 ; estado.s34 ; estado.s33 ; estado.s32 ; estado.s31 ; estado.s30 ; estado.s29 ; estado.s28 ; estado.s27 ; estado.s26 ; estado.s25 ; estado.s24 ; estado.s23 ; estado.s22 ; estado.s21 ; estado.s20 ; estado.s19 ; estado.s18 ; estado.s17 ; estado.s16 ; estado.s15 ; estado.s14 ; estado.s13 ; estado.s12 ; estado.s11 ; estado.s10 ; estado.s9 ; estado.s8 ; estado.s7 ; estado.s6 ; estado.s5 ; estado.s4 ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; estado.s0  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; estado.s1  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; estado.s2  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; estado.s3  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; estado.s4  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s5  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s6  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s7  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s8  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s9  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s13 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s14 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s15 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s16 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s17 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s18 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s19 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s20 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s21 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s22 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s23 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s24 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s25 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s26 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s27 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s28 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s29 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s30 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s31 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s32 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s33 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s34 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s35 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s36 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s37 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s38 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s39 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s40 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
+; estado.s41 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_entity|I2C_READ_verilog:inst2|estado                                                                                          ;
++----------------+-------------+-------------+-------------+--------------+-------------+--------------+-------------+----------------+--------------+
+; Name           ; estado.IDLE ; estado.STOP ; estado.NACK ; estado.READ2 ; estado.ACK2 ; estado.READ1 ; estado.ACK1 ; estado.ADDRESS ; estado.START ;
++----------------+-------------+-------------+-------------+--------------+-------------+--------------+-------------+----------------+--------------+
+; estado.IDLE    ; 0           ; 0           ; 0           ; 0            ; 0           ; 0            ; 0           ; 0              ; 0            ;
+; estado.START   ; 1           ; 0           ; 0           ; 0            ; 0           ; 0            ; 0           ; 0              ; 1            ;
+; estado.ADDRESS ; 1           ; 0           ; 0           ; 0            ; 0           ; 0            ; 0           ; 1              ; 0            ;
+; estado.ACK1    ; 1           ; 0           ; 0           ; 0            ; 0           ; 0            ; 1           ; 0              ; 0            ;
+; estado.READ1   ; 1           ; 0           ; 0           ; 0            ; 0           ; 1            ; 0           ; 0              ; 0            ;
+; estado.ACK2    ; 1           ; 0           ; 0           ; 0            ; 1           ; 0            ; 0           ; 0              ; 0            ;
+; estado.READ2   ; 1           ; 0           ; 0           ; 1            ; 0           ; 0            ; 0           ; 0              ; 0            ;
+; estado.NACK    ; 1           ; 0           ; 1           ; 0            ; 0           ; 0            ; 0           ; 0              ; 0            ;
+; estado.STOP    ; 1           ; 1           ; 0           ; 0            ; 0           ; 0            ; 0           ; 0              ; 0            ;
++----------------+-------------+-------------+-------------+--------------+-------------+--------------+-------------+----------------+--------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------+
+; State Machine - |top_entity|I2C_READ_verilog:inst2|cnt    ;
++---------+---------+---------+---------+---------+---------+
+; Name    ; cnt.000 ; cnt.011 ; cnt.010 ; cnt.001 ; cnt.100 ;
++---------+---------+---------+---------+---------+---------+
+; cnt.100 ; 0       ; 0       ; 0       ; 0       ; 0       ;
+; cnt.001 ; 0       ; 0       ; 0       ; 1       ; 1       ;
+; cnt.010 ; 0       ; 0       ; 1       ; 0       ; 1       ;
+; cnt.011 ; 0       ; 1       ; 0       ; 0       ; 1       ;
+; cnt.000 ; 1       ; 0       ; 0       ; 0       ; 1       ;
++---------+---------+---------+---------+---------+---------+
+
+
++------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                  ;
++----------------------------------------------------+------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal    ; Free of Timing Hazards ;
++----------------------------------------------------+------------------------+------------------------+
+; Mp3:inst4|musica1play                              ; Mp3:inst4|estado_atual ; yes                    ;
+; Mp3:inst4|musica1stop                              ; Mp3:inst4|estado_atual ; yes                    ;
+; Mp3:inst4|musica2stop                              ; Mp3:inst4|estado_atual ; yes                    ;
+; Mp3:inst4|musica2play                              ; Mp3:inst4|estado_atual ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                        ;                        ;
++----------------------------------------------------+------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                               ;
++-------------------------------------------------+------------------------------------------------+
+; Register name                                   ; Reason for Removal                             ;
++-------------------------------------------------+------------------------------------------------+
+; leds:inst1|saida[2]                             ; Stuck at GND due to stuck port data_in         ;
+; leds:inst1|saida[3]                             ; Stuck at VCC due to stuck port data_in         ;
+; I2C_READ_verilog:inst2|addr_reg[1..3,5,6]       ; Stuck at GND due to stuck port data_in         ;
+; leds:inst1|saida[1]                             ; Merged with leds:inst1|saida[4]                ;
+; I2C_READ_verilog:inst2|addr_reg[4,7]            ; Merged with I2C_READ_verilog:inst2|addr_reg[0] ;
+; leds:inst1|saida[4]                             ; Stuck at VCC due to stuck port data_in         ;
+; I2C_READ_verilog:inst2|cnt.100                  ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~2 ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~3 ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~4 ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~5 ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~6 ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~2      ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~3      ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~4      ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~5      ; Lost fanout                                    ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~6      ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~2       ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~3       ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~4       ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~5       ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~6       ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~7       ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|estado~2            ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|estado~3            ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|estado~4            ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|estado~5            ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|estado~6            ; Lost fanout                                    ;
+; Mp3:inst4|Fur_Elise:control|estado~7            ; Lost fanout                                    ;
+; I2C_READ_verilog:inst2|estado~14                ; Lost fanout                                    ;
+; I2C_READ_verilog:inst2|cnt~4                    ; Lost fanout                                    ;
+; I2C_READ_verilog:inst2|cnt~5                    ; Lost fanout                                    ;
+; I2C_READ_verilog:inst2|timer_cnt[0]             ; Merged with I2C_READ_verilog:inst2|scl_cnt[0]  ;
+; I2C_READ_verilog:inst2|timer_cnt[1]             ; Merged with I2C_READ_verilog:inst2|scl_cnt[1]  ;
+; Total Number of Removed Registers = 39          ;                                                ;
++-------------------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                              ;
++---------------------+---------------------------+----------------------------------------+
+; Register name       ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------+---------------------------+----------------------------------------+
+; leds:inst1|saida[2] ; Stuck at GND              ; leds:inst1|saida[3]                    ;
+;                     ; due to stuck port data_in ;                                        ;
++---------------------+---------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 35    ;
-; Number of registers using Synchronous Clear  ; 3     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Total registers                              ; 365   ;
+; Number of registers using Synchronous Clear  ; 119   ;
+; Number of registers using Synchronous Load   ; 28    ;
+; Number of registers using Asynchronous Clear ; 81    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Clock Enable       ; 47    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |vga_interface_topo|pixel_generator:inst1|data[0]  ;
-; 13:1               ; 3 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |vga_interface_topo|pixel_generator:inst1|dat_draw ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; I2C_READ_verilog:inst2|sda_r           ; 6       ;
+; I2C_READ_verilog:inst2|sda_link        ; 2       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: horizontal_sync:inst ;
-+----------------+------------+-------------------------------------+
-; Parameter Name ; Value      ; Type                                ;
-+----------------+------------+-------------------------------------+
-; hsync_pulse    ; 0001100000 ; Unsigned Binary                     ;
-; hback_porch    ; 0000110000 ; Unsigned Binary                     ;
-; hfront_porch   ; 0000010000 ; Unsigned Binary                     ;
-; hresolution    ; 1010000000 ; Unsigned Binary                     ;
-+----------------+------------+-------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[16]                 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[6]                  ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[15]                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_entity|ir_verilog:inst|comando[7]                          ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |top_entity|ir_verilog:inst|cnt2[6]                             ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|cnt1[9]                             ;
+; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|data_cnt[5]                         ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |top_entity|I2C_READ_verilog:inst2|data_cnt[2]                  ;
+; 32:1               ; 3 bits    ; 63 LEs        ; 60 LEs               ; 3 LEs                  ; Yes        ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|dat_draw[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_interface:inst5|horizontal_sync:hs1 ;
++----------------+------------+--------------------------------------------------------+
+; Parameter Name ; Value      ; Type                                                   ;
++----------------+------------+--------------------------------------------------------+
+; hsync_pulse    ; 0001100000 ; Unsigned Binary                                        ;
+; hback_porch    ; 0000110000 ; Unsigned Binary                                        ;
+; hfront_porch   ; 0000010000 ; Unsigned Binary                                        ;
+; hresolution    ; 1010000000 ; Unsigned Binary                                        ;
++----------------+------------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vertical_sync:inst2 ;
-+----------------+------------+------------------------------------+
-; Parameter Name ; Value      ; Type                               ;
-+----------------+------------+------------------------------------+
-; vsync_pulse    ; 0000000010 ; Unsigned Binary                    ;
-; vback_porch    ; 0000011111 ; Unsigned Binary                    ;
-; vfront_porch   ; 0000001011 ; Unsigned Binary                    ;
-; vresolution    ; 0111100000 ; Unsigned Binary                    ;
-+----------------+------------+------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_interface:inst5|vertical_sync:vs1 ;
++----------------+------------+------------------------------------------------------+
+; Parameter Name ; Value      ; Type                                                 ;
++----------------+------------+------------------------------------------------------+
+; vsync_pulse    ; 0000000010 ; Unsigned Binary                                      ;
+; vback_porch    ; 0000011111 ; Unsigned Binary                                      ;
+; vfront_porch   ; 0000001011 ; Unsigned Binary                                      ;
+; vresolution    ; 0111100000 ; Unsigned Binary                                      ;
++----------------+------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pixel_generator:inst1|lpm_mult:Mult2 ;
-+------------------------------------------------+--------------+-----------------------+
-; Parameter Name                                 ; Value        ; Type                  ;
-+------------------------------------------------+--------------+-----------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY            ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY          ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE          ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE        ;
-; LPM_WIDTHA                                     ; 11           ; Untyped               ;
-; LPM_WIDTHB                                     ; 11           ; Untyped               ;
-; LPM_WIDTHP                                     ; 22           ; Untyped               ;
-; LPM_WIDTHR                                     ; 22           ; Untyped               ;
-; LPM_WIDTHS                                     ; 1            ; Untyped               ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped               ;
-; LPM_PIPELINE                                   ; 0            ; Untyped               ;
-; LATENCY                                        ; 0            ; Untyped               ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped               ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped               ;
-; USE_EAB                                        ; OFF          ; Untyped               ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped               ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped               ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped               ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K   ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped               ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped               ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped               ;
-; CBXI_PARAMETER                                 ; mult_p5t     ; Untyped               ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped               ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped               ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped               ;
-+------------------------------------------------+--------------+-----------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+-----------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                    ;
++------------------------------------------------+--------------+-----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                          ;
+; LPM_WIDTHA                                     ; 11           ; Untyped                                 ;
+; LPM_WIDTHB                                     ; 11           ; Untyped                                 ;
+; LPM_WIDTHP                                     ; 22           ; Untyped                                 ;
+; LPM_WIDTHR                                     ; 22           ; Untyped                                 ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                 ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                 ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                 ;
+; LATENCY                                        ; 0            ; Untyped                                 ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                 ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                 ;
+; USE_EAB                                        ; OFF          ; Untyped                                 ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                 ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                 ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                 ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                     ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                 ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                 ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                 ;
+; CBXI_PARAMETER                                 ; mult_p5t     ; Untyped                                 ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                 ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                 ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                 ;
++------------------------------------------------+--------------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pixel_generator:inst1|lpm_mult:Mult3 ;
-+------------------------------------------------+--------------+-----------------------+
-; Parameter Name                                 ; Value        ; Type                  ;
-+------------------------------------------------+--------------+-----------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY            ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY          ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE          ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE        ;
-; LPM_WIDTHA                                     ; 11           ; Untyped               ;
-; LPM_WIDTHB                                     ; 11           ; Untyped               ;
-; LPM_WIDTHP                                     ; 22           ; Untyped               ;
-; LPM_WIDTHR                                     ; 22           ; Untyped               ;
-; LPM_WIDTHS                                     ; 1            ; Untyped               ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped               ;
-; LPM_PIPELINE                                   ; 0            ; Untyped               ;
-; LATENCY                                        ; 0            ; Untyped               ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped               ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped               ;
-; USE_EAB                                        ; OFF          ; Untyped               ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped               ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped               ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped               ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K   ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped               ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped               ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped               ;
-; CBXI_PARAMETER                                 ; mult_p5t     ; Untyped               ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped               ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped               ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped               ;
-+------------------------------------------------+--------------+-----------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1 ;
++------------------------------------------------+--------------+-----------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                    ;
++------------------------------------------------+--------------+-----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                          ;
+; LPM_WIDTHA                                     ; 11           ; Untyped                                 ;
+; LPM_WIDTHB                                     ; 11           ; Untyped                                 ;
+; LPM_WIDTHP                                     ; 22           ; Untyped                                 ;
+; LPM_WIDTHR                                     ; 22           ; Untyped                                 ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                 ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                 ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                 ;
+; LATENCY                                        ; 0            ; Untyped                                 ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                 ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                 ;
+; USE_EAB                                        ; OFF          ; Untyped                                 ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                 ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                 ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                 ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                     ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                 ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                 ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                 ;
+; CBXI_PARAMETER                                 ; mult_p5t     ; Untyped                                 ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                 ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                 ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                 ;
++------------------------------------------------+--------------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                               ;
-+---------------------------------------+--------------------------------------+
-; Name                                  ; Value                                ;
-+---------------------------------------+--------------------------------------+
-; Number of entity instances            ; 2                                    ;
-; Entity Instance                       ; pixel_generator:inst1|lpm_mult:Mult2 ;
-;     -- LPM_WIDTHA                     ; 11                                   ;
-;     -- LPM_WIDTHB                     ; 11                                   ;
-;     -- LPM_WIDTHP                     ; 22                                   ;
-;     -- LPM_REPRESENTATION             ; SIGNED                               ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                   ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                   ;
-;     -- USE_EAB                        ; OFF                                  ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                 ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                   ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                   ;
-; Entity Instance                       ; pixel_generator:inst1|lpm_mult:Mult3 ;
-;     -- LPM_WIDTHA                     ; 11                                   ;
-;     -- LPM_WIDTHB                     ; 11                                   ;
-;     -- LPM_WIDTHP                     ; 22                                   ;
-;     -- LPM_REPRESENTATION             ; SIGNED                               ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                   ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                   ;
-;     -- USE_EAB                        ; OFF                                  ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                 ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                   ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                   ;
-+---------------------------------------+--------------------------------------+
++------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                 ;
++---------------------------------------+--------------------------------------------------------+
+; Name                                  ; Value                                                  ;
++---------------------------------------+--------------------------------------------------------+
+; Number of entity instances            ; 2                                                      ;
+; Entity Instance                       ; VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 11                                                     ;
+;     -- LPM_WIDTHB                     ; 11                                                     ;
+;     -- LPM_WIDTHP                     ; 22                                                     ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                     ;
+;     -- USE_EAB                        ; OFF                                                    ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                   ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                     ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                     ;
+; Entity Instance                       ; VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 11                                                     ;
+;     -- LPM_WIDTHB                     ; 11                                                     ;
+;     -- LPM_WIDTHP                     ; 22                                                     ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                     ;
+;     -- USE_EAB                        ; OFF                                                    ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                   ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                     ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                     ;
++---------------------------------------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Mp3:inst4|Over_The_Rainbow:contro"                                                     ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Mp3:inst4|Fur_Elise:control"                                                           ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -413,26 +764,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 8                           ;
-; cycloneiii_ff         ; 35                          ;
-;     ENA               ; 10                          ;
-;     SCLR              ; 3                           ;
-;     plain             ; 22                          ;
-; cycloneiii_lcell_comb ; 293                         ;
-;     arith             ; 59                          ;
-;         2 data inputs ; 38                          ;
-;         3 data inputs ; 21                          ;
-;     normal            ; 234                         ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 24                          ;
-;         3 data inputs ; 39                          ;
-;         4 data inputs ; 163                         ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 365                         ;
+;     CLR               ; 77                          ;
+;     ENA               ; 28                          ;
+;     ENA CLR           ; 4                           ;
+;     ENA SCLR          ; 15                          ;
+;     SCLR              ; 104                         ;
+;     SLD               ; 28                          ;
+;     plain             ; 109                         ;
+; cycloneiii_io_obuf    ; 1                           ;
+; cycloneiii_lcell_comb ; 839                         ;
+;     arith             ; 197                         ;
+;         2 data inputs ; 161                         ;
+;         3 data inputs ; 36                          ;
+;     normal            ; 642                         ;
+;         0 data inputs ; 5                           ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 79                          ;
+;         3 data inputs ; 106                         ;
+;         4 data inputs ; 432                         ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 5.76                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.96                        ;
 +-----------------------+-----------------------------+
 
 
@@ -441,7 +797,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -451,9 +807,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 21 15:25:09 2023
+    Info: Processing started: Thu Sep 21 17:02:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file leds.v
+    Info (12023): Found entity 1: leds File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/leds.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file SEG_D_verilog.v
+    Info (12023): Found entity 1: SEG_D_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file Over_The_Rainbow.v
+    Info (12023): Found entity 1: Over_The_Rainbow File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Over_The_Rainbow.v Line: 1
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(48): overriding existing definition for macro "BPM", which was defined in "Over_The_Rainbow.v", line 46 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 48
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(50): overriding existing definition for macro "BPS", which was defined in "Over_The_Rainbow.v", line 48 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 50
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(60): overriding existing definition for macro "ov_t4", which was defined in "Over_The_Rainbow.v", line 56 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 60
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(61): overriding existing definition for macro "ov_t2", which was defined in "Over_The_Rainbow.v", line 57 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 61
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(62): overriding existing definition for macro "ov_t1", which was defined in "Over_The_Rainbow.v", line 58 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 62
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(63): overriding existing definition for macro "ov_t1_2", which was defined in "Over_The_Rainbow.v", line 59 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 63
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(64): overriding existing definition for macro "ov_t1_4", which was defined in "Over_The_Rainbow.v", line 60 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 64
+Info (12021): Found 1 design units, including 1 entities, in source file Fur_Elise.v
+    Info (12023): Found entity 1: Fur_Elise File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_clock.v
+    Info (12023): Found entity 1: divisor_clock File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file temporizador.v
+    Info (12023): Found entity 1: temporizador File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/temporizador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file Mp3.v
+    Info (12023): Found entity 1: Mp3 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file I2C_READ_verilog.v
+    Info (12023): Found entity 1: I2C_READ_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ir_verilog.v
+    Info (12023): Found entity 1: ir_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file top_entity.bdf
+    Info (12023): Found entity 1: top_entity
+Warning (10275): Verilog HDL Module Instantiation warning at driver_monitor.v(36): ignored dangling comma in List of Port Connections File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file driver_monitor.v
+    Info (12023): Found entity 1: driver_monitor File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file horizontal_sync.v
     Info (12023): Found entity 1: horizontal_sync File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file vertical_sync.v
@@ -464,15 +850,72 @@ Info (12021): Found 1 design units, including 1 entities, in source file VGA_int
     Info (12023): Found entity 1: VGA_interface File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file vga_interface_topo.bdf
     Info (12023): Found entity 1: vga_interface_topo
-Info (12127): Elaborating entity "vga_interface_topo" for the top level hierarchy
-Info (12128): Elaborating entity "pixel_generator" for hierarchy "pixel_generator:inst1"
-Info (12128): Elaborating entity "horizontal_sync" for hierarchy "horizontal_sync:inst"
-Info (12128): Elaborating entity "vertical_sync" for hierarchy "vertical_sync:inst2"
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(47): created implicit net for "musica1_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(48): created implicit net for "musica1_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(49): created implicit net for "musica2_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(50): created implicit net for "musica2_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
+Info (12127): Elaborating entity "top_entity" for the top level hierarchy
+Info (12128): Elaborating entity "I2C_READ_verilog" for hierarchy "I2C_READ_verilog:inst2"
+Info (12128): Elaborating entity "Mp3" for hierarchy "Mp3:inst4"
+Warning (10230): Verilog HDL assignment warning at Mp3.v(47): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 47
+Warning (10230): Verilog HDL assignment warning at Mp3.v(48): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
+Warning (10230): Verilog HDL assignment warning at Mp3.v(49): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
+Warning (10230): Verilog HDL assignment warning at Mp3.v(50): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(193): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 193
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(194): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 194
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(195): variable "musica1t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 195
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(196): variable "musica1t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 196
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(197): variable "musica1t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 197
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(198): variable "musica1_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 198
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(199): variable "musica1_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 199
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(203): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 203
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(204): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 204
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(205): variable "musica2t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 205
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(206): variable "musica2t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 206
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(207): variable "musica2t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 207
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(208): variable "musica2_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 208
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(209): variable "musica2_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 209
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica2play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica2stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica1play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica1stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Info (10041): Inferred latch for "musica1stop" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Info (10041): Inferred latch for "musica1play" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Info (10041): Inferred latch for "musica2stop" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Info (10041): Inferred latch for "musica2play" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
+Info (12128): Elaborating entity "temporizador" for hierarchy "Mp3:inst4|temporizador:temp" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 56
+Info (12128): Elaborating entity "divisor_clock" for hierarchy "Mp3:inst4|divisor_clock:div_clk" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 61
+Info (12128): Elaborating entity "Fur_Elise" for hierarchy "Mp3:inst4|Fur_Elise:control" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 158
+Info (12128): Elaborating entity "Over_The_Rainbow" for hierarchy "Mp3:inst4|Over_The_Rainbow:contro" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 168
+Info (12128): Elaborating entity "ir_verilog" for hierarchy "ir_verilog:inst"
+Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_endereco" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "endereco" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_comando" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
+Info (12128): Elaborating entity "VGA_interface" for hierarchy "VGA_interface:inst5"
+Info (12128): Elaborating entity "horizontal_sync" for hierarchy "VGA_interface:inst5|horizontal_sync:hs1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 76
+Info (12128): Elaborating entity "vertical_sync" for hierarchy "VGA_interface:inst5|vertical_sync:vs1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 83
+Info (12128): Elaborating entity "pixel_generator" for hierarchy "VGA_interface:inst5|pixel_generator:pg1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 94
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(68): object "h_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 68
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(69): object "v_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 69
+Info (12128): Elaborating entity "SEG_D_verilog" for hierarchy "SEG_D_verilog:inst3"
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(69): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 69
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(70): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 70
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(71): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 71
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(72): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 72
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(73): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 73
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(74): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 74
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(75): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 75
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(76): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 76
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(77): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 77
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(78): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 78
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(79): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 79
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(80): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 80
+Info (12128): Elaborating entity "leds" for hierarchy "leds:inst1"
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pixel_generator:inst1|Mult2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 233
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pixel_generator:inst1|Mult3" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 233
-Info (12130): Elaborated megafunction instantiation "pixel_generator:inst1|lpm_mult:Mult2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 233
-Info (12133): Instantiated megafunction "pixel_generator:inst1|lpm_mult:Mult2" with the following parameter: File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 233
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_interface:inst5|pixel_generator:pg1|Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_interface:inst5|pixel_generator:pg1|Mult1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
+Info (12130): Elaborated megafunction instantiation "VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
+Info (12133): Instantiated megafunction "VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0" with the following parameter: File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
     Info (12134): Parameter "LPM_WIDTHA" = "11"
     Info (12134): Parameter "LPM_WIDTHB" = "11"
     Info (12134): Parameter "LPM_WIDTHP" = "22"
@@ -484,17 +927,33 @@ Info (12133): Instantiated megafunction "pixel_generator:inst1|lpm_mult:Mult2" w
     Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_p5t.tdf
     Info (12023): Found entity 1: mult_p5t File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/db/mult_p5t.tdf Line: 29
+Info (13000): Registers with preset signals will power-up high File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 11
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "led[4]" is stuck at VCC
+    Warning (13410): Pin "led[3]" is stuck at VCC
+    Warning (13410): Pin "led[2]" is stuck at GND
+    Warning (13410): Pin "led[1]" is stuck at VCC
+Info (17049): 26 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 294 logic cells
+Info (21057): Implemented 937 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 23 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 905 logic cells
     Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 363 megabytes
-    Info: Processing ended: Thu Sep 21 15:25:15 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 371 megabytes
+    Info: Processing ended: Thu Sep 21 17:02:18 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg.
 
 

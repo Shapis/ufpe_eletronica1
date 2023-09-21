@@ -111,13 +111,7 @@ module pixel_generator(
 	// Lógica para escolha do que será exibido na tela
 	always @(posedge vga_clk)
 	L1 : begin
-		case(key[2:1])
-			2'd0: data <= h_dat;      // exibe barra de cores horizontal
-			2'd1: data <= v_dat;      // exibe barra de cores vertical
-			2'd2: data <= (v_dat ^ h_dat); //exibe tabuleiro colorido
-			2'd3: data <= dat_draw;
-			default: data <= WHITE; //limpa tela
-		endcase
+			data <= dat_draw; 
 	end
 
 	///Lógica para gerar a saída barras de cores horizontais
