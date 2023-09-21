@@ -162,6 +162,7 @@ module pixel_generator(
 	begin
 		 localparam REF_X = 310;
 		 localparam pos_m = 300;
+		 localparam pos_a = 300;
 		 
 	    draw_bg(WHITE);
 		 
@@ -184,8 +185,11 @@ module pixel_generator(
 		 
 		 draw_elipse(CENTER_X+2, CENTER_Y, 100, 2, MAGENTA);
 		 		
-		 //draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
-		 draw_A(pos_m, pos_m, 2, RED);
+		 draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
+		 draw_M(pos_m, pos_m, 2, RED);
+		 
+		 draw_I(pos_a+22, pos_a+2, 2, BLACK);//sombra
+		 draw_I(pos_a+20, pos_a, 2, RED);
 		
 	end
 	
@@ -231,25 +235,218 @@ module pixel_generator(
 	  end
     endtask
 	 
-	 //TASK: Lógica para desenhar a letra A
-	  task draw_A(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
-        begin
-				integer i;
-				for(i=0; i<8; i=i+1) begin
-					draw_sqr(POSX+i*THICK/2, POSY+i*THICK, THICK, COLOR);
+	task draw_A(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+        integer i;
+			for(i=0; i<9; i=i+1) begin
+				draw_sqr(POSX+(i*THICK)/2, (POSY+8*THICK)-i*THICK, THICK, COLOR);
+			end
+			
+			for(i=0; i<9; i=i+1) begin
+				draw_sqr(POSX+((i*THICK)/2)+((8*THICK)/2), POSY+i*THICK, THICK, COLOR);
+			end
+			
+			for(i=0; i<8; i=i+1) begin
+				draw_sqr(POSX+((i*THICK)/2)+3, POSY+6*THICK, THICK, COLOR);
+			end
+			
+			
+    end
+endtask
+
+task draw_B(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
 				end
 				
-				for(i=0; i<8; i=i+1) begin
-					draw_sqr(POSX+7-i*THICK/2, POSY+i*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);		
+				
+
+				draw_sqr(POSX+4*THICK, POSY+2*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+3*THICK, THICK, COLOR);
+			   draw_sqr(POSX+4*THICK, POSY+6*THICK, THICK, COLOR);
+    end
+endtask
+
+
+task draw_C(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
 				end
-        end
-    endtask
+				
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);		
+				draw_sqr(POSX+4*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+8*THICK, THICK, COLOR);	
+
+
+			
+    end
+endtask
+
+task draw_D(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);		
+				
+
+				draw_sqr(POSX+4*THICK, POSY+2*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+3*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+5*THICK, THICK, COLOR);
+			   draw_sqr(POSX+4*THICK, POSY+6*THICK, THICK, COLOR);
+    end
+endtask
+
+task draw_E(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);		
+
+
+			
+    end
+endtask
+
+task draw_F(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+4*THICK, THICK, COLOR);
+		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+4*THICK, THICK, COLOR);
+	
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+4*THICK, THICK, COLOR);
+	
+    end
+endtask
+
+task draw_G(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+
+				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+
+				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);
+				
+				draw_sqr(POSX+4*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+1*THICK, THICK, COLOR);
+				
+				draw_sqr(POSX+4*THICK, POSY+8*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+7*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+6*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+5*THICK, THICK, COLOR);
+				
+
+				draw_sqr(POSX+3*THICK, POSY+5*THICK, THICK, COLOR);
+				
+	
+    end
+endtask
+
+task draw_H(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+5*THICK, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				draw_sqr(POSX+1*THICK, POSY+4*THICK, THICK, COLOR);
+		
+		
+				draw_sqr(POSX+2*THICK, POSY+4*THICK, THICK, COLOR);
+	
+			
+				draw_sqr(POSX+3*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+4*THICK, THICK, COLOR);
+	
+    end
+endtask
+
+task draw_I(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+3, POSY+i*THICK, THICK, COLOR);
+				end
+	
+    end
+endtask
+	 
+	 
 	 
 	 //TASK: Lógica para desenhar a letra M
 	  task draw_M(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
         begin
 				integer i;
-				for(i=0; i<8; i=i+1) begin
+				for(i=0; i<9; i=i+1) begin
 					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
 				end
 
@@ -260,7 +457,7 @@ module pixel_generator(
 				draw_sqr(POSX+5*THICK, POSY+2*THICK, THICK, COLOR);
 				draw_sqr(POSX+6*THICK, POSY+1*THICK, THICK, COLOR);
 				
-				for(i=0; i<8; i=i+1) begin
+				for(i=0; i<9; i=i+1) begin
 					draw_sqr(POSX+7*THICK, POSY+i*THICK, THICK, COLOR);
 				end
         end

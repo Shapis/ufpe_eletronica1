@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Thu Sep 21 17:02:18 2023
+Thu Sep 21 18:23:53 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -64,13 +64,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 17:02:18 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 21 18:23:53 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; top_entity                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 904                                         ;
-;     Total combinational functions  ; 834                                         ;
+; Total logic elements               ; 911                                         ;
+;     Total combinational functions  ; 841                                         ;
 ;     Dedicated logic registers      ; 365                                         ;
 ; Total registers                    ; 365                                         ;
 ; Total pins                         ; 28                                          ;
@@ -218,16 +218,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 904         ;
+; Estimated Total logic elements              ; 911         ;
 ;                                             ;             ;
-; Total combinational functions               ; 834         ;
+; Total combinational functions               ; 841         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 432         ;
-;     -- 3 input functions                    ; 142         ;
-;     -- <=2 input functions                  ; 260         ;
+;     -- 4 input functions                    ; 435         ;
+;     -- 3 input functions                    ; 149         ;
+;     -- <=2 input functions                  ; 257         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 637         ;
+;     -- normal mode                          ; 644         ;
 ;     -- arithmetic mode                      ; 197         ;
 ;                                             ;             ;
 ; Total registers                             ; 365         ;
@@ -240,8 +240,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 338         ;
-; Total fan-out                               ; 3757        ;
-; Average fan-out                             ; 2.98        ;
+; Total fan-out                               ; 3784        ;
+; Average fan-out                             ; 2.99        ;
 +---------------------------------------------+-------------+
 
 
@@ -250,22 +250,22 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Entity Name      ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+------------------+--------------+
-; |top_entity                           ; 834 (1)             ; 365 (0)                   ; 0           ; 4            ; 0       ; 2         ; 28   ; 0            ; |top_entity                                                                                ; top_entity       ; work         ;
+; |top_entity                           ; 841 (1)             ; 365 (0)                   ; 0           ; 4            ; 0       ; 2         ; 28   ; 0            ; |top_entity                                                                                ; top_entity       ; work         ;
 ;    |I2C_READ_verilog:inst2|           ; 120 (120)           ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|I2C_READ_verilog:inst2                                                         ; I2C_READ_verilog ; work         ;
-;    |Mp3:inst4|                        ; 276 (74)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                                      ; Mp3              ; work         ;
-;       |Fur_Elise:control|             ; 55 (55)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                                                    ; Fur_Elise        ; work         ;
+;    |Mp3:inst4|                        ; 272 (71)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                                      ; Mp3              ; work         ;
+;       |Fur_Elise:control|             ; 54 (54)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                                                    ; Fur_Elise        ; work         ;
 ;       |Over_The_Rainbow:contro|       ; 39 (39)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Over_The_Rainbow:contro                                              ; Over_The_Rainbow ; work         ;
 ;       |divisor_clock:div_clk|         ; 50 (50)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|divisor_clock:div_clk                                                ; divisor_clock    ; work         ;
 ;       |temporizador:temp|             ; 58 (58)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|temporizador:temp                                                    ; temporizador     ; work         ;
-;    |SEG_D_verilog:inst3|              ; 83 (83)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                                            ; SEG_D_verilog    ; work         ;
-;    |VGA_interface:inst5|              ; 258 (0)             ; 29 (0)                    ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|VGA_interface:inst5                                                            ; VGA_interface    ; work         ;
-;       |horizontal_sync:hs1|           ; 19 (19)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|horizontal_sync:hs1                                        ; horizontal_sync  ; work         ;
-;       |pixel_generator:pg1|           ; 214 (214)           ; 7 (7)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1                                        ; pixel_generator  ; work         ;
+;    |SEG_D_verilog:inst3|              ; 81 (81)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                                            ; SEG_D_verilog    ; work         ;
+;    |VGA_interface:inst5|              ; 271 (0)             ; 29 (0)                    ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|VGA_interface:inst5                                                            ; VGA_interface    ; work         ;
+;       |horizontal_sync:hs1|           ; 23 (23)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|horizontal_sync:hs1                                        ; horizontal_sync  ; work         ;
+;       |pixel_generator:pg1|           ; 222 (222)           ; 7 (7)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1                                        ; pixel_generator  ; work         ;
 ;          |lpm_mult:Mult0|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0                         ; lpm_mult         ; work         ;
 ;             |mult_p5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0|mult_p5t:auto_generated ; mult_p5t         ; work         ;
 ;          |lpm_mult:Mult1|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1                         ; lpm_mult         ; work         ;
 ;             |mult_p5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult1|mult_p5t:auto_generated ; mult_p5t         ; work         ;
-;       |vertical_sync:vs1|             ; 25 (25)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|vertical_sync:vs1                                          ; vertical_sync    ; work         ;
+;       |vertical_sync:vs1|             ; 26 (26)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|VGA_interface:inst5|vertical_sync:vs1                                          ; vertical_sync    ; work         ;
 ;    |ir_verilog:inst|                  ; 96 (96)             ; 58 (58)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|ir_verilog:inst                                                                ; ir_verilog       ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -610,7 +610,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|cnt1[9]                             ;
 ; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|data_cnt[5]                         ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |top_entity|I2C_READ_verilog:inst2|data_cnt[2]                  ;
-; 32:1               ; 3 bits    ; 63 LEs        ; 60 LEs               ; 3 LEs                  ; Yes        ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|dat_draw[0] ;
+; 82:1               ; 3 bits    ; 162 LEs       ; 162 LEs              ; 0 LEs                  ; Yes        ; |top_entity|VGA_interface:inst5|pixel_generator:pg1|dat_draw[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
 
@@ -774,21 +774,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 28                          ;
 ;     plain             ; 109                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 839                         ;
+; cycloneiii_lcell_comb ; 846                         ;
 ;     arith             ; 197                         ;
 ;         2 data inputs ; 161                         ;
 ;         3 data inputs ; 36                          ;
-;     normal            ; 642                         ;
+;     normal            ; 649                         ;
 ;         0 data inputs ; 5                           ;
 ;         1 data inputs ; 20                          ;
-;         2 data inputs ; 79                          ;
-;         3 data inputs ; 106                         ;
-;         4 data inputs ; 432                         ;
+;         2 data inputs ; 76                          ;
+;         3 data inputs ; 113                         ;
+;         4 data inputs ; 435                         ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.96                        ;
+; Max LUT depth         ; 8.10                        ;
+; Average LUT depth     ; 4.10                        ;
 +-----------------------+-----------------------------+
 
 
@@ -807,7 +807,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 21 17:02:10 2023
+    Info: Processing started: Thu Sep 21 18:23:46 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file leds.v
@@ -912,10 +912,10 @@ Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(79): truncate
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(80): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 80
 Info (12128): Elaborating entity "leds" for hierarchy "leds:inst1"
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_interface:inst5|pixel_generator:pg1|Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_interface:inst5|pixel_generator:pg1|Mult1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
-Info (12130): Elaborated megafunction instantiation "VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
-Info (12133): Instantiated megafunction "VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0" with the following parameter: File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 227
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_interface:inst5|pixel_generator:pg1|Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_interface:inst5|pixel_generator:pg1|Mult1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
+Info (12130): Elaborated megafunction instantiation "VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
+Info (12133): Instantiated megafunction "VGA_interface:inst5|pixel_generator:pg1|lpm_mult:Mult0" with the following parameter: File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
     Info (12134): Parameter "LPM_WIDTHA" = "11"
     Info (12134): Parameter "LPM_WIDTHB" = "11"
     Info (12134): Parameter "LPM_WIDTHP" = "22"
@@ -938,17 +938,17 @@ Info (17049): 26 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 937 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 944 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 23 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 905 logic cells
+    Info (21061): Implemented 912 logic cells
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 371 megabytes
-    Info: Processing ended: Thu Sep 21 17:02:18 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 373 megabytes
+    Info: Processing ended: Thu Sep 21 18:23:53 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+
