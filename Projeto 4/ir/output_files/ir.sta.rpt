@@ -1,5 +1,5 @@
 Timing Analyzer report for ir
-Thu Sep 21 12:55:44 2023
+Thu Sep 21 15:33:10 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -111,13 +111,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.20        ;
+; Average used               ; 1.21        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.9%      ;
-;     Processors 3-16        ;   1.2%      ;
+;     Processor 2            ;   3.7%      ;
+;     Processors 3-16        ;   1.3%      ;
 +----------------------------+-------------+
 
 
@@ -679,14 +679,14 @@ No paths to report.
 ; 0.401 ; I2C_READ_verilog:inst2|estado.READ2     ; I2C_READ_verilog:inst2|estado.READ2        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; I2C_READ_verilog:inst2|estado.START     ; I2C_READ_verilog:inst2|estado.START        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; I2C_READ_verilog:inst2|estado.IDLE      ; I2C_READ_verilog:inst2|estado.IDLE         ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
-; 0.402 ; Mp3:inst4|play_pause                    ; Mp3:inst4|play_pause                       ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; Mp3:inst4|stop                          ; Mp3:inst4|stop                             ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; I2C_READ_verilog:inst2|data_r[7]        ; I2C_READ_verilog:inst2|data_r[7]           ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; I2C_READ_verilog:inst2|data_r[8]        ; I2C_READ_verilog:inst2|data_r[8]           ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; I2C_READ_verilog:inst2|data_r[14]       ; I2C_READ_verilog:inst2|data_r[14]          ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; I2C_READ_verilog:inst2|data_r[15]       ; I2C_READ_verilog:inst2|data_r[15]          ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; I2C_READ_verilog:inst2|scl              ; I2C_READ_verilog:inst2|scl                 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; ir_verilog:inst|error_flag              ; ir_verilog:inst|error_flag                 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; Mp3:inst4|play_pause                    ; Mp3:inst4|play_pause                       ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; Mp3:inst4|stop                          ; Mp3:inst4|stop                             ; clock        ; clock       ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.416 ; I2C_READ_verilog:inst2|data_cnt[0]      ; I2C_READ_verilog:inst2|data_cnt[0]         ; clock        ; clock       ; 0.000        ; 0.073      ; 0.684      ;
 ; 0.452 ; ir_verilog:inst|cnt1[10]                ; ir_verilog:inst|cnt1[10]                   ; clock        ; clock       ; 0.000        ; 0.073      ; 0.720      ;
 ; 0.469 ; SEG_D_verilog:inst3|delay_cnt[16]       ; SEG_D_verilog:inst3|delay_cnt[16]          ; clock        ; clock       ; 0.000        ; 0.073      ; 0.737      ;
@@ -714,42 +714,42 @@ No paths to report.
 ; 0.691 ; ir_verilog:inst|cnt1[9]                 ; ir_verilog:inst|cnt1[9]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.959      ;
 ; 0.692 ; I2C_READ_verilog:inst2|timer_cnt[8]     ; I2C_READ_verilog:inst2|timer_cnt[8]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.959      ;
 ; 0.692 ; SEG_D_verilog:inst3|delay_cnt[11]       ; SEG_D_verilog:inst3|delay_cnt[11]          ; clock        ; clock       ; 0.000        ; 0.073      ; 0.960      ;
+; 0.693 ; I2C_READ_verilog:inst2|scl_cnt[2]       ; I2C_READ_verilog:inst2|scl_cnt[2]          ; clock        ; clock       ; 0.000        ; 0.091      ; 0.979      ;
+; 0.693 ; ir_verilog:inst|data_cnt[3]             ; ir_verilog:inst|data_cnt[3]                ; clock        ; clock       ; 0.000        ; 0.073      ; 0.961      ;
+; 0.693 ; ir_verilog:inst|cnt1[7]                 ; ir_verilog:inst|cnt1[7]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.961      ;
 ; 0.693 ; Mp3:inst4|temporizador:temp|cnt[19]     ; Mp3:inst4|temporizador:temp|cnt[19]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.960      ;
 ; 0.693 ; Mp3:inst4|temporizador:temp|cnt[11]     ; Mp3:inst4|temporizador:temp|cnt[11]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.960      ;
 ; 0.693 ; Mp3:inst4|temporizador:temp|cnt[9]      ; Mp3:inst4|temporizador:temp|cnt[9]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.960      ;
 ; 0.693 ; Mp3:inst4|temporizador:temp|cnt[4]      ; Mp3:inst4|temporizador:temp|cnt[4]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.960      ;
-; 0.693 ; I2C_READ_verilog:inst2|scl_cnt[2]       ; I2C_READ_verilog:inst2|scl_cnt[2]          ; clock        ; clock       ; 0.000        ; 0.091      ; 0.979      ;
-; 0.693 ; ir_verilog:inst|data_cnt[3]             ; ir_verilog:inst|data_cnt[3]                ; clock        ; clock       ; 0.000        ; 0.073      ; 0.961      ;
-; 0.693 ; ir_verilog:inst|cnt1[7]                 ; ir_verilog:inst|cnt1[7]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.961      ;
+; 0.694 ; Mp3:inst4|divisor_clock:div_clk|cnt[25] ; Mp3:inst4|divisor_clock:div_clk|cnt[25]    ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
+; 0.694 ; ir_verilog:inst|cnt2[1]                 ; ir_verilog:inst|cnt2[1]                    ; clock        ; clock       ; 0.000        ; 0.092      ; 0.981      ;
+; 0.694 ; ir_verilog:inst|cnt1[5]                 ; ir_verilog:inst|cnt1[5]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.962      ;
 ; 0.694 ; Mp3:inst4|temporizador:temp|cnt[17]     ; Mp3:inst4|temporizador:temp|cnt[17]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
 ; 0.694 ; Mp3:inst4|temporizador:temp|cnt[18]     ; Mp3:inst4|temporizador:temp|cnt[18]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
 ; 0.694 ; Mp3:inst4|temporizador:temp|cnt[16]     ; Mp3:inst4|temporizador:temp|cnt[16]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
 ; 0.694 ; Mp3:inst4|temporizador:temp|cnt[10]     ; Mp3:inst4|temporizador:temp|cnt[10]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
 ; 0.694 ; Mp3:inst4|temporizador:temp|cnt[8]      ; Mp3:inst4|temporizador:temp|cnt[8]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
 ; 0.694 ; Mp3:inst4|temporizador:temp|cnt[6]      ; Mp3:inst4|temporizador:temp|cnt[6]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
-; 0.694 ; Mp3:inst4|divisor_clock:div_clk|cnt[25] ; Mp3:inst4|divisor_clock:div_clk|cnt[25]    ; clock        ; clock       ; 0.000        ; 0.072      ; 0.961      ;
-; 0.694 ; ir_verilog:inst|cnt2[1]                 ; ir_verilog:inst|cnt2[1]                    ; clock        ; clock       ; 0.000        ; 0.092      ; 0.981      ;
-; 0.694 ; ir_verilog:inst|cnt1[5]                 ; ir_verilog:inst|cnt1[5]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.962      ;
 ; 0.695 ; I2C_READ_verilog:inst2|timer_cnt[11]    ; I2C_READ_verilog:inst2|timer_cnt[11]       ; clock        ; clock       ; 0.000        ; 0.072      ; 0.962      ;
 ; 0.695 ; I2C_READ_verilog:inst2|timer_cnt[4]     ; I2C_READ_verilog:inst2|timer_cnt[4]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.962      ;
 ; 0.695 ; ir_verilog:inst|get_data[3]             ; ir_verilog:inst|get_data[4]                ; clock        ; clock       ; 0.000        ; 0.073      ; 0.963      ;
 ; 0.695 ; ir_verilog:inst|cnt1[2]                 ; ir_verilog:inst|cnt1[2]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.963      ;
 ; 0.695 ; ir_verilog:inst|cnt1[3]                 ; ir_verilog:inst|cnt1[3]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.963      ;
-; 0.696 ; Mp3:inst4|temporizador:temp|cnt[24]     ; Mp3:inst4|temporizador:temp|cnt[24]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.963      ;
-; 0.696 ; Mp3:inst4|temporizador:temp|cnt[25]     ; Mp3:inst4|temporizador:temp|cnt[25]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.963      ;
 ; 0.696 ; I2C_READ_verilog:inst2|timer_cnt[9]     ; I2C_READ_verilog:inst2|timer_cnt[9]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.963      ;
 ; 0.696 ; SEG_D_verilog:inst3|delay_cnt[10]       ; SEG_D_verilog:inst3|delay_cnt[10]          ; clock        ; clock       ; 0.000        ; 0.073      ; 0.964      ;
-; 0.697 ; Mp3:inst4|temporizador:temp|cnt[26]     ; Mp3:inst4|temporizador:temp|cnt[26]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.964      ;
+; 0.696 ; Mp3:inst4|temporizador:temp|cnt[24]     ; Mp3:inst4|temporizador:temp|cnt[24]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.963      ;
+; 0.696 ; Mp3:inst4|temporizador:temp|cnt[25]     ; Mp3:inst4|temporizador:temp|cnt[25]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.963      ;
 ; 0.697 ; SEG_D_verilog:inst3|delay_cnt[12]       ; SEG_D_verilog:inst3|delay_cnt[12]          ; clock        ; clock       ; 0.000        ; 0.073      ; 0.965      ;
 ; 0.697 ; Mp3:inst4|divisor_clock:div_clk|cnt[23] ; Mp3:inst4|divisor_clock:div_clk|cnt[23]    ; clock        ; clock       ; 0.000        ; 0.072      ; 0.964      ;
 ; 0.697 ; ir_verilog:inst|data_cnt[2]             ; ir_verilog:inst|data_cnt[2]                ; clock        ; clock       ; 0.000        ; 0.073      ; 0.965      ;
 ; 0.697 ; ir_verilog:inst|cnt1[8]                 ; ir_verilog:inst|cnt1[8]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.965      ;
-; 0.698 ; Mp3:inst4|temporizador:temp|cnt[27]     ; Mp3:inst4|temporizador:temp|cnt[27]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
-; 0.698 ; Mp3:inst4|temporizador:temp|cnt[7]      ; Mp3:inst4|temporizador:temp|cnt[7]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
-; 0.698 ; Mp3:inst4|temporizador:temp|cnt[5]      ; Mp3:inst4|temporizador:temp|cnt[5]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
+; 0.697 ; Mp3:inst4|temporizador:temp|cnt[26]     ; Mp3:inst4|temporizador:temp|cnt[26]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.964      ;
 ; 0.698 ; I2C_READ_verilog:inst2|timer_cnt[5]     ; I2C_READ_verilog:inst2|timer_cnt[5]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
 ; 0.698 ; ir_verilog:inst|data_cnt[4]             ; ir_verilog:inst|data_cnt[4]                ; clock        ; clock       ; 0.000        ; 0.073      ; 0.966      ;
 ; 0.698 ; ir_verilog:inst|cnt1[4]                 ; ir_verilog:inst|cnt1[4]                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.966      ;
+; 0.698 ; Mp3:inst4|temporizador:temp|cnt[27]     ; Mp3:inst4|temporizador:temp|cnt[27]        ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
+; 0.698 ; Mp3:inst4|temporizador:temp|cnt[7]      ; Mp3:inst4|temporizador:temp|cnt[7]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
+; 0.698 ; Mp3:inst4|temporizador:temp|cnt[5]      ; Mp3:inst4|temporizador:temp|cnt[5]         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.965      ;
 ; 0.699 ; Mp3:inst4|divisor_clock:div_clk|cnt[22] ; Mp3:inst4|divisor_clock:div_clk|cnt[22]    ; clock        ; clock       ; 0.000        ; 0.072      ; 0.966      ;
 ; 0.704 ; SEG_D_verilog:inst3|delay_cnt[5]        ; SEG_D_verilog:inst3|delay_cnt[5]           ; clock        ; clock       ; 0.000        ; 0.073      ; 0.972      ;
 ; 0.704 ; Mp3:inst4|divisor_clock:div_clk|cnt[1]  ; Mp3:inst4|divisor_clock:div_clk|cnt[1]     ; clock        ; clock       ; 0.000        ; 0.073      ; 0.972      ;
@@ -1397,9 +1397,34 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 21 12:55:43 2023
+    Info: Processing started: Thu Sep 21 15:33:09 2023
 Info: Command: quartus_sta ir -c ir
 Info: qsta_default_script.tcl version: #1
+Warning (20013): Ignored 24 assignments for entity "vga_interface_topo" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity vga_interface_topo -section_id Top was ignored
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1494,9 +1519,9 @@ Info (332114): Report Metastability: Found 67 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 30 warnings
     Info: Peak virtual memory: 604 megabytes
-    Info: Processing ended: Thu Sep 21 12:55:44 2023
+    Info: Processing ended: Thu Sep 21 15:33:10 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ir
-Thu Sep 21 12:55:37 2023
+Thu Sep 21 15:33:04 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 12:55:37 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 21 15:33:04 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ir                                          ;
 ; Top-level Entity Name              ; top_entity                                  ;
@@ -170,7 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -642,11 +642,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 21 12:55:32 2023
+    Info: Processing started: Thu Sep 21 15:32:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ir -c ir
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ir_verilog.v
     Info (12023): Found entity 1: ir_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/ir_verilog.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file vga_interface_topo.bdf
+    Info (12023): Found entity 1: vga_interface_topo
+Info (12021): Found 1 design units, including 1 entities, in source file VGA_interface.v
+    Info (12023): Found entity 1: VGA_interface File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/VGA_interface.v Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file vertical_sync.v
+    Info (12023): Found entity 1: vertical_sync File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/vertical_sync.v Line: 46
+Info (12021): Found 1 design units, including 1 entities, in source file pixel_generator.v
+    Info (12023): Found entity 1: pixel_generator File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/pixel_generator.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file horizontal_sync.v
+    Info (12023): Found entity 1: horizontal_sync File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/horizontal_sync.v Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file top_entity.bdf
     Info (12023): Found entity 1: top_entity
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/leds.v
@@ -674,6 +684,8 @@ Warning (10274): Verilog HDL macro warning at Over_The_Rainbow.v(59): overriding
 Warning (10274): Verilog HDL macro warning at Over_The_Rainbow.v(60): overriding existing definition for macro "ov_t1_4", which was defined in "Fur_Elise.v", line 64 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/Over_The_Rainbow.v Line: 60
 Info (12021): Found 1 design units, including 1 entities, in source file Over_The_Rainbow.v
     Info (12023): Found entity 1: Over_The_Rainbow File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/Over_The_Rainbow.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file driver_monitor.v
+    Info (12023): Found entity 1: driver_monitor File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/driver_monitor.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(47): created implicit net for "musica1_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/Mp3.v Line: 47
 Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(48): created implicit net for "musica1_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/Mp3.v Line: 48
 Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(49): created implicit net for "musica2_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/Mp3.v Line: 49
@@ -738,6 +750,31 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led[1]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 26 registers lost all their fanouts during netlist optimizations.
+Warning (20013): Ignored 24 assignments for entity "vga_interface_topo" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity vga_interface_topo -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity vga_interface_topo -section_id Top was ignored
 Info (144001): Generated suppressed messages file /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/output_files/ir.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -746,11 +783,11 @@ Info (21057): Implemented 674 device resources after synthesis - the final resou
     Info (21059): Implemented 18 output pins
     Info (21060): Implemented 1 bidirectional pins
     Info (21061): Implemented 651 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 485 megabytes
-    Info: Processing ended: Thu Sep 21 12:55:37 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 487 megabytes
+    Info: Processing ended: Thu Sep 21 15:33:04 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+

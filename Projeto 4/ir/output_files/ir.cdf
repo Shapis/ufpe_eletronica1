@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("C:/Users/gabil/Downloads/Projetos Exemplo em Verilog/ir/ir/output_files/") File("ir.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("/home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/ir/output_files/") File("ir.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
