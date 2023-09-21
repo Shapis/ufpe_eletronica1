@@ -1,7 +1,7 @@
-module driver_monitor(input iclock, input itemperature, input iautor, input imusica, output ovga_r, output ovga_g, output ovga_b, output ohsync, output ovsync);
+module driver_monitor(input iclock, input [15:0] itemperature, input [15:0]iautor, input [15:0] imusica, output ovga_r, output ovga_g, output ovga_b, output ohsync, output ovsync);
 
-wire wire_hcount;
-wire wire_vcount;
+wire [9:0] wire_hcount  ;
+wire [9:0] wire_vcount ;
 wire wire_hcount_ov;
 wire wire_dat_act_h;
 wire wire_dat_act_v;
