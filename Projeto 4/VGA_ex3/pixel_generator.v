@@ -188,8 +188,8 @@ module pixel_generator(
 		 draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
 		 draw_M(pos_m, pos_m, 2, RED);
 		 
-		 draw_Z(pos_a+22, pos_a+2, 2, BLACK);//sombra
-		 draw_Z(pos_a+20, pos_a, 2, RED);
+		 draw_0(pos_a+22, pos_a+2, 2, BLACK);//sombra
+		 draw_0(pos_a+20, pos_a, 2, RED);
 		
 	end
 	
@@ -631,12 +631,11 @@ endtask
 
 task draw_S(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
     begin
-      	integer i;
-			
+      	integer i;		
 				for(i=0; i<7; i=i+1) begin
 					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
 				end
-				
+			
 				for(i=0; i<7; i=i+1) begin
 					draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
 				end
@@ -651,12 +650,7 @@ task draw_S(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
 				
 				for(i=0; i<4; i=i+1) begin
 					draw_sqr(POSX+6*THICK, POSY+(4*THICK)+i*THICK, THICK, COLOR);
-				end
-				
-				
-				
-		
-				
+				end				
     end
 endtask
 
@@ -777,7 +771,222 @@ task draw_Y(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
 					draw_sqr(POSX+(i*THICK), POSY-(i*THICK)+(8*THICK), THICK, COLOR);
 				end
         end
+    endtask
+	
+	 task draw_1(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+        begin
+					integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+4*(THICK), POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<5; i=i+1) begin
+					draw_sqr(POSX+i*(THICK), POSY+4*THICK-i*THICK, THICK, COLOR);
+				end
+        end
     endtask	
+	
+	 task draw_2(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;		
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+			
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<4; i=i+1) begin
+					draw_sqr(POSX+6*THICK, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<4; i=i+1) begin
+					draw_sqr(POSX, POSY+(4*THICK)+i*THICK, THICK, COLOR);
+				end				
+    end
+endtask		
+	 
+task draw_3(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+5*THICK, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
+		
+				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+			
+				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);
+
+				draw_sqr(POSX+4*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+4*THICK, POSY+8*THICK, THICK, COLOR);				
+    end
+endtask
+
+task draw_4(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+5*THICK, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+i*THICK/2, POSY+4*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK/2, THICK, COLOR);
+				end	
+    end
+endtask
+
+task draw_5(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;		
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+			
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<4; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<4; i=i+1) begin
+					draw_sqr(POSX+6*THICK, POSY+(4*THICK)+i*THICK, THICK, COLOR);
+				end	
+    end
+endtask
+
+task draw_6(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;		
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+			
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<4; i=i+1) begin
+					draw_sqr(POSX+6*THICK, POSY+(4*THICK)+i*THICK, THICK, COLOR);
+				end	
+    end
+endtask
+
+task draw_7(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;		
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK-(i*THICK), THICK, COLOR);
+				end
+				
+    end
+endtask
+
+task draw_8(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;		
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+			
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+6*THICK, POSY+(8*THICK)-i*THICK, THICK, COLOR);
+				end	
+    end
+endtask
+
+task draw_9(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+    begin
+      	integer i;		
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+			
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<7; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<5; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+6*THICK, POSY+(8*THICK)-i*THICK, THICK, COLOR);
+				end	
+    end
+endtask
+
+	  task draw_0(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+        begin
+				integer i;
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
+				end
+
+				for(i=0; i<9; i=i+1) begin
+					draw_sqr(POSX+6*THICK, POSY+i*THICK, THICK, COLOR);
+				end
+				
+				for(i=0; i<6; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY, THICK, COLOR);
+				end
+				
+				for(i=0; i<6; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+        end
+    endtask				 
 	 
 task draw_maior_que(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
         begin
