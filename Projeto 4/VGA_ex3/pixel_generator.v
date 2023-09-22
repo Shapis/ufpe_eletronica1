@@ -185,7 +185,7 @@ module pixel_generator(
 		 localparam temp_pos_y = 400;
 		 localparam temp_pos_offset = 20;
 		 localparam pos_alunos = 170;
-		 localparam pos_ed_x = 420;
+		 localparam pos_ed_x = 390;
 		 localparam pos_autor_y = 300;
 		 
 		 
@@ -262,7 +262,19 @@ module pixel_generator(
 			draw_A(pos_ed_x+132,120, 2, RED);
 			draw_L(pos_ed_x+154,120, 2, RED);
 			
-		 
+		 // Temperatura
+		
+			draw_T(pos_ed_x+0,pos_autor_y+60, 2, RED);
+			draw_E(pos_ed_x+22,pos_autor_y+60, 2, RED);
+			draw_M(pos_ed_x+44,pos_autor_y+60, 2, RED);
+			draw_P(pos_ed_x+66,pos_autor_y+60, 2, RED);
+			draw_E(pos_ed_x+88,pos_autor_y+60, 2, RED);
+			draw_R(pos_ed_x+110,pos_autor_y+60, 2, RED);
+			draw_A(pos_ed_x+132,pos_autor_y+60, 2, RED);
+			draw_T(pos_ed_x+154,pos_autor_y+60, 2, RED);
+			draw_U(pos_ed_x+176,pos_autor_y+60, 2, RED);
+			draw_R(pos_ed_x+198,pos_autor_y+60, 2, RED);
+			draw_A(pos_ed_x+220,pos_autor_y+60, 2, RED);
 		 
 		 if (musica_atual == 1'b0)	begin	
 			draw_B(pos_alunos,pos_autor_y, 2, RED);
@@ -317,75 +329,6 @@ module pixel_generator(
 			draw_W(pos_alunos+330,pos_autor_y+30, 2, RED);
 		 end
 			 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
 		 
 		 case(dig_temp)
 		 4'b0111: begin

@@ -133,12 +133,7 @@ module Mp3(
 //	end
 //	assign stop = toggle4;
 
-	
-	
-	
-	
-	
-	
+
 	
 	assign buzzer = freq_nota & (!silencio);
 //	always @(posedge clock)
