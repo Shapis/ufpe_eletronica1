@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("/home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/") File("VGA.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("/home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/") File("VGA.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

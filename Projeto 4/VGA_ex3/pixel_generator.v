@@ -181,7 +181,7 @@ module pixel_generator(
 		 localparam pos_m = 300;
 		 localparam pos_a = 300;
 		 
-		 localparam temp_pos_x = 500;
+		 localparam temp_pos_x = 480;
 		 localparam temp_pos_y = 400;
 		 localparam temp_pos_offset = 20;
 		 localparam pos_alunos = 170;
@@ -377,17 +377,20 @@ module pixel_generator(
 				endcase 
 			end
 			4'b1110: begin
+					draw_dot(temp_pos_x+temp_pos_offset*3.8, temp_pos_y, 2, BLACK);
+					draw_upper_o(temp_pos_x+temp_pos_offset*5.3, temp_pos_y, 2, BLACK);
+					draw_C(temp_pos_x+temp_pos_offset*6.4, temp_pos_y, 2, BLACK);
 				 case(temperatura) 			
-					4'h0 : draw_0(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //0  
-					4'h1 : draw_1(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //1  
-					4'h2 : draw_2(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //2  
-					4'h3 : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //3  
-					4'h4 : draw_4(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //4  
-					4'h5 : draw_5(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //5  
-					4'h6 : draw_6(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //6  
-					4'h7 : draw_7(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //7  
-					4'h8 : draw_8(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //8  
-					4'h9 : draw_9(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //9    
+					4'h0 : draw_0(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //0  
+					4'h1 : draw_1(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //1  
+					4'h2 : draw_2(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //2  
+					4'h3 : draw_3(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //3  
+					4'h4 : draw_4(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //4  
+					4'h5 : draw_5(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //5  
+					4'h6 : draw_6(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //6  
+					4'h7 : draw_7(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //7  
+					4'h8 : draw_8(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //8  
+					4'h9 : draw_9(temp_pos_x+temp_pos_offset*4.8, temp_pos_y, 2, BLACK); //9    
 					default : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK);//0          
 				endcase 
 			end
@@ -1176,7 +1179,31 @@ endtask
 					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
 				end
         end
-    endtask				 
+    endtask
+
+task draw_upper_o(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+        begin
+				integer i;
+				for(i=0; i<2; i=i+1) begin
+					draw_sqr(POSX+6*THICK+i*THICK, POSY, THICK, COLOR);
+				end
+				for(i=0; i<2; i=i+1) begin
+					draw_sqr(POSX+6*THICK+i*THICK, POSY+1*THICK, THICK, COLOR);
+				end
+
+        end
+    endtask	
+
+task draw_dot(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
+        begin
+				integer i;
+				for(i=0; i<2; i=i+1) begin
+					draw_sqr(POSX+3*THICK+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
+
+        end
+    endtask		 	 
 	 
 task draw_maior_que(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
         begin

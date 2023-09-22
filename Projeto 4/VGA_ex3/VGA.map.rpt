@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Fri Sep 22 13:41:58 2023
+Fri Sep 22 14:14:31 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -30,11 +30,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  22. Port Connectivity Checks: "driver_monitor:inst8|pixel_generator:pixel_generator_inst"
  23. Port Connectivity Checks: "Mp3:inst4|Over_The_Rainbow:contro"
  24. Port Connectivity Checks: "Mp3:inst4|Fur_Elise:control"
- 25. Port Connectivity Checks: "Mp3:inst4|divisor_clock:clk_16m"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
- 29. Analysis & Synthesis Suppressed Messages
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,13 +60,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 22 13:41:58 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 22 14:14:31 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; top_entity                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,817                                       ;
-;     Total combinational functions  ; 2,748                                       ;
+; Total logic elements               ; 2,864                                       ;
+;     Total combinational functions  ; 2,795                                       ;
 ;     Dedicated logic registers      ; 363                                         ;
 ; Total registers                    ; 363                                         ;
 ; Total pins                         ; 28                                          ;
@@ -170,8 +169,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -181,26 +180,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
-; leds.v                           ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/leds.v             ;         ;
-; SEG_D_verilog.v                  ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v    ;         ;
-; Over_The_Rainbow.v               ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Over_The_Rainbow.v ;         ;
-; Fur_Elise.v                      ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v        ;         ;
-; divisor_clock.v                  ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock.v    ;         ;
-; temporizador.v                   ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/temporizador.v     ;         ;
-; Mp3.v                            ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v              ;         ;
-; I2C_READ_verilog.v               ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v ;         ;
-; ir_verilog.v                     ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v       ;         ;
-; top_entity.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/top_entity.bdf     ;         ;
-; driver_monitor.v                 ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v   ;         ;
-; horizontal_sync.v                ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v  ;         ;
-; vertical_sync.v                  ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v    ;         ;
-; pixel_generator.v                ; yes             ; User Verilog HDL File              ; /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v  ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; leds.v                           ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/leds.v             ;         ;
+; SEG_D_verilog.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v    ;         ;
+; Over_The_Rainbow.v               ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Over_The_Rainbow.v ;         ;
+; Fur_Elise.v                      ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v        ;         ;
+; divisor_clock.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock.v    ;         ;
+; temporizador.v                   ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/temporizador.v     ;         ;
+; Mp3.v                            ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v              ;         ;
+; I2C_READ_verilog.v               ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v ;         ;
+; ir_verilog.v                     ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v       ;         ;
+; top_entity.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/top_entity.bdf     ;         ;
+; driver_monitor.v                 ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v   ;         ;
+; horizontal_sync.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v  ;         ;
+; vertical_sync.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v    ;         ;
+; pixel_generator.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v  ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -208,16 +207,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 2,817       ;
+; Estimated Total logic elements              ; 2,864       ;
 ;                                             ;             ;
-; Total combinational functions               ; 2748        ;
+; Total combinational functions               ; 2795        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 2033        ;
-;     -- 3 input functions                    ; 394         ;
-;     -- <=2 input functions                  ; 321         ;
+;     -- 4 input functions                    ; 2075        ;
+;     -- 3 input functions                    ; 395         ;
+;     -- <=2 input functions                  ; 325         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 2592        ;
+;     -- normal mode                          ; 2639        ;
 ;     -- arithmetic mode                      ; 156         ;
 ;                                             ;             ;
 ; Total registers                             ; 363         ;
@@ -230,7 +229,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 338         ;
-; Total fan-out                               ; 11017       ;
+; Total fan-out                               ; 11196       ;
 ; Average fan-out                             ; 3.48        ;
 +---------------------------------------------+-------------+
 
@@ -240,18 +239,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
-; |top_entity                                  ; 2748 (1)            ; 363 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |top_entity                                                           ; top_entity       ; work         ;
+; |top_entity                                  ; 2795 (1)            ; 363 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |top_entity                                                           ; top_entity       ; work         ;
 ;    |I2C_READ_verilog:inst2|                  ; 120 (120)           ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|I2C_READ_verilog:inst2                                    ; I2C_READ_verilog ; work         ;
 ;    |Mp3:inst4|                               ; 270 (70)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                 ; Mp3              ; work         ;
 ;       |Fur_Elise:control|                    ; 54 (54)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                               ; Fur_Elise        ; work         ;
 ;       |Over_The_Rainbow:contro|              ; 39 (39)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Over_The_Rainbow:contro                         ; Over_The_Rainbow ; work         ;
 ;       |divisor_clock:div_clk|                ; 49 (49)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|divisor_clock:div_clk                           ; divisor_clock    ; work         ;
 ;       |temporizador:temp|                    ; 58 (58)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|temporizador:temp                               ; temporizador     ; work         ;
-;    |SEG_D_verilog:inst3|                     ; 82 (82)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                       ; SEG_D_verilog    ; work         ;
-;    |driver_monitor:inst8|                    ; 2179 (0)            ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8                                      ; driver_monitor   ; work         ;
-;       |horizontal_sync:hsync_inst|           ; 25 (25)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|horizontal_sync:hsync_inst           ; horizontal_sync  ; work         ;
-;       |pixel_generator:pixel_generator_inst| ; 2125 (2125)         ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst ; pixel_generator  ; work         ;
-;       |vertical_sync:vsync_inst|             ; 29 (29)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|vertical_sync:vsync_inst             ; vertical_sync    ; work         ;
+;    |SEG_D_verilog:inst3|                     ; 81 (81)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                       ; SEG_D_verilog    ; work         ;
+;    |driver_monitor:inst8|                    ; 2227 (0)            ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8                                      ; driver_monitor   ; work         ;
+;       |horizontal_sync:hsync_inst|           ; 27 (27)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|horizontal_sync:hsync_inst           ; horizontal_sync  ; work         ;
+;       |pixel_generator:pixel_generator_inst| ; 2170 (2170)         ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst ; pixel_generator  ; work         ;
+;       |vertical_sync:vsync_inst|             ; 30 (30)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|vertical_sync:vsync_inst             ; vertical_sync    ; work         ;
 ;    |ir_verilog:inst|                         ; 96 (96)             ; 58 (58)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|ir_verilog:inst                                           ; ir_verilog       ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -566,7 +565,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|cnt1[5]                                               ;
 ; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|get_data[10]                                          ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |top_entity|I2C_READ_verilog:inst2|data_cnt[0]                                    ;
-; 600:1              ; 3 bits    ; 1200 LEs      ; 48 LEs               ; 1152 LEs               ; Yes        ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[0] ;
+; 622:1              ; 3 bits    ; 1242 LEs      ; 54 LEs               ; 1188 LEs               ; Yes        ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[0] ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
@@ -575,6 +574,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 32:1               ; 3 bits    ; 63 LEs        ; 3 LEs                ; 60 LEs                 ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 ; 2431:1             ; 3 bits    ; 4860 LEs      ; 2862 LEs             ; 1998 LEs               ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
@@ -632,17 +632,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mp3:inst4|divisor_clock:clk_16m"                                                               ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Clk_out         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Overflow[1..0]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; Overflow[27..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -658,19 +647,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 28                          ;
 ;     plain             ; 110                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 2759                        ;
+; cycloneiii_lcell_comb ; 2806                        ;
 ;     arith             ; 156                         ;
 ;         2 data inputs ; 141                         ;
 ;         3 data inputs ; 15                          ;
-;     normal            ; 2603                        ;
+;     normal            ; 2650                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 26                          ;
-;         2 data inputs ; 163                         ;
-;         3 data inputs ; 379                         ;
-;         4 data inputs ; 2033                        ;
+;         2 data inputs ; 167                         ;
+;         3 data inputs ; 380                         ;
+;         4 data inputs ; 2075                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 26.00                       ;
-; Average LUT depth     ; 16.67                       ;
+; Max LUT depth         ; 25.00                       ;
+; Average LUT depth     ; 16.33                       ;
 +-----------------------+-----------------------------+
 
 
@@ -679,7 +668,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:16     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -689,138 +678,138 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 22 13:41:36 2023
+    Info: Processing started: Fri Sep 22 14:14:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file leds.v
-    Info (12023): Found entity 1: leds File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/leds.v Line: 1
+    Info (12023): Found entity 1: leds File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/leds.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file SEG_D_verilog.v
-    Info (12023): Found entity 1: SEG_D_verilog File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 1
+    Info (12023): Found entity 1: SEG_D_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Over_The_Rainbow.v
-    Info (12023): Found entity 1: Over_The_Rainbow File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Over_The_Rainbow.v Line: 1
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(48): overriding existing definition for macro "BPM", which was defined in "Over_The_Rainbow.v", line 46 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 48
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(50): overriding existing definition for macro "BPS", which was defined in "Over_The_Rainbow.v", line 48 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 50
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(60): overriding existing definition for macro "ov_t4", which was defined in "Over_The_Rainbow.v", line 56 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 60
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(61): overriding existing definition for macro "ov_t2", which was defined in "Over_The_Rainbow.v", line 57 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 61
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(62): overriding existing definition for macro "ov_t1", which was defined in "Over_The_Rainbow.v", line 58 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 62
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(63): overriding existing definition for macro "ov_t1_2", which was defined in "Over_The_Rainbow.v", line 59 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 63
-Warning (10274): Verilog HDL macro warning at Fur_Elise.v(64): overriding existing definition for macro "ov_t1_4", which was defined in "Over_The_Rainbow.v", line 60 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 64
+    Info (12023): Found entity 1: Over_The_Rainbow File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Over_The_Rainbow.v Line: 1
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(48): overriding existing definition for macro "BPM", which was defined in "Over_The_Rainbow.v", line 46 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 48
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(50): overriding existing definition for macro "BPS", which was defined in "Over_The_Rainbow.v", line 48 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 50
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(60): overriding existing definition for macro "ov_t4", which was defined in "Over_The_Rainbow.v", line 56 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 60
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(61): overriding existing definition for macro "ov_t2", which was defined in "Over_The_Rainbow.v", line 57 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 61
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(62): overriding existing definition for macro "ov_t1", which was defined in "Over_The_Rainbow.v", line 58 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 62
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(63): overriding existing definition for macro "ov_t1_2", which was defined in "Over_The_Rainbow.v", line 59 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 63
+Warning (10274): Verilog HDL macro warning at Fur_Elise.v(64): overriding existing definition for macro "ov_t1_4", which was defined in "Over_The_Rainbow.v", line 60 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 64
 Info (12021): Found 1 design units, including 1 entities, in source file Fur_Elise.v
-    Info (12023): Found entity 1: Fur_Elise File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 1
+    Info (12023): Found entity 1: Fur_Elise File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Fur_Elise.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file divisor_clock.v
-    Info (12023): Found entity 1: divisor_clock File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock.v Line: 1
+    Info (12023): Found entity 1: divisor_clock File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file temporizador.v
-    Info (12023): Found entity 1: temporizador File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/temporizador.v Line: 1
+    Info (12023): Found entity 1: temporizador File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/temporizador.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Mp3.v
-    Info (12023): Found entity 1: Mp3 File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 1
+    Info (12023): Found entity 1: Mp3 File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file I2C_READ_verilog.v
-    Info (12023): Found entity 1: I2C_READ_verilog File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 1
+    Info (12023): Found entity 1: I2C_READ_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ir_verilog.v
-    Info (12023): Found entity 1: ir_verilog File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 8
+    Info (12023): Found entity 1: ir_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file top_entity.bdf
     Info (12023): Found entity 1: top_entity
 Info (12021): Found 1 design units, including 1 entities, in source file driver_monitor.v
-    Info (12023): Found entity 1: driver_monitor File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 1
+    Info (12023): Found entity 1: driver_monitor File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file horizontal_sync.v
-    Info (12023): Found entity 1: horizontal_sync File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v Line: 46
+    Info (12023): Found entity 1: horizontal_sync File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file vertical_sync.v
-    Info (12023): Found entity 1: vertical_sync File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v Line: 46
+    Info (12023): Found entity 1: vertical_sync File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file pixel_generator.v
-    Info (12023): Found entity 1: pixel_generator File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 48
+    Info (12023): Found entity 1: pixel_generator File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 48
 Info (12021): Found 1 design units, including 1 entities, in source file VGA_interface.v
-    Info (12023): Found entity 1: VGA_interface File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 51
+    Info (12023): Found entity 1: VGA_interface File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file vga_interface_topo.bdf
     Info (12023): Found entity 1: vga_interface_topo
 Info (12021): Found 1 design units, including 1 entities, in source file divisor_clock_16m.v
-    Info (12023): Found entity 1: divisor_clock_16m File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock_16m.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at SEG_D_verilog.v(109): created implicit net for "data_out" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 109
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(48): created implicit net for "musica1_1" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(49): created implicit net for "musica1_2" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(50): created implicit net for "musica2_1" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(51): created implicit net for "musica2_2" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 51
+    Info (12023): Found entity 1: divisor_clock_16m File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/divisor_clock_16m.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at SEG_D_verilog.v(109): created implicit net for "data_out" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 109
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(47): created implicit net for "musica1_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(48): created implicit net for "musica1_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(49): created implicit net for "musica2_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(50): created implicit net for "musica2_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
 Info (12127): Elaborating entity "top_entity" for the top level hierarchy
 Info (12128): Elaborating entity "I2C_READ_verilog" for hierarchy "I2C_READ_verilog:inst2"
 Info (12128): Elaborating entity "Mp3" for hierarchy "Mp3:inst4"
-Warning (10230): Verilog HDL assignment warning at Mp3.v(48): truncated value with size 128 to match size of target (1) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
-Warning (10230): Verilog HDL assignment warning at Mp3.v(49): truncated value with size 128 to match size of target (1) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
-Warning (10230): Verilog HDL assignment warning at Mp3.v(50): truncated value with size 128 to match size of target (1) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
-Warning (10230): Verilog HDL assignment warning at Mp3.v(51): truncated value with size 128 to match size of target (1) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 51
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(194): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 194
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(195): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 195
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(196): variable "musica1t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 196
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(197): variable "musica1t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 197
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(198): variable "musica1t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 198
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(199): variable "musica1_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 199
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(200): variable "musica1_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 200
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(205): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 205
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(206): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 206
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(207): variable "musica2t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 207
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(208): variable "musica2t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 208
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(209): variable "musica2t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 209
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(210): variable "musica2_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 210
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(211): variable "musica2_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 211
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica2play", which holds its previous value in one or more paths through the always construct File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica2stop", which holds its previous value in one or more paths through the always construct File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica1play", which holds its previous value in one or more paths through the always construct File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica1stop", which holds its previous value in one or more paths through the always construct File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Info (10041): Inferred latch for "musica1stop" at Mp3.v(190) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Info (10041): Inferred latch for "musica1play" at Mp3.v(190) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Info (10041): Inferred latch for "musica2stop" at Mp3.v(190) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Info (10041): Inferred latch for "musica2play" at Mp3.v(190) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
-Info (12128): Elaborating entity "temporizador" for hierarchy "Mp3:inst4|temporizador:temp" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 57
-Info (12128): Elaborating entity "divisor_clock" for hierarchy "Mp3:inst4|divisor_clock:div_clk" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 62
-Info (12128): Elaborating entity "Fur_Elise" for hierarchy "Mp3:inst4|Fur_Elise:control" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 159
-Info (12128): Elaborating entity "Over_The_Rainbow" for hierarchy "Mp3:inst4|Over_The_Rainbow:contro" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 169
+Warning (10230): Verilog HDL assignment warning at Mp3.v(47): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 47
+Warning (10230): Verilog HDL assignment warning at Mp3.v(48): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
+Warning (10230): Verilog HDL assignment warning at Mp3.v(49): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
+Warning (10230): Verilog HDL assignment warning at Mp3.v(50): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(190): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(191): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 191
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(192): variable "musica1t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 192
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(193): variable "musica1t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 193
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(194): variable "musica1t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 194
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(195): variable "musica1_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 195
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(196): variable "musica1_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 196
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(201): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 201
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(202): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 202
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(203): variable "musica2t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 203
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(204): variable "musica2t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 204
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(205): variable "musica2t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 205
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(206): variable "musica2_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 206
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(207): variable "musica2_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 207
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(186): inferring latch(es) for variable "musica2play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(186): inferring latch(es) for variable "musica2stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(186): inferring latch(es) for variable "musica1play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(186): inferring latch(es) for variable "musica1stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Info (10041): Inferred latch for "musica1stop" at Mp3.v(186) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Info (10041): Inferred latch for "musica1play" at Mp3.v(186) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Info (10041): Inferred latch for "musica2stop" at Mp3.v(186) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Info (10041): Inferred latch for "musica2play" at Mp3.v(186) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 186
+Info (12128): Elaborating entity "temporizador" for hierarchy "Mp3:inst4|temporizador:temp" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 56
+Info (12128): Elaborating entity "divisor_clock" for hierarchy "Mp3:inst4|divisor_clock:div_clk" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 61
+Info (12128): Elaborating entity "Fur_Elise" for hierarchy "Mp3:inst4|Fur_Elise:control" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 155
+Info (12128): Elaborating entity "Over_The_Rainbow" for hierarchy "Mp3:inst4|Over_The_Rainbow:contro" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 165
 Info (12128): Elaborating entity "ir_verilog" for hierarchy "ir_verilog:inst"
-Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_endereco" assigned a value but never read File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
-Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "endereco" assigned a value but never read File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
-Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_comando" assigned a value but never read File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_endereco" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "endereco" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_comando" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
 Info (12128): Elaborating entity "driver_monitor" for hierarchy "driver_monitor:inst8"
-Info (12128): Elaborating entity "horizontal_sync" for hierarchy "driver_monitor:inst8|horizontal_sync:hsync_inst" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 16
-Info (12128): Elaborating entity "vertical_sync" for hierarchy "driver_monitor:inst8|vertical_sync:vsync_inst" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 25
-Info (12128): Elaborating entity "pixel_generator" for hierarchy "driver_monitor:inst8|pixel_generator:pixel_generator_inst" File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 41
-Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(78): object "h_dat" assigned a value but never read File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 78
-Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(79): object "v_dat" assigned a value but never read File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 79
+Info (12128): Elaborating entity "horizontal_sync" for hierarchy "driver_monitor:inst8|horizontal_sync:hsync_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 16
+Info (12128): Elaborating entity "vertical_sync" for hierarchy "driver_monitor:inst8|vertical_sync:vsync_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 25
+Info (12128): Elaborating entity "pixel_generator" for hierarchy "driver_monitor:inst8|pixel_generator:pixel_generator_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 41
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(78): object "h_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 78
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(79): object "v_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 79
 Info (12128): Elaborating entity "SEG_D_verilog" for hierarchy "SEG_D_verilog:inst3"
-Warning (10036): Verilog HDL or VHDL warning at SEG_D_verilog.v(109): object "data_out" assigned a value but never read File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 109
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(68): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 68
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(69): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 69
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(70): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 70
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(71): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 71
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(72): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 72
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(73): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 73
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(74): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 74
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(75): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 75
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(76): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 76
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(77): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 77
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(78): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 78
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(79): truncated value with size 7 to match size of target (4) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 79
-Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(109): truncated value with size 4 to match size of target (1) File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 109
+Warning (10036): Verilog HDL or VHDL warning at SEG_D_verilog.v(109): object "data_out" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 109
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(68): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 68
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(69): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 69
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(70): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 70
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(71): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 71
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(72): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 72
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(73): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 73
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(74): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 74
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(75): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 75
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(76): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 76
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(77): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 77
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(78): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 78
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(79): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 79
+Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(109): truncated value with size 4 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 109
 Info (12128): Elaborating entity "leds" for hierarchy "leds:inst1"
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 11
+Info (13000): Registers with preset signals will power-up high File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 11
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led[4]" is stuck at VCC
 Info (17049): 26 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg
+Info (144001): Generated suppressed messages file /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2846 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2893 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 23 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 2818 logic cells
+    Info (21061): Implemented 2865 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 409 megabytes
-    Info: Processing ended: Fri Sep 22 13:41:58 2023
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 392 megabytes
+    Info: Processing ended: Fri Sep 22 14:14:31 2023
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home/pedro/Documentos/2023.1/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg.
+The suppressed messages can be found in /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg.
 
 
