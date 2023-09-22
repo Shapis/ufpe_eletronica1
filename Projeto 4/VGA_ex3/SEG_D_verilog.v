@@ -2,10 +2,9 @@ module SEG_D_verilog (
 	input clk,rst_n,
 	input [15:0] data, //2bytes
 	output reg [7:0] seg, //seg[7] -> dp 
-	output reg [4:1] dig //seleciona display
+	output reg [4:1] dig, //seleciona display
+	output reg [3:0] dataout_buf
 );  
-  
-	reg [3:0] dataout_buf;  
 	reg [1:0] disp_dat;  
 	reg [16:0] delay_cnt;  
 		
@@ -106,5 +105,7 @@ module SEG_D_verilog (
 		endcase   
 	end 
 	/* INICIO: MSB+LSB 9bits para 4BCD  */	
+	
+	assign data_out = dataout_buf;
 	
 endmodule   

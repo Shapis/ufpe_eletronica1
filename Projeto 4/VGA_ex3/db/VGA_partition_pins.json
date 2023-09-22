@@ -48,6 +48,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
 					"name" : "seg[7]",
 					"strict" : false
 				},

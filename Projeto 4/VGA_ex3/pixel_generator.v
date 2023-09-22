@@ -62,7 +62,7 @@ module pixel_generator(
 	input musica_atual;
 	input [15:0] autor;
 	input [15:0] musica;
-	input [7:0] temperatura;
+	input [3:0] temperatura;
 	input [4:1] dig_temp;
 	input clock;     	//50MHz clock de entrada do sistema
 	input dat_act_h;		//flag auxiliar para ativação de pixels (horizontal)
@@ -333,61 +333,61 @@ module pixel_generator(
 		 case(dig_temp)
 		 4'b0111: begin
 				 case(temperatura) 			
-					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //0  
-					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //1  
-					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //2  
-					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //3  
-					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //4  
-					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //5  
-					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //6  
-					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //7  
-					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //8  
-					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //9   
+					4'h0 : draw_0(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //0  
+					4'h1 : draw_1(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //1  
+					4'h2 : draw_2(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //2  
+					4'h3 : draw_3(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //3  
+					4'h4 : draw_4(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //4  
+					4'h5 : draw_5(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //5  
+					4'h6 : draw_6(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //6  
+					4'h7 : draw_7(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //7  
+					4'h8 : draw_8(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //8  
+					4'h9 : draw_9(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //9  
 					default : draw_3(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK);//0          
 				endcase 
 			end
 			4'b1011: begin
 				 case(temperatura) 			
-					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //0  
-					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //1  
-					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //2  
-					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //3  
-					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //4  
-					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //5  
-					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //6  
-					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //7  
-					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //8  
-					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //9   
+					4'h0 : draw_0(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //0  
+					4'h1 : draw_1(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //1  
+					4'h2 : draw_2(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //2  
+					4'h3 : draw_3(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //3  
+					4'h4 : draw_4(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //4  
+					4'h5 : draw_5(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //5  
+					4'h6 : draw_6(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //6  
+					4'h7 : draw_7(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //7  
+					4'h8 : draw_8(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //8  
+					4'h9 : draw_9(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //9   
 					default : draw_3(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK);//0          
 				endcase 
 			end
 			4'b1101: begin
 				 case(temperatura) 			
-					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //0  
-					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //1  
-					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //2  
-					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //3  
-					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //4  
-					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //5  
-					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //6  
-					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //7  
-					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //8  
-					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //9   
+					4'h0 : draw_0(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //0  
+					4'h1 : draw_1(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //1  
+					4'h2 : draw_2(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //2  
+					4'h3 : draw_3(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //3  
+					4'h4 : draw_4(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //4  
+					4'h5 : draw_5(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //5  
+					4'h6 : draw_6(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //6  
+					4'h7 : draw_7(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //7  
+					4'h8 : draw_8(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //8  
+					4'h9 : draw_9(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //9  
 					default : draw_3(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK);//0          
 				endcase 
 			end
 			4'b1110: begin
 				 case(temperatura) 			
-					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //0  
-					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //1  
-					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //2  
-					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //3  
-					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //4  
-					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //5  
-					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //6  
-					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //7  
-					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //8  
-					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //9   
+					4'h0 : draw_0(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //0  
+					4'h1 : draw_1(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //1  
+					4'h2 : draw_2(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //2  
+					4'h3 : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //3  
+					4'h4 : draw_4(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //4  
+					4'h5 : draw_5(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //5  
+					4'h6 : draw_6(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //6  
+					4'h7 : draw_7(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //7  
+					4'h8 : draw_8(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //8  
+					4'h9 : draw_9(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //9    
 					default : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK);//0          
 				endcase 
 			end
