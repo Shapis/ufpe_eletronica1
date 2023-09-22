@@ -52,8 +52,12 @@ module pixel_generator(
 	hcount,
    vcount,
 	key,
+	temperatura,
+	dig_temp,
    vga_r, vga_g, vga_b   
 );
+	input [7:0] temperatura;
+	input [4:1] dig_temp;
 	input clock;     	//50MHz clock de entrada do sistema
 	input dat_act_h;		//flag auxiliar para ativação de pixels (horizontal)
 	input dat_act_v;		//flag auxiliar para ativação de pixels (vertical)
@@ -114,6 +118,7 @@ module pixel_generator(
 			data <= dat_draw; 
 	end
 
+
 	///Lógica para gerar a saída barras de cores horizontais
 	always @(posedge vga_clk)  
 	L2: begin
@@ -166,32 +171,30 @@ module pixel_generator(
 		 
 	    draw_bg(WHITE);
 		 
-		 draw_cross(REF_X, CENTER_Y, 300, 5, RED);
-		 draw_cross(CENTER_X, CENTER_Y, 10, 2, BLACK);
 		 
-		 draw_elipse(CENTER_X+2, CENTER_Y, 60, 2, MAGENTA);
-		 		 
-		 draw_sqr(REF_X+80-5, CENTER_Y+40+5, 20, BLACK); //sombra
-		 draw_sqr(REF_X+80, CENTER_Y+40, 20, BLUE);
-		 
-		 draw_sqr(REF_X+80-5, CENTER_Y-95-5, 20, BLACK); //sombra
-		 draw_sqr(REF_X+80, CENTER_Y-95, 20, CYAN);
-		 
-		 draw_sqr(REF_X+180+5, CENTER_Y+40+5, 20, BLACK); //sombra
-		 draw_sqr(REF_X+180, CENTER_Y+40, 20, YELLOW);
-		 
-		 draw_sqr(REF_X+180+5, CENTER_Y-95-5, 20, BLACK);//sombra
-		 draw_sqr(REF_X+180, CENTER_Y-95, 20, GREEN);
-		 
-		 draw_elipse(CENTER_X+2, CENTER_Y, 100, 2, MAGENTA);
 		 		
 		 draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
 		 draw_M(pos_m, pos_m, 2, RED);
 		 
-		 draw_0(pos_a+22, pos_a+2, 2, BLACK);//sombra
-		 draw_0(pos_a+20, pos_a, 2, RED);
+		 case(temperatura) 			
+			7'b1000000 : draw_0(pos_m+20, pos_m+20, 2, BLACK); //0  
+			7'b1111001 : draw_1(pos_m+20, pos_m+20, 2, BLACK); //1  
+			7'b0100100 : draw_2(pos_m+20, pos_m+20, 2, BLACK); //2  
+			7'b0110000 : draw_3(pos_m+20, pos_m+20, 2, BLACK); //3  
+			7'b0011001 : draw_4(pos_m+20, pos_m+20, 2, BLACK); //4  
+			7'b0010010 : draw_5(pos_m+20, pos_m+20, 2, BLACK); //5  
+			7'b0000010 : draw_6(pos_m+20, pos_m+20, 2, BLACK); //6  
+			7'b1111000 : draw_7(pos_m+20, pos_m+20, 2, BLACK); //7  
+			7'b0000000 : draw_8(pos_m+20, pos_m+20, 2, BLACK); //8  
+			7'b0010000 : draw_9(pos_m+20, pos_m+20, 2, BLACK); //9   
+			default : draw_3(pos_m+20, pos_m+20, 2, BLACK);//0          
+		endcase 
+		 
+	
 		
 	end
+	
+	
 	
 	//TASK: Lógica para desenhar background
 	task draw_bg(input [3:1] COLOR);

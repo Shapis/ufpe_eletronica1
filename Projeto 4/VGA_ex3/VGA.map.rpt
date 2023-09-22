@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Thu Sep 21 22:26:44 2023
+Thu Sep 21 23:24:25 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,32 +13,28 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. State Machine - |top_entity|ir_verilog:inst|estado_atual
- 10. State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|prox_estado
- 11. State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|estado
- 12. State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|prox_estado
- 13. State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|estado
- 14. State Machine - |top_entity|I2C_READ_verilog:inst2|estado
- 15. State Machine - |top_entity|I2C_READ_verilog:inst2|cnt
- 16. User-Specified and Inferred Latches
- 17. Registers Removed During Synthesis
- 18. Removed Registers Triggering Further Register Optimizations
- 19. General Register Statistics
- 20. Inverted Register Statistics
- 21. Multiplexer Restructuring Statistics (Restructuring Performed)
- 22. Parameter Settings for User Entity Instance: driver_monitor:inst8|horizontal_sync:hsync_inst
- 23. Parameter Settings for User Entity Instance: driver_monitor:inst8|vertical_sync:vsync_inst
- 24. Parameter Settings for Inferred Entity Instance: driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0
- 25. Parameter Settings for Inferred Entity Instance: driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult1
- 26. lpm_mult Parameter Settings by Entity Instance
- 27. Port Connectivity Checks: "driver_monitor:inst8|pixel_generator:pixel_generator_inst"
- 28. Port Connectivity Checks: "Mp3:inst4|Over_The_Rainbow:contro"
- 29. Port Connectivity Checks: "Mp3:inst4|Fur_Elise:control"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+  8. State Machine - |top_entity|ir_verilog:inst|estado_atual
+  9. State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|prox_estado
+ 10. State Machine - |top_entity|Mp3:inst4|Over_The_Rainbow:contro|estado
+ 11. State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|prox_estado
+ 12. State Machine - |top_entity|Mp3:inst4|Fur_Elise:control|estado
+ 13. State Machine - |top_entity|I2C_READ_verilog:inst2|estado
+ 14. State Machine - |top_entity|I2C_READ_verilog:inst2|cnt
+ 15. User-Specified and Inferred Latches
+ 16. Registers Removed During Synthesis
+ 17. Removed Registers Triggering Further Register Optimizations
+ 18. General Register Statistics
+ 19. Inverted Register Statistics
+ 20. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 21. Parameter Settings for User Entity Instance: driver_monitor:inst8|horizontal_sync:hsync_inst
+ 22. Parameter Settings for User Entity Instance: driver_monitor:inst8|vertical_sync:vsync_inst
+ 23. Port Connectivity Checks: "driver_monitor:inst8|pixel_generator:pixel_generator_inst"
+ 24. Port Connectivity Checks: "Mp3:inst4|Over_The_Rainbow:contro"
+ 25. Port Connectivity Checks: "Mp3:inst4|Fur_Elise:control"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,19 +61,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 22:26:44 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 21 23:24:25 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; top_entity                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 926                                         ;
-;     Total combinational functions  ; 856                                         ;
-;     Dedicated logic registers      ; 365                                         ;
-; Total registers                    ; 365                                         ;
+; Total logic elements               ; 924                                         ;
+;     Total combinational functions  ; 855                                         ;
+;     Dedicated logic registers      ; 363                                         ;
+; Total registers                    ; 363                                         ;
 ; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 4                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
@@ -204,13 +200,6 @@ https://fpgasoftware.intel.com/eula.
 ; horizontal_sync.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/horizontal_sync.v  ;         ;
 ; vertical_sync.v                  ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/vertical_sync.v    ;         ;
 ; pixel_generator.v                ; yes             ; User Verilog HDL File              ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v  ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf       ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc     ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc    ;         ;
-; multcore.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/multcore.inc       ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/bypassff.inc       ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; /home/hpsilva/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altshift.inc       ;         ;
-; db/mult_p5t.tdf                  ; yes             ; Auto-Generated Megafunction        ; /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/db/mult_p5t.tdf    ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
 
 
@@ -219,75 +208,53 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 926         ;
+; Estimated Total logic elements              ; 924         ;
 ;                                             ;             ;
-; Total combinational functions               ; 856         ;
+; Total combinational functions               ; 855         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 442         ;
-;     -- 3 input functions                    ; 149         ;
-;     -- <=2 input functions                  ; 265         ;
+;     -- 4 input functions                    ; 481         ;
+;     -- 3 input functions                    ; 141         ;
+;     -- <=2 input functions                  ; 233         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 659         ;
-;     -- arithmetic mode                      ; 197         ;
+;     -- normal mode                          ; 699         ;
+;     -- arithmetic mode                      ; 156         ;
 ;                                             ;             ;
-; Total registers                             ; 365         ;
-;     -- Dedicated logic registers            ; 365         ;
+; Total registers                             ; 363         ;
+;     -- Dedicated logic registers            ; 363         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 28          ;
 ;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 4           ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 338         ;
-; Total fan-out                               ; 3828        ;
-; Average fan-out                             ; 2.99        ;
+; Total fan-out                               ; 3871        ;
+; Average fan-out                             ; 3.04        ;
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                      ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Entity Name      ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |top_entity                                  ; 856 (1)             ; 365 (0)                   ; 0           ; 4            ; 0       ; 2         ; 28   ; 0            ; |top_entity                                                                                                  ; top_entity       ; work         ;
-;    |I2C_READ_verilog:inst2|                  ; 120 (120)           ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|I2C_READ_verilog:inst2                                                                           ; I2C_READ_verilog ; work         ;
-;    |Mp3:inst4|                               ; 272 (71)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                                                        ; Mp3              ; work         ;
-;       |Fur_Elise:control|                    ; 54 (54)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                                                                      ; Fur_Elise        ; work         ;
-;       |Over_The_Rainbow:contro|              ; 39 (39)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Over_The_Rainbow:contro                                                                ; Over_The_Rainbow ; work         ;
-;       |divisor_clock:div_clk|                ; 50 (50)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|divisor_clock:div_clk                                                                  ; divisor_clock    ; work         ;
-;       |temporizador:temp|                    ; 58 (58)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|temporizador:temp                                                                      ; temporizador     ; work         ;
-;    |SEG_D_verilog:inst3|                     ; 81 (81)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                                                              ; SEG_D_verilog    ; work         ;
-;    |driver_monitor:inst8|                    ; 286 (0)             ; 29 (0)                    ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|driver_monitor:inst8                                                                             ; driver_monitor   ; work         ;
-;       |horizontal_sync:hsync_inst|           ; 22 (22)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|horizontal_sync:hsync_inst                                                  ; horizontal_sync  ; work         ;
-;       |pixel_generator:pixel_generator_inst| ; 238 (238)           ; 7 (7)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst                                        ; pixel_generator  ; work         ;
-;          |lpm_mult:Mult0|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0                         ; lpm_mult         ; work         ;
-;             |mult_p5t:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0|mult_p5t:auto_generated ; mult_p5t         ; work         ;
-;          |lpm_mult:Mult1|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult1                         ; lpm_mult         ; work         ;
-;             |mult_p5t:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult1|mult_p5t:auto_generated ; mult_p5t         ; work         ;
-;       |vertical_sync:vsync_inst|             ; 26 (26)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|vertical_sync:vsync_inst                                                    ; vertical_sync    ; work         ;
-;    |ir_verilog:inst|                         ; 96 (96)             ; 58 (58)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|ir_verilog:inst                                                                                  ; ir_verilog       ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                               ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name      ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
+; |top_entity                                  ; 855 (1)             ; 363 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |top_entity                                                           ; top_entity       ; work         ;
+;    |I2C_READ_verilog:inst2|                  ; 120 (120)           ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|I2C_READ_verilog:inst2                                    ; I2C_READ_verilog ; work         ;
+;    |Mp3:inst4|                               ; 270 (70)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                 ; Mp3              ; work         ;
+;       |Fur_Elise:control|                    ; 54 (54)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                               ; Fur_Elise        ; work         ;
+;       |Over_The_Rainbow:contro|              ; 39 (39)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Over_The_Rainbow:contro                         ; Over_The_Rainbow ; work         ;
+;       |divisor_clock:div_clk|                ; 49 (49)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|divisor_clock:div_clk                           ; divisor_clock    ; work         ;
+;       |temporizador:temp|                    ; 58 (58)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|temporizador:temp                               ; temporizador     ; work         ;
+;    |SEG_D_verilog:inst3|                     ; 81 (81)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                       ; SEG_D_verilog    ; work         ;
+;    |driver_monitor:inst8|                    ; 287 (0)             ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8                                      ; driver_monitor   ; work         ;
+;       |horizontal_sync:hsync_inst|           ; 23 (23)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|horizontal_sync:hsync_inst           ; horizontal_sync  ; work         ;
+;       |pixel_generator:pixel_generator_inst| ; 240 (240)           ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst ; pixel_generator  ; work         ;
+;       |vertical_sync:vsync_inst|             ; 24 (24)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|vertical_sync:vsync_inst             ; vertical_sync    ; work         ;
+;    |ir_verilog:inst|                         ; 96 (96)             ; 58 (58)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|ir_verilog:inst                                           ; ir_verilog       ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary        ;
-+---------------------------------------+-------------+
-; Statistic                             ; Number Used ;
-+---------------------------------------+-------------+
-; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 2           ;
-; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 4           ;
-; Signed Embedded Multipliers           ; 2           ;
-; Unsigned Embedded Multipliers         ; 0           ;
-; Mixed Sign Embedded Multipliers       ; 0           ;
-; Variable Sign Embedded Multipliers    ; 0           ;
-; Dedicated Input Shift Register Chains ; 0           ;
-+---------------------------------------+-------------+
-Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
 Encoding Type:  One-Hot
@@ -519,47 +486,49 @@ Encoding Type:  One-Hot
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+--------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                               ;
-+-------------------------------------------------+------------------------------------------------+
-; Register name                                   ; Reason for Removal                             ;
-+-------------------------------------------------+------------------------------------------------+
-; leds:inst1|saida[2]                             ; Stuck at GND due to stuck port data_in         ;
-; leds:inst1|saida[3]                             ; Stuck at VCC due to stuck port data_in         ;
-; I2C_READ_verilog:inst2|addr_reg[1..3,5,6]       ; Stuck at GND due to stuck port data_in         ;
-; leds:inst1|saida[1]                             ; Merged with leds:inst1|saida[4]                ;
-; I2C_READ_verilog:inst2|addr_reg[4,7]            ; Merged with I2C_READ_verilog:inst2|addr_reg[0] ;
-; leds:inst1|saida[4]                             ; Stuck at VCC due to stuck port data_in         ;
-; I2C_READ_verilog:inst2|cnt.100                  ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~2 ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~3 ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~4 ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~5 ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~6 ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|estado~2      ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|estado~3      ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|estado~4      ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|estado~5      ; Lost fanout                                    ;
-; Mp3:inst4|Over_The_Rainbow:contro|estado~6      ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|prox_estado~2       ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|prox_estado~3       ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|prox_estado~4       ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|prox_estado~5       ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|prox_estado~6       ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|prox_estado~7       ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|estado~2            ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|estado~3            ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|estado~4            ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|estado~5            ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|estado~6            ; Lost fanout                                    ;
-; Mp3:inst4|Fur_Elise:control|estado~7            ; Lost fanout                                    ;
-; I2C_READ_verilog:inst2|estado~14                ; Lost fanout                                    ;
-; I2C_READ_verilog:inst2|cnt~4                    ; Lost fanout                                    ;
-; I2C_READ_verilog:inst2|cnt~5                    ; Lost fanout                                    ;
-; I2C_READ_verilog:inst2|timer_cnt[0]             ; Merged with I2C_READ_verilog:inst2|scl_cnt[0]  ;
-; I2C_READ_verilog:inst2|timer_cnt[1]             ; Merged with I2C_READ_verilog:inst2|scl_cnt[1]  ;
-; Total Number of Removed Registers = 39          ;                                                ;
-+-------------------------------------------------+------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                        ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+; Register name                                                         ; Reason for Removal                                                                ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+; leds:inst1|saida[2]                                                   ; Stuck at GND due to stuck port data_in                                            ;
+; leds:inst1|saida[3]                                                   ; Stuck at VCC due to stuck port data_in                                            ;
+; I2C_READ_verilog:inst2|addr_reg[1..3,5,6]                             ; Stuck at GND due to stuck port data_in                                            ;
+; leds:inst1|saida[1]                                                   ; Merged with leds:inst1|saida[4]                                                   ;
+; I2C_READ_verilog:inst2|addr_reg[4,7]                                  ; Merged with I2C_READ_verilog:inst2|addr_reg[0]                                    ;
+; leds:inst1|saida[4]                                                   ; Stuck at VCC due to stuck port data_in                                            ;
+; I2C_READ_verilog:inst2|cnt.100                                        ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~2                       ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~3                       ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~4                       ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~5                       ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|prox_estado~6                       ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~2                            ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~3                            ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~4                            ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~5                            ; Lost fanout                                                                       ;
+; Mp3:inst4|Over_The_Rainbow:contro|estado~6                            ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~2                             ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~3                             ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~4                             ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~5                             ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~6                             ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|prox_estado~7                             ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|estado~2                                  ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|estado~3                                  ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|estado~4                                  ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|estado~5                                  ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|estado~6                                  ; Lost fanout                                                                       ;
+; Mp3:inst4|Fur_Elise:control|estado~7                                  ; Lost fanout                                                                       ;
+; I2C_READ_verilog:inst2|estado~14                                      ; Lost fanout                                                                       ;
+; I2C_READ_verilog:inst2|cnt~4                                          ; Lost fanout                                                                       ;
+; I2C_READ_verilog:inst2|cnt~5                                          ; Lost fanout                                                                       ;
+; driver_monitor:inst8|pixel_generator:pixel_generator_inst|data[2]     ; Merged with driver_monitor:inst8|pixel_generator:pixel_generator_inst|data[1]     ;
+; driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[2] ; Merged with driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[1] ;
+; I2C_READ_verilog:inst2|timer_cnt[0]                                   ; Merged with I2C_READ_verilog:inst2|scl_cnt[0]                                     ;
+; I2C_READ_verilog:inst2|timer_cnt[1]                                   ; Merged with I2C_READ_verilog:inst2|scl_cnt[1]                                     ;
+; Total Number of Removed Registers = 41                                ;                                                                                   ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -577,12 +546,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 365   ;
+; Total registers                              ; 363   ;
 ; Number of registers using Synchronous Clear  ; 119   ;
 ; Number of registers using Synchronous Load   ; 28    ;
 ; Number of registers using Asynchronous Clear ; 81    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 44    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -611,7 +580,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|cnt1[9]                                               ;
 ; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|data_cnt[5]                                           ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |top_entity|I2C_READ_verilog:inst2|data_cnt[2]                                    ;
-; 124:1              ; 3 bits    ; 246 LEs       ; 246 LEs              ; 0 LEs                  ; Yes        ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[0] ;
+; 147:1              ; 3 bits    ; 294 LEs       ; 12 LEs               ; 282 LEs                ; Yes        ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[0] ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 50:1               ; 3 bits    ; 99 LEs        ; 99 LEs               ; 0 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
 
@@ -639,107 +611,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; vresolution    ; 0111100000 ; Unsigned Binary                                              ;
 +----------------+------------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+-----------------------------------------------------------+
-; Parameter Name                                 ; Value        ; Type                                                      ;
-+------------------------------------------------+--------------+-----------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                                ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                              ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                              ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                            ;
-; LPM_WIDTHA                                     ; 11           ; Untyped                                                   ;
-; LPM_WIDTHB                                     ; 11           ; Untyped                                                   ;
-; LPM_WIDTHP                                     ; 22           ; Untyped                                                   ;
-; LPM_WIDTHR                                     ; 22           ; Untyped                                                   ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                                                   ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                                   ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                                                   ;
-; LATENCY                                        ; 0            ; Untyped                                                   ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                                   ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                                   ;
-; USE_EAB                                        ; OFF          ; Untyped                                                   ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                                   ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                                   ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                                   ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                                       ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                                   ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                                   ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                                   ;
-; CBXI_PARAMETER                                 ; mult_p5t     ; Untyped                                                   ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                                   ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                                   ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                                   ;
-+------------------------------------------------+--------------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult1 ;
-+------------------------------------------------+--------------+-----------------------------------------------------------+
-; Parameter Name                                 ; Value        ; Type                                                      ;
-+------------------------------------------------+--------------+-----------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                                ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                              ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                              ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                            ;
-; LPM_WIDTHA                                     ; 11           ; Untyped                                                   ;
-; LPM_WIDTHB                                     ; 11           ; Untyped                                                   ;
-; LPM_WIDTHP                                     ; 22           ; Untyped                                                   ;
-; LPM_WIDTHR                                     ; 22           ; Untyped                                                   ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                                                   ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                                   ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                                                   ;
-; LATENCY                                        ; 0            ; Untyped                                                   ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                                   ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                                                   ;
-; USE_EAB                                        ; OFF          ; Untyped                                                   ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                                   ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                                   ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                                   ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                                       ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                                   ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                                   ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                                   ;
-; CBXI_PARAMETER                                 ; mult_p5t     ; Untyped                                                   ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                                   ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                                   ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                                   ;
-+------------------------------------------------+--------------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                                                                   ;
-+---------------------------------------+--------------------------------------------------------------------------+
-; Name                                  ; Value                                                                    ;
-+---------------------------------------+--------------------------------------------------------------------------+
-; Number of entity instances            ; 2                                                                        ;
-; Entity Instance                       ; driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 11                                                                       ;
-;     -- LPM_WIDTHB                     ; 11                                                                       ;
-;     -- LPM_WIDTHP                     ; 22                                                                       ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                   ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                       ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                       ;
-;     -- USE_EAB                        ; OFF                                                                      ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                     ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                       ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                       ;
-; Entity Instance                       ; driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult1 ;
-;     -- LPM_WIDTHA                     ; 11                                                                       ;
-;     -- LPM_WIDTHB                     ; 11                                                                       ;
-;     -- LPM_WIDTHP                     ; 22                                                                       ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                   ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                       ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                       ;
-;     -- USE_EAB                        ; OFF                                                                      ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                     ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                       ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                       ;
-+---------------------------------------+--------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -775,30 +646,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 28                          ;
-; cycloneiii_ff         ; 365                         ;
+; cycloneiii_ff         ; 363                         ;
 ;     CLR               ; 77                          ;
-;     ENA               ; 28                          ;
+;     ENA               ; 25                          ;
 ;     ENA CLR           ; 4                           ;
 ;     ENA SCLR          ; 15                          ;
 ;     SCLR              ; 104                         ;
 ;     SLD               ; 28                          ;
-;     plain             ; 109                         ;
+;     plain             ; 110                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 861                         ;
-;     arith             ; 197                         ;
-;         2 data inputs ; 161                         ;
-;         3 data inputs ; 36                          ;
-;     normal            ; 664                         ;
-;         0 data inputs ; 5                           ;
+; cycloneiii_lcell_comb ; 860                         ;
+;     arith             ; 156                         ;
+;         2 data inputs ; 141                         ;
+;         3 data inputs ; 15                          ;
+;     normal            ; 704                         ;
+;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 20                          ;
-;         2 data inputs ; 84                          ;
-;         3 data inputs ; 113                         ;
-;         4 data inputs ; 442                         ;
-; cycloneiii_mac_mult   ; 2                           ;
-; cycloneiii_mac_out    ; 2                           ;
+;         2 data inputs ; 75                          ;
+;         3 data inputs ; 126                         ;
+;         4 data inputs ; 481                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 4.14                        ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 5.63                        ;
 +-----------------------+-----------------------------+
 
 
@@ -807,7 +676,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -817,7 +686,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 21 22:26:38 2023
+    Info: Processing started: Thu Sep 21 23:24:17 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file leds.v
@@ -847,7 +716,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file ir_veri
     Info (12023): Found entity 1: ir_verilog File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file top_entity.bdf
     Info (12023): Found entity 1: top_entity
-Warning (10275): Verilog HDL Module Instantiation warning at driver_monitor.v(36): ignored dangling comma in List of Port Connections File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file driver_monitor.v
     Info (12023): Found entity 1: driver_monitor File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file horizontal_sync.v
@@ -904,9 +772,9 @@ Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_coma
 Info (12128): Elaborating entity "driver_monitor" for hierarchy "driver_monitor:inst8"
 Info (12128): Elaborating entity "horizontal_sync" for hierarchy "driver_monitor:inst8|horizontal_sync:hsync_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 16
 Info (12128): Elaborating entity "vertical_sync" for hierarchy "driver_monitor:inst8|vertical_sync:vsync_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 25
-Info (12128): Elaborating entity "pixel_generator" for hierarchy "driver_monitor:inst8|pixel_generator:pixel_generator_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 36
-Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(68): object "h_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 68
-Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(69): object "v_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 69
+Info (12128): Elaborating entity "pixel_generator" for hierarchy "driver_monitor:inst8|pixel_generator:pixel_generator_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 38
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(72): object "h_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 72
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(73): object "v_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 73
 Info (12128): Elaborating entity "SEG_D_verilog" for hierarchy "SEG_D_verilog:inst3"
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(69): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 69
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(70): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 70
@@ -921,22 +789,6 @@ Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(78): truncate
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(79): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 79
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(80): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 80
 Info (12128): Elaborating entity "leds" for hierarchy "leds:inst1"
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "driver_monitor:inst8|pixel_generator:pixel_generator_inst|Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "driver_monitor:inst8|pixel_generator:pixel_generator_inst|Mult1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
-Info (12130): Elaborated megafunction instantiation "driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
-Info (12133): Instantiated megafunction "driver_monitor:inst8|pixel_generator:pixel_generator_inst|lpm_mult:Mult0" with the following parameter: File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 231
-    Info (12134): Parameter "LPM_WIDTHA" = "11"
-    Info (12134): Parameter "LPM_WIDTHB" = "11"
-    Info (12134): Parameter "LPM_WIDTHP" = "22"
-    Info (12134): Parameter "LPM_WIDTHR" = "22"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_p5t.tdf
-    Info (12023): Found entity 1: mult_p5t File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/db/mult_p5t.tdf Line: 29
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/I2C_READ_verilog.v Line: 11
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -949,17 +801,16 @@ Info (17049): 26 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 959 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 953 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 23 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 927 logic cells
-    Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 374 megabytes
-    Info: Processing ended: Thu Sep 21 22:26:44 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 925 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 372 megabytes
+    Info: Processing ended: Thu Sep 21 23:24:25 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+
