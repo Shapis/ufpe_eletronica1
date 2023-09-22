@@ -1,5 +1,5 @@
 Flow report for VGA
-Fri Sep 22 03:23:50 2023
+Fri Sep 22 13:42:23 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Sep 22 03:23:48 2023       ;
+; Flow Status                        ; Successful - Fri Sep 22 13:42:20 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; top_entity                                  ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,727 / 6,272 ( 43 % )                      ;
-;     Total combinational functions  ; 2,689 / 6,272 ( 43 % )                      ;
+; Total logic elements               ; 2,783 / 6,272 ( 44 % )                      ;
+;     Total combinational functions  ; 2,748 / 6,272 ( 44 % )                      ;
 ;     Dedicated logic registers      ; 363 / 6,272 ( 6 % )                         ;
 ; Total registers                    ; 363                                         ;
 ; Total pins                         ; 28 / 92 ( 30 % )                            ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/22/2023 03:23:03 ;
+; Start date & time ; 09/22/2023 13:41:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198516028607331.169536378318878        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 5288368003951.169540089614578          ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --             ;
@@ -100,24 +100,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 408 MB              ; 00:00:36                           ;
-; Fitter               ; 00:00:17     ; 1.2                     ; 1977 MB             ; 00:00:32                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 356 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.4                     ; 628 MB              ; 00:00:02                           ;
-; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:11                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 399 MB              ; 00:00:32                           ;
+; Fitter               ; 00:00:20     ; 1.1                     ; 985 MB              ; 00:00:29                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 363 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 486 MB              ; 00:00:03                           ;
+; Total                ; 00:00:44     ; --                      ; --                  ; 00:01:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; archlappy        ; Arch Linux ; Arch Linux ; x86_64         ;
-; Fitter               ; archlappy        ; Arch Linux ; Arch Linux ; x86_64         ;
-; Assembler            ; archlappy        ; Arch Linux ; Arch Linux ; x86_64         ;
-; Timing Analyzer      ; archlappy        ; Arch Linux ; Arch Linux ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++----------------------+----------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname     ; OS Name        ; OS Version ; Processor type ;
++----------------------+----------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; pedro-Aspire-A514-54 ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
+; Fitter               ; pedro-Aspire-A514-54 ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
+; Assembler            ; pedro-Aspire-A514-54 ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
+; Timing Analyzer      ; pedro-Aspire-A514-54 ; Ubuntu 22.04.3 ; 22         ; x86_64         ;
++----------------------+----------------------+----------------+------------+----------------+
 
 
 ------------

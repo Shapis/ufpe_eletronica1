@@ -6,7 +6,6 @@ module Mp3(
 	output reg play_pause,
 	output reg stop,
 	output reg musica_atual,
-	
 	//output reg luz,
 	
 	input clock,
