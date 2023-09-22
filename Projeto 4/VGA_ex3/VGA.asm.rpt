@@ -1,5 +1,5 @@
 Assembler report for VGA
-Fri Sep 22 02:14:34 2023
+Fri Sep 22 02:31:01 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 22 02:14:34 2023 ;
+; Assembler Status      ; Successful - Fri Sep 22 02:31:01 2023 ;
 ; Revision Name         ; VGA                                   ;
 ; Top-level Entity Name ; top_entity                            ;
 ; Family                ; Cyclone IV E                          ;
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option         ; Setting          ;
 +----------------+------------------+
 ; JTAG usercode  ; 0xFFFFFFFF       ;
-; Checksum       ; 0x001D1BCE       ;
+; Checksum       ; 0x0024CD23       ;
 +----------------+------------------+
 
 
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option             ; Setting      ;
 +--------------------+--------------+
 ; JTAG usercode      ; 0x00000000   ;
-; Checksum           ; 0x06541FDA   ;
+; Checksum           ; 0x0646F2D6   ;
 ; Compression Ratio  ; 2            ;
 +--------------------+--------------+
 
@@ -91,14 +91,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 22 02:14:33 2023
+    Info: Processing started: Fri Sep 22 02:31:01 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off VGA -c VGA
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 353 megabytes
-    Info: Processing ended: Fri Sep 22 02:14:34 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 355 megabytes
+    Info: Processing ended: Fri Sep 22 02:31:01 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -3,35 +3,39 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'driver_monitor:inst8|pixel_generator:pixel_generator_inst|vga_clk'
-Slack : -15.539
-TNS   : -34.125
+Slack : -16.057
+TNS   : -32.873
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -7.899
-TNS   : -1020.827
+Slack : -8.387
+TNS   : -1029.506
 
 Type  : Slow 1200mV 85C Model Setup 'driver_monitor:inst8|vertical_sync:vsync_inst|vga_clk'
-Slack : -3.778
-TNS   : -32.990
+Slack : -3.746
+TNS   : -32.855
 
 Type  : Slow 1200mV 85C Model Setup 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
-Slack : -3.183
-TNS   : -22.620
+Slack : -2.790
+TNS   : -19.901
 
 Type  : Slow 1200mV 85C Model Setup 'Mp3:inst4|skip'
-Slack : -1.860
-TNS   : -1.860
+Slack : -1.547
+TNS   : -1.547
 
 Type  : Slow 1200mV 85C Model Setup 'Mp3:inst4|estado_atual'
-Slack : -1.388
-TNS   : -3.789
+Slack : -1.521
+TNS   : -4.836
 
-Type  : Slow 1200mV 85C Model Hold 'Mp3:inst4|estado_atual'
-Slack : 0.312
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'Mp3:inst4|skip'
+Slack : -0.278
+TNS   : -0.278
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.452
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Mp3:inst4|estado_atual'
+Slack : 0.480
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'driver_monitor:inst8|vertical_sync:vsync_inst|vga_clk'
@@ -39,15 +43,11 @@ Slack : 0.786
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
-Slack : 0.790
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Mp3:inst4|skip'
-Slack : 0.962
+Slack : 0.792
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'driver_monitor:inst8|pixel_generator:pixel_generator_inst|vga_clk'
-Slack : 1.658
+Slack : 1.624
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
@@ -71,55 +71,55 @@ Slack : -1.487
 TNS   : -1.487
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Mp3:inst4|estado_atual'
-Slack : 0.363
+Slack : 0.482
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'driver_monitor:inst8|pixel_generator:pixel_generator_inst|vga_clk'
-Slack : -14.545
-TNS   : -31.801
+Slack : -15.142
+TNS   : -30.820
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -7.280
-TNS   : -932.649
+Slack : -7.686
+TNS   : -936.429
 
 Type  : Slow 1200mV 0C Model Setup 'driver_monitor:inst8|vertical_sync:vsync_inst|vga_clk'
-Slack : -3.462
-TNS   : -30.004
+Slack : -3.411
+TNS   : -29.673
 
 Type  : Slow 1200mV 0C Model Setup 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
-Slack : -2.896
-TNS   : -20.182
-
-Type  : Slow 1200mV 0C Model Setup 'Mp3:inst4|skip'
-Slack : -1.630
-TNS   : -1.630
+Slack : -2.544
+TNS   : -17.701
 
 Type  : Slow 1200mV 0C Model Setup 'Mp3:inst4|estado_atual'
-Slack : -1.403
-TNS   : -3.479
+Slack : -1.483
+TNS   : -4.458
 
-Type  : Slow 1200mV 0C Model Hold 'Mp3:inst4|estado_atual'
-Slack : 0.315
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Mp3:inst4|skip'
+Slack : -1.323
+TNS   : -1.323
+
+Type  : Slow 1200mV 0C Model Hold 'Mp3:inst4|skip'
+Slack : -0.253
+TNS   : -0.253
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.400
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Mp3:inst4|estado_atual'
+Slack : 0.568
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'driver_monitor:inst8|vertical_sync:vsync_inst|vga_clk'
-Slack : 0.729
+Slack : 0.730
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
-Slack : 0.735
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Mp3:inst4|skip'
-Slack : 0.938
+Slack : 0.734
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'driver_monitor:inst8|pixel_generator:pixel_generator_inst|vga_clk'
-Slack : 1.567
+Slack : 1.473
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
@@ -140,46 +140,46 @@ TNS   : -5.948
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Mp3:inst4|skip'
 Slack : -1.487
-TNS   : -1.487
+TNS   : -1.588
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Mp3:inst4|estado_atual'
-Slack : 0.197
+Slack : 0.391
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'driver_monitor:inst8|pixel_generator:pixel_generator_inst|vga_clk'
-Slack : -6.104
-TNS   : -12.709
+Slack : -6.526
+TNS   : -12.261
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -2.887
-TNS   : -271.750
+Slack : -3.000
+TNS   : -271.920
 
 Type  : Fast 1200mV 0C Model Setup 'driver_monitor:inst8|vertical_sync:vsync_inst|vga_clk'
-Slack : -1.057
-TNS   : -8.711
+Slack : -1.050
+TNS   : -8.674
 
 Type  : Fast 1200mV 0C Model Setup 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
-Slack : -0.820
-TNS   : -4.124
-
-Type  : Fast 1200mV 0C Model Setup 'Mp3:inst4|skip'
-Slack : -0.262
-TNS   : -0.262
+Slack : -0.646
+TNS   : -2.604
 
 Type  : Fast 1200mV 0C Model Setup 'Mp3:inst4|estado_atual'
-Slack : -0.148
-TNS   : -0.148
+Slack : -0.245
+TNS   : -0.249
 
-Type  : Fast 1200mV 0C Model Hold 'Mp3:inst4|estado_atual'
-Slack : 0.161
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.186
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'Mp3:inst4|skip'
+Slack : -0.168
+TNS   : -0.168
 
 Type  : Fast 1200mV 0C Model Hold 'Mp3:inst4|skip'
-Slack : 0.302
+Slack : -0.188
+TNS   : -0.188
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Mp3:inst4|estado_atual'
+Slack : 0.265
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'driver_monitor:inst8|vertical_sync:vsync_inst|vga_clk'
@@ -187,16 +187,16 @@ Slack : 0.316
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
-Slack : 0.318
+Slack : 0.321
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'driver_monitor:inst8|pixel_generator:pixel_generator_inst|vga_clk'
-Slack : 0.649
+Slack : 0.664
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -441.138
+TNS   : -441.112
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driver_monitor:inst8|horizontal_sync:hsync_inst|vga_clk'
 Slack : -1.000
@@ -215,7 +215,7 @@ Slack : -1.000
 TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Mp3:inst4|estado_atual'
-Slack : 0.365
+Slack : 0.374
 TNS   : 0.000
 
 ------------------------------------------------------------

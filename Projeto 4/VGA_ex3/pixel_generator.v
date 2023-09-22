@@ -186,6 +186,7 @@ module pixel_generator(
 		 localparam temp_pos_offset = 20;
 		 localparam pos_alunos = 170;
 		 localparam pos_ed_x = 420;
+		 localparam pos_autor_y = 300;
 		 
 		 
 		 
@@ -219,6 +220,25 @@ module pixel_generator(
 			draw_L(pos_alunos+132,150, 2, RED);
 			draw_A(pos_alunos+154,150, 2, RED);
 			
+			// Henrique
+		
+			draw_H(pos_alunos,180, 2, RED);
+			draw_E(pos_alunos+22,180, 2, RED);
+			draw_N(pos_alunos+44,180, 2, RED);
+			draw_R(pos_alunos+66,180, 2, RED);
+			draw_I(pos_alunos+88,180, 2, RED);
+			draw_Q(pos_alunos+110,180, 2, RED);
+			draw_U(pos_alunos+132,180, 2, RED);
+			draw_E(pos_alunos+154,180, 2, RED);
+			
+			// Pedro
+		
+			draw_P(pos_alunos,210, 2, RED);
+			draw_E(pos_alunos+22,210, 2, RED);
+			draw_D(pos_alunos+44,210, 2, RED);
+			draw_R(pos_alunos+66,210, 2, RED);
+			draw_O(pos_alunos+88,210, 2, RED);
+			
 		// Eletronica
 		
 			draw_E(pos_ed_x+0,90, 2, RED);
@@ -245,13 +265,56 @@ module pixel_generator(
 		 
 		 
 		 if (musica_atual == 1'b0)	begin	
-			draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
-			draw_M(pos_m, pos_m, 2, RED);
+			draw_B(pos_alunos,pos_autor_y, 2, RED);
+			draw_E(pos_alunos+22,pos_autor_y, 2, RED);
+			draw_E(pos_alunos+44,pos_autor_y, 2, RED);
+			draw_T(pos_alunos+66,pos_autor_y, 2, RED);
+			draw_H(pos_alunos+88,pos_autor_y, 2, RED);
+			draw_O(pos_alunos+110,pos_autor_y, 2, RED);
+			draw_V(pos_alunos+132,pos_autor_y, 2, RED);
+			draw_E(pos_alunos+154,pos_autor_y, 2, RED);
+			draw_N(pos_alunos+176,pos_autor_y, 2, RED);
+			
+			draw_F(pos_alunos,pos_autor_y+30, 2, RED);
+			draw_U(pos_alunos+22,pos_autor_y+30, 2, RED);
+			draw_R(pos_alunos+44,pos_autor_y+30, 2, RED);
+
+			draw_E(pos_alunos+88,pos_autor_y+30, 2, RED);
+			draw_L(pos_alunos+110,pos_autor_y+30, 2, RED);
+			draw_I(pos_alunos+132,pos_autor_y+30, 2, RED);
+			draw_S(pos_alunos+154,pos_autor_y+30, 2, RED);
+			draw_E(pos_alunos+176,pos_autor_y+30, 2, RED);
 		 end
 		 
 		 if (musica_atual == 1'b1)	begin	
-			draw_E(pos_m+2, pos_m+2, 2, BLACK);//sombra
-			draw_E(pos_m, pos_m, 2, RED);
+			draw_Y(pos_alunos,pos_autor_y, 2, RED);
+			draw_I(pos_alunos+22,pos_autor_y, 2, RED);
+			draw_P(pos_alunos+44,pos_autor_y, 2, RED);
+			
+			draw_H(pos_alunos+88,pos_autor_y, 2, RED);
+			draw_A(pos_alunos+110,pos_autor_y, 2, RED);
+			draw_R(pos_alunos+132,pos_autor_y, 2, RED);
+			draw_B(pos_alunos+154,pos_autor_y, 2, RED);
+			draw_U(pos_alunos+176,pos_autor_y, 2, RED);
+			draw_R(pos_alunos+198,pos_autor_y, 2, RED);
+			draw_G(pos_alunos+220,pos_autor_y, 2, RED);
+			
+			draw_O(pos_alunos,pos_autor_y+30, 2, RED);
+			draw_V(pos_alunos+22,pos_autor_y+30, 2, RED);
+			draw_E(pos_alunos+44,pos_autor_y+30, 2, RED);
+			draw_R(pos_alunos+66,pos_autor_y+30, 2, RED);
+
+			draw_T(pos_alunos+110,pos_autor_y+30, 2, RED);
+			draw_H(pos_alunos+132,pos_autor_y+30, 2, RED);
+			draw_E(pos_alunos+154,pos_autor_y+30, 2, RED);
+
+			draw_R(pos_alunos+198,pos_autor_y+30, 2, RED);
+			draw_A(pos_alunos+220,pos_autor_y+30, 2, RED);
+			draw_I(pos_alunos+242,pos_autor_y+30, 2, RED);
+			draw_N(pos_alunos+264,pos_autor_y+30, 2, RED);
+			draw_B(pos_alunos+286,pos_autor_y+30, 2, RED);
+			draw_O(pos_alunos+308,pos_autor_y+30, 2, RED);
+			draw_W(pos_alunos+330,pos_autor_y+30, 2, RED);
 		 end
 			 
 		 
