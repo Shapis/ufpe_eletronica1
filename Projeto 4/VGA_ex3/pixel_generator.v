@@ -54,8 +54,14 @@ module pixel_generator(
 	key,
 	temperatura,
 	dig_temp,
+	autor,
+	musica,
+	musica_atual,
    vga_r, vga_g, vga_b   
 );
+	input musica_atual;
+	input [15:0] autor;
+	input [15:0] musica;
 	input [7:0] temperatura;
 	input [4:1] dig_temp;
 	input clock;     	//50MHz clock de entrada do sistema
@@ -72,6 +78,9 @@ module pixel_generator(
 	reg [2:0] h_dat;     //registrador para posição horizontal
 	reg [2:0] v_dat;     //registrador para posição vertical
 	reg [2:0] dat_draw;  //registrador para ...
+	
+	reg [7:0] current_char;    // Register to hold the current character
+	reg [3:0] char_index;      // Register to track the character index
 
 	wire  dat_act;			//condução para ativação dos pixels
 	reg   vga_clk; 	   //clock do VGA
@@ -162,6 +171,9 @@ module pixel_generator(
 			h_dat <= BLACK;   	//Preto
 	end
 	
+		 integer j;
+
+	
 	//Lógica para gerar a saída dat_draw
 	always @(posedge vga_clk)
 	begin
@@ -169,29 +181,211 @@ module pixel_generator(
 		 localparam pos_m = 300;
 		 localparam pos_a = 300;
 		 
+		 localparam temp_pos_x = 500;
+		 localparam temp_pos_y = 400;
+		 localparam temp_pos_offset = 20;
+		 localparam pos_alunos = 170;
+		 localparam pos_ed_x = 420;
+		 
+		 
+		 
 	    draw_bg(WHITE);
 		 
+		 // Alunos
 		 
-		 		
-		 draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
-		 draw_M(pos_m, pos_m, 2, RED);
+			draw_A(pos_alunos,90, 2, RED);
+			draw_L(pos_alunos+22,90, 2, RED);
+			draw_U(pos_alunos+44,90, 2, RED);
+			draw_N(pos_alunos+66,90, 2, RED);
+			draw_O(pos_alunos+88,90, 2, RED);
+			draw_S(pos_alunos+110,90, 2, RED);
+			
+		 // Bruno
 		 
-		 case(temperatura) 			
-			7'b1000000 : draw_0(pos_m+20, pos_m+20, 2, BLACK); //0  
-			7'b1111001 : draw_1(pos_m+20, pos_m+20, 2, BLACK); //1  
-			7'b0100100 : draw_2(pos_m+20, pos_m+20, 2, BLACK); //2  
-			7'b0110000 : draw_3(pos_m+20, pos_m+20, 2, BLACK); //3  
-			7'b0011001 : draw_4(pos_m+20, pos_m+20, 2, BLACK); //4  
-			7'b0010010 : draw_5(pos_m+20, pos_m+20, 2, BLACK); //5  
-			7'b0000010 : draw_6(pos_m+20, pos_m+20, 2, BLACK); //6  
-			7'b1111000 : draw_7(pos_m+20, pos_m+20, 2, BLACK); //7  
-			7'b0000000 : draw_8(pos_m+20, pos_m+20, 2, BLACK); //8  
-			7'b0010000 : draw_9(pos_m+20, pos_m+20, 2, BLACK); //9   
-			default : draw_3(pos_m+20, pos_m+20, 2, BLACK);//0          
-		endcase 
-		 
-	
+			draw_B(pos_alunos,120, 2, RED);
+			draw_R(pos_alunos+22,120, 2, RED);
+			draw_U(pos_alunos+44,120, 2, RED);
+			draw_N(pos_alunos+66,120, 2, RED);
+			draw_O(pos_alunos+88,120, 2, RED);
+			
+		// Gabriela
 		
+			draw_G(pos_alunos,150, 2, RED);
+			draw_A(pos_alunos+22,150, 2, RED);
+			draw_B(pos_alunos+44,150, 2, RED);
+			draw_R(pos_alunos+66,150, 2, RED);
+			draw_I(pos_alunos+88,150, 2, RED);
+			draw_E(pos_alunos+110,150, 2, RED);
+			draw_L(pos_alunos+132,150, 2, RED);
+			draw_A(pos_alunos+154,150, 2, RED);
+			
+		// Eletronica
+		
+			draw_E(pos_ed_x+0,90, 2, RED);
+			draw_L(pos_ed_x+22,90, 2, RED);
+			draw_E(pos_ed_x+44,90, 2, RED);
+			draw_T(pos_ed_x+66,90, 2, RED);
+			draw_R(pos_ed_x+88,90, 2, RED);
+			draw_O(pos_ed_x+110,90, 2, RED);
+			draw_N(pos_ed_x+132,90, 2, RED);
+			draw_I(pos_ed_x+154,90, 2, RED);
+			draw_C(pos_ed_x+176,90, 2, RED);
+			draw_A(pos_ed_x+198,90, 2, RED);
+			
+			// Digital
+		
+			draw_D(pos_ed_x+22,120, 2, RED);
+			draw_I(pos_ed_x+44,120, 2, RED);
+			draw_G(pos_ed_x+66,120, 2, RED);
+			draw_I(pos_ed_x+88,120, 2, RED);
+			draw_T(pos_ed_x+110,120, 2, RED);
+			draw_A(pos_ed_x+132,120, 2, RED);
+			draw_L(pos_ed_x+154,120, 2, RED);
+			
+		 
+		 
+		 if (musica_atual == 1'b0)	begin	
+			draw_M(pos_m+2, pos_m+2, 2, BLACK);//sombra
+			draw_M(pos_m, pos_m, 2, RED);
+		 end
+		 
+		 if (musica_atual == 1'b1)	begin	
+			draw_E(pos_m+2, pos_m+2, 2, BLACK);//sombra
+			draw_E(pos_m, pos_m, 2, RED);
+		 end
+			 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 case(dig_temp)
+		 4'b0111: begin
+				 case(temperatura) 			
+					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //0  
+					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //1  
+					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //2  
+					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //3  
+					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //4  
+					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //5  
+					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //6  
+					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //7  
+					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //8  
+					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK); //9   
+					default : draw_3(temp_pos_x+temp_pos_offset*1, temp_pos_y, 2, BLACK);//0          
+				endcase 
+			end
+			4'b1011: begin
+				 case(temperatura) 			
+					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //0  
+					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //1  
+					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //2  
+					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //3  
+					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //4  
+					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //5  
+					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //6  
+					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //7  
+					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //8  
+					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK); //9   
+					default : draw_3(temp_pos_x+temp_pos_offset*2, temp_pos_y, 2, BLACK);//0          
+				endcase 
+			end
+			4'b1101: begin
+				 case(temperatura) 			
+					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //0  
+					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //1  
+					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //2  
+					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //3  
+					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //4  
+					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //5  
+					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //6  
+					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //7  
+					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //8  
+					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK); //9   
+					default : draw_3(temp_pos_x+temp_pos_offset*3, temp_pos_y, 2, BLACK);//0          
+				endcase 
+			end
+			4'b1110: begin
+				 case(temperatura) 			
+					7'b1000000 : draw_0(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //0  
+					7'b1111001 : draw_1(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //1  
+					7'b0100100 : draw_2(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //2  
+					7'b0110000 : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //3  
+					7'b0011001 : draw_4(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //4  
+					7'b0010010 : draw_5(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //5  
+					7'b0000010 : draw_6(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //6  
+					7'b1111000 : draw_7(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //7  
+					7'b0000000 : draw_8(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //8  
+					7'b0010000 : draw_9(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK); //9   
+					default : draw_3(temp_pos_x+temp_pos_offset*4, temp_pos_y, 2, BLACK);//0          
+				endcase 
+			end
+		 endcase
 	end
 	
 	
@@ -291,19 +485,11 @@ task draw_C(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
 					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
 				end
 				
-				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
-		
-				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
-			
-				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);		
-				draw_sqr(POSX+4*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+4*THICK, POSY+8*THICK, THICK, COLOR);	
+				for(i=0; i<8; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+0*THICK, THICK, COLOR);
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
 
-
-			
     end
 endtask
 
@@ -339,18 +525,13 @@ task draw_E(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
 					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
 				end
 				
-				draw_sqr(POSX+1*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+1*THICK, POSY+4*THICK, THICK, COLOR);
-				draw_sqr(POSX+1*THICK, POSY+8*THICK, THICK, COLOR);		
-		
-				draw_sqr(POSX+2*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+2*THICK, POSY+4*THICK, THICK, COLOR);
-				draw_sqr(POSX+2*THICK, POSY+8*THICK, THICK, COLOR);		
+				for(i=0; i<8; i=i+1) begin
+				draw_sqr(POSX+i*THICK, POSY+0*THICK, THICK, COLOR);
+				draw_sqr(POSX+i*THICK, POSY+4*THICK, THICK, COLOR);
+				draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
+				end
+				
 			
-				draw_sqr(POSX+3*THICK, POSY+0*THICK, THICK, COLOR);
-				draw_sqr(POSX+3*THICK, POSY+4*THICK, THICK, COLOR);
-				draw_sqr(POSX+3*THICK, POSY+8*THICK, THICK, COLOR);		
-
 
 			
     end
@@ -437,7 +618,7 @@ task draw_I(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
     begin
       	integer i;
 				for(i=0; i<9; i=i+1) begin
-					draw_sqr(POSX+3, POSY+i*THICK, THICK, COLOR);
+					draw_sqr(POSX+3*THICK, POSY+i*THICK, THICK, COLOR);
 				end
 	
     end
@@ -484,8 +665,8 @@ task draw_L(input [10:1] POSX, POSY, THICK, input [3:1] COLOR);
 					draw_sqr(POSX, POSY+i*THICK, THICK, COLOR);
 				end
 				
-				for(i=0; i<5; i=i+1) begin
-					draw_sqr(POSX+i, POSY+8*THICK, THICK, COLOR);
+				for(i=0; i<8; i=i+1) begin
+					draw_sqr(POSX+i*THICK, POSY+8*THICK, THICK, COLOR);
 				end
     end
 endtask

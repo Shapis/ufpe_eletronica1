@@ -5,6 +5,7 @@ module Mp3(
 	
 	output reg play_pause,
 	output reg stop,
+	output reg musica_atual,
 	
 	//output reg luz,
 	
@@ -197,6 +198,7 @@ module Mp3(
 				t5 <= musica1t5;
 				musicas <= musica1_1;
 				autor <= musica1_2;
+				musica_atual <= s0;
 				//luz <= 1'b1;
 			end
 			s1: begin
@@ -208,6 +210,7 @@ module Mp3(
 				musicas <= musica2_1;
 				autor <= musica2_2;
 				//luz <= 1'b0;
+				musica_atual <= s1;
 			end
 		endcase
 	end

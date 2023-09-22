@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Thu Sep 21 23:24:25 2023
+Fri Sep 22 02:14:19 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -61,13 +61,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 21 23:24:25 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 22 02:14:19 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; top_entity                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 924                                         ;
-;     Total combinational functions  ; 855                                         ;
+; Total logic elements               ; 1,986                                       ;
+;     Total combinational functions  ; 1,917                                       ;
 ;     Dedicated logic registers      ; 363                                         ;
 ; Total registers                    ; 363                                         ;
 ; Total pins                         ; 28                                          ;
@@ -208,16 +208,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 924         ;
+; Estimated Total logic elements              ; 1,986       ;
 ;                                             ;             ;
-; Total combinational functions               ; 855         ;
+; Total combinational functions               ; 1917        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 481         ;
-;     -- 3 input functions                    ; 141         ;
-;     -- <=2 input functions                  ; 233         ;
+;     -- 4 input functions                    ; 1325        ;
+;     -- 3 input functions                    ; 290         ;
+;     -- <=2 input functions                  ; 302         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 699         ;
+;     -- normal mode                          ; 1761        ;
 ;     -- arithmetic mode                      ; 156         ;
 ;                                             ;             ;
 ; Total registers                             ; 363         ;
@@ -230,8 +230,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 338         ;
-; Total fan-out                               ; 3871        ;
-; Average fan-out                             ; 3.04        ;
+; Total fan-out                               ; 7832        ;
+; Average fan-out                             ; 3.35        ;
 +---------------------------------------------+-------------+
 
 
@@ -240,18 +240,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
-; |top_entity                                  ; 855 (1)             ; 363 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |top_entity                                                           ; top_entity       ; work         ;
+; |top_entity                                  ; 1917 (1)            ; 363 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |top_entity                                                           ; top_entity       ; work         ;
 ;    |I2C_READ_verilog:inst2|                  ; 120 (120)           ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|I2C_READ_verilog:inst2                                    ; I2C_READ_verilog ; work         ;
 ;    |Mp3:inst4|                               ; 270 (70)            ; 197 (6)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4                                                 ; Mp3              ; work         ;
 ;       |Fur_Elise:control|                    ; 54 (54)             ; 84 (84)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Fur_Elise:control                               ; Fur_Elise        ; work         ;
 ;       |Over_The_Rainbow:contro|              ; 39 (39)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|Over_The_Rainbow:contro                         ; Over_The_Rainbow ; work         ;
 ;       |divisor_clock:div_clk|                ; 49 (49)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|divisor_clock:div_clk                           ; divisor_clock    ; work         ;
 ;       |temporizador:temp|                    ; 58 (58)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|Mp3:inst4|temporizador:temp                               ; temporizador     ; work         ;
-;    |SEG_D_verilog:inst3|                     ; 81 (81)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                       ; SEG_D_verilog    ; work         ;
-;    |driver_monitor:inst8|                    ; 287 (0)             ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8                                      ; driver_monitor   ; work         ;
-;       |horizontal_sync:hsync_inst|           ; 23 (23)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|horizontal_sync:hsync_inst           ; horizontal_sync  ; work         ;
-;       |pixel_generator:pixel_generator_inst| ; 240 (240)           ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst ; pixel_generator  ; work         ;
-;       |vertical_sync:vsync_inst|             ; 24 (24)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|vertical_sync:vsync_inst             ; vertical_sync    ; work         ;
+;    |SEG_D_verilog:inst3|                     ; 79 (79)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|SEG_D_verilog:inst3                                       ; SEG_D_verilog    ; work         ;
+;    |driver_monitor:inst8|                    ; 1351 (0)            ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8                                      ; driver_monitor   ; work         ;
+;       |horizontal_sync:hsync_inst|           ; 24 (24)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|horizontal_sync:hsync_inst           ; horizontal_sync  ; work         ;
+;       |pixel_generator:pixel_generator_inst| ; 1300 (1300)         ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst ; pixel_generator  ; work         ;
+;       |vertical_sync:vsync_inst|             ; 27 (27)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|driver_monitor:inst8|vertical_sync:vsync_inst             ; vertical_sync    ; work         ;
 ;    |ir_verilog:inst|                         ; 96 (96)             ; 58 (58)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_entity|ir_verilog:inst                                           ; ir_verilog       ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -572,18 +572,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[16]                                   ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[6]                                    ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[15]                                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_entity|ir_verilog:inst|comando[7]                                            ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |top_entity|ir_verilog:inst|cnt2[6]                                               ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|cnt1[9]                                               ;
-; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|data_cnt[5]                                           ;
-; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |top_entity|I2C_READ_verilog:inst2|data_cnt[2]                                    ;
-; 147:1              ; 3 bits    ; 294 LEs       ; 12 LEs               ; 282 LEs                ; Yes        ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[0] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[25]                                   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[2]                                    ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |top_entity|Mp3:inst4|temporizador:temp|cnt[9]                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_entity|ir_verilog:inst|comando[0]                                            ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |top_entity|ir_verilog:inst|cnt2[8]                                               ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|cnt1[1]                                               ;
+; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_entity|ir_verilog:inst|get_data[10]                                          ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; Yes        ; |top_entity|I2C_READ_verilog:inst2|data_cnt[0]                                    ;
+; 600:1              ; 3 bits    ; 1200 LEs      ; 42 LEs               ; 1158 LEs               ; Yes        ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw[0] ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
-; 50:1               ; 3 bits    ; 99 LEs        ; 99 LEs               ; 0 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
+; 935:1              ; 3 bits    ; 1869 LEs      ; 1758 LEs             ; 111 LEs                ; No         ; |top_entity|driver_monitor:inst8|pixel_generator:pixel_generator_inst|dat_draw    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
 
@@ -655,19 +661,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 28                          ;
 ;     plain             ; 110                         ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 860                         ;
+; cycloneiii_lcell_comb ; 1922                        ;
 ;     arith             ; 156                         ;
 ;         2 data inputs ; 141                         ;
 ;         3 data inputs ; 15                          ;
-;     normal            ; 704                         ;
+;     normal            ; 1766                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 20                          ;
-;         2 data inputs ; 75                          ;
-;         3 data inputs ; 126                         ;
-;         4 data inputs ; 481                         ;
+;         2 data inputs ; 144                         ;
+;         3 data inputs ; 275                         ;
+;         4 data inputs ; 1325                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.00                       ;
-; Average LUT depth     ; 5.63                        ;
+; Max LUT depth         ; 24.00                       ;
+; Average LUT depth     ; 13.56                       ;
 +-----------------------+-----------------------------+
 
 
@@ -676,7 +682,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -686,7 +692,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 21 23:24:17 2023
+    Info: Processing started: Fri Sep 22 02:13:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file leds.v
@@ -728,43 +734,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file VGA_int
     Info (12023): Found entity 1: VGA_interface File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA_interface.v Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file vga_interface_topo.bdf
     Info (12023): Found entity 1: vga_interface_topo
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(47): created implicit net for "musica1_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 47
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(48): created implicit net for "musica1_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(49): created implicit net for "musica2_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
-Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(50): created implicit net for "musica2_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(48): created implicit net for "musica1_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(49): created implicit net for "musica1_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(50): created implicit net for "musica2_1" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at Mp3.v(51): created implicit net for "musica2_2" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 51
 Info (12127): Elaborating entity "top_entity" for the top level hierarchy
 Info (12128): Elaborating entity "I2C_READ_verilog" for hierarchy "I2C_READ_verilog:inst2"
 Info (12128): Elaborating entity "Mp3" for hierarchy "Mp3:inst4"
-Warning (10230): Verilog HDL assignment warning at Mp3.v(47): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 47
 Warning (10230): Verilog HDL assignment warning at Mp3.v(48): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 48
 Warning (10230): Verilog HDL assignment warning at Mp3.v(49): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 49
 Warning (10230): Verilog HDL assignment warning at Mp3.v(50): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 50
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(193): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 193
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(194): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 194
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(195): variable "musica1t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 195
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(196): variable "musica1t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 196
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(197): variable "musica1t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 197
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(198): variable "musica1_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 198
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(199): variable "musica1_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 199
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(203): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 203
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(204): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 204
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(205): variable "musica2t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 205
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(206): variable "musica2t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 206
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(207): variable "musica2t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 207
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(208): variable "musica2_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 208
-Warning (10235): Verilog HDL Always Construct warning at Mp3.v(209): variable "musica2_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 209
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica2play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica2stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica1play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Warning (10240): Verilog HDL Always Construct warning at Mp3.v(189): inferring latch(es) for variable "musica1stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Info (10041): Inferred latch for "musica1stop" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Info (10041): Inferred latch for "musica1play" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Info (10041): Inferred latch for "musica2stop" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Info (10041): Inferred latch for "musica2play" at Mp3.v(189) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 189
-Info (12128): Elaborating entity "temporizador" for hierarchy "Mp3:inst4|temporizador:temp" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 56
-Info (12128): Elaborating entity "divisor_clock" for hierarchy "Mp3:inst4|divisor_clock:div_clk" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 61
-Info (12128): Elaborating entity "Fur_Elise" for hierarchy "Mp3:inst4|Fur_Elise:control" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 158
-Info (12128): Elaborating entity "Over_The_Rainbow" for hierarchy "Mp3:inst4|Over_The_Rainbow:contro" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 168
+Warning (10230): Verilog HDL assignment warning at Mp3.v(51): truncated value with size 128 to match size of target (1) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 51
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(194): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 194
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(195): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 195
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(196): variable "musica1t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 196
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(197): variable "musica1t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 197
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(198): variable "musica1t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 198
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(199): variable "musica1_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 199
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(200): variable "musica1_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 200
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(205): variable "play_pause" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 205
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(206): variable "stop" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 206
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(207): variable "musica2t2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 207
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(208): variable "musica2t3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 208
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(209): variable "musica2t5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 209
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(210): variable "musica2_1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 210
+Warning (10235): Verilog HDL Always Construct warning at Mp3.v(211): variable "musica2_2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 211
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica2play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica2stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica1play", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Warning (10240): Verilog HDL Always Construct warning at Mp3.v(190): inferring latch(es) for variable "musica1stop", which holds its previous value in one or more paths through the always construct File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Info (10041): Inferred latch for "musica1stop" at Mp3.v(190) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Info (10041): Inferred latch for "musica1play" at Mp3.v(190) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Info (10041): Inferred latch for "musica2stop" at Mp3.v(190) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Info (10041): Inferred latch for "musica2play" at Mp3.v(190) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 190
+Info (12128): Elaborating entity "temporizador" for hierarchy "Mp3:inst4|temporizador:temp" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 57
+Info (12128): Elaborating entity "divisor_clock" for hierarchy "Mp3:inst4|divisor_clock:div_clk" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 62
+Info (12128): Elaborating entity "Fur_Elise" for hierarchy "Mp3:inst4|Fur_Elise:control" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 159
+Info (12128): Elaborating entity "Over_The_Rainbow" for hierarchy "Mp3:inst4|Over_The_Rainbow:contro" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/Mp3.v Line: 169
 Info (12128): Elaborating entity "ir_verilog" for hierarchy "ir_verilog:inst"
 Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_endereco" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
 Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "endereco" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/ir_verilog.v Line: 25
@@ -772,9 +778,9 @@ Warning (10036): Verilog HDL or VHDL warning at ir_verilog.v(25): object "c_coma
 Info (12128): Elaborating entity "driver_monitor" for hierarchy "driver_monitor:inst8"
 Info (12128): Elaborating entity "horizontal_sync" for hierarchy "driver_monitor:inst8|horizontal_sync:hsync_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 16
 Info (12128): Elaborating entity "vertical_sync" for hierarchy "driver_monitor:inst8|vertical_sync:vsync_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 25
-Info (12128): Elaborating entity "pixel_generator" for hierarchy "driver_monitor:inst8|pixel_generator:pixel_generator_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 38
-Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(72): object "h_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 72
-Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(73): object "v_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 73
+Info (12128): Elaborating entity "pixel_generator" for hierarchy "driver_monitor:inst8|pixel_generator:pixel_generator_inst" File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/driver_monitor.v Line: 41
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(78): object "h_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 78
+Warning (10036): Verilog HDL or VHDL warning at pixel_generator.v(79): object "v_dat" assigned a value but never read File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/pixel_generator.v Line: 79
 Info (12128): Elaborating entity "SEG_D_verilog" for hierarchy "SEG_D_verilog:inst3"
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(69): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 69
 Warning (10230): Verilog HDL assignment warning at SEG_D_verilog.v(70): truncated value with size 7 to match size of target (4) File: /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/SEG_D_verilog.v Line: 70
@@ -801,16 +807,16 @@ Info (17049): 26 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/hpsilva/Documents/ufpe_eletronica_digital/Projeto 4/VGA_ex3/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 953 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2015 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 23 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 925 logic cells
+    Info (21061): Implemented 1987 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 372 megabytes
-    Info: Processing ended: Thu Sep 21 23:24:25 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 403 megabytes
+    Info: Processing ended: Fri Sep 22 02:14:19 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +------------------------------------------+
